@@ -1,0 +1,48 @@
+{
+  "status": "stage8_in_progress_initial_public500_dependency_fix_pending_user_push",
+  "github": {
+    "url": "https://github.com/c2838/l7-crispdm-mr",
+    "owner": "c2838",
+    "visibility": "public",
+    "branch": "main",
+    "head_at_verification": "12ca7c43005911dbe370b5dd6187331ba2fc3a7d"
+  },
+  "vercel": {
+    "url": "https://l7-crispdm-mr.vercel.app/",
+    "deployment_status_url": "https://vercel.com/colin-f439/l7-crispdm-mr/GHPcUFrGFxsqY8HRyjZuDqDCNsLp",
+    "github_deployment_status": "success",
+    "observed_home_status": 500,
+    "observed_release_status": 500,
+    "observed_health_status": 500,
+    "error": "FUNCTION_INVOCATION_FAILED",
+    "user_runtime_log": "ModuleNotFoundError: No module named fastapi",
+    "plan": "Hobby expected; actual settings not verified",
+    "execution_region": null,
+    "observed_request_edge": "hnd1"
+  },
+  "local_validation": {
+    "existing_unit_tests": 72,
+    "packaged_checks": 53,
+    "static_files": 509,
+    "actual_third_data_models": 9,
+    "linux_wheel_count": 36,
+    "linux_uncompressed_wheel_bytes": 369832759
+  },
+  "fix": {
+    "files": [
+      "pyproject.toml",
+      "scripts/build_vercel_static.py"
+    ],
+    "dependency_versions_changed": false,
+    "release_id": "0f0e21f43b8d078d3f4137bae5ce92f0d07f0a20fa2339df16a0f592f0c6c630",
+    "cloud_verification": "pending user push/redeploy"
+  },
+  "platform_operations_owner": "user",
+  "external_writes_by_agent": false,
+  "stage9_started": false,
+  "limitations": [
+    "Actual plan, project settings, Python runtime and Function region need user-provided effective evidence.",
+    "Cloud still500 at last checked deployment; local success does not prove fix deployed.",
+    "Public two datasets/custom upload+URL/CI/PI/downloads/cold-start/concurrency remain pending repaired deployment."
+  ]
+}

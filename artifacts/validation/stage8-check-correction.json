@@ -1,0 +1,6 @@
+{
+  "issue": "New validation script incorrectly expected400 for private URL.",
+  "actual": "422 with error.code=private_url, matching existing Problem contract and unit tests.",
+  "resolution": "Corrected checker expectation only; API and SSRF guard unchanged.",
+  "scope": "No production or external changes."
+}

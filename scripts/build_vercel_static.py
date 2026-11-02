@@ -2,7 +2,7 @@
 No external writes, dependency installs, or analysis recomputation.
 """
 from pathlib import Path
-import hashlib,json,shutil
+import hashlib,json,shutil,tomllib
 
 ROOT=Path(__file__).resolve().parents[1]
 STATIC=ROOT/'web'
@@ -12,6 +12,12 @@ EXTENSIONS={'.html','.css','.mjs','.svg','.json','.pdf','.md','.txt'}
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
 def main():
+    project=tomllib.loads((ROOT/'pyproject.toml').read_text()).get('project',{})
+    expected=[line.strip() for line in (ROOT/'requirements.txt').read_text().splitlines() if line.strip() and not line.lstrip().startswith('#')]
+    if project.get('dependencies')!=expected:
+        raise ValueError('pyproject.toml project.dependencies must exactly match requirements.txt; Vercel prioritizes pyproject.')
+    if project.get('requires-python')!='~=3.12.0':
+        raise ValueError('Deployment must use the validated Python 3.12.x runtime.')
     entries=[]
     for p in sorted(STATIC.rglob('*')):
         if p.is_symlink():raise ValueError('Static symlink is not allowed: '+str(p.relative_to(ROOT)))

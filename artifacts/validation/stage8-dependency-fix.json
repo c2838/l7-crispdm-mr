@@ -1,0 +1,68 @@
+{
+  "status": "passed_local_pending_user_push_redeploy",
+  "checks": [
+    {
+      "name": "36 project dependency pins match requirements exactly",
+      "passed": true
+    },
+    {
+      "name": "Python constrained3.12.x",
+      "passed": true
+    },
+    {
+      "name": "original missing dependency manifest fails before static build",
+      "passed": true
+    },
+    {
+      "name": "509 static files remain byte-identical",
+      "passed": true
+    },
+    {
+      "name": "protected_sha256 unchanged",
+      "passed": true,
+      "count": 188
+    },
+    {
+      "name": "export_sha256 unchanged",
+      "passed": true,
+      "count": 493
+    },
+    {
+      "name": "source_sha256 unchanged",
+      "passed": true,
+      "count": 11
+    }
+  ],
+  "release_id": "0f0e21f43b8d078d3f4137bae5ce92f0d07f0a20fa2339df16a0f592f0c6c630",
+  "changed_runtime_files": [
+    "pyproject.toml",
+    "scripts/build_vercel_static.py"
+  ],
+  "public_state": "Initial12ca7c4 deployment returns500; user supplied ModuleNotFoundError fastapi.",
+  "limitation": "Fresh macOS dependency installation and runtime checked; fixed Vercel build still pending user push/redeploy.",
+  "isolated_dependency_install": {
+    "packages": 36,
+    "host_site_packages_enabled": false,
+    "api_health_status": 200,
+    "api_health": {
+      "status": "ok",
+      "pipeline": "custom-v1",
+      "methods": [
+        "baseline",
+        "kbest",
+        "rfe",
+        "sfs",
+        "lasso_select",
+        "elasticnet_select"
+      ],
+      "persist_uploads": false,
+      "json_limit": 3000000,
+      "csv_limit": 3500000
+    },
+    "real_public_data_preview_status": 200,
+    "real_public_data_rows": 5875,
+    "baseline_http_status": 200,
+    "baseline_models": 4,
+    "environment": "New macOS dependency installation; Python -S disables original site-packages. Actual localhost HTTP; not a Vercel rebuild."
+  }
+}

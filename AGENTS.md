@@ -131,3 +131,8 @@
 ## 階段8授權與已確認新名稱（最新）
 
 使用者「好，那我們進行階段8」核准STAGE8_PROPOSAL.md本機發布準備與唯讀盤點，並確認建立新的GitHub儲存庫／Vercel專案名稱l7-crispdm-mr。先完成可review的設定、打包與實際驗證。帳號／team／region仍待登入核對；外部建立、push、部署仍依具體execution preview後再次執行授權，不視本階段go為已發布。上文階段8未授權為歷史，由本段取代。
+
+
+## 階段8平台分工與當前故障（最新）
+
+使用者明確表示Chrome登入與GitHub／Vercel操作由他處理。Agent可修改已授權本機部署檔案、準備具體差異與驗證，不能自行push或重新部署。遠端為c2838/l7-crispdm-mr main，公開網址l7-crispdm-mr.vercel.app。首次12ca7c4雲端缺fastapi而500，manifest修正本機完成但雲端仍待使用者推送／部署；不得將build success視為可用。

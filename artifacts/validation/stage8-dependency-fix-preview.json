@@ -1,0 +1,25 @@
+{
+  "action_owner": "user",
+  "repository": "https://github.com/c2838/l7-crispdm-mr",
+  "remote": "origin",
+  "branch": "main",
+  "base_commit": "12ca7c43005911dbe370b5dd6187331ba2fc3a7d",
+  "production_url": "https://l7-crispdm-mr.vercel.app/",
+  "operation": "Commit/push only the two deployment fix files; verify resulting Vercel deployment matches the new commit.",
+  "files": [
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/pyproject.toml",
+      "relative_path": "pyproject.toml",
+      "sha256": "96fd104cd983f4212ac6125d3317364234bf7d63a9add74924b1ecd0c00a2841"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/scripts/build_vercel_static.py",
+      "relative_path": "scripts/build_vercel_static.py",
+      "sha256": "d693e06b92af9e6c15a90a0439aae19d22d0ce51766b517f0b69d51f51dfda11"
+    }
+  ],
+  "validation": "After deployment: GET /api/health must return200 JSON; verify /release.json release_id before full public checks.",
+  "expected_release_id": "0f0e21f43b8d078d3f4137bae5ce92f0d07f0a20fa2339df16a0f592f0c6c630",
+  "rollback": "Changes are isolated to dependency declaration and consistency guard; retain previous commit and local history. Reverting initial configuration does not restore a working service because initial deployment already500.",
+  "executed_by_agent": false
+}

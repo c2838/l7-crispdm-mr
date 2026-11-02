@@ -1,0 +1,31 @@
+{
+  "status": "passed_local_source_preview",
+  "checks": [
+    {
+      "name": "GPU packaged page",
+      "evidence": {
+        "bodyFont": "16px",
+        "metrics": "MAE\n176.37\nms\nHeld-out test\nRMSE\n285.23\nms\nHeld-out test\nR²\n0.4099\nHeld-out test\nAdjusted R²\n0.4068\nDevelopment OLS\nCV RMSE\n283.54\nms\nSelection score · 5 folds",
+        "noOverflow": true,
+        "researchCount": 2,
+        "service": "Analysis service ready · 可分析",
+        "status": "Frozen representative · 凍結主代表",
+        "title": "GPU Runtime Regression Explorer"
+      }
+    },
+    {
+      "name": "Student packaged page",
+      "evidence": {
+        "metrics": "MAE\n0.67\ngrade points\nHeld-out test\nRMSE\n0.84\ngrade points\nHeld-out test\nR²\n0.9290\nHeld-out test\nAdjusted R²\n0.8279\nDevelopment OLS\nCV RMSE\n1.35\ngrade points\nSelection score · 5 folds",
+        "noOverflow": true,
+        "service": "Analysis service ready · 可分析",
+        "status": "Frozen representative · 凍結主代表",
+        "title": "Student Performance Regression Explorer"
+      }
+    }
+  ],
+  "public_state": "HTTP500 FUNCTION_INVOCATION_FAILED; runtime logs requested",
+  "limitations": [
+    "Local preview is not public deployment verification."
+  ]
+}

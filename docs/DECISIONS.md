@@ -126,3 +126,8 @@ D26依使用者明確go核准；D24與D25末段的未授權文字是先前歷史
 ## D37：階段8授權及部署準備
 
 使用者核准階段8，並指定新GitHub儲存庫／Vercel專案名l7-crispdm-mr。採public/ CDN與獨立vercel_app.py API入口，保留本機app.py、分析引擎與原套件鎖定。先量測Linux wheels、產生明確發布清單並以打包環境驗證；effective帳號／team／region及外部操作授權仍待具體preview。
+
+
+## D38：使用者操作GitHub／Vercel與首次runtime故障
+
+使用者指定在Chrome登入並自行處理GitHub／Vercel平台操作，後提供c2838/l7-crispdm-mr與l7-crispdm-mr.vercel.app。唯讀確認main commit12ca7c4、Vercel deployment狀態success，但首頁／release.json／api/health真實HTTP500。使用者提供traceback定位ModuleNotFoundError:fastapi。初始pyproject僅入口而無project.dependencies，已在本機補齊與requirements相同36個pin、Python3.12.x與build一致性guard。Agent不自行push／重部署；雲端修復及完整公開加分驗收待使用者執行後取得證據。
