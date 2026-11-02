@@ -1,0 +1,9 @@
+{
+  "status": "prepared_and_integrity_checked_not_published_or_submitted",
+  "directory": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/submission/L7_CRISPDM_MR_HW2",
+  "archive": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/submission/L7_CRISPDM_MR_HW2_submission.zip",
+  "zip_bytes": 2599328,
+  "zip_sha256": "15cffb327d8c828ba482f83ff6ecb843255569ce44c464866d552a3bd808b233",
+  "files_including_manifest": 20,
+  "all_zip_entries_match_manifest": true
+}

@@ -136,3 +136,8 @@
 ## 階段8平台分工與當前故障（最新）
 
 使用者明確表示Chrome登入與GitHub／Vercel操作由他處理。Agent可修改已授權本機部署檔案、準備具體差異與驗證，不能自行push或重新部署。遠端為c2838/l7-crispdm-mr main，公開網址l7-crispdm-mr.vercel.app。首次12ca7c4雲端缺fastapi而500，manifest修正本機完成但雲端仍待使用者推送／部署；不得將build success視為可用。
+
+
+## 階段9授權（最新）
+
+使用者「階段 9 go」已核准最終需求核對、HW2對話更新、README／附件一致化、加分證據、繳交包與LMS內容preview。階段8公開功能與收尾版本已實際驗證。GitHub push／Vercel操作仍由使用者處理；LMS實際提交須使用者看過具體內容後自行完成或另行明確授權。不改資料、模型、test或既定代表，不加入Lecture6對話。

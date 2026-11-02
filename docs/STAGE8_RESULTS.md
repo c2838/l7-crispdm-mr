@@ -25,7 +25,7 @@
 - [x] 網站改列實際公開網址與GitHub，移除未建立／Local preview舊文字。
 - [x] 報告20頁、A3資訊圖表1頁更新公開功能驗收；21頁全部渲染，文字邊界與視覺檢查通過。
 - [x] 網站下載區同步兩份PDF，實際本機HTTP內容與檔案一致。
-- [ ] 使用者commit／push收尾版本，Vercel部署後確認新文字及兩份PDF的SHA。
+- [x] 使用者commit／push收尾版本，已確認公開新文字與兩份PDF的SHA，API仍200。
 - [ ] 階段9待使用者核准；更新HW2對話快照、最終附件封存與繳交內容預覽。尚未LMS提交。
 
 ## 限制與未驗證範圍
@@ -33,3 +33,7 @@
 無管理端資料，未證實實際帳號方案、Function記憶體、instance身分與冷啟動；Build機器2cores／8GB不當成Function設定。三次health與每方法時間只屬實際觀測，不標成冷啟動。公開release的vercel.json單一來源雜湊與本機不同，原因未確認；其餘runtime來源及所有靜態檔均一致，不宣稱設定檔完全一致。通過功能驗證不保證統計假設、醫療／教育可用性或教師加分。
 
 收尾只更新文字、附件及驗收紀錄；不重新訓練、不修改test或既定代表。
+
+## 收尾版本公開核對
+
+2026-11-03：commit 6b7ec625d177cfa5228358d5659e4eba759f94cd，release ae136bfdd390000c956e9b54684727f7cf9244bc899fdc4ae6cf65616382bda6。17項收尾檢查通過；完整紀錄見artifacts/validation/stage8-public/final-assets.json。階段8公開功能與收尾附件驗收完成；平台內部限制照上文保留。階段9尚未開始。

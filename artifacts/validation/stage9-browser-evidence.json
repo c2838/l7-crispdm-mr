@@ -1,0 +1,35 @@
+{
+  "status": "actual_public_bonus_recheck_passed",
+  "base_url": "https://l7-crispdm-mr.vercel.app/",
+  "preset_gpu_r2": "0.4099",
+  "preset_student_r2": "0.9290",
+  "custom_source_rows": 5875,
+  "custom_target": "total_UPDRS",
+  "custom_group": "subject#",
+  "custom_raw_inputs": 16,
+  "request_states": {
+    "baseline": "succeeded",
+    "kbest": "succeeded",
+    "rfe": "succeeded",
+    "sfs": "succeeded",
+    "lasso_select": "succeeded",
+    "elasticnet_select": "succeeded"
+  },
+  "models": 9,
+  "console_errors": 0,
+  "screenshots": [
+    "stage9-evidence/public-gpu.png",
+    "stage9-evidence/public-student.png",
+    "stage9-evidence/public-custom-nine-models.png"
+  ],
+  "lms_attempt": {
+    "requested": "https://lms2020.nchu.edu.tw/course/homework/74761",
+    "observed_redirect": "https://lms2020.nchu.edu.tw/course/info/46977",
+    "submission_fields_visible": false,
+    "reason": "Authenticated homework view not available in this browser session."
+  },
+  "limits": [
+    "This is real public functionality evidence, not medical validity proof.",
+    "Stage9 updated attachments are still local; publication and LMS submission are user-owned."
+  ]
+}

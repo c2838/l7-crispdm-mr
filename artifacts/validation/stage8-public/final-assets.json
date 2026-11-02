@@ -1,0 +1,115 @@
+{
+  "status": "passed_final_public_assets",
+  "base_url": "https://l7-crispdm-mr.vercel.app",
+  "release_id": "ae136bfdd390000c956e9b54684727f7cf9244bc899fdc4ae6cf65616382bda6",
+  "verified_git_commit": "6b7ec625d177cfa5228358d5659e4eba759f94cd",
+  "deployment_status_url": "https://vercel.com/colin-f439/l7-crispdm-mr/7fF3YfHZK22bEzVfWGGFMpUDM6x5",
+  "checks": [
+    {
+      "name": "deployment success",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release200",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release hash internally reproducible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "509 static files retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all509 release asset hashes match reviewed local files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "final asset200 and SHA matches index.html",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "bytes": 24670
+      }
+    },
+    {
+      "name": "final asset200 and SHA matches app.mjs",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "bytes": 24361
+      }
+    },
+    {
+      "name": "final asset200 and SHA matches downloads/L7_CRISPDM_MR_report_draft.pdf",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "bytes": 1620658
+      }
+    },
+    {
+      "name": "final asset200 and SHA matches downloads/L7_CRISPDM_MR_infographic.pdf",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "bytes": 123402
+      }
+    },
+    {
+      "name": "root homepage current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "homepage includes actual GitHub link",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stale deployment text retired",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "API health200 and six methods",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "runtime code unchanged",
+      "passed": true,
+      "detail": [
+        "vercel.json"
+      ]
+    },
+    {
+      "name": "protected_sha256 unchanged",
+      "passed": true,
+      "detail": 188
+    },
+    {
+      "name": "export_sha256 unchanged",
+      "passed": true,
+      "detail": 493
+    },
+    {
+      "name": "source_sha256 unchanged",
+      "passed": true,
+      "detail": 11
+    }
+  ],
+  "passed_checks": 17,
+  "limits": [
+    "Four changed assets and API health checked on actual public service; prior six-method public validation remains in summary.json.",
+    "Actual billing plan, cold-start instance identity and Function memory remain unverified.",
+    "vercel.json is the only differing runtime source hash; exact build-time cause unconfirmed.",
+    "LMS submission and refreshed conversation archive are not performed."
+  ]
+}

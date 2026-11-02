@@ -1,0 +1,2437 @@
+{
+  "status": "passed_automated_and_visual_review",
+  "checks": [
+    {
+      "name": "HW2_conversation_snapshot.pdf pages/unencrypted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf complete rendering",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf website copy byte-identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page1 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 428,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page1 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page2 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 482,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page2 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page3 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1771,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page3 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page4 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1594,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page4 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page5 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 970,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page5 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page6 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1419,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page6 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page7 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1057,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page7 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page8 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 879,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page8 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page9 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1301,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page9 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page10 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1254,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page10 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page11 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1066,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page11 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page12 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1086,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page12 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page13 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 292,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page13 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page14 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1154,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page14 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page15 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1053,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page15 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page16 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 984,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page16 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page17 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1318,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page17 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page18 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 784,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page18 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page19 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1581,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page19 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page20 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1094,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page20 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page21 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1669,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page21 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page22 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1407,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page22 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page23 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 192,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page23 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page24 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1435,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page24 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page25 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1529,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page25 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page26 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 2107,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page26 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page27 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 941,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page27 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page28 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1327,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page28 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page29 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 927,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page29 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page30 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1388,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page30 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page31 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 944,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page31 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page32 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1299,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page32 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page33 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 900,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page33 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page34 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1414,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page34 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page35 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 240,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page35 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page36 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1046,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page36 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page37 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1152,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page37 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page38 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1317,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page38 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page39 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1512,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page39 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page40 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1297,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page40 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page41 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 479,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page41 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page42 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1293,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page42 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page43 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1193,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page43 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page44 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1142,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page44 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page45 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1363,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page45 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page46 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 312,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page46 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page47 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1372,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page47 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page48 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 937,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page48 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page49 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1291,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page49 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page50 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 925,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page50 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page51 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1395,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page51 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page52 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1309,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page52 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page53 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1398,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page53 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page54 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 361,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page54 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page55 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1687,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page55 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page56 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1333,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page56 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page57 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 817,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page57 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page58 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 699,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page58 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page59 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1560,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page59 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page60 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1159,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page60 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page61 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1612,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page61 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page62 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1321,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page62 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page63 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1398,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page63 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page64 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1008,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page64 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page65 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 2555,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page65 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page66 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1548,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page66 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page67 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1578,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page67 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page68 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 346,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page68 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page69 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 3434,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page69 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page70 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4277,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page70 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page71 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4282,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page71 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page72 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4469,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page72 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page73 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4104,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page73 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page74 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4567,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page74 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page75 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 3987,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page75 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page76 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4091,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page76 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page77 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4189,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page77 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page78 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 3976,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page78 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page79 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4041,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page79 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page80 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4232,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page80 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page81 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4024,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page81 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page82 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 3979,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page82 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page83 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 3966,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page83 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page84 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 3684,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page84 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page85 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4310,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page85 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page86 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4189,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page86 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page87 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4112,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page87 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page88 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4066,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page88 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page89 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4100,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page89 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page90 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4019,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page90 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page91 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4214,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page91 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page92 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4014,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page92 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page93 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4096,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page93 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page94 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4292,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page94 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page95 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4121,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page95 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page96 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 3999,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page96 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page97 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4268,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page97 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page98 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4255,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page98 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page99 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 3971,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page99 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page100 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4145,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page100 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page101 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4110,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page101 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page102 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 4011,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page102 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page103 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 3753,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page103 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page104 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 2169,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page104 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page105 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1337,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page105 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page106 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 792,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page106 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page107 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1388,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page107 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page108 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 924,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page108 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic.pdf pages/unencrypted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic.pdf complete rendering",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic.pdf website copy byte-identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic.pdf page1 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1225,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic.pdf page1 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf pages/unencrypted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf complete rendering",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf website copy byte-identical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page1 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 741,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page1 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page2 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 594,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page2 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page3 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 611,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page3 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page4 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 566,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page4 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page5 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 601,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page5 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page6 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 883,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page6 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page7 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 481,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page7 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page8 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 522,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page8 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page9 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 804,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page9 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page10 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 468,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page10 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page11 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 511,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page11 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page12 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 664,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page12 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page13 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 579,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page13 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page14 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 661,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page14 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page15 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 845,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page15 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page16 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1077,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page16 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page17 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1224,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page17 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page18 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1761,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page18 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page19 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 1334,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page19 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page20 text within bounds",
+      "passed": true,
+      "detail": {
+        "characters": 615,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page20 nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "204 distinct actual public messages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all4 source pages and no truncation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page1 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page2 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page3 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page4 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page5 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page6 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page7 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page8 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page9 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page10 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page11 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page12 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page13 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page14 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page15 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page16 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page17 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page18 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page19 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page20 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page21 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page22 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page23 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page24 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page25 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page26 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page27 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page28 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page29 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page30 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page31 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page32 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page33 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page34 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page35 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page36 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page37 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page38 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page39 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page40 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page41 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page42 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page43 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page44 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page45 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page46 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page47 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page48 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page49 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page50 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page51 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page52 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page53 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page54 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page55 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page56 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page57 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page58 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page59 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page60 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page61 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page62 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page63 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page64 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page65 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page66 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page67 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page68 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page69 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page70 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page71 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page72 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page73 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page74 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page75 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page76 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page77 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page78 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page79 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page80 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page81 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page82 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page83 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page84 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page85 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page86 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page87 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page88 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page89 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page90 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page91 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page92 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page93 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page94 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page95 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page96 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page97 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page98 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page99 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page100 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page101 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page102 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page103 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page104 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page105 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page106 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page107 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transcript page108 header/footer consistent",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "204/204 message text retained after declared presentation normalization",
+      "passed": true,
+      "detail": {
+        "missing_ids": []
+      }
+    },
+    {
+      "name": "no raw tool/automatic citation markup in reading PDF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no credential pattern OpenAI literal key",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no credential pattern GitHub literal credential",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no credential pattern private key block",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 0.409873",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 0.928986",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 285.227",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 0.840",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 1111.408",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 5.312",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains NotebookLM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 204",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 對話截止點",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains l7-crispdm-mr.vercel.app",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains github.com/c2838/l7-crispdm-mr",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gpu NotebookLM summary >100 Chinese characters",
+      "passed": true,
+      "detail": 188
+    },
+    {
+      "name": "student NotebookLM summary >100 Chinese characters",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "protected_sha256 unchanged",
+      "passed": true,
+      "detail": 188
+    },
+    {
+      "name": "export_sha256 unchanged",
+      "passed": true,
+      "detail": 493
+    },
+    {
+      "name": "source_sha256 unchanged",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "Lecture6 PDF absent from public downloads",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed_checks": 399,
+  "pages_rendered": 129,
+  "renders": [
+    {
+      "pdf": "reports/output/pdf/HW2_conversation_snapshot.pdf",
+      "pages": 108,
+      "png_dir": "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot",
+      "contact_sheets": [
+        "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot-contact-1.jpg",
+        "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot-contact-2.jpg",
+        "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot-contact-3.jpg",
+        "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot-contact-4.jpg",
+        "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot-contact-5.jpg",
+        "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot-contact-6.jpg",
+        "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot-contact-7.jpg",
+        "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot-contact-8.jpg",
+        "artifacts/validation/stage9-pdf-pages/HW2_conversation_snapshot-contact-9.jpg"
+      ]
+    },
+    {
+      "pdf": "reports/output/pdf/L7_CRISPDM_MR_infographic.pdf",
+      "pages": 1,
+      "png_dir": "artifacts/validation/stage9-pdf-pages/L7_CRISPDM_MR_infographic",
+      "contact_sheets": [
+        "artifacts/validation/stage9-pdf-pages/L7_CRISPDM_MR_infographic-contact-1.jpg"
+      ]
+    },
+    {
+      "pdf": "reports/output/pdf/L7_CRISPDM_MR_report_draft.pdf",
+      "pages": 20,
+      "png_dir": "artifacts/validation/stage9-pdf-pages/L7_CRISPDM_MR_report_draft",
+      "contact_sheets": [
+        "artifacts/validation/stage9-pdf-pages/L7_CRISPDM_MR_report_draft-contact-1.jpg",
+        "artifacts/validation/stage9-pdf-pages/L7_CRISPDM_MR_report_draft-contact-2.jpg"
+      ]
+    }
+  ],
+  "message_count": 204,
+  "limits": [
+    "PDF bounds and text replay do not replace visual inspection.",
+    "LMS authentication/submission not performed.",
+    "This snapshot deliberately ends at stage9 kickoff; later messages are outside its declared cutoff."
+  ],
+  "visual_review": {
+    "pages_reviewed": 129,
+    "method": "All page contact sheets inspected. Transcript cover/log/last page and report cover inspected full-size. Latest report20 pages and A3 inspected after stable label polish. All108 transcript page texts independently identical to prior inspected edition.",
+    "findings": "No overflow, overlap or missing glyphs."
+  }
+}

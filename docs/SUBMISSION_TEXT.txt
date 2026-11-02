@@ -1,0 +1,21 @@
+物聯網應用與資料分析 HW2：Multiple Linear Regression
+
+GitHub：https://github.com/c2838/l7-crispdm-mr
+公開網站：https://l7-crispdm-mr.vercel.app/
+
+本作業依CRISP-DM完成兩個真實問題的多元線性回歸、特徵選擇、模型評估、預測圖與信賴／預測區間：
+1. SGEMM GPU Runtime：241,600筆、14個原始輸入；Target為四次Run平均毫秒。SelectKBest選13欄後OLS，test R²=0.409873、RMSE=285.227 ms。保留為原始特徵加法線性模型能力有限的案例，如實呈現負時間與區間限制。
+2. Student Performance（Portuguese）：649筆、32個原始輸入，編碼後41欄；Target為G3。ElasticNet選G1／G2後OLS，test R²=0.928986、RMSE=0.840分。此結果以已知前期成績為前提，不宣稱開學預警或因果效果。
+
+加分操作：
+（1）首頁Dataset下拉可切換上述兩題。
+（2）Custom Dataset Analysis支援任意CSV上傳或公開HTTPS CSV網址，預覽後設定Target／X／group，即時執行基準與五種選擇方法，共九模型；可查看結果、單筆預測及下載JSON。已以第三份真實UCI資料5875筆完成公開驗證。逐步操作見GitHub docs/BONUS_DEMO.md。
+
+資料來源：
+GPU：https://www.kaggle.com/datasets/rupals/gpu-runtime
+學生：https://www.kaggle.com/datasets/uciml/student-alcohol-consumption
+原始UCI來源、授權及版本已於網站、報告與GitHub標示。
+
+附件：分析報告20頁、A3資訊圖表1頁、HW2對話PDF108頁（36回合、204則公開訊息，截止階段9啟動與初始進度）。網站Research & Deliverables設有附件下載入口，附件版本以本次提交的三份PDF為準。
+
+GPT輔助內容與兩題NotebookLM研究摘要已於報告及網站分別標示。NotebookLM由本人操作並提供實際回答，再經來源核對整合；每題摘要均超過100中文字。

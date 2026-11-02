@@ -43,3 +43,8 @@ docs/notebooklm/review.json
 
 # Generated release stamp, collected by the FastAPI frontend build
 web/release.json
+
+# Generated final submission bundle and PDF rendering intermediates
+/artifacts/submission/
+/artifacts/validation/stage9-pdf-pages/
+/artifacts/validation/stage9-publication-preview.*

@@ -1,0 +1,103 @@
+{
+  "status": "passed_actual_local_http_and_links",
+  "checks": [
+    {
+      "name": "all homepage relative links exist",
+      "passed": true
+    },
+    {
+      "name": "108 page and204 message labels current",
+      "passed": true
+    },
+    {
+      "name": "actual local HTTP index.html",
+      "passed": true
+    },
+    {
+      "name": "actual local HTTP downloads/HW2_conversation_snapshot.pdf",
+      "passed": true
+    },
+    {
+      "name": "actual local HTTP downloads/L7_CRISPDM_MR_report_draft.pdf",
+      "passed": true
+    },
+    {
+      "name": "actual local HTTP downloads/L7_CRISPDM_MR_infographic.pdf",
+      "passed": true
+    },
+    {
+      "name": "local API healthy",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/datasets/ATTRIBUTION.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/BONUS_DEMO.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/API_CONTRACT.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/INFERENCE_SCHEMA.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/DEPLOYMENT.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/STAGE8_RESULTS.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/STAGE9_RESULTS.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/REQUIREMENTS.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/DECISIONS.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/datasets/AUDIT_SUMMARY.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/STAGE4_RESULTS.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/STAGE5_RESULTS.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/STAGE6_RESULTS.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/notebooklm/START_HERE.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/STAGE8_RESULTS.md",
+      "passed": true
+    },
+    {
+      "name": "README local link docs/SUBMISSION_PREVIEW.md",
+      "passed": true
+    }
+  ],
+  "passed_checks": 24,
+  "relative_home_links": 12
+}

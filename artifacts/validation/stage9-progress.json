@@ -1,0 +1,24 @@
+{
+  "status": "prepared_verified_pending_user_review_publication_and_lms",
+  "stage9_authorized": true,
+  "stage9_complete": false,
+  "prepared": {
+    "pdf_pages": [
+      20,
+      1,
+      108
+    ],
+    "message_count": 204,
+    "pdf_checks": 399,
+    "public_bonus_methods": 6,
+    "public_bonus_models": 9,
+    "package_files": 20
+  },
+  "pending": [
+    "User reviews and pushes final documents/PDFs; Vercel publishes, then Agent verifies actual public hashes.",
+    "User submits reviewed text and three PDFs in authenticated LMS.",
+    "Actual LMS receipt/status/time/links/files verified."
+  ],
+  "external_writes_by_agent": false,
+  "lms_submitted": false
+}

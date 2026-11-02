@@ -1,44 +1,44 @@
 {
-  "status": "passed_stage8_render_and_visual_review_pending_user_publish",
-  "created_at": "2026-11-03T00:17:33.554090+08:00",
+  "status": "stage9_three_pdfs_checked_pending_user_publication",
+  "created_at": "2026-11-03T00:57:13.556313+08:00",
   "notebooklm_status": "user_outputs_received_summaries_reviewed",
-  "public_deployment": "public_functionality_verified_pending_final_asset_deployment",
+  "public_deployment": "stage8_public_verified_stage9_local_submission_assets_pending_user_publication",
   "artifacts": [
     {
       "path": "reports/output/pdf/HW2_conversation_snapshot.pdf",
-      "pages": 53,
-      "bytes": 543813,
-      "sha256": "a63a1eaa5072bc9d1756aef1ddb83c8fa079eb8c1aa65ff29c6ba7769f05fce6",
-      "text_characters": 60809
+      "pages": 108,
+      "bytes": 691051,
+      "sha256": "feb36f0c131ebf8a70907b89e507697b229c85e631113d68d27e1fda370b4e9c",
+      "text_characters": 233119
     },
     {
       "path": "reports/output/pdf/L7_CRISPDM_MR_infographic.pdf",
       "pages": 1,
-      "bytes": 123402,
-      "sha256": "3892c1211b71a07ee19c7a840d80827fdbf97857b447ecae3d6eeed2d7075137",
-      "text_characters": 1276
+      "bytes": 121879,
+      "sha256": "8d599022375cec7b6b53c5e984fda02d7c94ba07bd9de4be517526a2462d1798",
+      "text_characters": 1278
     },
     {
       "path": "reports/output/pdf/L7_CRISPDM_MR_report_draft.pdf",
       "pages": 20,
-      "bytes": 1620658,
-      "sha256": "2a07f6e9fe04eb48dc80abbf6947db1bc38ff4929fd6f08c730d2f0c81a3e032",
-      "text_characters": 16161
+      "bytes": 1621179,
+      "sha256": "41998a1602b18b8f9e3a9974c2792d903350e535df01a942d53ab87613a91d09",
+      "text_characters": 16218
     }
   ],
   "transcripts": [
     {
       "title": "物聯網作業 2 - CRISP-DM & 多元線性回歸",
       "thread_id": "01a178d2-c1e6-7321-ac54-9a404dc92c44",
-      "messages": 122,
-      "automatic_browser_context_blocks_omitted": 0,
+      "messages": 204,
+      "automatic_browser_context_blocks_omitted": 5,
       "path": "reports/output/pdf/HW2_conversation_snapshot.pdf",
       "source_json": "reports/source/transcripts/hw2.json",
-      "source_sha256": "ffb59622f68fb834ca9c1866aa70a4a4e6015e55214892d5e3290422ec25e567"
+      "source_sha256": "7859b153604a5259d12f5aa6d4797b4bd80b17569308748371252c17488cccc4"
     }
   ],
   "font": "Arial Unicode embedded; unsupported characters visibly annotated",
   "glyph_substitutions": {},
   "source_script": "reports/source/build_deliverables.py",
-  "stage8_pdf_validation": "artifacts/validation/stage8-public/pdf/checks.json"
+  "stage9_pdf_validation": "artifacts/validation/stage9-pdf.json"
 }

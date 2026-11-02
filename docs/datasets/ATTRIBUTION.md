@@ -18,5 +18,5 @@ Kaggle鏡像：<https://www.kaggle.com/datasets/uciml/student-alcohol-consumptio
 
 - CC BY 4.0：<https://creativecommons.org/licenses/by/4.0/>。後續網站、報告與公開資料包均須保留上述出處及處理說明。
 - 公開資料不是使用者上傳私有資料；自訂上傳內容不可自動放入Git或NotebookLM。
-- 尚未推送或公開再散布。本機保存與後續公開發布須分開記錄。
+- 使用者已公開GitHub／網站；網站提供正式衍生展示JSON與附件，保留來源與處理說明。原始／處理資料與使用者上傳內容不自動加入Git；NotebookLM研究論文只提供來源連結。
 - 原成衣與lattice來源／授權保留於歷史快照，不能沿用為新題目的來源。

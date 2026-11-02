@@ -1,15 +1,15 @@
 {
-  "status": "public_functionality_verified_final_text_and_pdf_pending_user_push",
+  "status": "stage8_public_functionality_and_final_assets_verified",
   "github": {
     "url": "https://github.com/c2838/l7-crispdm-mr",
     "owner": "c2838",
     "visibility": "public",
     "branch": "main",
-    "head_at_verification": "1234731f98644bf5722af175ddcf592dcddca287"
+    "head_at_verification": "6b7ec625d177cfa5228358d5659e4eba759f94cd"
   },
   "vercel": {
     "url": "https://l7-crispdm-mr.vercel.app/",
-    "deployment_status_url": "https://vercel.com/colin-f439/l7-crispdm-mr/GKrUmsCjHqx8NrCVwWg3gY4t6ZCC",
+    "deployment_status_url": "https://vercel.com/colin-f439/l7-crispdm-mr/7fF3YfHZK22bEzVfWGGFMpUDM6x5",
     "github_deployment_status": "success",
     "observed_home_status": 200,
     "observed_release_status": 200,
@@ -24,7 +24,7 @@
     "project_id": "prj_NjIyTkrTrpsS1LpeEyHVuUEjpByL",
     "team_id": "team_VebHG43ERpwu8PA40ERTShkZ",
     "deployment_id": "dpl_GKrUmsCjHqx8NrCVwWg3gY4t6ZCC",
-    "verified_release_id": "9d3fd76d99ed3c9c1428f59f448b7d9a619a13f0ef0c0f108c93e2115338e841"
+    "verified_release_id": "ae136bfdd390000c956e9b54684727f7cf9244bc899fdc4ae6cf65616382bda6"
   },
   "local_validation": {
     "existing_unit_tests": 72,
@@ -39,14 +39,14 @@
     "public_http_checks": 49,
     "browser_methods": 6,
     "browser_models": 9,
-    "final_static_updates": "Local website status/links and two PDFs updated; user push/redeploy pending."
+    "final_static_updates": "Published by user and independently verified on public website."
   },
   "platform_operations_owner": "user",
   "external_writes_by_agent": false,
   "stage9_started": false,
   "limitations": [
-    "Cold-start identity, actual plan, Function memory and platform-wide concurrency not verified.",
-    "Two bounded simultaneous requests tested; no stress test.",
-    "Final text/PDF deployment pending; conversation snapshot and LMS submission remain for stage9."
+    "Actual billing plan, Function memory and cold-start identity remain unverified.",
+    "Two bounded concurrent requests passed; platform-wide load capacity unverified.",
+    "Final conversation snapshot/archive and LMS submission remain stage9 work, not yet authorized."
   ]
 }
