@@ -1,0 +1,203 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "data": {
+    "uci_id": 597,
+    "name": "Productivity Prediction of Garment Employees",
+    "repository_url": "https://archive.ics.uci.edu/dataset/597/productivity+prediction+of+garment+employees",
+    "data_url": "https://archive.ics.uci.edu/static/public/597/data.csv",
+    "abstract": "This dataset includes important attributes of the garment manufacturing process and the productivity of the employees which had been collected manually and also been validated by the industry experts.",
+    "area": "Business",
+    "tasks": [
+      "Classification",
+      "Regression"
+    ],
+    "characteristics": [
+      "Multivariate",
+      "Time-Series"
+    ],
+    "num_instances": 1197,
+    "num_features": 14,
+    "feature_types": [
+      "Integer",
+      "Real"
+    ],
+    "demographics": [],
+    "target_col": [
+      "actual_productivity"
+    ],
+    "index_col": null,
+    "has_missing_values": "yes",
+    "missing_values_symbol": "NaN",
+    "year_of_dataset_creation": 2020,
+    "last_updated": "Mon Feb 26 2024",
+    "dataset_doi": "10.24432/C51S6D",
+    "creators": [],
+    "intro_paper": {
+      "ID": 399,
+      "type": "NATIVE",
+      "title": "Mining the productivity data of the garment industry",
+      "authors": "Abdullah Al Imran, Md Shamsur Rahim, Tanvir Ahmed",
+      "venue": "International Journal of Business Intelligence and Data Mining",
+      "year": 2021,
+      "journal": null,
+      "DOI": null,
+      "URL": "https://dl.acm.org/doi/abs/10.1504/ijbidm.2021.118183",
+      "sha": null,
+      "corpus": null,
+      "arxiv": null,
+      "mag": null,
+      "acl": null,
+      "pmid": null,
+      "pmcid": null
+    },
+    "variables": [
+      {
+        "name": "date",
+        "role": "Feature",
+        "type": "Date",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "quarter",
+        "role": "Feature",
+        "type": "Categorical",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "department",
+        "role": "Feature",
+        "type": "Categorical",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "day",
+        "role": "Feature",
+        "type": "Categorical",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "team",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "targeted_productivity",
+        "role": "Feature",
+        "type": "Continuous",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "smv",
+        "role": "Feature",
+        "type": "Continuous",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "wip",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "yes"
+      },
+      {
+        "name": "over_time",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "incentive",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": null,
+        "units": "BDT",
+        "missing_values": "no"
+      },
+      {
+        "name": "idle_time",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "idle_men",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "no_of_style_change",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "no_of_workers",
+        "role": "Feature",
+        "type": "Integer",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      },
+      {
+        "name": "actual_productivity",
+        "role": "Target",
+        "type": "Continuous",
+        "demographic": null,
+        "description": null,
+        "units": null,
+        "missing_values": "no"
+      }
+    ],
+    "additional_info": {
+      "summary": "The Garment Industry is one of the key examples of the industrial globalization of this modern era. It is a highly labour-intensive industry with lots of manual processes. Satisfying the huge global demand for garment products is mostly dependent on the production and delivery performance of the employees in the garment manufacturing companies. So, it is highly desirable among the decision makers in the garments industry to track, analyse and predict the productivity performance of the working teams in their factories. This dataset can be used for regression purpose by predicting the productivity range (0-1) or for classification purpose by transforming the productivity range (0-1) into different classes.",
+      "purpose": null,
+      "funded_by": null,
+      "instances_represent": null,
+      "recommended_data_splits": null,
+      "sensitive_data": null,
+      "preprocessing_description": null,
+      "variable_info": "01\tdate\t\t\t:\tDate in MM-DD-YYYY\r\n02\tday\t\t\t:\tDay of the Week\r\n03\tquarter\t\t\t:\tA portion of the month. A month was divided into four quarters\r\n04\tdepartment\t\t:\tAssociated department with the instance\r\n05\tteam_no\t\t\t:\tAssociated team number with the instance\r\n06\tno_of_workers\t\t:\tNumber of workers in each team\r\n07\tno_of_style_change\t:\tNumber of changes in the style of a particular product\r\n08\ttargeted_productivity\t:\tTargeted productivity set by the Authority for each team for each day.\r\n09\tsmv\t\t\t:\tStandard Minute Value, it is the allocated time for a task\r\n10\twip\t\t\t:\tWork in progress. Includes the number of unfinished items for products\r\n11\tover_time\t\t:\tRepresents the amount of overtime by each team in minutes\r\n12\tincentive\t\t:\tRepresents the amount of financial incentive (in BDT) that enables or motivates a particular course of action.\r\n13\tidle_time\t\t:\tThe amount of time when the production was interrupted due to several reasons\r\n14\tidle_men\t\t:\tThe number of workers who were idle due to production interruption\r\n15\tactual_productivity\t:\tThe actual % of productivity that was delivered by the workers. It ranges from 0-1.\r\n",
+      "citation": null
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.data",
+  "page": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+  "license": "CC BY 4.0",
+  "source": {
+    "sha256": "f2c7d5025dec4e92e7feae367a5f7ccf58789a10ac6b54bdf15976c599f9dd39",
+    "bytes": 911261,
+    "delimiter": ",",
+    "encoding": "UTF-8",
+    "rows": 5875,
+    "source_columns": 22
+  },
+  "transport": {
+    "host": "archive.ics.uci.edu",
+    "redirects": 0,
+    "bytes": 911261,
+    "verified_public_addresses": [
+      "128.195.10.252"
+    ],
+    "transport": "Pinned public IP; TLS certificate + original-host SNI; no credentials/proxy/cookies"
+  },
+  "purpose": "Actual public third-dataset validation fixture; not a preset problem or a saved user upload",
+  "creators": [
+    "Athanasios Tsanas",
+    "Max Little"
+  ],
+  "doi": "10.24432/C5ZS3N",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Tsanas, A. & Little, M. (2009). Parkinsons Telemonitoring [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5ZS3N.",
+  "modifications": "Validation CSV bytes unchanged; modelling target/input/group selection documented in STAGE6_RESULTS.md."
+}

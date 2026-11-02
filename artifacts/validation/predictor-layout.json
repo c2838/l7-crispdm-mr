@@ -1,0 +1,41 @@
+{
+  "status": "passed_local_browser",
+  "request": "User asked coefficient and Single-sample Predictor each full width, stacked.",
+  "checks": [
+    {
+      "name": "GPU desktop panels each occupy full row",
+      "passed": true,
+      "actual": {
+        "client": 1425,
+        "coefficientWidth": 1316,
+        "gap": 20,
+        "gridWidth": 1316,
+        "predictorWidth": 1316,
+        "sameLeft": true,
+        "scroll": 1425,
+        "viewport": 1440
+      }
+    },
+    {
+      "name": "Student panels follow same full-row layout",
+      "passed": true,
+      "actual": {
+        "coefficientWidth": 1316,
+        "gap": 20,
+        "gridWidth": 1316,
+        "predictorWidth": 1316
+      }
+    },
+    {
+      "name": "Mobile remains single-column without page overflow",
+      "passed": true,
+      "actual": {
+        "client": 375,
+        "columns": "339px",
+        "scroll": 375
+      }
+    }
+  ],
+  "passed_checks": 3,
+  "scope": "Formal model pair only; numeric sources and custom dataset pair unchanged."
+}

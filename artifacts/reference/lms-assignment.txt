@@ -1,0 +1,275 @@
+物聯網應用與資料分析作業HW2: Multiple Linear regression
+HW2: Multiple Linear regression
+類型
+個人作業
+開放繳交
+2025-10-15 00:00
+繳交期限
+2026-11-04
+已繳交
+21人
+允許遲交
+是
+成績比重
+10%
+評分方式
+直接打分數
+說明
+
+
+
+========加分 ==============
+
+加總分 1分:
+1. 有下拉視窗呈現兩種problem
+加總分2分
+
+1. 可任意輸入 Dataset (such as https://raw.githubusercontent.com/Avik-Jain/100-Days-Of-ML-Code/master/datasets/50_Startups.csv)
+======== ======== ========
+
+
+一、作業目標：
+本次作業延伸自 HW1，目標是讓同學能夠以實際資料集進行「多元線性回歸 (Multiple Linear Regression)」的完整分析，並遵循 CRISP-DM 流程完成從資料理解、建模到評估的全過程。
+ 
+二、作業內容：
+1. 資料來源
+  至 Kaggle 選擇一個具有>13 個特徵 (features) 的公開資料集。
+  類型不限（可為房價預測、醫療、車輛效能等主題）。
+  請明確標示資料集來源與連結。
+2. 分析任務
+  使用線性回歸 (Linear Regression) 模型進行預測。
+  可嘗試單純線性回歸、多元線性回歸或 Auto Regression。
+  必須執行 特徵選擇 (Feature Selection) 與 模型評估 (Model Evaluation)。
+  結果部分需包含請提供預測圖(加上信賴區間或預測區間)
+3. CRISP-DM 流程說明
+    Business Understanding
+    Data Understanding
+    Data Preparation
+    Modeling
+    Evaluation
+    Deployment
+
+4. AI協助要求
+  所有與 ChatGPT 的對話請以 pdfCrowd 或其他方式須匯出為 PDF
+  請使用 NotebookLM 對網路上同主題的解法進行研究，並撰寫一份 100 字以上的摘要，放入報告中。
+  請在報告中明確標示「GPT 輔助內容」與「NotebookLM 摘要」
+5. 繳交內容
+  主要繳交:   跟 DIC2 一樣github and web
+  optional :對話內容, 資訊圖表 
+
+
+========================
+
+三、評分標準
+ 
+  主要繳交:   跟 DIC2 一樣github and web
+  optional :對話內容, 資訊圖表 , 報告書
+  不夠事後可再補 1次
+
+
+
+==== 補充 ====
+list kaggle multiple linear regression problems , choose features > 13,  < 40
+Kaggle Multiple Linear Regression Problems (14–39 Features)
+
+你希望找適合 Multiple Linear Regression（多元線性回歸） 的 Kaggle 題目，條件為：
+
+13<Number of Features<40
+13<Number of Features<40
+
+也就是 14–39 個輸入特徵，不包含 Target（預測目標）。
+
+建議優先選擇連續數值預測（Regression）、可使用 sklearn.LinearRegression、適合進行 Feature Selection、MSE、RMSE、R² 與五大回歸假設檢驗的資料集。
+
+特別注意：Kaggle 上常見的 House Prices — Advanced Regression Techniques 有 79 個原始特徵，不符合你的原始特徵數限制，但可以透過特徵選擇建立 14–39 特徵的練習版本。
+
+Kaggle
++1
+Recommended Kaggle Regression Problems
+
+以下區分「原始特徵符合條件」與「需要 Feature Selection 才符合條件」。
+
+#
+
+	
+
+Kaggle Problem
+
+	
+
+Features
+
+	
+
+Target
+
+	
+
+Suitability
+
+
+
+
+1
+
+	
+
+Predict the Flood
+
+	
+
+20
+
+	
+
+FloodProbability
+
+	
+
+Excellent
+
+
+
+
+2
+
+	
+
+Flood Prediction Dataset
+
+	
+
+20
+
+	
+
+FloodProbability
+
+	
+
+Excellent
+
+
+
+
+3
+
+	
+
+Istanbul Apartment Prices 2026
+
+	
+
+29 or fewer*
+
+	
+
+Price
+
+	
+
+Good
+
+
+
+
+4
+
+	
+
+Swiss Housing Price Prediction
+
+	
+
+30
+
+	
+
+House price
+
+	
+
+Good; restricted access
+
+
+
+
+5
+
+	
+
+Human–AI Interaction
+
+	
+
+20
+
+	
+
+Trust score
+
+	
+
+Excellent; synthetic
+
+
+
+
+6
+
+	
+
+House Prices — Advanced Regression
+
+	
+
+79 → select 20–30
+
+	
+
+SalePrice
+
+	
+
+Excellent for feature selection
+
+*Istanbul 資料集描述為 30 欄，包含價格等欄位；精確輸入特徵數需檢查 CSV。上述資料集的特徵數以來源描述為準，類別編碼後可能增加。
+Kaggle
++5
+My Top 3 for Teaching
+
+1. Predict the Flood
+
+20 numerical features, continuous target. Best for teaching OLS, MSE, R², residual analysis and regression assumptions.
+
+2. Istanbul Apartment Prices
+
+Suitable for categorical encoding, feature selection, and housing-price regression. Check the dataset columns before modeling.
+
+3. Human–AI Interaction
+
+20 original features, 10,100 samples. Useful for studying coefficients, categorical features and multicollinearity.
+
+Suggested Assignment: CRISP-DM + Feature Selection
+
+For any selected dataset, students can complete:
+
+Business Understanding: Define the continuous prediction target.
+
+Data Understanding: Verify sample size, feature count, missing values and correlations.
+
+Data Preparation: Train/test split, missing-value handling and categorical encoding.
+
+Modeling: Train LinearRegression, Ridge and Lasso.
+
+Evaluation: Compare MAE, MSE, RMSE, R² and Adjusted R²; check the five regression assumptions.
+
+Deployment: Predict new samples and explain the model.
+
+For Feature Selection, compare SelectKBest, RFE, Sequential Feature Selection, Lasso and permutation importance, selecting 14, 20, 25 or 30 features using training data only.
+
+My first choice is Predict the Flood, because its 20 numerical features meet your constraint directly and avoid the extra complexity of categorical encoding.
+
+
+
+交作業

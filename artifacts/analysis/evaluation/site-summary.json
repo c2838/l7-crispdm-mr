@@ -1,0 +1,1408 @@
+{
+  "schema_version": "1.0",
+  "selection_frozen": true,
+  "cases": [
+    {
+      "id": "sgemm",
+      "primary": true,
+      "development_rows": 193280,
+      "test_rows": 48320,
+      "raw_input_fields": 14,
+      "encoded_fields": 14,
+      "target": "runtime_mean_ms",
+      "unit": "ms",
+      "methods": [
+        {
+          "method": "dummy",
+          "candidate_id": "dummy",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 216.19968415331914,
+            "mse": 135506.98742940955,
+            "rmse": 368.11273739088347,
+            "r2": -1.704720212014621e-05,
+            "fold_rmse_std": 4.85707512679227
+          },
+          "test": {
+            "n": 48320,
+            "mae": 217.53269380467654,
+            "mse": 137862.50161870505,
+            "rmse": 371.2983996985512,
+            "r2": -2.2491271116420464e-05
+          },
+          "selected_encoded_fields": 0,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/sgemm/models/b5a2c96250612366.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/b5a2c96250612366.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/b5a2c96250612366.json"
+        },
+        {
+          "method": "ols",
+          "candidate_id": "ols",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 176.1899681870599,
+            "mse": 80395.22529704952,
+            "rmse": 283.5405179106674,
+            "r2": 0.40669778484606844,
+            "fold_rmse_std": 3.4400196874640163
+          },
+          "test": {
+            "n": 48320,
+            "mae": 176.37455017013608,
+            "mse": 81354.53526680975,
+            "rmse": 285.2271643213699,
+            "r2": 0.40987314114804496
+          },
+          "selected_encoded_fields": 14,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 47025,
+            "observation_pi_coverage": 0.9731995033112583,
+            "observation_pi_mean_width": 1111.4134771686242,
+            "location_ci_mean_width": 9.718414543364087,
+            "location_ci_hc3_mean_width": 10.057656083398657,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 8894,
+            "negative_pi_lower_count": 44349,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm/models/56b3097935e4a664.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/56b3097935e4a664.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/082c0a235fcd84638d9e-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/082c0a235fcd84638d9e-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/082c0a235fcd84638d9e-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/56b3097935e4a664.json"
+        },
+        {
+          "method": "kbest",
+          "candidate_id": "kbest:k=13",
+          "frozen_representative": true,
+          "cv": {
+            "mae": 176.18912052338547,
+            "mse": 80394.31819513228,
+            "rmse": 283.5389183077559,
+            "r2": 0.40670447909407736,
+            "fold_rmse_std": 3.439271535115916
+          },
+          "test": {
+            "n": 48320,
+            "mae": 176.37443299244615,
+            "mse": 81354.53250240185,
+            "rmse": 285.22715947539405,
+            "r2": 0.4098731612004163
+          },
+          "selected_encoded_fields": 13,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 47025,
+            "observation_pi_coverage": 0.9731995033112583,
+            "observation_pi_mean_width": 1111.4077438286315,
+            "location_ci_mean_width": 9.379209716854962,
+            "location_ci_hc3_mean_width": 9.720266077402627,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 8892,
+            "negative_pi_lower_count": 44349,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm/models/e8bdf42a699b8cc8.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/e8bdf42a699b8cc8.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/e8bdf42a699b8cc8.json"
+        },
+        {
+          "method": "rfe",
+          "candidate_id": "rfe:k=13",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 176.18912052338547,
+            "mse": 80394.31819513228,
+            "rmse": 283.5389183077559,
+            "r2": 0.40670447909407736,
+            "fold_rmse_std": 3.439271535115916
+          },
+          "test": {
+            "n": 48320,
+            "mae": 176.37443299244615,
+            "mse": 81354.53250240185,
+            "rmse": 285.22715947539405,
+            "r2": 0.4098731612004163
+          },
+          "selected_encoded_fields": 13,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 47025,
+            "observation_pi_coverage": 0.9731995033112583,
+            "observation_pi_mean_width": 1111.4077438286315,
+            "location_ci_mean_width": 9.379209716854962,
+            "location_ci_hc3_mean_width": 9.720266077402627,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 8892,
+            "negative_pi_lower_count": 44349,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm/models/38fc8ca61fe51107.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/38fc8ca61fe51107.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/38fc8ca61fe51107.json"
+        },
+        {
+          "method": "sfs",
+          "candidate_id": "sfs:k=13",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 176.18912052338547,
+            "mse": 80394.31819513228,
+            "rmse": 283.5389183077559,
+            "r2": 0.40670447909407736,
+            "fold_rmse_std": 3.439271535115916
+          },
+          "test": {
+            "n": 48320,
+            "mae": 176.37443299244615,
+            "mse": 81354.53250240185,
+            "rmse": 285.22715947539405,
+            "r2": 0.4098731612004163
+          },
+          "selected_encoded_fields": 13,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 47025,
+            "observation_pi_coverage": 0.9731995033112583,
+            "observation_pi_mean_width": 1111.4077438286315,
+            "location_ci_mean_width": 9.379209716854962,
+            "location_ci_hc3_mean_width": 9.720266077402627,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 8892,
+            "negative_pi_lower_count": 44349,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm/models/218af8d9e0f13c19.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/218af8d9e0f13c19.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/218af8d9e0f13c19.json"
+        },
+        {
+          "method": "lasso_select",
+          "candidate_id": "lasso_select:alpha=0.001",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 176.18976457370962,
+            "mse": 80395.11288058247,
+            "rmse": 283.54031967355627,
+            "r2": 0.4066986144592535,
+            "fold_rmse_std": 3.4400864498745296
+          },
+          "test": {
+            "n": 48320,
+            "mae": 176.37443299244615,
+            "mse": 81354.53250240185,
+            "rmse": 285.22715947539405,
+            "r2": 0.4098731612004163
+          },
+          "selected_encoded_fields": 13,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 47025,
+            "observation_pi_coverage": 0.9731995033112583,
+            "observation_pi_mean_width": 1111.4077438286315,
+            "location_ci_mean_width": 9.379209716854962,
+            "location_ci_hc3_mean_width": 9.720266077402627,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 8892,
+            "negative_pi_lower_count": 44349,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm/models/edd20bf36d51718f.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/edd20bf36d51718f.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/edd20bf36d51718f.json"
+        },
+        {
+          "method": "elasticnet_select",
+          "candidate_id": "elasticnet_select:alpha=0.001,l1_ratio=0.8",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 176.18976457370962,
+            "mse": 80395.11288058247,
+            "rmse": 283.54031967355627,
+            "r2": 0.4066986144592535,
+            "fold_rmse_std": 3.4400864498745296
+          },
+          "test": {
+            "n": 48320,
+            "mae": 176.37443299244615,
+            "mse": 81354.53250240185,
+            "rmse": 285.22715947539405,
+            "r2": 0.4098731612004163
+          },
+          "selected_encoded_fields": 13,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 47025,
+            "observation_pi_coverage": 0.9731995033112583,
+            "observation_pi_mean_width": 1111.4077438286315,
+            "location_ci_mean_width": 9.379209716854962,
+            "location_ci_hc3_mean_width": 9.720266077402627,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 8892,
+            "negative_pi_lower_count": 44349,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm/models/1437b3e3fc5f5545.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/1437b3e3fc5f5545.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/1437b3e3fc5f5545.json"
+        },
+        {
+          "method": "ridge",
+          "candidate_id": "ridge:alpha=10.0",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 176.18384223248688,
+            "mse": 80395.22452259462,
+            "rmse": 283.54051654498096,
+            "r2": 0.4066977905614054,
+            "fold_rmse_std": 3.4403287815343275
+          },
+          "test": {
+            "n": 48320,
+            "mae": 176.36974779855316,
+            "mse": 81354.64769362751,
+            "rmse": 285.2273614042445,
+            "r2": 0.4098723256300827
+          },
+          "selected_encoded_fields": 14,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/sgemm/models/74ba7544eae0bffb.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/74ba7544eae0bffb.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/74ba7544eae0bffb.json"
+        },
+        {
+          "method": "lasso_reg",
+          "candidate_id": "lasso_reg:alpha=0.0001",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 176.15293265197172,
+            "mse": 80395.16202431735,
+            "rmse": 283.54040633447175,
+            "r2": 0.4066982517873825,
+            "fold_rmse_std": 3.441853912672191
+          },
+          "test": {
+            "n": 48320,
+            "mae": 176.3381796794145,
+            "mse": 81355.45686358758,
+            "rmse": 285.2287798655451,
+            "r2": 0.4098664560995735
+          },
+          "selected_encoded_fields": 14,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/sgemm/models/93dc9c7f7ffa3044.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/93dc9c7f7ffa3044.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/93dc9c7f7ffa3044.json"
+        }
+      ],
+      "frozen_representative_id": "kbest:k=13"
+    },
+    {
+      "id": "sgemm_log",
+      "primary": false,
+      "development_rows": 193280,
+      "test_rows": 48320,
+      "raw_input_fields": 14,
+      "encoded_fields": 14,
+      "target": "runtime_mean_ms",
+      "unit": "ms",
+      "methods": [
+        {
+          "method": "dummy",
+          "candidate_id": "dummy",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 216.19968415331914,
+            "mse": 135506.98742940955,
+            "rmse": 368.11273739088347,
+            "r2": -1.704720212014621e-05,
+            "fold_rmse_std": 4.85707512679227
+          },
+          "test": {
+            "n": 48320,
+            "mae": 217.53269380467654,
+            "mse": 137862.50161870505,
+            "rmse": 371.2983996985512,
+            "r2": -2.2491271116420464e-05
+          },
+          "selected_encoded_fields": 0,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/sgemm_log/models/b5a2c96250612366.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm_log/predictions/b5a2c96250612366.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/plot-data/b5a2c96250612366.json"
+        },
+        {
+          "method": "ols",
+          "candidate_id": "ols",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 116.25934544707007,
+            "mse": 85005.22797286052,
+            "rmse": 291.55656050389354,
+            "r2": 0.37267679927984476,
+            "fold_rmse_std": 4.991581375963533
+          },
+          "test": {
+            "n": 48320,
+            "mae": 117.03658519544001,
+            "mse": 86050.70377931496,
+            "rmse": 293.3440024601065,
+            "r2": 0.37580822806317127
+          },
+          "selected_encoded_fields": 14,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 46249,
+            "observation_pi_coverage": 0.9571399006622516,
+            "observation_pi_mean_width": 593.4627885525964,
+            "location_ci_mean_width": 3.7730447190835754,
+            "location_ci_hc3_mean_width": 3.7976173563968563,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "exp(E[log(Y)|X]), geometric location; not arithmetic conditional mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm_log/models/56b3097935e4a664.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm_log/predictions/56b3097935e4a664.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm_log/inference/779b76cc080f15daa887-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm_log/inference/779b76cc080f15daa887-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/inference/779b76cc080f15daa887-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/plot-data/56b3097935e4a664.json"
+        },
+        {
+          "method": "kbest",
+          "candidate_id": "kbest:k=6",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 117.15455672147125,
+            "mse": 84508.81047609299,
+            "rmse": 290.7039911595522,
+            "r2": 0.3763402705791056,
+            "fold_rmse_std": 4.906804240944049
+          },
+          "test": {
+            "n": 48320,
+            "mae": 117.92576585836382,
+            "mse": 85585.48811248165,
+            "rmse": 292.5499754101539,
+            "r2": 0.3791827942045265
+          },
+          "selected_encoded_fields": 6,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 46199,
+            "observation_pi_coverage": 0.9561051324503311,
+            "observation_pi_mean_width": 605.7585319660456,
+            "location_ci_mean_width": 2.5542370941974264,
+            "location_ci_hc3_mean_width": 2.592298319143827,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "exp(E[log(Y)|X]), geometric location; not arithmetic conditional mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm_log/models/509d882243ddb9c5.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm_log/predictions/509d882243ddb9c5.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm_log/inference/c5e81c013c3ca2daae2b-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm_log/inference/c5e81c013c3ca2daae2b-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/inference/c5e81c013c3ca2daae2b-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/plot-data/509d882243ddb9c5.json"
+        },
+        {
+          "method": "rfe",
+          "candidate_id": "rfe:k=8",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 116.36749259297761,
+            "mse": 84322.86864570536,
+            "rmse": 290.38400204850365,
+            "r2": 0.3777124876411406,
+            "fold_rmse_std": 4.968324307601552
+          },
+          "test": {
+            "n": 48320,
+            "mae": 117.15412459503294,
+            "mse": 85362.09653040502,
+            "rmse": 292.1679252252119,
+            "r2": 0.38080322473359907
+          },
+          "selected_encoded_fields": 8,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 46259,
+            "observation_pi_coverage": 0.9573468543046357,
+            "observation_pi_mean_width": 593.8558986603985,
+            "location_ci_mean_width": 2.8544591540790547,
+            "location_ci_hc3_mean_width": 2.9113880848416733,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "exp(E[log(Y)|X]), geometric location; not arithmetic conditional mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm_log/models/4bdc78af7efec26d.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm_log/predictions/4bdc78af7efec26d.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm_log/inference/4bb02137eacc851148c0-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm_log/inference/4bb02137eacc851148c0-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/inference/4bb02137eacc851148c0-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/plot-data/4bdc78af7efec26d.json"
+        },
+        {
+          "method": "sfs",
+          "candidate_id": "sfs:k=10",
+          "frozen_representative": true,
+          "cv": {
+            "mae": 117.05525078661222,
+            "mse": 81724.47025310606,
+            "rmse": 285.87492064381246,
+            "r2": 0.3968881975976142,
+            "fold_rmse_std": 4.751451066122314
+          },
+          "test": {
+            "n": 48320,
+            "mae": 117.91754954115612,
+            "mse": 82816.74555967514,
+            "rmse": 287.7789873491029,
+            "r2": 0.3992666080976166
+          },
+          "selected_encoded_fields": 10,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 46340,
+            "observation_pi_coverage": 0.9590231788079471,
+            "observation_pi_mean_width": 598.7086879262934,
+            "location_ci_mean_width": 3.2430930310633275,
+            "location_ci_hc3_mean_width": 3.264097640630661,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "exp(E[log(Y)|X]), geometric location; not arithmetic conditional mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm_log/models/1f22b2c465e8c649.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm_log/predictions/1f22b2c465e8c649.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm_log/inference/d62bdae887fa78c73f8a-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm_log/inference/d62bdae887fa78c73f8a-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/inference/d62bdae887fa78c73f8a-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/plot-data/1f22b2c465e8c649.json"
+        },
+        {
+          "method": "lasso_select",
+          "candidate_id": "lasso_select:alpha=0.1",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 117.12770786348166,
+            "mse": 84756.41528066473,
+            "rmse": 291.1295506826209,
+            "r2": 0.374512991925524,
+            "fold_rmse_std": 4.878218966910833
+          },
+          "test": {
+            "n": 48320,
+            "mae": 117.96218192385217,
+            "mse": 85959.15746111762,
+            "rmse": 293.18792175176253,
+            "r2": 0.3764722837426744
+          },
+          "selected_encoded_fields": 4,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 46239,
+            "observation_pi_coverage": 0.9569329470198675,
+            "observation_pi_mean_width": 606.1024175526087,
+            "location_ci_mean_width": 2.050808728277272,
+            "location_ci_hc3_mean_width": 2.14255301479029,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "exp(E[log(Y)|X]), geometric location; not arithmetic conditional mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm_log/models/c2b6291619557b90.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm_log/predictions/c2b6291619557b90.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm_log/inference/9e4c658d7d4904393fd2-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm_log/inference/9e4c658d7d4904393fd2-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/inference/9e4c658d7d4904393fd2-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/plot-data/c2b6291619557b90.json"
+        },
+        {
+          "method": "elasticnet_select",
+          "candidate_id": "elasticnet_select:alpha=0.1,l1_ratio=0.5",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 116.398791178499,
+            "mse": 84538.59977801,
+            "rmse": 290.75522313109013,
+            "r2": 0.3761204309213404,
+            "fold_rmse_std": 4.943773578110036
+          },
+          "test": {
+            "n": 48320,
+            "mae": 117.27818660745895,
+            "mse": 85682.82610841238,
+            "rmse": 292.7162894483537,
+            "r2": 0.37847672704309343
+          },
+          "selected_encoded_fields": 7,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 48320,
+            "covered_count": 46201,
+            "observation_pi_coverage": 0.956146523178808,
+            "observation_pi_mean_width": 594.2919890596327,
+            "location_ci_mean_width": 2.6519797114344517,
+            "location_ci_hc3_mean_width": 2.7221312310694685,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "exp(E[log(Y)|X]), geometric location; not arithmetic conditional mean"
+          },
+          "model_path": "artifacts/analysis/models/sgemm_log/models/02f3f9acd14ab8b4.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm_log/predictions/02f3f9acd14ab8b4.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/sgemm_log/inference/ec61f3d0171295845208-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/sgemm_log/inference/ec61f3d0171295845208-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/inference/ec61f3d0171295845208-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/plot-data/02f3f9acd14ab8b4.json"
+        },
+        {
+          "method": "ridge",
+          "candidate_id": "ridge:alpha=0.0001",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 116.25934549639366,
+            "mse": 85005.22805139469,
+            "rmse": 291.55656063857435,
+            "r2": 0.3726767987002768,
+            "fold_rmse_std": 4.991581376805936
+          },
+          "test": {
+            "n": 48320,
+            "mae": 117.03658523548732,
+            "mse": 86050.70384455856,
+            "rmse": 293.3440025713131,
+            "r2": 0.3758082275899094
+          },
+          "selected_encoded_fields": 14,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/sgemm_log/models/535f48549a7eb00d.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm_log/predictions/535f48549a7eb00d.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/plot-data/535f48549a7eb00d.json"
+        },
+        {
+          "method": "lasso_reg",
+          "candidate_id": "lasso_reg:alpha=0.0001",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 116.27661825888575,
+            "mse": 85031.44901753795,
+            "rmse": 291.60152437451,
+            "r2": 0.3724832927148307,
+            "fold_rmse_std": 4.99295161068244
+          },
+          "test": {
+            "n": 48320,
+            "mae": 117.05423915312504,
+            "mse": 86077.83754660169,
+            "rmse": 293.3902478723546,
+            "r2": 0.3756114060322272
+          },
+          "selected_encoded_fields": 14,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/sgemm_log/models/93dc9c7f7ffa3044.json",
+          "predictions_path": "artifacts/analysis/evaluation/sgemm_log/predictions/93dc9c7f7ffa3044.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm_log/plot-data/93dc9c7f7ffa3044.json"
+        }
+      ],
+      "frozen_representative_id": "sfs:k=10"
+    },
+    {
+      "id": "student",
+      "primary": true,
+      "development_rows": 519,
+      "test_rows": 130,
+      "raw_input_fields": 32,
+      "encoded_fields": 41,
+      "target": "G3",
+      "unit": "grade points",
+      "methods": [
+        {
+          "method": "dummy",
+          "candidate_id": "dummy",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 2.4193080012357124,
+            "mse": 10.63891069648709,
+            "rmse": 3.2617343080770835,
+            "r2": -0.009229661601147576,
+            "fold_rmse_std": 0.5793036401573962
+          },
+          "test": {
+            "n": 130,
+            "mae": 2.406669630947088,
+            "mse": 9.940021126923462,
+            "rmse": 3.152779904611716,
+            "r2": -0.00013310617159945082
+          },
+          "selected_encoded_fields": 0,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/student/models/b5a2c96250612366.json",
+          "predictions_path": "artifacts/analysis/evaluation/student/predictions/b5a2c96250612366.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student/plot-data/b5a2c96250612366.json"
+        },
+        {
+          "method": "ols",
+          "candidate_id": "ols",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 0.898896663363598,
+            "mse": 2.077848505659378,
+            "rmse": 1.4414744207440442,
+            "r2": 0.802890878206404,
+            "fold_rmse_std": 0.2303801451575648
+          },
+          "test": {
+            "n": 130,
+            "mae": 0.6708351646262096,
+            "mse": 0.7119079959855168,
+            "rmse": 0.8437464050207958,
+            "r2": 0.9283700963768711
+          },
+          "selected_encoded_fields": 41,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 130,
+            "observation_pi_coverage": 1.0,
+            "observation_pi_mean_width": 5.512356430330608,
+            "location_ci_mean_width": 1.54320676890687,
+            "location_ci_hc3_mean_width": 1.6582561825830742,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 3,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student/models/56b3097935e4a664.json",
+          "predictions_path": "artifacts/analysis/evaluation/student/predictions/56b3097935e4a664.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student/inference/37b6d9ea45d8466b4126-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student/inference/37b6d9ea45d8466b4126-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student/inference/37b6d9ea45d8466b4126-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student/plot-data/56b3097935e4a664.json"
+        },
+        {
+          "method": "kbest",
+          "candidate_id": "kbest:k=2",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 0.8169622282131901,
+            "mse": 1.832043540983752,
+            "rmse": 1.3535300295832937,
+            "r2": 0.8262084591502291,
+            "fold_rmse_std": 0.27301017987609283
+          },
+          "test": {
+            "n": 130,
+            "mae": 0.6749451376412697,
+            "mse": 0.7057873071430901,
+            "rmse": 0.8401114849489264,
+            "r2": 0.9289859404948785
+          },
+          "selected_encoded_fields": 2,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 130,
+            "observation_pi_coverage": 1.0,
+            "observation_pi_mean_width": 5.312169220225538,
+            "location_ci_mean_width": 0.36083038165301107,
+            "location_ci_hc3_mean_width": 0.3900740112599958,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 3,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student/models/f37219abef807058.json",
+          "predictions_path": "artifacts/analysis/evaluation/student/predictions/f37219abef807058.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student/plot-data/f37219abef807058.json"
+        },
+        {
+          "method": "rfe",
+          "candidate_id": "rfe:k=2",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 0.8169622282131901,
+            "mse": 1.832043540983752,
+            "rmse": 1.3535300295832937,
+            "r2": 0.8262084591502291,
+            "fold_rmse_std": 0.27301017987609283
+          },
+          "test": {
+            "n": 130,
+            "mae": 0.6749451376412697,
+            "mse": 0.7057873071430901,
+            "rmse": 0.8401114849489264,
+            "r2": 0.9289859404948785
+          },
+          "selected_encoded_fields": 2,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 130,
+            "observation_pi_coverage": 1.0,
+            "observation_pi_mean_width": 5.312169220225538,
+            "location_ci_mean_width": 0.36083038165301107,
+            "location_ci_hc3_mean_width": 0.3900740112599958,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 3,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student/models/797b9d041754c9c0.json",
+          "predictions_path": "artifacts/analysis/evaluation/student/predictions/797b9d041754c9c0.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student/plot-data/797b9d041754c9c0.json"
+        },
+        {
+          "method": "sfs",
+          "candidate_id": "sfs:k=1",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 0.8427726019815241,
+            "mse": 1.8678032995108989,
+            "rmse": 1.366676003854205,
+            "r2": 0.8228162125164447,
+            "fold_rmse_std": 0.28389769490603306
+          },
+          "test": {
+            "n": 130,
+            "mae": 0.6793656310843764,
+            "mse": 0.7209894135593446,
+            "rmse": 0.8491109547988087,
+            "r2": 0.9274563532116827
+          },
+          "selected_encoded_fields": 1,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 129,
+            "observation_pi_coverage": 0.9923076923076923,
+            "observation_pi_mean_width": 5.374164099666681,
+            "location_ci_mean_width": 0.31740110181126574,
+            "location_ci_hc3_mean_width": 0.33393496836192205,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 3,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student/models/5117a2ba69ea9590.json",
+          "predictions_path": "artifacts/analysis/evaluation/student/predictions/5117a2ba69ea9590.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student/inference/bbbb5f2a1daa2ee9f9f1-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student/inference/bbbb5f2a1daa2ee9f9f1-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student/inference/bbbb5f2a1daa2ee9f9f1-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student/plot-data/5117a2ba69ea9590.json"
+        },
+        {
+          "method": "lasso_select",
+          "candidate_id": "lasso_select:alpha=0.1",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 0.8169622282131901,
+            "mse": 1.832043540983752,
+            "rmse": 1.3535300295832937,
+            "r2": 0.8262084591502291,
+            "fold_rmse_std": 0.27301017987609283
+          },
+          "test": {
+            "n": 130,
+            "mae": 0.6749451376412697,
+            "mse": 0.7057873071430901,
+            "rmse": 0.8401114849489264,
+            "r2": 0.9289859404948785
+          },
+          "selected_encoded_fields": 2,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 130,
+            "observation_pi_coverage": 1.0,
+            "observation_pi_mean_width": 5.312169220225538,
+            "location_ci_mean_width": 0.36083038165301107,
+            "location_ci_hc3_mean_width": 0.3900740112599958,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 3,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student/models/c2b6291619557b90.json",
+          "predictions_path": "artifacts/analysis/evaluation/student/predictions/c2b6291619557b90.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student/plot-data/c2b6291619557b90.json"
+        },
+        {
+          "method": "elasticnet_select",
+          "candidate_id": "elasticnet_select:alpha=0.1,l1_ratio=0.8",
+          "frozen_representative": true,
+          "cv": {
+            "mae": 0.8169622282131901,
+            "mse": 1.832043540983752,
+            "rmse": 1.3535300295832937,
+            "r2": 0.8262084591502291,
+            "fold_rmse_std": 0.27301017987609283
+          },
+          "test": {
+            "n": 130,
+            "mae": 0.6749451376412697,
+            "mse": 0.7057873071430901,
+            "rmse": 0.8401114849489264,
+            "r2": 0.9289859404948785
+          },
+          "selected_encoded_fields": 2,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 130,
+            "observation_pi_coverage": 1.0,
+            "observation_pi_mean_width": 5.312169220225538,
+            "location_ci_mean_width": 0.36083038165301107,
+            "location_ci_hc3_mean_width": 0.3900740112599958,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 3,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student/models/4e91b01431a71eed.json",
+          "predictions_path": "artifacts/analysis/evaluation/student/predictions/4e91b01431a71eed.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student/inference/3e6bbe0267e9af163c86-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student/plot-data/4e91b01431a71eed.json"
+        },
+        {
+          "method": "ridge",
+          "candidate_id": "ridge:alpha=1.0",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 0.8977399805637225,
+            "mse": 2.0768450616669285,
+            "rmse": 1.441126317040574,
+            "r2": 0.8029860670344549,
+            "fold_rmse_std": 0.22974769859631042
+          },
+          "test": {
+            "n": 130,
+            "mae": 0.6719596063621773,
+            "mse": 0.713439729693776,
+            "rmse": 0.8446536152138201,
+            "r2": 0.928215978234474
+          },
+          "selected_encoded_fields": 41,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/student/models/60445be0db5fe2f8.json",
+          "predictions_path": "artifacts/analysis/evaluation/student/predictions/60445be0db5fe2f8.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student/plot-data/60445be0db5fe2f8.json"
+        },
+        {
+          "method": "lasso_reg",
+          "candidate_id": "lasso_reg:alpha=0.01",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 0.8519452747992369,
+            "mse": 1.9557981876818218,
+            "rmse": 1.3984985476151992,
+            "r2": 0.814468830557435,
+            "fold_rmse_std": 0.24493731457728152
+          },
+          "test": {
+            "n": 130,
+            "mae": 0.6685469745253223,
+            "mse": 0.6872790120517388,
+            "rmse": 0.8290229261315629,
+            "r2": 0.9308481858989165
+          },
+          "selected_encoded_fields": 41,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/student/models/f327ab445bb208bc.json",
+          "predictions_path": "artifacts/analysis/evaluation/student/predictions/f327ab445bb208bc.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student/plot-data/f327ab445bb208bc.json"
+        }
+      ],
+      "frozen_representative_id": "elasticnet_select:alpha=0.1,l1_ratio=0.8"
+    },
+    {
+      "id": "student_background",
+      "primary": false,
+      "development_rows": 519,
+      "test_rows": 130,
+      "raw_input_fields": 30,
+      "encoded_fields": 39,
+      "target": "G3",
+      "unit": "grade points",
+      "methods": [
+        {
+          "method": "dummy",
+          "candidate_id": "dummy",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 2.4193080012357124,
+            "mse": 10.63891069648709,
+            "rmse": 3.2617343080770835,
+            "r2": -0.009229661601147576,
+            "fold_rmse_std": 0.5793036401573962
+          },
+          "test": {
+            "n": 130,
+            "mae": 2.406669630947088,
+            "mse": 9.940021126923462,
+            "rmse": 3.152779904611716,
+            "r2": -0.00013310617159945082
+          },
+          "selected_encoded_fields": 0,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/student_background/models/b5a2c96250612366.json",
+          "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/b5a2c96250612366.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/b5a2c96250612366.json"
+        },
+        {
+          "method": "ols",
+          "candidate_id": "ols",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 2.059368722316589,
+            "mse": 8.340400079583146,
+            "rmse": 2.8879750829228334,
+            "r2": 0.20881193666610465,
+            "fold_rmse_std": 0.5359131941520123
+          },
+          "test": {
+            "n": 130,
+            "mae": 1.9055855078288282,
+            "mse": 6.245792495990793,
+            "rmse": 2.4991583575257477,
+            "r2": 0.37156835284796497
+          },
+          "selected_encoded_fields": 39,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 125,
+            "observation_pi_coverage": 0.9615384615384616,
+            "observation_pi_mean_width": 11.22695991521973,
+            "location_ci_mean_width": 3.076928748268542,
+            "location_ci_hc3_mean_width": 3.2607874670905463,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student_background/models/56b3097935e4a664.json",
+          "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/56b3097935e4a664.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/ad272b995cd9870da515-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/ad272b995cd9870da515-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/ad272b995cd9870da515-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/56b3097935e4a664.json"
+        },
+        {
+          "method": "kbest",
+          "candidate_id": "kbest:k=7",
+          "frozen_representative": true,
+          "cv": {
+            "mae": 2.0596922415230887,
+            "mse": 8.071288193939656,
+            "rmse": 2.8410012660925825,
+            "r2": 0.23434046162782884,
+            "fold_rmse_std": 0.5768459029809976
+          },
+          "test": {
+            "n": 130,
+            "mae": 1.975094794000784,
+            "mse": 6.307355617465699,
+            "rmse": 2.511444926225877,
+            "r2": 0.36537406863869437
+          },
+          "selected_encoded_fields": 7,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 125,
+            "observation_pi_coverage": 0.9615384615384616,
+            "observation_pi_mean_width": 11.036533193878642,
+            "location_ci_mean_width": 1.283573423815178,
+            "location_ci_hc3_mean_width": 1.3064323416796566,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student_background/models/0c8272239860ac75.json",
+          "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/0c8272239860ac75.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/f0cb2dd503c661d6dea1-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/f0cb2dd503c661d6dea1-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/f0cb2dd503c661d6dea1-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/0c8272239860ac75.json"
+        },
+        {
+          "method": "rfe",
+          "candidate_id": "rfe:k=4",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 2.0932150926291415,
+            "mse": 8.212384963643483,
+            "rmse": 2.8657259051841444,
+            "r2": 0.2209557224187454,
+            "fold_rmse_std": 0.5643128393446548
+          },
+          "test": {
+            "n": 130,
+            "mae": 2.084264671017446,
+            "mse": 6.836758599465428,
+            "rmse": 2.6147196024555726,
+            "r2": 0.31210723529467177
+          },
+          "selected_encoded_fields": 4,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 126,
+            "observation_pi_coverage": 0.9692307692307692,
+            "observation_pi_mean_width": 11.099299619100627,
+            "location_ci_mean_width": 0.9583005973977312,
+            "location_ci_hc3_mean_width": 0.9781789707155472,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 1,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student_background/models/5c7f55e584e068bf.json",
+          "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/5c7f55e584e068bf.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/5c7f55e584e068bf.json"
+        },
+        {
+          "method": "sfs",
+          "candidate_id": "sfs:k=4",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 2.0986996674033955,
+            "mse": 8.225223502648067,
+            "rmse": 2.8679650455764043,
+            "r2": 0.21973783134467828,
+            "fold_rmse_std": 0.4969125048738696
+          },
+          "test": {
+            "n": 130,
+            "mae": 2.084264671017446,
+            "mse": 6.836758599465428,
+            "rmse": 2.6147196024555726,
+            "r2": 0.31210723529467177
+          },
+          "selected_encoded_fields": 4,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 126,
+            "observation_pi_coverage": 0.9692307692307692,
+            "observation_pi_mean_width": 11.099299619100627,
+            "location_ci_mean_width": 0.9583005973977312,
+            "location_ci_hc3_mean_width": 0.9781789707155472,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 1,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student_background/models/e356a75ffa361aa6.json",
+          "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/e356a75ffa361aa6.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/e356a75ffa361aa6.json"
+        },
+        {
+          "method": "lasso_select",
+          "candidate_id": "lasso_select:alpha=0.01",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 2.0530707624113917,
+            "mse": 8.289152851631842,
+            "rmse": 2.879088892624165,
+            "r2": 0.21367335753886074,
+            "fold_rmse_std": 0.5305030689715834
+          },
+          "test": {
+            "n": 130,
+            "mae": 1.9054585970171365,
+            "mse": 6.168105238273267,
+            "rmse": 2.4835670392146185,
+            "r2": 0.3793849960299932
+          },
+          "selected_encoded_fields": 33,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 125,
+            "observation_pi_coverage": 0.9615384615384616,
+            "observation_pi_mean_width": 11.086271840220881,
+            "location_ci_mean_width": 2.785804680763972,
+            "location_ci_hc3_mean_width": 2.9341656839278047,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student_background/models/7d181f95c1c32a0b.json",
+          "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/7d181f95c1c32a0b.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/cfc03cea6b4860ddc52e-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/cfc03cea6b4860ddc52e-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/cfc03cea6b4860ddc52e-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/7d181f95c1c32a0b.json"
+        },
+        {
+          "method": "elasticnet_select",
+          "candidate_id": "elasticnet_select:alpha=0.1,l1_ratio=0.2",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 2.042124862912671,
+            "mse": 8.239735845176577,
+            "rmse": 2.8704940071661142,
+            "r2": 0.21836115971382009,
+            "fold_rmse_std": 0.5361399863968653
+          },
+          "test": {
+            "n": 130,
+            "mae": 1.9170698800166366,
+            "mse": 6.201432653147897,
+            "rmse": 2.4902675866556785,
+            "r2": 0.3760316982317671
+          },
+          "selected_encoded_fields": 31,
+          "interval_status": "available",
+          "interval_summary": {
+            "rows": 130,
+            "covered_count": 126,
+            "observation_pi_coverage": 0.9692307692307692,
+            "observation_pi_mean_width": 11.049158889628405,
+            "location_ci_mean_width": 2.6894040712075524,
+            "location_ci_hc3_mean_width": 2.8603053972225063,
+            "location_ci_coverage_against_individual_y": null,
+            "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+            "negative_prediction_count": 0,
+            "negative_pi_lower_count": 0,
+            "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+            "nominal_level": 0.95,
+            "location_kind": "conditional_arithmetic_mean"
+          },
+          "model_path": "artifacts/analysis/models/student_background/models/2b6b12f216fc3a6f.json",
+          "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/2b6b12f216fc3a6f.csv.gz",
+          "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/0ce988f192407ce040c4-interval-spec.json",
+          "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/0ce988f192407ce040c4-diagnostics.json",
+          "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/0ce988f192407ce040c4-diagnostic-plot-data.json",
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/2b6b12f216fc3a6f.json"
+        },
+        {
+          "method": "ridge",
+          "candidate_id": "ridge:alpha=100.0",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 2.014727000150723,
+            "mse": 8.119791025429878,
+            "rmse": 2.8495247016704166,
+            "r2": 0.2297393800314078,
+            "fold_rmse_std": 0.5661987481608926
+          },
+          "test": {
+            "n": 130,
+            "mae": 1.9143832108375447,
+            "mse": 6.199264335809668,
+            "rmse": 2.4898321902910783,
+            "r2": 0.37624986738120414
+          },
+          "selected_encoded_fields": 39,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/student_background/models/f093950d42965cca.json",
+          "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/f093950d42965cca.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/f093950d42965cca.json"
+        },
+        {
+          "method": "lasso_reg",
+          "candidate_id": "lasso_reg:alpha=0.01",
+          "frozen_representative": false,
+          "cv": {
+            "mae": 2.0292952680055802,
+            "mse": 8.154344445967311,
+            "rmse": 2.855581279874084,
+            "r2": 0.22646156918112315,
+            "fold_rmse_std": 0.5431560436292452
+          },
+          "test": {
+            "n": 130,
+            "mae": 1.9186675643336977,
+            "mse": 6.19295248098292,
+            "rmse": 2.488564341338781,
+            "r2": 0.3768849460086009
+          },
+          "selected_encoded_fields": 39,
+          "interval_status": "not_applicable_to_baseline_or_regularized_model",
+          "interval_summary": null,
+          "model_path": "artifacts/analysis/models/student_background/models/f327ab445bb208bc.json",
+          "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/f327ab445bb208bc.csv.gz",
+          "interval_spec_path": null,
+          "diagnostics_path": null,
+          "diagnostic_plot_data_path": null,
+          "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/f327ab445bb208bc.json"
+        }
+      ],
+      "frozen_representative_id": "kbest:k=7"
+    }
+  ],
+  "scope": "preset website data references; not an implemented web UI or public API",
+  "interval_caveats": [
+    "Post-selection conditioning; uncorrected selection uncertainty.",
+    "HC3 location CI does not repair observation PI.",
+    "Log location is geometric, not arithmetic conditional mean."
+  ]
+}

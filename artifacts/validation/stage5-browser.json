@@ -1,0 +1,474 @@
+{
+  "status": "passed_with_observed_defects_resolved",
+  "recorded_at": "2026-11-01T12:16:12.313Z",
+  "browser": "Codex in-app browser",
+  "origin": "http://127.0.0.1:8767/",
+  "asset_version": "stage5-3",
+  "passed_checks": 42,
+  "resolved_failed_attempts": 2,
+  "unresolved_failures": 0,
+  "checks": [
+    {
+      "name": "Student inputs G1=15 G2=16 update point prediction",
+      "actual": "16.404",
+      "expected": "16.404",
+      "passed": true
+    },
+    {
+      "name": "Active numeric input outside training range is disclosed",
+      "actual": "G1=30 超出 training 範圍 [0, 19]，屬外推。\nPI 超出目標的實際範圍，反映模型／誤差假設限制；未裁切。",
+      "expected": "contains 外推",
+      "passed": true
+    },
+    {
+      "name": "Blank numeric input uses disclosed training median",
+      "actual": "G1：缺值使用 training median 11。",
+      "expected": "contains 缺值",
+      "passed": true
+    },
+    {
+      "name": "Reset restores student reference input",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "Background supplement updates fields and model",
+      "actual": "519 development / 130 test30 raw inputs39 encoded fieldsTarget: G3 (grade points)Fixed 80 / 20 split",
+      "expected": "30 raw inputs / 39 encoded fields",
+      "passed": true
+    },
+    {
+      "name": "Unknown category uses disclosed reference effect",
+      "actual": "school=NEW_SCHOOL 是未知類別，依凍結規則採 reference「GP」的效果。",
+      "expected": "contains 未知類別",
+      "passed": true
+    },
+    {
+      "name": "High-dimensional candidate updates its equation and coefficients",
+      "actual": "RFE → OLS · k = 39 · 39 selected encoded / 30 selected raw fields",
+      "expected": "39 selected encoded",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Enter on chart selects candidate",
+      "actual": "ElasticNet selection → OLS · α = 10 · L1 ratio = 0.2 · 0 fields · 0 selected encoded / 0 selected raw fields",
+      "expected": "elasticnet_select:alpha=10.0,l1_ratio=0.2",
+      "passed": true
+    },
+    {
+      "name": "390px mobile has no page-level horizontal overflow",
+      "actual": {
+        "overflow": [],
+        "scrollWidth": 375,
+        "selected": "student",
+        "version": "student",
+        "width": 375
+      },
+      "expected": "scrollWidth <= clientWidth",
+      "passed": true
+    },
+    {
+      "name": "320px narrow mobile has no page horizontal overflow",
+      "actual": {
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "viewport": 320
+      },
+      "expected": "scrollWidth <= clientWidth",
+      "passed": true
+    },
+    {
+      "name": "Browser rejects nonfinite numeric entry",
+      "actual": "11.321",
+      "expected": "—",
+      "passed": false,
+      "resolved_by": "Browser rejects nonfinite numeric entry with versioned input fix"
+    },
+    {
+      "name": "Browser rejects nonfinite numeric entry after input fix",
+      "actual": {
+        "input": "",
+        "invalid": null,
+        "message": "G1：缺值使用 training median 11。",
+        "prediction": "11.321"
+      },
+      "expected": "input retained, error shown, no prediction",
+      "passed": false,
+      "resolved_by": "Browser rejects nonfinite numeric entry with versioned input fix"
+    },
+    {
+      "name": "Browser rejects nonfinite numeric entry with versioned input fix",
+      "actual": {
+        "input": "1e309",
+        "invalid": "true",
+        "message": "G1 必須是有限數值。",
+        "prediction": "—",
+        "type": "text"
+      },
+      "expected": "input retained; aria-invalid; no prediction",
+      "passed": true
+    },
+    {
+      "name": "Browser rejects nonnumeric entry",
+      "actual": "—",
+      "expected": "—",
+      "passed": true
+    },
+    {
+      "name": "sgemm/kbest real browser winner switch",
+      "actual": {
+        "candidate": "kbest:k=13",
+        "errorVisible": false,
+        "prediction": "-109.792",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "sgemm/sfs real browser winner switch",
+      "actual": {
+        "candidate": "sfs:k=13",
+        "errorVisible": false,
+        "prediction": "-109.792",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "sgemm/rfe real browser winner switch",
+      "actual": {
+        "candidate": "rfe:k=13",
+        "errorVisible": false,
+        "prediction": "-109.792",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "sgemm/lasso_select real browser winner switch",
+      "actual": {
+        "candidate": "lasso_select:alpha=0.001",
+        "errorVisible": false,
+        "prediction": "-109.792",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "sgemm/elasticnet_select real browser winner switch",
+      "actual": {
+        "candidate": "elasticnet_select:alpha=0.001,l1_ratio=0.8",
+        "errorVisible": false,
+        "prediction": "-109.792",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "sgemm_log/kbest real browser winner switch",
+      "actual": {
+        "candidate": "kbest:k=6",
+        "errorVisible": false,
+        "prediction": "43.438",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm_log"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "sgemm_log/sfs real browser winner switch",
+      "actual": {
+        "candidate": "sfs:k=10",
+        "errorVisible": false,
+        "prediction": "42.334",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm_log"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "sgemm_log/rfe real browser winner switch",
+      "actual": {
+        "candidate": "rfe:k=8",
+        "errorVisible": false,
+        "prediction": "46.398",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm_log"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "sgemm_log/lasso_select real browser winner switch",
+      "actual": {
+        "candidate": "lasso_select:alpha=0.1",
+        "errorVisible": false,
+        "prediction": "42.602",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm_log"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "sgemm_log/elasticnet_select real browser winner switch",
+      "actual": {
+        "candidate": "elasticnet_select:alpha=0.1,l1_ratio=0.5",
+        "errorVisible": false,
+        "prediction": "45.757",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "sgemm_log"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student/kbest real browser winner switch",
+      "actual": {
+        "candidate": "kbest:k=2",
+        "errorVisible": false,
+        "prediction": "9.604",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student/sfs real browser winner switch",
+      "actual": {
+        "candidate": "sfs:k=1",
+        "errorVisible": false,
+        "prediction": "11.309",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student/rfe real browser winner switch",
+      "actual": {
+        "candidate": "rfe:k=2",
+        "errorVisible": false,
+        "prediction": "9.604",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student/lasso_select real browser winner switch",
+      "actual": {
+        "candidate": "lasso_select:alpha=0.1",
+        "errorVisible": false,
+        "prediction": "9.604",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student/elasticnet_select real browser winner switch",
+      "actual": {
+        "candidate": "elasticnet_select:alpha=0.1,l1_ratio=0.8",
+        "errorVisible": false,
+        "prediction": "9.604",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student_background/kbest real browser winner switch",
+      "actual": {
+        "candidate": "kbest:k=7",
+        "errorVisible": false,
+        "prediction": "13.668",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student_background"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student_background/sfs real browser winner switch",
+      "actual": {
+        "candidate": "sfs:k=4",
+        "errorVisible": false,
+        "prediction": "13.264",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student_background"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student_background/rfe real browser winner switch",
+      "actual": {
+        "candidate": "rfe:k=4",
+        "errorVisible": false,
+        "prediction": "13.264",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student_background"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student_background/lasso_select real browser winner switch",
+      "actual": {
+        "candidate": "lasso_select:alpha=0.01",
+        "errorVisible": false,
+        "prediction": "13.489",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student_background"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "student_background/elasticnet_select real browser winner switch",
+      "actual": {
+        "candidate": "elasticnet_select:alpha=0.1,l1_ratio=0.2",
+        "errorVisible": false,
+        "prediction": "13.470",
+        "scope": "HELD-OUT EVALUATION · 此方法已在測試前凍結",
+        "variant": "student_background"
+      },
+      "expected": "correct variant/method, frozen test scope, valid prediction",
+      "passed": true
+    },
+    {
+      "name": "Final version loads with explicit asset version",
+      "actual": "app.mjs?v=stage5-3",
+      "expected": "app.mjs?v=stage5-3",
+      "passed": true
+    },
+    {
+      "name": "768px tablet has no page horizontal overflow",
+      "actual": {
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "viewport": 768
+      },
+      "expected": "scrollWidth <= clientWidth",
+      "passed": true
+    },
+    {
+      "name": "Learning curve discloses rank-limited small training subsets",
+      "actual": "0\n15.3\n0.993\n103\n1.99\n190\n2.98\n277\n3.97\n365\nTraining rows per fold\nRMSE (grade points)\nTraining RMSE\nValidation RMSE\n\n3/15 個小樣本子集設計 rank／自由度不足，OLS 可作最小範數點預測，但係數不唯一或不具推論自由度；本曲線不提供 CI／PI。",
+      "expected": "contains 3/15 and rank",
+      "passed": true
+    },
+    {
+      "name": "Final UI retains categorical predictor fields",
+      "actual": [
+        "school",
+        "higher"
+      ],
+      "expected": "includes school and higher",
+      "passed": true
+    },
+    {
+      "name": "Final log UI keeps geometric location label",
+      "actual": "Geometric-location prediction",
+      "expected": "Geometric-location prediction",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Tab follows labelled predictor fields",
+      "actual": "G2",
+      "expected": "G2",
+      "passed": true
+    },
+    {
+      "name": "Forms have labels and a single page heading",
+      "actual": {
+        "h1": 1,
+        "lang": "zh-Hant",
+        "unlabelled": []
+      },
+      "expected": "all inputs labelled; h1=1; zh-Hant",
+      "passed": true
+    },
+    {
+      "name": "Comparison CSV download completed",
+      "actual": "/Users/c2838/Downloads/student_background-frozen-comparison.csv",
+      "expected": "downloaded student_background CSV",
+      "passed": true
+    },
+    {
+      "name": "Model JSON download completed",
+      "actual": "/Users/c2838/Downloads/student_background-kbest-model.json",
+      "expected": "downloaded student_background model",
+      "passed": true
+    },
+    {
+      "name": "No browser console errors during final workflow",
+      "actual": [],
+      "expected": "empty error list",
+      "passed": true
+    }
+  ],
+  "observed_interactions": [
+    "All four scenarios × five method-winner switches (20 combinations)",
+    "k=1 exploration switches to CV/development scope",
+    "Lasso alpha=10 intercept-only and background RFE k=39",
+    "Compare All legend, baseline OLS and regularized interval availability",
+    "Coefficient basis and HC3 dropdowns",
+    "Single-sample numeric/category input, blank, unknown category, extrapolation, overflow and invalid text",
+    "Enter on SVG candidate, Tab through fields",
+    "Actual CSV and JSON downloads; files separately verified",
+    "1280/768/390/320 target viewport review; final viewport reset"
+  ],
+  "screenshot_files": [
+    "gpu-desktop.jpg",
+    "gpu-diagnostics-desktop.jpg",
+    "gpu-intervals-desktop.jpg",
+    "student-320-intervals.jpg",
+    "student-mobile-charts.jpg",
+    "student-mobile-intervals.jpg",
+    "student-mobile.jpg",
+    "student-predictor.jpg"
+  ],
+  "limits": [
+    "Browser viewport simulation; not physical iPhone/Android hardware.",
+    "No public hosting, backend API or custom dataset execution in Stage 5.",
+    "No full WCAG conformance claim; representative keyboard and labelling checks only."
+  ],
+  "final_source_sha256": {
+    "web/app.mjs": "70bbad52681cb18221b3665aeba24dc0496b77faa03b83ad25bf4f25d891ec93",
+    "web/charts.mjs": "671e0c83144625789f752d1f305e6621791ab451748819b3765493c855c8fad6",
+    "web/favicon.svg": "60b407db580add52cb5394679f2f617756d49abe9ee58f7f33045a5df2ba9893",
+    "web/index.html": "e0d7b1f91de79bd867d9cb9ed03c1d08bd33fe40ba2ed29d488363e9fc29b2b6",
+    "web/prediction.mjs": "316eb62a5cadd9c53ab6eb40b2733ee8c3370302b619ac67d2cfd977f3568ead",
+    "web/style.css": "06e0b942fd75a81ae5edf1a8d47448fdb1297f9cad28a87ef0a4294e9f2c28a2"
+  },
+  "screenshot_sha256": {
+    "artifacts/validation/screenshots/stage5/gpu-desktop.jpg": "9e9a7407e4a6e0b4a5cded30182609ffe60c29067e4d61ff2d0a69957572e44e",
+    "artifacts/validation/screenshots/stage5/gpu-diagnostics-desktop.jpg": "ae93a3f2b829c9029d8d95e87acae768683016b6cb2c0991f1fab947dada42ad",
+    "artifacts/validation/screenshots/stage5/gpu-intervals-desktop.jpg": "204423c8a9a20c6be7ba47948148fc1ea65556001046fa63b43f359ca2a441a8",
+    "artifacts/validation/screenshots/stage5/student-320-intervals.jpg": "4b9f120adbe39cc4cac5ccc86d8f9269cb10b8bf405179f37764b2b7a8b01a0f",
+    "artifacts/validation/screenshots/stage5/student-mobile-charts.jpg": "c6ac8fd5aacfb530da898f38ae485d8ec24c8276306559d3f2b01ef8ddd4b274",
+    "artifacts/validation/screenshots/stage5/student-mobile-intervals.jpg": "d8685e29242211e62fcc1faa1d49a753494282ba6c8eaa9c507473471c758e42",
+    "artifacts/validation/screenshots/stage5/student-mobile.jpg": "37b2b516f9cf71432376622dd3404ca596c323857fe568bc8374bb44b22b2df8",
+    "artifacts/validation/screenshots/stage5/student-predictor.jpg": "8a295dba9974c0b128d57f7aa35b1cda2ed50fe23c1aff59d57779f90b788fe9"
+  }
+}

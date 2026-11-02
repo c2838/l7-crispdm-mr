@@ -1,0 +1,37 @@
+{
+  "dataset": "student",
+  "method": "lasso",
+  "status": "passed",
+  "development_rows": 519,
+  "raw_input_fields": 32,
+  "encoded_columns": 41,
+  "import_s": 1.062943915836513,
+  "load_s": 0.002636583987623453,
+  "preprocess_s": 0.010947874980047345,
+  "operation_s": 0.002837708918377757,
+  "wall_s_including_import": 1.0796189999673516,
+  "cpu_s": 1.0747179999999998,
+  "peak_rss_bytes": 198017024,
+  "threads_limit": 1,
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "filepath": "/Users/c2838/NCHU/115-1 \u4e2d\u8208\u4f5c\u696d/AIOT/L7_CRISPDM_MR/.venv/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+      "version": null
+    }
+  ],
+  "warning_categories": [],
+  "final_test_rows_read": 0,
+  "model_scope": "feasibility only; no final scores or model export",
+  "selected_encoded_columns": 39,
+  "candidate_encoded_columns": 41,
+  "alpha": 0.001,
+  "target_standardized_for_selector": true,
+  "refit_ols": true,
+  "iterations": 39,
+  "parameter_scope": "single fixed feasibility setting; not tuned performance",
+  "fresh_process_wall_s": 1.1961186667904258
+}

@@ -1,0 +1,93 @@
+{
+  "status": "passed_local_browser",
+  "checks": [
+    {
+      "name": "Four PDF and four research links have actual targets",
+      "passed": true,
+      "actual": [
+        {
+          "download": true,
+          "href": "downloads/L7_CRISPDM_MR_report_draft.pdf",
+          "text": "Analysis report · 分析報告草稿19頁；NotebookLM與公開部署待補 · PDF"
+        },
+        {
+          "download": true,
+          "href": "downloads/L7_CRISPDM_MR_infographic.pdf",
+          "text": "Infographic · 資訊圖表1頁A3；兩題結果、流程與限制 · PDF"
+        },
+        {
+          "download": true,
+          "href": "downloads/Lecture6_conversation_snapshot.pdf",
+          "text": "Lecture 6 · 對話快照33頁；79則實際公開訊息 · PDF"
+        },
+        {
+          "download": true,
+          "href": "downloads/HW2_conversation_snapshot.pdf",
+          "text": "HW2 · 對話快照53頁；122則訊息，最終繳交前更新 · PDF"
+        },
+        {
+          "download": true,
+          "href": "downloads/notebooklm/START_HERE.md",
+          "text": "操作與來源說明"
+        },
+        {
+          "download": true,
+          "href": "downloads/notebooklm/A_GPU_PROMPT.txt",
+          "text": "GPU研究提示詞"
+        },
+        {
+          "download": true,
+          "href": "downloads/notebooklm/B_STUDENT_PROMPT.txt",
+          "text": "學生研究提示詞"
+        },
+        {
+          "download": true,
+          "href": "downloads/notebooklm/RETURN_TEMPLATE.md",
+          "text": "研究回傳格式"
+        }
+      ]
+    },
+    {
+      "name": "Responsive downloads 390",
+      "passed": true,
+      "actual": {
+        "client": 375,
+        "columns": "303px",
+        "focus": "Infographic · 資訊圖表1頁A3；兩題結果、流程與限制 · PDF",
+        "font": "15px",
+        "scroll": 375,
+        "width": 390
+      }
+    },
+    {
+      "name": "Responsive downloads 320",
+      "passed": true,
+      "actual": {
+        "client": 305,
+        "columns": "233px",
+        "focus": "Infographic · 資訊圖表1頁A3；兩題結果、流程與限制 · PDF",
+        "font": "15px",
+        "scroll": 305,
+        "width": 320
+      }
+    },
+    {
+      "name": "Desktop two-column layout and keyboard next-link focus",
+      "passed": true,
+      "actual": {
+        "client": 1265,
+        "columns": "569.5px 569.5px",
+        "focus": "Infographic · 資訊圖表1頁A3；兩題結果、流程與限制 · PDF",
+        "scroll": 1265,
+        "width": 1280
+      }
+    },
+    {
+      "name": "No runtime console errors",
+      "passed": true,
+      "actual": []
+    }
+  ],
+  "passed_checks": 5,
+  "scope": "Actual desktop/mobile/keyboard/link inspection. Download bytes verified separately by live HTTP; native Save dialog not exercised this stage."
+}

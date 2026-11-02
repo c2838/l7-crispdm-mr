@@ -1,0 +1,164 @@
+{
+  "python": "3.12.14",
+  "executable": "/Users/c2838/NCHU/115-1 \u4e2d\u8208\u4f5c\u696d/AIOT/L7_CRISPDM_MR/.venv/bin/python",
+  "base_prefix": "/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12",
+  "prefix": "/Users/c2838/NCHU/115-1 \u4e2d\u8208\u4f5c\u696d/AIOT/L7_CRISPDM_MR/.venv",
+  "independent_venv": true,
+  "platform": "macOS-15.7.3-arm64-arm-64bit",
+  "machine": "arm64",
+  "processor": "arm",
+  "runtime_dependencies": {
+    "annotated-doc": {
+      "version": "0.0.5",
+      "installed_bytes_including_metadata": 11933
+    },
+    "annotated-types": {
+      "version": "0.8.0",
+      "installed_bytes_including_metadata": 67480
+    },
+    "anyio": {
+      "version": "4.15.1",
+      "installed_bytes_including_metadata": 1284817
+    },
+    "click": {
+      "version": "8.5.0",
+      "installed_bytes_including_metadata": 954431
+    },
+    "cloudpickle": {
+      "version": "3.1.2",
+      "installed_bytes_including_metadata": 125965
+    },
+    "contourpy": {
+      "version": "1.4.0",
+      "installed_bytes_including_metadata": 1194752
+    },
+    "cycler": {
+      "version": "0.12.1",
+      "installed_bytes_including_metadata": 45730
+    },
+    "fastapi": {
+      "version": "0.162.0",
+      "installed_bytes_including_metadata": 1555051
+    },
+    "fonttools": {
+      "version": "4.68.0",
+      "installed_bytes_including_metadata": 19274520
+    },
+    "h11": {
+      "version": "0.16.0",
+      "installed_bytes_including_metadata": 185985
+    },
+    "idna": {
+      "version": "3.20",
+      "installed_bytes_including_metadata": 518405
+    },
+    "joblib": {
+      "version": "1.6.0",
+      "installed_bytes_including_metadata": 1941970
+    },
+    "kiwisolver": {
+      "version": "1.5.1",
+      "installed_bytes_including_metadata": 245672
+    },
+    "matplotlib": {
+      "version": "3.11.2",
+      "installed_bytes_including_metadata": 34328601
+    },
+    "narwhals": {
+      "version": "2.28.0",
+      "installed_bytes_including_metadata": 4766722
+    },
+    "numpy": {
+      "version": "2.5.4",
+      "installed_bytes_including_metadata": 32615788
+    },
+    "opentelemetry-api": {
+      "version": "1.45.2",
+      "installed_bytes_including_metadata": 417228
+    },
+    "packaging": {
+      "version": "26.3",
+      "installed_bytes_including_metadata": 996056
+    },
+    "pandas": {
+      "version": "2.3.3",
+      "installed_bytes_including_metadata": 67486152
+    },
+    "patsy": {
+      "version": "1.0.3",
+      "installed_bytes_including_metadata": 1569362
+    },
+    "pillow": {
+      "version": "13.0.0",
+      "installed_bytes_including_metadata": 13372200
+    },
+    "pydantic": {
+      "version": "2.14.2",
+      "installed_bytes_including_metadata": 3917548
+    },
+    "pydantic-core": {
+      "version": "2.50.2",
+      "installed_bytes_including_metadata": 5010043
+    },
+    "pyparsing": {
+      "version": "3.3.3",
+      "installed_bytes_including_metadata": 1032251
+    },
+    "python-dateutil": {
+      "version": "4.0.0",
+      "installed_bytes_including_metadata": 659203
+    },
+    "python-multipart": {
+      "version": "0.0.33",
+      "installed_bytes_including_metadata": 196148
+    },
+    "pytz": {
+      "version": "2026.6",
+      "installed_bytes_including_metadata": 1075042
+    },
+    "scikit-learn": {
+      "version": "1.9.1",
+      "installed_bytes_including_metadata": 45978854
+    },
+    "scipy": {
+      "version": "1.18.1",
+      "installed_bytes_including_metadata": 97598656
+    },
+    "starlette": {
+      "version": "1.10.0",
+      "installed_bytes_including_metadata": 654156
+    },
+    "statsmodels": {
+      "version": "0.14.6",
+      "installed_bytes_including_metadata": 51594643
+    },
+    "threadpoolctl": {
+      "version": "3.7.0",
+      "installed_bytes_including_metadata": 166149
+    },
+    "typing-extensions": {
+      "version": "4.16.0",
+      "installed_bytes_including_metadata": 349491
+    },
+    "typing-inspection": {
+      "version": "0.4.4",
+      "installed_bytes_including_metadata": 90368
+    },
+    "tzdata": {
+      "version": "2026.6",
+      "installed_bytes_including_metadata": 589604
+    },
+    "uvicorn": {
+      "version": "0.54.0",
+      "installed_bytes_including_metadata": 680250
+    }
+  },
+  "runtime_installed_bytes_local": 392551226,
+  "dev_only_direct_packages": {
+    "httpx": "0.28.1",
+    "psutil": "7.2.2"
+  },
+  "lock_scope": "Exact successful local Python 3.12 resolution. Linux wheels measured separately; not a Vercel deployment build.",
+  "pip_check": "No broken requirements found; executed separately",
+  "account_plan_basis": "User selected Hobby free-tier evaluation; actual account/project not inspected."
+}

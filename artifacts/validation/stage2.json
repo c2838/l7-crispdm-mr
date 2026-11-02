@@ -1,0 +1,339 @@
+{
+  "recorded_at": "2026-11-01T10:04:46+00:00",
+  "status": "passed_local_feasibility_cloud_unverified",
+  "scope": "new L7 environment, actual development data, labeled generated fixture, real localhost HTTP and public URL parser",
+  "passed_checks": 36,
+  "checks": [
+    {
+      "name": "project-owned independent virtual environment",
+      "method": "actual saved evidence and file inspection",
+      "expected": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/.venv",
+      "actual": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/.venv",
+      "passed": true
+    },
+    {
+      "name": "Python 3.12",
+      "method": "actual saved evidence and file inspection",
+      "expected": [
+        3,
+        12
+      ],
+      "actual": [
+        3,
+        12
+      ],
+      "passed": true
+    },
+    {
+      "name": "installed dependency consistency",
+      "method": "pip check in new L7 .venv",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    },
+    {
+      "name": "runtime exact lock matches installed environment",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "real development benchmark count",
+      "method": "actual saved evidence and file inspection",
+      "expected": 18,
+      "actual": 18,
+      "passed": true
+    },
+    {
+      "name": "resource-fixture benchmark count",
+      "method": "actual saved evidence and file inspection",
+      "expected": 6,
+      "actual": 6,
+      "passed": true
+    },
+    {
+      "name": "all executed cases passed",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "all model cases use one BLAS/compute thread",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "no final test data records read by benchmark",
+      "method": "inspect skiprows loader plus recorded per-case scope; full source hash verification is separate",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "real development sample sizes",
+      "method": "actual saved evidence and file inspection",
+      "expected": [
+        [
+          "sgemm",
+          193280
+        ],
+        [
+          "student",
+          519
+        ]
+      ],
+      "actual": [
+        [
+          "sgemm",
+          193280
+        ],
+        [
+          "student",
+          519
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "name": "exact resource fixture boundary",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "resource fixture clearly separated from formal data",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "all five methods actually present for both formal datasets",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "SFS candidate/fold fit counts",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "representative methods below engineering deadline",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "representative whole process RSS below 1 GiB margin",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "no convergence warnings",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "OLS package prediction agreement",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "OLS design matrices full rank",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "illustrative interval JSON below response budget",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "actual localhost HTTP checks",
+      "method": "actual saved evidence and file inspection",
+      "expected": 11,
+      "actual": 11,
+      "passed": true
+    },
+    {
+      "name": "all HTTP expectations met",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "HTTP prototype not misrepresented as model analysis",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "public HTTPS CSV reachable and parseable",
+      "method": "actual saved evidence and file inspection",
+      "expected": [
+        200,
+        649,
+        33,
+        true
+      ],
+      "actual": [
+        200,
+        649,
+        33,
+        true
+      ],
+      "passed": true
+    },
+    {
+      "name": "Linux runtime wheel coverage",
+      "method": "actual saved evidence and file inspection",
+      "expected": 36,
+      "actual": 36,
+      "passed": true
+    },
+    {
+      "name": "Linux required dependency metadata satisfied",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "wheel content estimate below standard bundle ceiling",
+      "method": "sum of actual wheel ZipInfo.file_size; excludes application/bytecode/build overhead, not deployed size",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "matplotlib actual PNG output",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "source data bytes unchanged",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "model input data bytes unchanged",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "a original fixed split preserved",
+      "method": "recompute original numpy PCG64(0) held-out row indices; no scoring",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "b original fixed split preserved",
+      "method": "recompute original numpy PCG64(0) held-out row indices; no scoring",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "Stage 3 remains pending approval",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "no production app entrypoint created",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "no repository initialized by this stage",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "current stage2 checklist complete",
+      "method": "actual saved evidence and file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "visual_review": "Agent inspected actual matplotlib timing/RSS chart; legends, units and local-only labels legible.",
+  "evidence_sha256": {
+    "artifacts/feasibility/platform-reference.json": "811a1d2b725991933f3663a80482a0333bdb7ab221eefa44a9778e90a1c048d8",
+    "artifacts/feasibility/vercel-candidate.json": "15ef8d84605fabbdd6ea348d38e13858896ce7e12dd82e794acd01eedfad67ba",
+    "artifacts/feasibility/public-url-probe.json": "54005e25b52c7d1978e2f98cefb72d8f49726b51b341394681723ee95f9afb33",
+    "artifacts/feasibility/linux-wheel-sizes.json": "9d07ebf381f8cafd227cc53ffd8bf1ffca759a34f95a6c42c809e8ed99d373dd",
+    "artifacts/feasibility/http-probes.json": "b5076fb0bac6e1f6bb35c967375e5b6c0ae0121f69d651a70b19a30016834ffc",
+    "artifacts/feasibility/design-budget.json": "d62e61d504646aa0667b20dae16222a30ec239f3bb9d2053421365f16f06fb4b",
+    "artifacts/feasibility/environment.json": "54cefe06dbfb981641b8e3249aee8470ba4c5f6c88395d737552b853d3784bcf",
+    "artifacts/feasibility/local-performance.png": "03b44bf85ce87216eeb04a22f4b6e5b34234ee173d0e25cf09823da963a5d5a8",
+    "artifacts/feasibility/benchmarks/summary.json": "60e492b248a2e4c600d7d6add6ea80e33463f351dd8e210ff18796567f2f0423",
+    "artifacts/feasibility/benchmarks/student-load.json": "78096c201ee5eeb56e3fa66cf485ba948671e2f4223c50835ae83f99f6742cf9",
+    "artifacts/feasibility/benchmarks/sgemm-load.json": "b9738f9a164c155a3936656aca2cb344be961ea777d609158c111b0944e6143f",
+    "artifacts/feasibility/benchmarks/student-kbest.json": "26c43aa1382cf78bed53647887a94f62308be80f6f2077dbeb6685ede0d0bc95",
+    "artifacts/feasibility/benchmarks/sgemm-elasticnet.json": "da7018684f35f2830a02be3cf72469323e6da8b6b39bd7e96ecdef97013aceff",
+    "artifacts/feasibility/benchmarks/sgemm-kbest.json": "dd1463a89a405db931e55a542fded497c97834bd811fe40115b566558ec6da1a",
+    "artifacts/feasibility/benchmarks/sgemm-preprocess.json": "ef635e163e59fedc463b77b3c9e4de90e048b28fe95e6af762ed1777063b3d4d",
+    "artifacts/feasibility/benchmarks/sgemm-ols.json": "adadb6a235f7cabe421ac003ccbef793c01158495a4189f969aa71fe1a3d3daa",
+    "artifacts/feasibility/benchmarks/student-ols.json": "2f4db82f95d4b184784a284e58001bad7f042361d3681a0f3ca9ac8b9c341349",
+    "artifacts/feasibility/benchmarks/student-preprocess.json": "40ecd7b47e535410d50800ea5028ec63d00590bb24636d46667d275aa050f327",
+    "artifacts/feasibility/benchmarks/student-elasticnet.json": "487f28285ba796f993d8cc2006c15b232a33d6f1127276e43599a0942851c1e5",
+    "artifacts/feasibility/benchmarks/student-rfe.json": "54fd269f8fd9120be847bd5bb43498ff34021adb64226b60837b84398535bc58",
+    "artifacts/feasibility/benchmarks/sgemm-rfe.json": "d2b99b29553e53104159ce524b16aec9689009e9a0890b564219f32388a31153",
+    "artifacts/feasibility/benchmarks/sgemm-log_ols.json": "391b40c66df88ea8b86af7817707e1b972e42a3dac6bce706cc0fb43e1fe2249",
+    "artifacts/feasibility/benchmarks/student-no_prior_ols.json": "2d65b59d525fc5b1e8a93139f51ca52b0ba90245e613e9da407f9bc0782aad2f",
+    "artifacts/feasibility/benchmarks/sgemm-lasso.json": "9f2e0be2871f1485d4a4d337129b291bf18059f4d67da8cadfbdad10c2ac1267",
+    "artifacts/feasibility/benchmarks/sgemm-sfs.json": "32bda0c5e8730b8a19766aadba3bfa07760dcd837df7ac68afe00ff06d4fc01b",
+    "artifacts/feasibility/benchmarks/student-sfs.json": "41d1f29f7555fb1fb5d8042c7315a56432e46a1deba845ea704cfce3a402b1a1",
+    "artifacts/feasibility/benchmarks/student-lasso.json": "0843641f60e701cff69f8f65fce089a04a6a2326082d1c5eaa980a8799529207",
+    "artifacts/feasibility/stress/summary.json": "95a4b73b4095892ce35feca766a9b4a4a44b474e10f78c6c2cfc1b01c9cf7aa1",
+    "artifacts/feasibility/stress/stress-ols.json": "501ef59b30f3f6c2ad301fd06cf31230e1d8ff6cbea46afbb3d45578a82e678b",
+    "artifacts/feasibility/stress/stress-lasso.json": "8508d376b78ea1e6486ce5a13a1e5f797034744f406cbe9c1ffa73224b11a041",
+    "artifacts/feasibility/stress/stress-kbest.json": "2c4db4c3f31a4ef9a50bae73f5763004e1fb9320f5b933b6d6512ca2e5f99fa8",
+    "artifacts/feasibility/stress/stress-rfe.json": "8a052c07db121b526bf26ccb2cb8cfcd60bc3145506a75b73c3c1489fb2d23b1",
+    "artifacts/feasibility/stress/stress-sfs.json": "5d9942f70084e65c5603ccd57978c46fa0c599c06c82b5cc8e1f994aa146d593",
+    "artifacts/feasibility/stress/stress-elasticnet.json": "e6a77abf181fa85dbf0f669f8d39e377b7a21b71b4576d9c1ee92e97cf67c5c8"
+  },
+  "limitations": [
+    "No final test model scoring, final feature/model selection or exported formal model.",
+    "Representative k/alpha/CV timings are not the cost of the full planned analysis grid.",
+    "Linux wheel availability/metadata/size checked; Linux binaries and Vercel build/runtime not executed.",
+    "Actual Vercel account/project settings and remaining monthly usage not inspected; user selected Hobby design basis.",
+    "No product API, online third-dataset analysis, deployment or submission.",
+    "Cancellation, deadlines and public URL policy are architecture requirements to implement in subsequent stages."
+  ]
+}

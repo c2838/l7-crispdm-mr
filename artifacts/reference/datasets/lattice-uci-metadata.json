@@ -1,0 +1,65 @@
+{
+  "status": 200,
+  "statusText": "OK",
+  "data": {
+    "uci_id": 1091,
+    "name": "Lattice-physics (PWR fuel assembly neutronics simulation results)",
+    "repository_url": "https://archive.ics.uci.edu/dataset/1091/lattice-physics+(pwr+fuel+assembly+neutronics+simulation+results)",
+    "data_url": null,
+    "abstract": "This dataset encompasses lattice-physics parameters—the infinite multiplication factor (k-inf) and the pin power peaking factor (PPPF)—modeled as functions of variations in fuel pin enrichments for the NuScale US600 fuel assembly type C-01 (NFAC-01) [NuScale FSAR]. These critical parameters were computed using the MCNP6 code, a Monte Carlo-based tool for nuclear reactor criticality simulations.\n\nFuel pin enrichments were uniformly sampled within the range of 0.7–5.0 weight percent (w/o) U-235 to generate the dataset. The dataset contains 39 features, each representing the enrichment of a specific fuel rod in a one-eighth symmetry of the NFAC assembly. The outputs of interest are the k-inf and PPPF values associated with these enrichments.",
+    "area": "Physics and Chemistry",
+    "tasks": [
+      "Regression"
+    ],
+    "characteristics": [
+      "Tabular",
+      "Multivariate"
+    ],
+    "num_instances": 24000,
+    "num_features": 39,
+    "feature_types": [
+      "Real"
+    ],
+    "demographics": [],
+    "target_col": null,
+    "index_col": null,
+    "has_missing_values": "no",
+    "missing_values_symbol": null,
+    "year_of_dataset_creation": 2024,
+    "last_updated": "Thu Dec 12 2024",
+    "dataset_doi": "10.24432/C5BK64",
+    "creators": [
+      "Nguyen Huu Tiep"
+    ],
+    "intro_paper": {
+      "ID": 569,
+      "type": "NATIVE",
+      "title": "A New Hyperparameter Tuning Framework for Regression Tasks in Deep Neural Network: Combined-Sampling Algorithm to Search the Optimized Hyperparameters",
+      "authors": "Nguyen Huu Tiep, Hae-Yong Jeong, Kyung-Doo Kim, Nguyen Xuan Mung, Nhu-Ngoc Dao, Hoai-Nam Tran, Van-Khanh Hoang, Nguyen Ngoc Anh, Mai The Vu.",
+      "venue": " Institute for Nuclear Science and Technology (INST), Vietnam Atomic Energy Institute (VINATOM), 179 Hoang Quoc Viet, Cau Giay, Hanoi 100000, Vietnam",
+      "year": 2024,
+      "journal": null,
+      "DOI": null,
+      "URL": "https://www.mdpi.com/2227-7390/12/24/3892#B48-mathematics-12-03892",
+      "sha": null,
+      "corpus": null,
+      "arxiv": null,
+      "mag": null,
+      "acl": null,
+      "pmid": null,
+      "pmcid": null
+    },
+    "variables": [],
+    "additional_info": {
+      "summary": null,
+      "purpose": null,
+      "funded_by": null,
+      "instances_represent": null,
+      "recommended_data_splits": null,
+      "sensitive_data": null,
+      "preprocessing_description": null,
+      "variable_info": null,
+      "citation": null
+    }
+  }
+}

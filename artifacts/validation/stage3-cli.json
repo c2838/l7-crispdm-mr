@@ -1,0 +1,9 @@
+{
+  "scope": "actual CLI subprocess; real student development loader; output isolated in temporary directory",
+  "expected_exit": 2,
+  "actual_exit": 2,
+  "status": "partial_timeout",
+  "models_written": 0,
+  "final_test_rows_parsed_for_modeling": 0,
+  "passed": true
+}

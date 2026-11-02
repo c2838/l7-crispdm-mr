@@ -1,0 +1,41 @@
+{
+  "status": "passed_local",
+  "checks": [
+    {
+      "name": "desktop research and files",
+      "evidence": {
+        "bodyFont": "16px",
+        "hash": "#notebooklm-research",
+        "noOverflow": true,
+        "pdfLinks": 3,
+        "retiredAbsent": true,
+        "summaryHan": [
+          188,
+          200
+        ],
+        "width": 1280
+      }
+    },
+    {
+      "name": "390px responsive research",
+      "evidence": {
+        "font": "16px",
+        "noOverflow": true,
+        "summaryCount": 2,
+        "width": 390
+      }
+    },
+    {
+      "name": "320px responsive research",
+      "evidence": {
+        "noOverflow": true,
+        "summaryCount": 2,
+        "width": 320
+      }
+    }
+  ],
+  "limitations": [
+    "Local browser only; no public deployment.",
+    "Native Save dialog not exercised; actual HTTP bytes verified separately."
+  ]
+}

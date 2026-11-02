@@ -1,0 +1,521 @@
+{
+  "status": "computed",
+  "training_rows": 519,
+  "design_columns_including_intercept": 42,
+  "response_scale": "original target units",
+  "development_ols_r2": 0.8423063351295408,
+  "development_ols_adjusted_r2": 0.828751953033757,
+  "development_residual_df": 477.0,
+  "residual_std": 1.3448851286473922,
+  "normality": {
+    "test": "Jarque-Bera on all development residuals",
+    "statistic": 5405.926991319737,
+    "p_value": 0.0,
+    "p_display": "< floating-point resolution",
+    "skewness": -2.5426254090196188,
+    "excess_kurtosis": 15.132735980244632,
+    "interpretation": "Large-sample p-values are sensitive; use residual shape and effects, not a pass/fail label."
+  },
+  "heteroskedasticity": {
+    "status": "computed",
+    "test": "Koenker/studentized Breusch-Pagan",
+    "lm_statistic": 67.4278180431056,
+    "p_value": 0.005765589331637602,
+    "p_display": "0.005766",
+    "f_statistic": 1.7371865095842876,
+    "f_p_value": 0.003975189228707667,
+    "corr_abs_residual_fitted": -0.263065108283103
+  },
+  "functional_form": {
+    "status": "computed",
+    "test": "Quadratic fitted-value RESET-style test with HC3 covariance",
+    "f_statistic": 11.54832800251252,
+    "p_value": 0.0007350304793745322,
+    "p_display": "0.000735",
+    "diagnostic_only": true,
+    "frozen_model_replaced": false
+  },
+  "vif": [
+    {
+      "key": "c:[\"school\",\"MS\"]",
+      "label": "school = MS",
+      "vif": 1.578143780617462,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"sex\",\"M\"]",
+      "label": "sex = M",
+      "vif": 1.4081334498288711,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"age\"",
+      "label": "age",
+      "vif": 1.4839421583542733,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"address\",\"U\"]",
+      "label": "address = U",
+      "vif": 1.3380402212681357,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"famsize\",\"LE3\"]",
+      "label": "famsize = LE3",
+      "vif": 1.1726498767283793,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"Pstatus\",\"T\"]",
+      "label": "Pstatus = T",
+      "vif": 1.2434756460132115,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"Medu\"",
+      "label": "Medu",
+      "vif": 2.64533620202204,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"Fedu\"",
+      "label": "Fedu",
+      "vif": 2.1722831977906747,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"Mjob\",\"health\"]",
+      "label": "Mjob = health",
+      "vif": 1.865084625768012,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"Mjob\",\"other\"]",
+      "label": "Mjob = other",
+      "vif": 2.0748951219939133,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"Mjob\",\"services\"]",
+      "label": "Mjob = services",
+      "vif": 2.099495409345002,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"Mjob\",\"teacher\"]",
+      "label": "Mjob = teacher",
+      "vif": 2.285251922259506,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"Fjob\",\"health\"]",
+      "label": "Fjob = health",
+      "vif": 1.67760567124448,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"Fjob\",\"other\"]",
+      "label": "Fjob = other",
+      "vif": 4.736350260423845,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"Fjob\",\"services\"]",
+      "label": "Fjob = services",
+      "vif": 4.211220884122926,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"Fjob\",\"teacher\"]",
+      "label": "Fjob = teacher",
+      "vif": 2.228413790226413,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"reason\",\"home\"]",
+      "label": "reason = home",
+      "vif": 1.3299333812797363,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"reason\",\"other\"]",
+      "label": "reason = other",
+      "vif": 1.2485627100570058,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"reason\",\"reputation\"]",
+      "label": "reason = reputation",
+      "vif": 1.3902832909171308,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"guardian\",\"mother\"]",
+      "label": "guardian = mother",
+      "vif": 1.3432286753141838,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"guardian\",\"other\"]",
+      "label": "guardian = other",
+      "vif": 1.5641816395307246,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"traveltime\"",
+      "label": "traveltime",
+      "vif": 1.3231756989426577,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"studytime\"",
+      "label": "studytime",
+      "vif": 1.2218044022055867,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"failures\"",
+      "label": "failures",
+      "vif": 1.4568840889377777,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"schoolsup\",\"yes\"]",
+      "label": "schoolsup = yes",
+      "vif": 1.194447729380897,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"famsup\",\"yes\"]",
+      "label": "famsup = yes",
+      "vif": 1.1340854192188727,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"paid\",\"yes\"]",
+      "label": "paid = yes",
+      "vif": 1.1069283489320791,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"activities\",\"yes\"]",
+      "label": "activities = yes",
+      "vif": 1.1569252599395692,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"nursery\",\"yes\"]",
+      "label": "nursery = yes",
+      "vif": 1.0638497783523178,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"higher\",\"yes\"]",
+      "label": "higher = yes",
+      "vif": 1.3687594334857536,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"internet\",\"yes\"]",
+      "label": "internet = yes",
+      "vif": 1.249782653633036,
+      "status": "finite"
+    },
+    {
+      "key": "c:[\"romantic\",\"yes\"]",
+      "label": "romantic = yes",
+      "vif": 1.15999570778013,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"famrel\"",
+      "label": "famrel",
+      "vif": 1.147580931052991,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"freetime\"",
+      "label": "freetime",
+      "vif": 1.2731954663837304,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"goout\"",
+      "label": "goout",
+      "vif": 1.436725462082201,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"Dalc\"",
+      "label": "Dalc",
+      "vif": 1.8894788793013517,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"Walc\"",
+      "label": "Walc",
+      "vif": 2.2476147653199754,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"health\"",
+      "label": "health",
+      "vif": 1.1681696280102398,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"absences\"",
+      "label": "absences",
+      "vif": 1.2892359722696685,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"G1\"",
+      "label": "G1",
+      "vif": 4.484134426691252,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"G2\"",
+      "label": "G2",
+      "vif": 4.2890969185426995,
+      "status": "finite"
+    }
+  ],
+  "condition_number_standardized_design": 6.572685683951572,
+  "influence": {
+    "status": "available",
+    "cook_heuristic": 0.007707129094412331,
+    "leverage_heuristic": 0.16184971098265896,
+    "cook_flagged_rows": 18,
+    "leverage_flagged_rows": 4,
+    "max_cooks_distance": 0.10938198377283408,
+    "max_leverage": 0.2234794902403782,
+    "top_rows": [
+      {
+        "development_position": 124,
+        "source_row_index_0_based": 163,
+        "leverage": 0.09209593206358736,
+        "cooks_distance": 0.10938198377283408,
+        "studentized_internal": -6.7297247272178256,
+        "residual": -8.62387538838968
+      },
+      {
+        "development_position": 469,
+        "source_row_index_0_based": 586,
+        "leverage": 0.09701529203294486,
+        "cooks_distance": 0.09683127445567702,
+        "studentized_internal": -6.152513414710335,
+        "residual": -7.862813205892771
+      },
+      {
+        "development_position": 130,
+        "source_row_index_0_based": 172,
+        "leverage": 0.0698378081880122,
+        "cooks_distance": 0.07669137313783977,
+        "studentized_internal": -6.549858880791408,
+        "residual": -8.495647330484667
+      },
+      {
+        "development_position": 512,
+        "source_row_index_0_based": 640,
+        "leverage": 0.11470803090079741,
+        "cooks_distance": 0.07346224345126583,
+        "studentized_internal": -4.879811977694675,
+        "residual": -6.17492294109035
+      },
+      {
+        "development_position": 48,
+        "source_row_index_0_based": 61,
+        "leverage": 0.13902471274797165,
+        "cooks_distance": 0.07200203254954508,
+        "studentized_internal": 4.3275925367714105,
+        "residual": 5.400412047698252
+      },
+      {
+        "development_position": 501,
+        "source_row_index_0_based": 626,
+        "leverage": 0.13784343776566216,
+        "cooks_distance": 0.0613719039972882,
+        "studentized_internal": -4.015221100159493,
+        "residual": -5.014039203773622
+      },
+      {
+        "development_position": 511,
+        "source_row_index_0_based": 639,
+        "leverage": 0.07877649351984593,
+        "cooks_distance": 0.0553708478203698,
+        "studentized_internal": -5.214941183228497,
+        "residual": -6.73158155061887
+      },
+      {
+        "development_position": 418,
+        "source_row_index_0_based": 519,
+        "leverage": 0.06357246898754358,
+        "cooks_distance": 0.04692772547662617,
+        "studentized_internal": -5.3881781344281325,
+        "residual": -7.012360314019706
+      },
+      {
+        "development_position": 510,
+        "source_row_index_0_based": 637,
+        "leverage": 0.06691412455423382,
+        "cooks_distance": 0.0420029493301616,
+        "studentized_internal": -4.959826057020759,
+        "residual": -6.443360714794597
+      },
+      {
+        "development_position": 466,
+        "source_row_index_0_based": 583,
+        "leverage": 0.07916324951300367,
+        "cooks_distance": 0.03749160981282331,
+        "studentized_internal": -4.279777634076805,
+        "residual": -5.523288365671201
+      },
+      {
+        "development_position": 127,
+        "source_row_index_0_based": 169,
+        "leverage": 0.13500399810080924,
+        "cooks_distance": 0.015121465578490884,
+        "studentized_internal": 2.0172295562174365,
+        "residual": 2.5231761107382784
+      },
+      {
+        "development_position": 516,
+        "source_row_index_0_based": 646,
+        "leverage": 0.07568012848620276,
+        "cooks_distance": 0.012264177508988965,
+        "studentized_internal": -2.5082110316729938,
+        "residual": -3.2431005200765224
+      },
+      {
+        "development_position": 49,
+        "source_row_index_0_based": 62,
+        "leverage": 0.07145027679340776,
+        "cooks_distance": 0.010795591710784357,
+        "studentized_internal": -2.4274399517289984,
+        "residual": -3.145837384468482
+      },
+      {
+        "development_position": 242,
+        "source_row_index_0_based": 307,
+        "leverage": 0.0644795982605146,
+        "cooks_distance": 0.010714984412764807,
+        "studentized_internal": 2.5552646508086214,
+        "residual": 3.323898165706064
+      },
+      {
+        "development_position": 432,
+        "source_row_index_0_based": 541,
+        "leverage": 0.10717448434485086,
+        "cooks_distance": 0.00929480423838647,
+        "studentized_internal": 1.8033597166179272,
+        "residual": 2.291663523606722
+      },
+      {
+        "development_position": 255,
+        "source_row_index_0_based": 322,
+        "leverage": 0.11708137203951621,
+        "cooks_distance": 0.009265109227236598,
+        "studentized_internal": 1.713035469089191,
+        "residual": 2.164770626842305
+      },
+      {
+        "development_position": 217,
+        "source_row_index_0_based": 279,
+        "leverage": 0.14929411044801244,
+        "cooks_distance": 0.009190897579476104,
+        "studentized_internal": -1.4831053122217088,
+        "residual": -1.8396995474745497
+      },
+      {
+        "development_position": 417,
+        "source_row_index_0_based": 518,
+        "leverage": 0.1147228720210456,
+        "cooks_distance": 0.00871859030956047,
+        "studentized_internal": 1.6809794220916454,
+        "residual": 2.127096584679318
+      },
+      {
+        "development_position": 133,
+        "source_row_index_0_based": 175,
+        "leverage": 0.08716181643460603,
+        "cooks_distance": 0.007137793154941858,
+        "studentized_internal": 1.7719048110735496,
+        "residual": 2.2767873915667876
+      },
+      {
+        "development_position": 319,
+        "source_row_index_0_based": 400,
+        "leverage": 0.07060968982647493,
+        "cooks_distance": 0.006811477536730938,
+        "studentized_internal": 1.9404936584323247,
+        "residual": 2.515918040200704
+      }
+    ],
+    "interpretation": "Heuristics locate potentially influential training observations; none are automatically deleted."
+  },
+  "sensitivity": {
+    "status": "diagnostic_only",
+    "deleted_training_position_for_sensitivity": 124,
+    "coefficients_after_one_row_deletion": [
+      11.931596654475301,
+      -0.10908941162091682,
+      -0.053208662294804976,
+      -0.015776503223818017,
+      0.03793372775000504,
+      0.026404376561985046,
+      -0.0385704070933546,
+      -0.17550011686652406,
+      0.0885721106689408,
+      0.08256581452372921,
+      -0.06821428182529299,
+      0.08360914960649414,
+      0.10934235862668787,
+      -0.04548284526415695,
+      -0.12966790090580382,
+      -0.19928955143705665,
+      -0.09435181701541395,
+      -0.055197155903091336,
+      -0.12878103004987257,
+      -0.07307986332014699,
+      -0.0060040523095882675,
+      0.06559671451800324,
+      0.08646781837378341,
+      0.050785388694342674,
+      -0.09236694591476508,
+      -0.053472133715854714,
+      0.03911028226601028,
+      -0.030164512048532727,
+      -0.03732755881311117,
+      -0.019230042980462828,
+      -0.0067317205210458,
+      0.04672049282160781,
+      -0.0076050754751277455,
+      -0.03166467546468704,
+      -0.045951340171974636,
+      -0.013968477992785867,
+      -0.06705993876214655,
+      0.05056906555475497,
+      -0.0973125340481002,
+      0.03769100025225424,
+      0.4452387893719416,
+      2.455126867908283
+    ],
+    "max_absolute_coefficient_change": 0.05398832512347151,
+    "development_fitted_change_rms": 0.12653161620121112,
+    "development_fitted_change_max_abs": 0.8747882842943779,
+    "response_scale": "original target units",
+    "production_model_changed": false,
+    "test_rows_deleted": 0,
+    "source_row_index_0_based": 163
+  },
+  "independence": {
+    "status": "not_established",
+    "reason": "No temporal ordering or sufficient independent clusters established. Random row order is not a time series; no mechanical Durbin-Watson test.",
+    "source_limit": "Student data come from only two schools; GPU data come from one benchmark hardware/workload. HC3 does not establish independence."
+  },
+  "post_selection_caveat": "Intervals condition on selected columns and fitted preprocessing; feature-selection uncertainty not corrected.",
+  "hc3_caveat": "coefficient and location CI only; not a robust observation PI"
+}

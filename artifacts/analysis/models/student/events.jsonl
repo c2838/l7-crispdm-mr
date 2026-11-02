@@ -1,0 +1,112 @@
+{"sequence": 0, "event": "started", "elapsed_s": 0.01704587507992983, "rows": 519, "methods": ["dummy", "ols", "kbest", "rfe", "sfs", "lasso_select", "elasticnet_select", "ridge", "lasso_reg"]}
+{"sequence": 1, "event": "fold_started", "elapsed_s": 0.06002470897510648, "fold": 0}
+{"sequence": 2, "event": "method_started", "elapsed_s": 0.06004895898513496, "fold": 0, "method": "dummy"}
+{"sequence": 3, "event": "method_completed", "elapsed_s": 0.06008041696622968, "fold": 0, "method": "dummy"}
+{"sequence": 4, "event": "method_started", "elapsed_s": 0.060088542057201266, "fold": 0, "method": "ols"}
+{"sequence": 5, "event": "method_completed", "elapsed_s": 0.06674695899710059, "fold": 0, "method": "ols"}
+{"sequence": 6, "event": "method_started", "elapsed_s": 0.06676645902916789, "fold": 0, "method": "kbest"}
+{"sequence": 7, "event": "method_completed", "elapsed_s": 0.09418649994768202, "fold": 0, "method": "kbest"}
+{"sequence": 8, "event": "method_started", "elapsed_s": 0.09421133412979543, "fold": 0, "method": "rfe"}
+{"sequence": 9, "event": "method_completed", "elapsed_s": 0.1277223341166973, "fold": 0, "method": "rfe"}
+{"sequence": 10, "event": "method_started", "elapsed_s": 0.12774241692386568, "fold": 0, "method": "sfs"}
+{"sequence": 11, "event": "method_completed", "elapsed_s": 0.9182090000249445, "fold": 0, "method": "sfs"}
+{"sequence": 12, "event": "method_started", "elapsed_s": 0.9182517919689417, "fold": 0, "method": "lasso_select"}
+{"sequence": 13, "event": "method_completed", "elapsed_s": 0.9229916669428349, "fold": 0, "method": "lasso_select"}
+{"sequence": 14, "event": "method_started", "elapsed_s": 0.9230062919668853, "fold": 0, "method": "elasticnet_select"}
+{"sequence": 15, "event": "method_completed", "elapsed_s": 0.9381371249910444, "fold": 0, "method": "elasticnet_select"}
+{"sequence": 16, "event": "method_started", "elapsed_s": 0.938154875067994, "fold": 0, "method": "ridge"}
+{"sequence": 17, "event": "method_completed", "elapsed_s": 0.9480027090758085, "fold": 0, "method": "ridge"}
+{"sequence": 18, "event": "method_started", "elapsed_s": 0.9480185001157224, "fold": 0, "method": "lasso_reg"}
+{"sequence": 19, "event": "method_completed", "elapsed_s": 0.9519180001225322, "fold": 0, "method": "lasso_reg"}
+{"sequence": 20, "event": "fold_completed", "elapsed_s": 0.9519291671458632, "fold": 0}
+{"sequence": 21, "event": "fold_started", "elapsed_s": 0.9519519170280546, "fold": 1}
+{"sequence": 22, "event": "method_started", "elapsed_s": 0.9519593750592321, "fold": 1, "method": "dummy"}
+{"sequence": 23, "event": "method_completed", "elapsed_s": 0.951981334015727, "fold": 1, "method": "dummy"}
+{"sequence": 24, "event": "method_started", "elapsed_s": 0.9519875419791788, "fold": 1, "method": "ols"}
+{"sequence": 25, "event": "method_completed", "elapsed_s": 0.952906500082463, "fold": 1, "method": "ols"}
+{"sequence": 26, "event": "method_started", "elapsed_s": 0.952926917001605, "fold": 1, "method": "kbest"}
+{"sequence": 27, "event": "method_completed", "elapsed_s": 0.9807848751079291, "fold": 1, "method": "kbest"}
+{"sequence": 28, "event": "method_started", "elapsed_s": 0.9808260421268642, "fold": 1, "method": "rfe"}
+{"sequence": 29, "event": "method_completed", "elapsed_s": 1.0146107501350343, "fold": 1, "method": "rfe"}
+{"sequence": 30, "event": "method_started", "elapsed_s": 1.0146395419724286, "fold": 1, "method": "sfs"}
+{"sequence": 31, "event": "method_completed", "elapsed_s": 1.8029936249367893, "fold": 1, "method": "sfs"}
+{"sequence": 32, "event": "method_started", "elapsed_s": 1.8030322089325637, "fold": 1, "method": "lasso_select"}
+{"sequence": 33, "event": "method_completed", "elapsed_s": 1.8079013749957085, "fold": 1, "method": "lasso_select"}
+{"sequence": 34, "event": "method_started", "elapsed_s": 1.8079121669288725, "fold": 1, "method": "elasticnet_select"}
+{"sequence": 35, "event": "method_completed", "elapsed_s": 1.8236343341413885, "fold": 1, "method": "elasticnet_select"}
+{"sequence": 36, "event": "method_started", "elapsed_s": 1.823651249986142, "fold": 1, "method": "ridge"}
+{"sequence": 37, "event": "method_completed", "elapsed_s": 1.8283306669909507, "fold": 1, "method": "ridge"}
+{"sequence": 38, "event": "method_started", "elapsed_s": 1.8283565000165254, "fold": 1, "method": "lasso_reg"}
+{"sequence": 39, "event": "method_completed", "elapsed_s": 1.8325232090428472, "fold": 1, "method": "lasso_reg"}
+{"sequence": 40, "event": "fold_completed", "elapsed_s": 1.8325400000903755, "fold": 1}
+{"sequence": 41, "event": "fold_started", "elapsed_s": 1.8325612500775605, "fold": 2}
+{"sequence": 42, "event": "method_started", "elapsed_s": 1.8325685421004891, "fold": 2, "method": "dummy"}
+{"sequence": 43, "event": "method_completed", "elapsed_s": 1.8325897499453276, "fold": 2, "method": "dummy"}
+{"sequence": 44, "event": "method_started", "elapsed_s": 1.8325955420732498, "fold": 2, "method": "ols"}
+{"sequence": 45, "event": "method_completed", "elapsed_s": 1.833462541922927, "fold": 2, "method": "ols"}
+{"sequence": 46, "event": "method_started", "elapsed_s": 1.8334755420219153, "fold": 2, "method": "kbest"}
+{"sequence": 47, "event": "method_completed", "elapsed_s": 1.8601516671478748, "fold": 2, "method": "kbest"}
+{"sequence": 48, "event": "method_started", "elapsed_s": 1.8601691669318825, "fold": 2, "method": "rfe"}
+{"sequence": 49, "event": "method_completed", "elapsed_s": 1.8931032090913504, "fold": 2, "method": "rfe"}
+{"sequence": 50, "event": "method_started", "elapsed_s": 1.8931228341534734, "fold": 2, "method": "sfs"}
+{"sequence": 51, "event": "method_completed", "elapsed_s": 2.678255292121321, "fold": 2, "method": "sfs"}
+{"sequence": 52, "event": "method_started", "elapsed_s": 2.6782919170800596, "fold": 2, "method": "lasso_select"}
+{"sequence": 53, "event": "method_completed", "elapsed_s": 2.6831712920684367, "fold": 2, "method": "lasso_select"}
+{"sequence": 54, "event": "method_started", "elapsed_s": 2.683181375032291, "fold": 2, "method": "elasticnet_select"}
+{"sequence": 55, "event": "method_completed", "elapsed_s": 2.6989791251253337, "fold": 2, "method": "elasticnet_select"}
+{"sequence": 56, "event": "method_started", "elapsed_s": 2.698989500058815, "fold": 2, "method": "ridge"}
+{"sequence": 57, "event": "method_completed", "elapsed_s": 2.703662334010005, "fold": 2, "method": "ridge"}
+{"sequence": 58, "event": "method_started", "elapsed_s": 2.703672874951735, "fold": 2, "method": "lasso_reg"}
+{"sequence": 59, "event": "method_completed", "elapsed_s": 2.7077198340557516, "fold": 2, "method": "lasso_reg"}
+{"sequence": 60, "event": "fold_completed", "elapsed_s": 2.7077296250499785, "fold": 2}
+{"sequence": 61, "event": "fold_started", "elapsed_s": 2.707749041961506, "fold": 3}
+{"sequence": 62, "event": "method_started", "elapsed_s": 2.7077553749550134, "fold": 3, "method": "dummy"}
+{"sequence": 63, "event": "method_completed", "elapsed_s": 2.707775417016819, "fold": 3, "method": "dummy"}
+{"sequence": 64, "event": "method_started", "elapsed_s": 2.707780583994463, "fold": 3, "method": "ols"}
+{"sequence": 65, "event": "method_completed", "elapsed_s": 2.708625625120476, "fold": 3, "method": "ols"}
+{"sequence": 66, "event": "method_started", "elapsed_s": 2.708644791971892, "fold": 3, "method": "kbest"}
+{"sequence": 67, "event": "method_completed", "elapsed_s": 2.735505917109549, "fold": 3, "method": "kbest"}
+{"sequence": 68, "event": "method_started", "elapsed_s": 2.7355266669765115, "fold": 3, "method": "rfe"}
+{"sequence": 69, "event": "method_completed", "elapsed_s": 2.7688234590459615, "fold": 3, "method": "rfe"}
+{"sequence": 70, "event": "method_started", "elapsed_s": 2.7688403751235455, "fold": 3, "method": "sfs"}
+{"sequence": 71, "event": "method_completed", "elapsed_s": 3.5534395419526845, "fold": 3, "method": "sfs"}
+{"sequence": 72, "event": "method_started", "elapsed_s": 3.5534762090537697, "fold": 3, "method": "lasso_select"}
+{"sequence": 73, "event": "method_completed", "elapsed_s": 3.5582960839383304, "fold": 3, "method": "lasso_select"}
+{"sequence": 74, "event": "method_started", "elapsed_s": 3.5583057089243084, "fold": 3, "method": "elasticnet_select"}
+{"sequence": 75, "event": "method_completed", "elapsed_s": 3.5739489591214806, "fold": 3, "method": "elasticnet_select"}
+{"sequence": 76, "event": "method_started", "elapsed_s": 3.5739719590637833, "fold": 3, "method": "ridge"}
+{"sequence": 77, "event": "method_completed", "elapsed_s": 3.578704917104915, "fold": 3, "method": "ridge"}
+{"sequence": 78, "event": "method_started", "elapsed_s": 3.578716542106122, "fold": 3, "method": "lasso_reg"}
+{"sequence": 79, "event": "method_completed", "elapsed_s": 3.582691584015265, "fold": 3, "method": "lasso_reg"}
+{"sequence": 80, "event": "fold_completed", "elapsed_s": 3.582701792009175, "fold": 3}
+{"sequence": 81, "event": "fold_started", "elapsed_s": 3.582721959101036, "fold": 4}
+{"sequence": 82, "event": "method_started", "elapsed_s": 3.5827283749822527, "fold": 4, "method": "dummy"}
+{"sequence": 83, "event": "method_completed", "elapsed_s": 3.582748959073797, "fold": 4, "method": "dummy"}
+{"sequence": 84, "event": "method_started", "elapsed_s": 3.582754250150174, "fold": 4, "method": "ols"}
+{"sequence": 85, "event": "method_completed", "elapsed_s": 3.583622584119439, "fold": 4, "method": "ols"}
+{"sequence": 86, "event": "method_started", "elapsed_s": 3.5836412920616567, "fold": 4, "method": "kbest"}
+{"sequence": 87, "event": "method_completed", "elapsed_s": 3.6104441250208765, "fold": 4, "method": "kbest"}
+{"sequence": 88, "event": "method_started", "elapsed_s": 3.6104572501499206, "fold": 4, "method": "rfe"}
+{"sequence": 89, "event": "method_completed", "elapsed_s": 3.643536499934271, "fold": 4, "method": "rfe"}
+{"sequence": 90, "event": "method_started", "elapsed_s": 3.6435533750336617, "fold": 4, "method": "sfs"}
+{"sequence": 91, "event": "method_completed", "elapsed_s": 4.432090874994174, "fold": 4, "method": "sfs"}
+{"sequence": 92, "event": "method_started", "elapsed_s": 4.432130417088047, "fold": 4, "method": "lasso_select"}
+{"sequence": 93, "event": "method_completed", "elapsed_s": 4.436947250040248, "fold": 4, "method": "lasso_select"}
+{"sequence": 94, "event": "method_started", "elapsed_s": 4.436961584025994, "fold": 4, "method": "elasticnet_select"}
+{"sequence": 95, "event": "method_completed", "elapsed_s": 4.452406208962202, "fold": 4, "method": "elasticnet_select"}
+{"sequence": 96, "event": "method_started", "elapsed_s": 4.452416874933988, "fold": 4, "method": "ridge"}
+{"sequence": 97, "event": "method_completed", "elapsed_s": 4.457142542116344, "fold": 4, "method": "ridge"}
+{"sequence": 98, "event": "method_started", "elapsed_s": 4.457155999960378, "fold": 4, "method": "lasso_reg"}
+{"sequence": 99, "event": "method_completed", "elapsed_s": 4.460988417034969, "fold": 4, "method": "lasso_reg"}
+{"sequence": 100, "event": "fold_completed", "elapsed_s": 4.4609982499387115, "fold": 4}
+{"sequence": 101, "event": "cv_completed", "elapsed_s": 4.461013959022239}
+{"sequence": 102, "event": "refit_completed", "elapsed_s": 4.523474584100768, "method": "dummy", "candidate_id": "dummy", "selected_count": 0}
+{"sequence": 103, "event": "refit_completed", "elapsed_s": 4.525255209067836, "method": "ols", "candidate_id": "ols", "selected_count": 41}
+{"sequence": 104, "event": "refit_completed", "elapsed_s": 4.526644625002518, "method": "kbest", "candidate_id": "kbest:k=2", "selected_count": 2}
+{"sequence": 105, "event": "refit_completed", "elapsed_s": 4.544036166975275, "method": "rfe", "candidate_id": "rfe:k=2", "selected_count": 2}
+{"sequence": 106, "event": "refit_completed", "elapsed_s": 4.545032292138785, "method": "sfs", "candidate_id": "sfs:k=1", "selected_count": 1}
+{"sequence": 107, "event": "refit_completed", "elapsed_s": 4.546578709036112, "method": "lasso_select", "candidate_id": "lasso_select:alpha=0.1", "selected_count": 2}
+{"sequence": 108, "event": "refit_completed", "elapsed_s": 4.54805316706188, "method": "elasticnet_select", "candidate_id": "elasticnet_select:alpha=0.1,l1_ratio=0.8", "selected_count": 2}
+{"sequence": 109, "event": "refit_completed", "elapsed_s": 4.550135417142883, "method": "ridge", "candidate_id": "ridge:alpha=1.0", "selected_count": 41}
+{"sequence": 110, "event": "refit_completed", "elapsed_s": 4.552036292152479, "method": "lasso_reg", "candidate_id": "lasso_reg:alpha=0.01", "selected_count": 41}
+{"sequence": 111, "event": "finished", "elapsed_s": 4.552084791939706, "status": "completed", "completed_methods": ["dummy", "ols", "kbest", "rfe", "sfs", "lasso_select", "elasticnet_select", "ridge", "lasso_reg"]}

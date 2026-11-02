@@ -1,0 +1,8 @@
+{
+  "saved_results_validated": 4,
+  "negative_fixtures_rejected": [
+    "string RMSE",
+    "NaN RMSE"
+  ],
+  "scope": "core result protocol; field dependencies and model dimensions checked by verify_stage3.py"
+}

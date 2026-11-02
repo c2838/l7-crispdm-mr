@@ -1,0 +1,276 @@
+{
+  "status": "computed",
+  "training_rows": 193280,
+  "design_columns_including_intercept": 7,
+  "response_scale": "natural log target",
+  "development_ols_r2": 0.5419646500732556,
+  "development_ols_adjusted_r2": 0.5419504307456746,
+  "development_residual_df": 193273.0,
+  "residual_std": 0.7633813127669437,
+  "normality": {
+    "test": "Jarque-Bera on all development residuals",
+    "statistic": 1389.901024401584,
+    "p_value": 1.5375433007783563e-302,
+    "p_display": "1.538e-302",
+    "skewness": 0.20752058587755776,
+    "excess_kurtosis": -0.018150383725080044,
+    "interpretation": "Large-sample p-values are sensitive; use residual shape and effects, not a pass/fail label."
+  },
+  "heteroskedasticity": {
+    "status": "computed",
+    "test": "Koenker/studentized Breusch-Pagan",
+    "lm_statistic": 3918.2331262512325,
+    "p_value": 0.0,
+    "p_display": "< floating-point resolution",
+    "f_statistic": 666.5272540776889,
+    "f_p_value": 0.0,
+    "corr_abs_residual_fitted": -0.09613404807249797
+  },
+  "functional_form": {
+    "status": "computed",
+    "test": "Quadratic fitted-value RESET-style test with HC3 covariance",
+    "f_statistic": 116842.09321662095,
+    "p_value": 0.0,
+    "p_display": "< floating-point resolution",
+    "diagnostic_only": true,
+    "frozen_model_replaced": false
+  },
+  "vif": [
+    {
+      "key": "n:\"MWG\"",
+      "label": "MWG",
+      "vif": 1.1752760316265694,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"NWG\"",
+      "label": "NWG",
+      "vif": 1.1758255108153155,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"MDIMC\"",
+      "label": "MDIMC",
+      "vif": 1.0964895653845739,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"NDIMC\"",
+      "label": "NDIMC",
+      "vif": 1.0970325617458874,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"VWM\"",
+      "label": "VWM",
+      "vif": 1.1837330931315415,
+      "status": "finite"
+    },
+    {
+      "key": "n:\"VWN\"",
+      "label": "VWN",
+      "vif": 1.1843686560869575,
+      "status": "finite"
+    }
+  ],
+  "condition_number_standardized_design": 1.5767139475440863,
+  "influence": {
+    "status": "available",
+    "cook_heuristic": 2.0695364238410596e-05,
+    "leverage_heuristic": 7.243377483443709e-05,
+    "cook_flagged_rows": 10069,
+    "leverage_flagged_rows": 7524,
+    "max_cooks_distance": 0.00030791633320783024,
+    "max_leverage": 0.00011175398465509121,
+    "top_rows": [
+      {
+        "development_position": 25489,
+        "source_row_index_0_based": 31888,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.00030791633320783024,
+        "studentized_internal": 4.753982044753745,
+        "residual": 3.628928011330326
+      },
+      {
+        "development_position": 25478,
+        "source_row_index_0_based": 31872,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.000305673319856782,
+        "studentized_internal": 4.736635229771051,
+        "residual": 3.615686408352979
+      },
+      {
+        "development_position": 25483,
+        "source_row_index_0_based": 31880,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.00030566167802422274,
+        "studentized_internal": 4.736545029489066,
+        "residual": 3.6156175544265565
+      },
+      {
+        "development_position": 25494,
+        "source_row_index_0_based": 31894,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.00028922079841138293,
+        "studentized_internal": 4.607400172921783,
+        "residual": 3.517035485099341
+      },
+      {
+        "development_position": 25497,
+        "source_row_index_0_based": 31898,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.00028922079841138293,
+        "studentized_internal": 4.607400172921783,
+        "residual": 3.517035485099341
+      },
+      {
+        "development_position": 25482,
+        "source_row_index_0_based": 31878,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.0002892132994966812,
+        "studentized_internal": 4.607340442215965,
+        "residual": 3.516989889968893
+      },
+      {
+        "development_position": 25491,
+        "source_row_index_0_based": 31890,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.00028920580033727384,
+        "studentized_internal": 4.607280708786595,
+        "residual": 3.516944292759435
+      },
+      {
+        "development_position": 25484,
+        "source_row_index_0_based": 31882,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.0002891858013823786,
+        "studentized_internal": 4.607121406324565,
+        "residual": 3.516822690035384
+      },
+      {
+        "development_position": 25487,
+        "source_row_index_0_based": 31886,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.00028918080137169984,
+        "studentized_internal": 4.6070815776820595,
+        "residual": 3.516792287043727
+      },
+      {
+        "development_position": 25480,
+        "source_row_index_0_based": 31874,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.0002891758012522286,
+        "studentized_internal": 4.607041747828608,
+        "residual": 3.5167618831277005
+      },
+      {
+        "development_position": 25490,
+        "source_row_index_0_based": 31889,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.000285547141274003,
+        "studentized_internal": 4.578045263320576,
+        "residual": 3.4946275641776694
+      },
+      {
+        "development_position": 25486,
+        "source_row_index_0_based": 31885,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.00028554206130956817,
+        "studentized_internal": 4.578004540779195,
+        "residual": 3.494596478832853
+      },
+      {
+        "development_position": 25493,
+        "source_row_index_0_based": 31893,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.0002855395212850781,
+        "studentized_internal": 4.577984179033791,
+        "residual": 3.4945809357980755
+      },
+      {
+        "development_position": 25481,
+        "source_row_index_0_based": 31877,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.0002855395212850781,
+        "studentized_internal": 4.577984179033791,
+        "residual": 3.4945809357980755
+      },
+      {
+        "development_position": 25479,
+        "source_row_index_0_based": 31873,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.0002855344411515493,
+        "studentized_internal": 4.577943454593509,
+        "residual": 3.494549849003743
+      },
+      {
+        "development_position": 25496,
+        "source_row_index_0_based": 31897,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.0002855344411515493,
+        "studentized_internal": 4.577943454593509,
+        "residual": 3.494549849003743
+      },
+      {
+        "development_position": 25499,
+        "source_row_index_0_based": 31901,
+        "leverage": 9.536176379013308e-05,
+        "cooks_distance": 0.0002855344411515493,
+        "studentized_internal": 4.577943454593509,
+        "residual": 3.494549849003743
+      },
+      {
+        "development_position": 69438,
+        "source_row_index_0_based": 86885,
+        "leverage": 8.709971665975812e-05,
+        "cooks_distance": 0.00028118676807107186,
+        "studentized_internal": 4.753562130336245,
+        "residual": 3.62862246305735
+      },
+      {
+        "development_position": 69412,
+        "source_row_index_0_based": 86853,
+        "leverage": 8.709971665975812e-05,
+        "cooks_distance": 0.0002811206935966026,
+        "studentized_internal": 4.753003591299284,
+        "residual": 3.6281961033631998
+      },
+      {
+        "development_position": 69435,
+        "source_row_index_0_based": 86881,
+        "leverage": 8.709971665975812e-05,
+        "cooks_distance": 0.0002810752555543119,
+        "studentized_internal": 4.752619457525776,
+        "residual": 3.627902875589763
+      }
+    ],
+    "interpretation": "Heuristics locate potentially influential training observations; none are automatically deleted."
+  },
+  "sensitivity": {
+    "status": "diagnostic_only",
+    "deleted_training_position_for_sensitivity": 25489,
+    "coefficients_after_one_row_deletion": [
+      4.62200718292737,
+      0.5650314209198473,
+      0.443796214800424,
+      -0.42960367243583486,
+      -0.41326874626942023,
+      -0.016676046401474413,
+      -0.04232280980754866
+    ],
+    "max_absolute_coefficient_change": 5.844610246846054e-05,
+    "development_fitted_change_rms": 8.06145527997321e-05,
+    "development_fitted_change_max_abs": 0.00034609397996024604,
+    "response_scale": "log target",
+    "production_model_changed": false,
+    "test_rows_deleted": 0,
+    "source_row_index_0_based": 31888
+  },
+  "independence": {
+    "status": "not_established",
+    "reason": "No temporal ordering or sufficient independent clusters established. Random row order is not a time series; no mechanical Durbin-Watson test.",
+    "source_limit": "Student data come from only two schools; GPU data come from one benchmark hardware/workload. HC3 does not establish independence."
+  },
+  "post_selection_caveat": "Intervals condition on selected columns and fitted preprocessing; feature-selection uncertainty not corrected.",
+  "hc3_caveat": "coefficient and location CI only; not a robust observation PI"
+}

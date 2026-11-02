@@ -1,0 +1,1971 @@
+{
+  "status": "passed_frozen_holdout_evaluation_with_assumption_limits",
+  "recorded_at": "2026-11-01T19:19:14+08:00",
+  "checks": [
+    {
+      "name": "fixed-model evaluation completed",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual evaluation manifest"
+    },
+    {
+      "name": "selection freeze unchanged",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "SHA-256 before and after first held-out evaluation"
+    },
+    {
+      "name": "all 36 frozen model bytes unchanged",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "compare every model against Stage 3 freeze"
+    },
+    {
+      "name": "all four Stage 3 selection results unchanged",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "compare selection-result hashes; no test-driven tuning"
+    },
+    {
+      "name": "33 executed unit tests match current numerical source",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual unittest command and source fingerprints"
+    },
+    {
+      "name": "sgemm exact held-out row count and disjointness",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "fixed split CSV, no row removal"
+    },
+    {
+      "name": "sgemm representative remains CV-frozen",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "unchanged representative identity, irrespective of test ranking"
+    },
+    {
+      "name": "sgemm/dummy full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm/dummy frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm/dummy independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm/dummy display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm/dummy regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "sgemm/ols full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm/ols frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm/ols independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm/ols display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm/ols full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm/ols no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm/ols independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "sgemm/ols independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "sgemm/ols single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "sgemm/kbest full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm/kbest frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm/kbest independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm/kbest display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm/kbest full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm/kbest no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm/kbest independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "sgemm/kbest independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "sgemm/kbest single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "sgemm/kbest one-row influence sensitivity independently refit",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "one training-row deletion refit for diagnostic validation only; no held-out deletion"
+    },
+    {
+      "name": "sgemm/rfe full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm/rfe frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm/rfe independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm/rfe display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm/rfe full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm/rfe no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm/sfs full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm/sfs frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm/sfs independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm/sfs display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm/sfs full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm/sfs no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm/lasso_select full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm/lasso_select frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm/lasso_select independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm/lasso_select display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm/lasso_select full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm/lasso_select no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm/elasticnet_select full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm/elasticnet_select frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm/elasticnet_select independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm/elasticnet_select display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm/elasticnet_select full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm/elasticnet_select no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm/ridge full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm/ridge frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm/ridge independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm/ridge display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm/ridge regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "sgemm/lasso_reg full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm/lasso_reg frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm/lasso_reg independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm/lasso_reg display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm/lasso_reg regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "sgemm_log exact held-out row count and disjointness",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "fixed split CSV, no row removal"
+    },
+    {
+      "name": "sgemm_log representative remains CV-frozen",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "unchanged representative identity, irrespective of test ranking"
+    },
+    {
+      "name": "sgemm_log/dummy full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm_log/dummy frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm_log/dummy independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm_log/dummy display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm_log/dummy regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "sgemm_log/ols full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm_log/ols frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm_log/ols independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm_log/ols display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm_log/ols full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm_log/ols no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm_log/ols independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "sgemm_log/ols independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "sgemm_log/ols single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "sgemm_log/ols correct log location label",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no smearing or arithmetic-mean claim"
+    },
+    {
+      "name": "sgemm_log/kbest full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm_log/kbest frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm_log/kbest independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm_log/kbest display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm_log/kbest full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm_log/kbest no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm_log/kbest independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "sgemm_log/kbest independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "sgemm_log/kbest single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "sgemm_log/kbest correct log location label",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no smearing or arithmetic-mean claim"
+    },
+    {
+      "name": "sgemm_log/rfe full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm_log/rfe frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm_log/rfe independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm_log/rfe display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm_log/rfe full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm_log/rfe no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm_log/rfe independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "sgemm_log/rfe independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "sgemm_log/rfe single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "sgemm_log/rfe correct log location label",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no smearing or arithmetic-mean claim"
+    },
+    {
+      "name": "sgemm_log/sfs full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm_log/sfs frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm_log/sfs independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm_log/sfs display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm_log/sfs full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm_log/sfs no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm_log/sfs independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "sgemm_log/sfs independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "sgemm_log/sfs single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "sgemm_log/sfs one-row influence sensitivity independently refit",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "one training-row deletion refit for diagnostic validation only; no held-out deletion"
+    },
+    {
+      "name": "sgemm_log/sfs correct log location label",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no smearing or arithmetic-mean claim"
+    },
+    {
+      "name": "sgemm_log/lasso_select full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm_log/lasso_select frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm_log/lasso_select independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm_log/lasso_select display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm_log/lasso_select full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm_log/lasso_select no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm_log/lasso_select independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "sgemm_log/lasso_select independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "sgemm_log/lasso_select single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "sgemm_log/lasso_select correct log location label",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no smearing or arithmetic-mean claim"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "sgemm_log/elasticnet_select correct log location label",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no smearing or arithmetic-mean claim"
+    },
+    {
+      "name": "sgemm_log/ridge full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm_log/ridge frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm_log/ridge independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm_log/ridge display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm_log/ridge regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "sgemm_log/lasso_reg full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "sgemm_log/lasso_reg frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "sgemm_log/lasso_reg independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "sgemm_log/lasso_reg display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "sgemm_log/lasso_reg regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "student exact held-out row count and disjointness",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "fixed split CSV, no row removal"
+    },
+    {
+      "name": "student representative remains CV-frozen",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "unchanged representative identity, irrespective of test ranking"
+    },
+    {
+      "name": "student/dummy full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student/dummy frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student/dummy independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student/dummy display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student/dummy regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "student/ols full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student/ols frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student/ols independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student/ols display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student/ols full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student/ols no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student/ols independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "student/ols independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "student/ols single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "student/kbest full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student/kbest frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student/kbest independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student/kbest display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student/kbest full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student/kbest no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student/kbest independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "student/kbest independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "student/kbest single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "student/rfe full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student/rfe frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student/rfe independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student/rfe display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student/rfe full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student/rfe no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student/sfs full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student/sfs frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student/sfs independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student/sfs display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student/sfs full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student/sfs no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student/sfs independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "student/sfs independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "student/sfs single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "student/lasso_select full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student/lasso_select frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student/lasso_select independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student/lasso_select display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student/lasso_select full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student/lasso_select no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student/elasticnet_select full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student/elasticnet_select frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student/elasticnet_select independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student/elasticnet_select display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student/elasticnet_select full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student/elasticnet_select no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student/elasticnet_select one-row influence sensitivity independently refit",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "one training-row deletion refit for diagnostic validation only; no held-out deletion"
+    },
+    {
+      "name": "student/ridge full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student/ridge frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student/ridge independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student/ridge display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student/ridge regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "student/lasso_reg full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student/lasso_reg frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student/lasso_reg independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student/lasso_reg display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student/lasso_reg regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "student_background exact held-out row count and disjointness",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "fixed split CSV, no row removal"
+    },
+    {
+      "name": "student_background representative remains CV-frozen",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "unchanged representative identity, irrespective of test ranking"
+    },
+    {
+      "name": "student_background/dummy full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student_background/dummy frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student_background/dummy independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student_background/dummy display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student_background/dummy regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "student_background/ols full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student_background/ols frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student_background/ols independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student_background/ols display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student_background/ols full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student_background/ols no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student_background/ols independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "student_background/ols independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "student_background/ols single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "student_background/kbest full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student_background/kbest frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student_background/kbest independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student_background/kbest display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student_background/kbest full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student_background/kbest no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student_background/kbest independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "student_background/kbest independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "student_background/kbest single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "student_background/kbest one-row influence sensitivity independently refit",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "one training-row deletion refit for diagnostic validation only; no held-out deletion"
+    },
+    {
+      "name": "student_background/rfe full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student_background/rfe frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student_background/rfe independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student_background/rfe display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student_background/rfe full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student_background/rfe no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student_background/rfe independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "student_background/rfe independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "student_background/rfe single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "student_background/sfs full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student_background/sfs frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student_background/sfs independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student_background/sfs display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student_background/sfs full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student_background/sfs no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student_background/lasso_select full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student_background/lasso_select frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student_background/lasso_select independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student_background/lasso_select display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student_background/lasso_select full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student_background/lasso_select no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student_background/lasso_select independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "student_background/lasso_select independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "student_background/lasso_select single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "student_background/elasticnet_select full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student_background/elasticnet_select frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student_background/elasticnet_select independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student_background/elasticnet_select display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student_background/elasticnet_select full PI coverage and width",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "all rows, no visual subsampling in metrics"
+    },
+    {
+      "name": "student_background/elasticnet_select no fake mean-CI coverage",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "individual outcomes are not the true conditional means"
+    },
+    {
+      "name": "student_background/elasticnet_select independent covariance and residual variance",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least squares, inverse(XtX), explicit HC3 sandwich; no statsmodels covariance reuse"
+    },
+    {
+      "name": "student_background/elasticnet_select independent full-test CI/PI endpoints",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Student-t closed-form mean and observation variance; exp only for log models"
+    },
+    {
+      "name": "student_background/elasticnet_select single versus batch intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay three individual rows against vectorized interval calculation"
+    },
+    {
+      "name": "student_background/ridge full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student_background/ridge frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student_background/ridge independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student_background/ridge display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student_background/ridge regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "student_background/lasso_reg full prediction table integrity",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "gzip CSV checksum, every held-out source row and actual target"
+    },
+    {
+      "name": "student_background/lasso_reg frozen JSON replay",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "full test batch, no model fitting"
+    },
+    {
+      "name": "student_background/lasso_reg independent sklearn metrics",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent MAE/MSE/RMSE/R2 on all held-out rows"
+    },
+    {
+      "name": "student_background/lasso_reg display thinning does not remove scored rows",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "plot metadata versus complete prediction table"
+    },
+    {
+      "name": "student_background/lasso_reg regularized/baseline intervals not fabricated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "OLS classical PI not automatically assigned to different estimator families"
+    },
+    {
+      "name": "all 24 OLS model cards have calculated intervals",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "six OLS-family winners per four scenarios"
+    },
+    {
+      "name": "all four representative influence sensitivities validated",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "one actual deletion refit for every frozen representative"
+    },
+    {
+      "name": "approved raw and prepared data unchanged",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "Stage 1 source SHA-256 manifest"
+    },
+    {
+      "name": "13 actual PNG files present",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "saved figures, separate visual review required"
+    }
+  ],
+  "passed_checks": 279,
+  "models_scored": 36,
+  "ols_models_with_intervals": 24,
+  "unique_covariance_specifications_verified": 16,
+  "unit_tests": 33,
+  "scope": "full heldout metrics plus independent covariance/CI/PI and frozen-model integrity",
+  "limitations": [
+    "Heteroskedasticity/non-normality/functional-form limitations are observed, not fixed by passing software checks.",
+    "95% is nominal; heldout coverage is descriptive and does not validate all OLS assumptions.",
+    "No test-driven selection, clipping, tuning or test-row removal performed.",
+    "No website, public API, Vercel execution or deployment tested."
+  ]
+}

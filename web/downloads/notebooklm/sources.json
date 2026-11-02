@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-11-02T23:06:35.872728+08:00",
+  "status": "user_outputs_received_and_reviewed",
+  "sources": [
+    {
+      "id": "A1",
+      "topic": "GPU",
+      "title": "SGEMM GPU kernel performance",
+      "author": "Enrique Paredes; Rafael Ballester-Ripoll",
+      "url": "https://archive.ics.uci.edu/dataset/440/sgemm+gpu+kernel+performance",
+      "locator": "Dataset Information / Variable Information / License",
+      "verified": "Official page read; data definition and CC BY 4.0 verified.",
+      "role": "primary dataset definition"
+    },
+    {
+      "id": "A2",
+      "topic": "GPU",
+      "title": "Sobol Tensor Trains for Global Sensitivity Analysis",
+      "author": "Rafael Ballester-Ripoll; Enrique G. Paredes; Renato Pajarola (2017)",
+      "url": "https://arxiv.org/abs/1712.00233",
+      "pdf_url": "https://arxiv.org/pdf/1712.00233",
+      "locator": "Section 8.3, PDF pages 12-14; Table 6-9; Figure 8",
+      "verified": "16-page original PDF obtained and section 8.3 inspected.",
+      "role": "primary related research; different sample/timing protocol from the assignment data",
+      "caution": "Paper GEMM experiment uses 12080 settings, 25 repeated runs and 70/15/15 split; our UCI/Kaggle data contain 241600 settings and four runs, fixed 80/20. Do not transfer paper scores or claim identical experiment."
+    },
+    {
+      "id": "A3",
+      "topic": "GPU",
+      "title": "GPU runtime - Kaggle mirror",
+      "author": "Kaggle / rupals",
+      "url": "https://www.kaggle.com/datasets/rupals/gpu-runtime",
+      "locator": "Version 4; stage1 local manifest",
+      "verified": "Source version and byte match to UCI established in stage1; not re-downloaded this stage.",
+      "role": "assignment source; use UCI for original data semantics"
+    },
+    {
+      "id": "B1",
+      "topic": "Student",
+      "title": "Student Performance",
+      "author": "Paulo Cortez (2008)",
+      "url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+      "locator": "Dataset Information / Additional Variable Information / Introductory Paper",
+      "verified": "Official page read; G1/G2/G3 timing and CC BY 4.0 verified.",
+      "role": "primary dataset definition"
+    },
+    {
+      "id": "B2",
+      "topic": "Student",
+      "title": "Explainable AI in education: integrating educational domain knowledge into the deep learning model for improved student performance prediction",
+      "author": "Ming Qiang; Ziyang Liu; Ru Zhang (2026)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13004980/",
+      "doi": "10.1038/s41598-026-40538-y",
+      "locator": "Abstract / Methodology / dataset and evaluation / Discussion / limitations",
+      "verified": "Public full-text opened; abstract, dataset and method sections inspected.",
+      "role": "primary related research, ANN / SHAP / SPPE",
+      "caution": "395 mathematics records and 30 features, different from our 649 Portuguese records with G1/G2. Compare methods and information availability, never transfer performance claims."
+    },
+    {
+      "id": "B3",
+      "topic": "Student",
+      "title": "Using Data Mining to Predict Secondary School Student Performance",
+      "author": "Paulo Cortez; Alice Maria Goncalves Silva (2008)",
+      "url": "https://www3.dsi.uminho.pt/pcortez/student.pdf",
+      "alternative_url": "https://repositorium.sdum.uminho.pt/bitstream/1822/8024/1/student.pdf",
+      "locator": "Original study linked by UCI",
+      "verified": "Bibliography verified via UCI; original PDF fetch timed out / university link unavailable. Full-text NOT obtained.",
+      "role": "optional original paper if NotebookLM/user can read it; not a required functioning source in this pack"
+    },
+    {
+      "id": "B4",
+      "topic": "Student",
+      "title": "Student Alcohol Consumption - Kaggle mirror",
+      "author": "Kaggle / UCI ML",
+      "url": "https://www.kaggle.com/datasets/uciml/student-alcohol-consumption",
+      "locator": "Version 2; student-por.csv; stage1 manifest",
+      "verified": "Parsed values match UCI established in stage1; not re-downloaded this stage.",
+      "role": "assignment source; distinguish student-por from student-mat"
+    },
+    {
+      "id": "M1",
+      "topic": "Common",
+      "title": "Linear Models",
+      "author": "scikit-learn developers",
+      "url": "https://scikit-learn.org/stable/modules/linear_model.html",
+      "locator": "OLS / Ridge / Lasso / Elastic-Net",
+      "verified": "Official documentation opened.",
+      "role": "method definition"
+    },
+    {
+      "id": "M2",
+      "topic": "Common",
+      "title": "Feature selection",
+      "author": "scikit-learn developers",
+      "url": "https://scikit-learn.org/stable/modules/feature_selection.html",
+      "locator": "Univariate / RFE / L1-based selection / sequential selection",
+      "verified": "Official documentation opened in this conversation.",
+      "role": "method definition; nonzero selection is distinct from fixed-k coefficient ranking"
+    },
+    {
+      "id": "M3",
+      "topic": "Common",
+      "title": "Common pitfalls and recommended practices",
+      "author": "scikit-learn developers",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "locator": "Data leakage / preprocessing / feature selection",
+      "verified": "Official documentation opened.",
+      "role": "training-only design and leakage control"
+    },
+    {
+      "id": "M4",
+      "topic": "Common",
+      "title": "OLSResults.get_prediction",
+      "author": "statsmodels developers",
+      "url": "https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.OLSResults.get_prediction.html",
+      "locator": "mean and observation intervals",
+      "verified": "Official get_prediction documentation opened this stage; documents mean/observation prediction results. Project runtime remains pinned statsmodels 0.14.6.",
+      "role": "distinguish mean-response CI from observation PI"
+    }
+  ],
+  "user_status": "Two user-provided pasted NotebookLM answers received; corrected summaries integrated. Internal citation-click targets not supplied.",
+  "review": "review.json",
+  "summaries": "REVIEWED_SUMMARIES.md"
+}

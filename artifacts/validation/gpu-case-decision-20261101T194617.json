@@ -1,0 +1,42 @@
+{
+  "status": "documented_user_decision",
+  "decision": "D25",
+  "recorded_at": "20261101T194617",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "before_sha256": "8a14088729a6d5b7beb4bfc9820f12c49a72210bb6fbf25a68be682b96aba4dd",
+      "after_sha256": "95ba7acd7b66f47de3d62e31ff978deeb9d32fee2d1252cedcae24a1664b401b"
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "8c447c9c73912d94e83ff1e7636be3dd9988c92995b59a4902cd533595cbcb19",
+      "after_sha256": "93c967d9ba7d962b8f1a01d7f27ef7cdb90701d29dc844c6875a1bbb54ac8786"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "before_sha256": "e16b583a390fd34270b90481ace3c4e4c26586ce49a94f8b1b9adbaf308da8bb",
+      "after_sha256": "722c02ade8df23f6dd36ba64cf0843ae1921ce2916a75fcf09a3bcf8af1ec153"
+    },
+    {
+      "path": "docs/PLAN.md",
+      "before_sha256": "655a4e9307161653808887212c1157dcce79e8761ccc98b3161cd097096d0ff7",
+      "after_sha256": "042a164208307a9b5a819a66eac7e593e70f39ba1e8f227eefd86ff1b1f25736"
+    },
+    {
+      "path": "docs/STAGE4_RESULTS.md",
+      "before_sha256": "c7638c5b75a422e3e613e5de777823f6669f0300f19d95b8f59260e5dc1b5279",
+      "after_sha256": "98684ee6037271e8b7df64cc9912763084fe5f962ea81bba95a32c38abffc38e"
+    },
+    {
+      "path": "docs/STAGE5_PROPOSAL.md",
+      "before_sha256": "0e70c0e44125b8d62284bfac02b7e89f602a3d9d92a9615909f2213dae13ce2c",
+      "after_sha256": "9dfbe887ce0d644c486820be42f1c3ec300f525c8921731e91254e5c7da003de"
+    }
+  ],
+  "backup": "artifacts/history/gpu-case-decision-20261101T194617",
+  "verification": "Read back all six documents; exact content matches prepared changes; selection freeze unchanged.",
+  "analysis_or_model_code_changed": false,
+  "stage5_started": false,
+  "note": "Stage4 completion document hashes are the historical completion snapshot; this receipt records subsequent authorized wording updates."
+}

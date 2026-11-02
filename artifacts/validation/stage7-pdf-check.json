@@ -1,0 +1,1564 @@
+{
+  "status": "automated_passed_pending_visual_review",
+  "checks": [
+    {
+      "name": "HW2_conversation_snapshot.pdf readable and unencrypted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 1 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 360,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 1 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 2 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 482,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 2 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 3 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1771,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 3 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 4 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1594,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 4 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 5 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 970,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 5 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 6 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1419,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 6 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 7 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1057,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 7 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 8 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 879,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 8 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 9 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1301,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 9 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 10 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1254,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 10 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 11 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1066,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 11 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 12 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1086,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 12 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 13 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 292,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 13 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 14 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1154,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 14 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 15 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1053,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 15 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 16 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 984,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 16 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 17 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1318,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 17 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 18 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 784,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 18 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 19 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1581,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 19 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 20 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1094,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 20 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 21 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1669,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 21 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 22 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1407,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 22 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 23 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 192,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 23 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 24 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1435,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 24 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 25 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1529,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 25 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 26 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 2107,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 26 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 27 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 941,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 27 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 28 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1327,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 28 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 29 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1113,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 29 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 30 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1388,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 30 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 31 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 944,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 31 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 32 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1299,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 32 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 33 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 900,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 33 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 34 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1414,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 34 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 35 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 240,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 35 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 36 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1046,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 36 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 37 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1152,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 37 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 38 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1317,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 38 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 39 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1512,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 39 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 40 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1297,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 40 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 41 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 479,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 41 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 42 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1293,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 42 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 43 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1193,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 43 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 44 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1142,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 44 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 45 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1363,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 45 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 46 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 312,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 46 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 47 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1372,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 47 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 48 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 937,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 48 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 49 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1291,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 49 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 50 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 925,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 50 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 51 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1395,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 51 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 52 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1309,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 52 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 53 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 216,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf page 53 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf complete render",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic.pdf readable and unencrypted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic.pdf page 1 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1186,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic.pdf page 1 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic.pdf complete render",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf readable and unencrypted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 1 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 669,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 1 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 2 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 597,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 2 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 3 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 613,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 3 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 4 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 568,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 4 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 5 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 603,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 5 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 6 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 885,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 6 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 7 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 483,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 7 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 8 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 524,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 8 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 9 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 806,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 9 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 10 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 470,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 10 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 11 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 513,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 11 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 12 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 666,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 12 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 13 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 581,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 13 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 14 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 605,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 14 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 15 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 784,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 15 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 16 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1079,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 16 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 17 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1134,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 17 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 18 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1763,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 18 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 19 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 1336,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 19 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 20 text within page",
+      "passed": true,
+      "detail": {
+        "characters": 617,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf page 20 has expected text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "L7_CRISPDM_MR_report_draft.pdf complete render",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 0.409873",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 0.928986",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 285.227",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 0.840",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 1111.408",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 5.312",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains NotebookLM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 未公開部署",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 193280",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 48320",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 4623",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "report retains 1252",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bibliography contains actual clickable links",
+      "passed": true,
+      "detail": [
+        "https://archive.ics.uci.edu/dataset/440/sgemm+gpu+kernel+performance",
+        "https://arxiv.org/abs/1712.00233",
+        "https://archive.ics.uci.edu/dataset/320/student+performance",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13004980/",
+        "https://www3.dsi.uminho.pt/pcortez/student.pdf",
+        "https://scikit-learn.org/stable/modules/linear_model.html",
+        "https://scikit-learn.org/stable/modules/feature_selection.html",
+        "https://scikit-learn.org/stable/common_pitfalls.html",
+        "https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.OLSResults.get_prediction.html"
+      ]
+    },
+    {
+      "name": "HW2_conversation_snapshot.pdf each public message retained after declared automatic-context removal",
+      "passed": true,
+      "detail": {
+        "messages": 122,
+        "missing_ids": []
+      }
+    }
+  ],
+  "passed_checks": 168,
+  "pages_rendered": 74,
+  "renders": [
+    {
+      "pdf": "reports/output/pdf/HW2_conversation_snapshot.pdf",
+      "rendered_pages": 53,
+      "contact_sheets": [
+        "artifacts/validation/stage7-pdf-pages/HW2_conversation_snapshot-contact-1.jpg",
+        "artifacts/validation/stage7-pdf-pages/HW2_conversation_snapshot-contact-2.jpg",
+        "artifacts/validation/stage7-pdf-pages/HW2_conversation_snapshot-contact-3.jpg",
+        "artifacts/validation/stage7-pdf-pages/HW2_conversation_snapshot-contact-4.jpg",
+        "artifacts/validation/stage7-pdf-pages/HW2_conversation_snapshot-contact-5.jpg"
+      ],
+      "png_dir": "reports/tmp/pdfs/HW2_conversation_snapshot-a63a1eaa50"
+    },
+    {
+      "pdf": "reports/output/pdf/L7_CRISPDM_MR_infographic.pdf",
+      "rendered_pages": 1,
+      "contact_sheets": [
+        "artifacts/validation/stage7-pdf-pages/L7_CRISPDM_MR_infographic-contact-1.jpg"
+      ],
+      "png_dir": "reports/tmp/pdfs/L7_CRISPDM_MR_infographic-31a9266964"
+    },
+    {
+      "pdf": "reports/output/pdf/L7_CRISPDM_MR_report_draft.pdf",
+      "rendered_pages": 20,
+      "contact_sheets": [
+        "artifacts/validation/stage7-pdf-pages/L7_CRISPDM_MR_report_draft-contact-1.jpg",
+        "artifacts/validation/stage7-pdf-pages/L7_CRISPDM_MR_report_draft-contact-2.jpg"
+      ],
+      "png_dir": "reports/tmp/pdfs/L7_CRISPDM_MR_report_draft-284ff5cd55"
+    }
+  ],
+  "page_bounds": [
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 1,
+      "characters": 360,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 2,
+      "characters": 482,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 3,
+      "characters": 1771,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 4,
+      "characters": 1594,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 5,
+      "characters": 970,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 6,
+      "characters": 1419,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 7,
+      "characters": 1057,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 8,
+      "characters": 879,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 9,
+      "characters": 1301,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 10,
+      "characters": 1254,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 11,
+      "characters": 1066,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 12,
+      "characters": 1086,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 13,
+      "characters": 292,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 14,
+      "characters": 1154,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 15,
+      "characters": 1053,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 16,
+      "characters": 984,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 17,
+      "characters": 1318,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 18,
+      "characters": 784,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 19,
+      "characters": 1581,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 20,
+      "characters": 1094,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 21,
+      "characters": 1669,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 22,
+      "characters": 1407,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 23,
+      "characters": 192,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 24,
+      "characters": 1435,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 25,
+      "characters": 1529,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 26,
+      "characters": 2107,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 27,
+      "characters": 941,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 28,
+      "characters": 1327,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 29,
+      "characters": 1113,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 30,
+      "characters": 1388,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 31,
+      "characters": 944,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 32,
+      "characters": 1299,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 33,
+      "characters": 900,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 34,
+      "characters": 1414,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 35,
+      "characters": 240,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 36,
+      "characters": 1046,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 37,
+      "characters": 1152,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 38,
+      "characters": 1317,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 39,
+      "characters": 1512,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 40,
+      "characters": 1297,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 41,
+      "characters": 479,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 42,
+      "characters": 1293,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 43,
+      "characters": 1193,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 44,
+      "characters": 1142,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 45,
+      "characters": 1363,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 46,
+      "characters": 312,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 47,
+      "characters": 1372,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 48,
+      "characters": 937,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 49,
+      "characters": 1291,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 50,
+      "characters": 925,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 51,
+      "characters": 1395,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 52,
+      "characters": 1309,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "HW2_conversation_snapshot.pdf",
+      "page": 53,
+      "characters": 216,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_infographic.pdf",
+      "page": 1,
+      "characters": 1186,
+      "lowest_text_bottom": 1109.70440945
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 1,
+      "characters": 669,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 2,
+      "characters": 597,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 3,
+      "characters": 613,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 4,
+      "characters": 568,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 5,
+      "characters": 603,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 6,
+      "characters": 885,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 7,
+      "characters": 483,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 8,
+      "characters": 524,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 9,
+      "characters": 806,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 10,
+      "characters": 470,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 11,
+      "characters": 513,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 12,
+      "characters": 666,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 13,
+      "characters": 581,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 14,
+      "characters": 605,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 15,
+      "characters": 784,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 16,
+      "characters": 1079,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 17,
+      "characters": 1134,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 18,
+      "characters": 1763,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 19,
+      "characters": 1336,
+      "lowest_text_bottom": 818.61147938
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft.pdf",
+      "page": 20,
+      "characters": 617,
+      "lowest_text_bottom": 818.61147938
+    }
+  ],
+  "method": "Actual Poppler rendering of every page; pdfplumber text bounds; PDF parse; literal message text replay; report frozen value checks and clickable links. Contact sheets and selected full pages require visual review.",
+  "limitations": [
+    "Text bounds cannot detect all raster-chart clipping; visual review is separate.",
+    "Research summaries integrated; report remains draft awaiting public deployment and final submission refresh."
+  ]
+}

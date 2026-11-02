@@ -1,0 +1,119 @@
+{
+  "status": "stage7_local_research_and_deliverables_complete_pending_stage8",
+  "recorded_at": "2026-11-02T01:25:12.306951+08:00",
+  "authorization": "User: 可以，那我們可以進入下階段了; then 尚未研究，請先準備資料包",
+  "completed_local": [
+    "Verified research pack and prompts; actual NotebookLM output still pending",
+    "19-page analysis draft, one-page A3 infographic and 53-page HW2 conversation snapshot; Lecture6 excluded by user",
+    "73 remaining PDF pages retain prior actual renders and visual review; 166 applicable automated checks plus 17 appendix checks",
+    "Eight active localhost download files byte-verified; retired Lecture6 URL404; three PDF links confirmed in actual browser",
+    "Full-width formal coefficient and predictor layout retained"
+  ],
+  "pending_required_input": "Actual NotebookLM answers, 200-300 Chinese-character summary per topic and citation locations; no result supplied yet.",
+  "next_action": "Stage8 remains unapproved. Final transcript refresh and public-deployment verification remain later work.",
+  "notebooklm_output_fabricated": false,
+  "stage8_started": false,
+  "external_writes_performed": false,
+  "artifacts": [
+    {
+      "path": "reports/output/pdf/HW2_conversation_snapshot.pdf",
+      "pages": 53,
+      "bytes": 543813,
+      "sha256": "a63a1eaa5072bc9d1756aef1ddb83c8fa079eb8c1aa65ff29c6ba7769f05fce6",
+      "text_characters": 60809
+    },
+    {
+      "path": "reports/output/pdf/L7_CRISPDM_MR_infographic.pdf",
+      "pages": 1,
+      "bytes": 127161,
+      "sha256": "31a92669643a57cb8abb3793c16fe343e001b802cca8b313cef28fae1972a15f",
+      "text_characters": 1239
+    },
+    {
+      "path": "reports/output/pdf/L7_CRISPDM_MR_report_draft.pdf",
+      "pages": 20,
+      "bytes": 1621848,
+      "sha256": "284ff5cd55c759b2541a3ed7955896a280c6bc7ab976994dee7762dd93fdeddd",
+      "text_characters": 15966
+    }
+  ],
+  "formal_frozen_analysis_files_unchanged": 188,
+  "public_data_exports_unchanged": 493,
+  "shared_analysis_code_unchanged": true,
+  "prior_font_sizes_preserved": true,
+  "freeze_sha256": "3a4fec9047f6e08b4eace272bd2f43d7fb4be1fb8356525549340561f15425f3",
+  "preview": {
+    "origin": "http://127.0.0.1:8768/",
+    "owned_session": 94852,
+    "status": "Running for user review of stage7 integrated research.",
+    "future_cleanup": "Stop owned preview after user review/teardown; other pre-existing previews untouched."
+  },
+  "file_sha256": {
+    "AGENTS.md": "e35e6c793d476904bb7801c10a58990df880b61da354a2f6bd15dcc0ba349ec5",
+    "README.md": "ea1283c7c79251d667e2d4b8e30dc50e879586a2392c503fb3d1d9f1d8380c38",
+    "artifacts/validation/predictor-layout.json": "cc0b62535933cab3965a3c7bcfc50ceca5322a8cdd85510cde4765f630b6f69e",
+    "artifacts/validation/stage7-appendix.json": "90e14c1ebe98ccefe91819d2bca21eadb0fbedace1c14ae01e07744f07806e01",
+    "artifacts/validation/stage7-pdf-build.json": "2423ed9f9dfe091b343061fdd298ad92c1cfbda4fd0d6feab51c36dfee59e837",
+    "artifacts/validation/stage7-pdf-check.json": "2550814fc5974d85987bf037d0efc2f0c883f9cb621e6a23513583c9e5d940ed",
+    "artifacts/validation/stage7-transcript-source.json": "ac424f2e7a385d70895e11ec55d0eb78f77b8056dbb63b3d3b4c9f759438221a",
+    "artifacts/validation/stage7-visual.json": "63097245f97aeb8566346f64e69534f4789d6431e01fb555578ab84e5112bead",
+    "artifacts/validation/stage7-web-browser.json": "05f6aada5f6ea171bfaa265b65283701f6a7456885410357ccc0b815125727b4",
+    "artifacts/validation/stage7-web-http.json": "8d37f8a73aedcb2424b430c169378d9925f97ff4215ae7ba77b82a6abae2c313",
+    "artifacts/validation/stage7-web.json": "6f33313aa33c79652929a34b2d783e519005e8e8e657e449269b3f7925c4f711",
+    "docs/DECISIONS.md": "d4795a585c943b84f98adb00e46bad08c5d7047bc457f28fba9868977fb2a52e",
+    "docs/NOTEBOOKLM_RESEARCH.md": "8e7dfeb043c583c950d40707ff8f0160b482e35f7ccf896881aa75580b3a746f",
+    "docs/PLAN.md": "1fc4ad2c49acd2d5a8b146c8fdcbcd8478fd6b8223209bcfb9ac0caeddeaa14d",
+    "docs/REQUIREMENTS.md": "035251cceb2f189482c6579fe461a29a1cad0f3cc44841b46db52d87b7ce143e",
+    "docs/STAGE7_PROPOSAL.md": "298bb439ebb6f26a798ca6a176b97e1064eb6ebb07c2cb396773a5c1b4556af2",
+    "docs/STAGE7_RESULTS.md": "dc0648706b8207c199da85fc973e8bce765e9e0ae23a81efbb4c86af5db100d6",
+    "docs/STAGE8_PROPOSAL.md": "34d5982a7d03e4954172529d45bddd928822298cb721d7cb85e27dee0f8bd2d9",
+    "docs/notebooklm/A_GPU_PROMPT.txt": "096cf6c335eb18fd64ac5b2e11ae3578687603405b58502c6cab7f702bba5e4a",
+    "docs/notebooklm/B_STUDENT_PROMPT.txt": "2884723596f1f313fe1cbff8cd031030a77aa9124591ad64612594e026013042",
+    "docs/notebooklm/RETURN_TEMPLATE.md": "701d755e6f5df3b374f9f5f76250968eead5653e749b367015ced9b9924b4e8e",
+    "docs/notebooklm/START_HERE.md": "97953409d8b096cdbfb8787fe60ed5d5a8360f760f3ea1783b478253b698fe39",
+    "docs/notebooklm/research/sobol-tensor-trains-1712.00233.pdf": "d1afa203dfad8c3958aed0226aa196fca5deb141509c95644a50f2357b6c7dd3",
+    "docs/notebooklm/sources.json": "b8dd0021bcc7c78a72fefa0b346699757bf3c34ed626c772fcae7c4c92155234",
+    "reports/source/build_deliverables.py": "75c525856bae4020bf3c37be8264b9f5dd21dbd7bde492dd47525f14d2c43f10",
+    "reports/source/check_pdf.py": "2a4e66bbe9cea14dec41196532325252621c53ce0afa62c221e1aa36f60f1a02",
+    "reports/source/report-data.json": "fd21eded3044ceb73e26bf62fc1f70ecf92d5dc535990e50327ad1bf8cfea5c5",
+    "reports/source/report-draft.md": "71b1c0d4a63868beb38e82ad08cc9f5795bd52aea98f5aede40d09655044be71",
+    "web/downloads/HW2_conversation_snapshot.pdf": "a63a1eaa5072bc9d1756aef1ddb83c8fa079eb8c1aa65ff29c6ba7769f05fce6",
+    "web/downloads/L7_CRISPDM_MR_infographic.pdf": "31a92669643a57cb8abb3793c16fe343e001b802cca8b313cef28fae1972a15f",
+    "web/downloads/L7_CRISPDM_MR_report_draft.pdf": "284ff5cd55c759b2541a3ed7955896a280c6bc7ab976994dee7762dd93fdeddd",
+    "web/downloads/notebooklm/A_GPU_PROMPT.txt": "096cf6c335eb18fd64ac5b2e11ae3578687603405b58502c6cab7f702bba5e4a",
+    "web/downloads/notebooklm/B_STUDENT_PROMPT.txt": "2884723596f1f313fe1cbff8cd031030a77aa9124591ad64612594e026013042",
+    "web/downloads/notebooklm/RETURN_TEMPLATE.md": "701d755e6f5df3b374f9f5f76250968eead5653e749b367015ced9b9924b4e8e",
+    "web/downloads/notebooklm/START_HERE.md": "97953409d8b096cdbfb8787fe60ed5d5a8360f760f3ea1783b478253b698fe39",
+    "web/downloads/notebooklm/sources.json": "b8dd0021bcc7c78a72fefa0b346699757bf3c34ed626c772fcae7c4c92155234",
+    "web/index.html": "85e28b40af45a26b1718c56232437e9155ae7cf29b65fd1cfb7b50cffab7492f",
+    "web/style.css": "f3aaa67ba913ae0665914bea3cb6443e4388a4ef0ed0f0010d9262bcadb3540b",
+    "artifacts/validation/lecture6-removal.json": "565987059847a8525459f56be71aaa156fc84a56217edd44e7855806e389930e",
+    "artifacts/validation/lecture6-removal-browser.json": "478c9bba57521b3e26750be21494bd57dcecfb98ec551835d52b069796c8cc62",
+    "docs/notebooklm/REVIEWED_SUMMARIES.md": "bfbec777e6d182329924f92cfaa4e4d94de9d501e907c8a98f15c872386b464e",
+    "docs/notebooklm/review.json": "69ee5a139d9902de54d65c0543291af454cba3a6b426a4018ddac19fda1dc095",
+    "docs/notebooklm/received/gpu-original.txt": "806ae123a024227fd842b4db7ee3c9172246f03e865f34faa6afed87b4ec229d",
+    "docs/notebooklm/received/student-original.txt": "95eac000907319f6f491c1484ddcf0877da0cedea0254fd1102624623ffb4d9e",
+    "artifacts/validation/notebooklm-integration.json": "06a745e9f9e9634a4db4d65ffb28318463dbfbe4e75e6a1d93eec1f9813fda60",
+    "artifacts/validation/notebooklm-browser.json": "62a0edded58dd5dc13b16e4e1610bc6f4e1b79847dbec260ffece1f6df09aeb1",
+    "web/downloads/notebooklm/REVIEWED_SUMMARIES.md": "bfbec777e6d182329924f92cfaa4e4d94de9d501e907c8a98f15c872386b464e"
+  },
+  "limitations": [
+    "NotebookLM internal numbered citation targets cannot be authenticated from pasted text alone; named sources and retained content were independently checked.",
+    "Original 2008 B3 full text unavailable and not used.",
+    "Formal model selection/test frozen; no retraining.",
+    "Public deployment and final transcript refresh pending.",
+    "Native Save dialog not exercised; actual localhost response bytes checked."
+  ],
+  "scope_update": "User excluded Lecture6 transcript; archived reversibly. Canonical builder and checker now include HW2 only.",
+  "updated_at": "2026-11-02T23:11:46.817369+08:00",
+  "completed": [
+    "User-provided NotebookLM outputs preserved and independently reviewed;12 corrections documented.",
+    "Two summaries188/200 Chinese characters, adoption decisions, source locators integrated in website/report.",
+    "20-page report and1-page infographic regenerated;53-page HW2 snapshot retained.",
+    "74 pages rendered;168 automated PDF checks plus17 appendix rows and integration verification passed.",
+    "9 downloads checked over actual localhost HTTP; retiredLecture6 returns404; desktop390/320 responsive checks passed."
+  ],
+  "awaiting_user": [
+    "Review local research summaries and approve next stage8 proposal when ready."
+  ]
+}

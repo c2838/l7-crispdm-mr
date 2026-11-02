@@ -1,0 +1,4479 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "02798982ac2865a1c62ffa2c7b8b302a50b3c08a796dade61f8801c5d4704690",
+  "data_sha256": "c6075ca5a7551243b31193bad9228f0a1b9468cdde2475c6586c56dcfac5630d",
+  "request_method": "baseline",
+  "options": {
+    "target": "Profit",
+    "exclude": [],
+    "categorical": [],
+    "group": null,
+    "target_transform": "identity",
+    "seed": 0
+  },
+  "source": {
+    "sha256": "c6075ca5a7551243b31193bad9228f0a1b9468cdde2475c6586c56dcfac5630d",
+    "bytes": 2436,
+    "delimiter": ",",
+    "encoding": "UTF-8",
+    "rows": 50,
+    "source_columns": 5
+  },
+  "split": {
+    "development_rows": 40,
+    "test_rows": 10,
+    "grouped": false,
+    "group_column": null,
+    "duplicate_input_rows": 0,
+    "effective_groups": null,
+    "training_test_groups_disjoint": null,
+    "development_source_rows_sha256": "538e726807bfce87e49343b9a2d2ca271c29ed4fd2b72ec28ae3440e5d625044",
+    "test_source_rows_sha256": "466689132fbff89553b3f8d67a926b83057ef088dbbfad5ed6a259c035404b93",
+    "seed": 0,
+    "policy": "PCG64(0), first ceil(20%) reserved",
+    "final_test_used_for_selection": false
+  },
+  "raw_input_fields": 4,
+  "scope": "One stateless method request; common development/test split; selection uses development CV only.",
+  "engine_status": "completed",
+  "status": "completed",
+  "warnings": [
+    "少於14個原始輸入：可用於教學／任意Dataset示範，不符合正式題目最低特徵數。"
+  ],
+  "cv_policy": {
+    "outer_folds": 5,
+    "inner_sfs_folds": 3,
+    "seed": 17,
+    "k_grid": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "alphas": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "l1_ratios": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "ridge_alphas": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0
+    ]
+  },
+  "cv_candidates": [
+    {
+      "id": "dummy",
+      "method": "dummy",
+      "parameters": {},
+      "status": "completed",
+      "cv": {
+        "mae": 34184.210609375,
+        "mse": 1773346724.785136,
+        "rmse": 42111.12352793661,
+        "r2": -0.11346291275558529,
+        "fold_rmse_std": 7805.656004179766
+      },
+      "mean_selected_count": 0.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 24708.14203125,
+            "mse": 889138354.1970707,
+            "rmse": 29818.423066907322,
+            "r2": -0.7406490895741911
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 35538.655625,
+            "mse": 2126643754.9632478,
+            "rmse": 46115.54786580387,
+            "r2": -0.33694523651510067
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 39277.884374999994,
+            "mse": 2136984285.9114246,
+            "rmse": 46227.527360993736,
+            "r2": -0.0030685816006295052
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 40042.266015625006,
+            "mse": 2327238458.597368,
+            "rmse": 48241.45995507773,
+            "r2": -2.019055732353611
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 31354.105,
+            "mse": 1386728770.256569,
+            "rmse": 37238.807315172824,
+            "r2": -0.02405585901841123
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ols",
+      "method": "ols",
+      "parameters": {},
+      "status": "completed",
+      "cv": {
+        "mae": 7786.789648367674,
+        "mse": 110979011.3800983,
+        "rmse": 10534.657629942147,
+        "r2": 0.9303176239936994,
+        "fold_rmse_std": 3322.7897886417513
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8865.6285073797,
+            "mse": 129841250.19993234,
+            "rmse": 11394.790485126628,
+            "r2": 0.7458122767026716
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 10505.206795288817,
+            "mse": 222201383.50619426,
+            "rmse": 14906.42088182788,
+            "r2": 0.8603098988571288
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7885.851698578451,
+            "mse": 105102474.64739403,
+            "rmse": 10251.949797350455,
+            "r2": 0.95066646448347
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5811.07098046574,
+            "mse": 50340107.63693364,
+            "rmse": 7095.076295356776,
+            "r2": 0.934695308094822
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5866.1902601256625,
+            "mse": 47409840.91003719,
+            "rmse": 6885.480441482438,
+            "r2": 0.9649893141323723
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ridge:alpha=0.0001",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 0.0001
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 7786.807111410506,
+        "mse": 110979378.1571502,
+        "rmse": 10534.675038042236,
+        "r2": 0.9303173936988345,
+        "fold_rmse_std": 3322.7852676448715
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8865.61732385398,
+            "mse": 129839635.52825394,
+            "rmse": 11394.719633595814,
+            "r2": 0.7458154377144238
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 10505.324533134171,
+            "mse": 222204664.7008753,
+            "rmse": 14906.530941197396,
+            "r2": 0.8603078360868183
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7885.795477799246,
+            "mse": 105100582.18980552,
+            "rmse": 10251.857499487862,
+            "r2": 0.9506673527748635
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5811.006128612276,
+            "mse": 50340020.966832824,
+            "rmse": 7095.070187590312,
+            "r2": 0.9346954205293101
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5866.292093652855,
+            "mse": 47411987.399983436,
+            "rmse": 6885.636310464229,
+            "r2": 0.9649877290166288
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ridge:alpha=0.001",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 0.001
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 7786.964228824819,
+        "mse": 110982683.30878513,
+        "rmse": 10534.831907001892,
+        "r2": 0.9303153184341865,
+        "fold_rmse_std": 3322.744733410575
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8865.516619282946,
+            "mse": 129825109.34949338,
+            "rmse": 11394.082207422123,
+            "r2": 0.7458438753357628
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 10506.383994471238,
+            "mse": 222234199.2124852,
+            "rmse": 14907.521565051824,
+            "r2": 0.8602892687905715
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7885.289608682465,
+            "mse": 105083554.87161683,
+            "rmse": 10251.027015456393,
+            "r2": 0.9506753451443051
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5810.422550111376,
+            "mse": 50339245.918787986,
+            "rmse": 7095.015568607865,
+            "r2": 0.9346964259755866
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5867.208371576069,
+            "mse": 47431307.191542245,
+            "rmse": 6887.039072892083,
+            "r2": 0.9649734619543415
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ridge:alpha=0.01",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 0.01
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 7788.530466206427,
+        "mse": 111016145.14496604,
+        "rmse": 10536.419939664802,
+        "r2": 0.9302943081528583,
+        "fold_rmse_std": 3322.354677615445
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8864.504351544076,
+            "mse": 129680426.73357388,
+            "rmse": 11387.731412953763,
+            "r2": 0.7461271177158588
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 10516.960891706396,
+            "mse": 222529914.62573642,
+            "rmse": 14917.436597007423,
+            "r2": 0.8601033630354644
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7880.2425726389165,
+            "mse": 104913756.02767044,
+            "rmse": 10242.741626521214,
+            "r2": 0.9507550461915601
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5804.595482119827,
+            "mse": 50331987.54881018,
+            "rmse": 7094.504038254554,
+            "r2": 0.9347058420383919
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5876.3490330229215,
+            "mse": 47624640.78903926,
+            "rmse": 6901.060845191792,
+            "r2": 0.9648306911346193
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ridge:alpha=0.1",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 0.1
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 7803.709336297177,
+        "mse": 111390491.43884368,
+        "rmse": 10554.16938649573,
+        "r2": 0.9300592606525954,
+        "fold_rmse_std": 3319.949680561876
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8853.868405928966,
+            "mse": 128289958.56675467,
+            "rmse": 11326.515729329769,
+            "r2": 0.7488492105569009
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 10620.989356684295,
+            "mse": 225522263.87842044,
+            "rmse": 15017.398705448972,
+            "r2": 0.8582221795650178
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7830.921359411491,
+            "mse": 103262345.10678016,
+            "rmse": 10161.80816128607,
+            "r2": 0.9515301938709221
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5747.183880538381,
+            "mse": 50307447.399498545,
+            "rmse": 7092.774309076706,
+            "r2": 0.9347376772283693
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5965.583678922752,
+            "mse": 49570442.24276456,
+            "rmse": 7040.6279721886,
+            "r2": 0.9633937775709054
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ridge:alpha=1.0",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 1.0
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 8087.4512495965155,
+        "mse": 118073829.58893745,
+        "rmse": 10866.178242093098,
+        "r2": 0.925862873640667,
+        "fold_rmse_std": 3411.136427282645
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8703.897975878052,
+            "mse": 118759288.74712598,
+            "rmse": 10897.673547465349,
+            "r2": 0.7675072199277259
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 11513.553364590678,
+            "mse": 257567182.90200463,
+            "rmse": 16048.899741166204,
+            "r2": 0.8380766795285843
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7438.208298880398,
+            "mse": 90681845.22250624,
+            "rmse": 9522.701571639544,
+            "r2": 0.9574352930604388
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5794.683117417966,
+            "mse": 53901497.34529511,
+            "rmse": 7341.763912391566,
+            "r2": 0.9300752254494647
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 6986.913491215483,
+            "mse": 69459333.7277553,
+            "rmse": 8334.226642451913,
+            "r2": 0.9487064527735567
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ridge:alpha=10.0",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 10.0
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 11423.063952733724,
+        "mse": 225619664.823672,
+        "rmse": 15020.641292024518,
+        "r2": 0.8583361473205737,
+        "fold_rmse_std": 5044.89426732438
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 9440.199396242522,
+            "mse": 116364241.44427133,
+            "rmse": 10787.225845613473,
+            "r2": 0.7721959580611357
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 15454.594367427195,
+            "mse": 522412733.7829304,
+            "rmse": 22856.349966320748,
+            "r2": 0.6715777081629779
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8644.135398185681,
+            "mse": 107194193.81112716,
+            "rmse": 10353.46288983194,
+            "r2": 0.9496846426757455
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 11626.192707302389,
+            "mse": 181936135.12513283,
+            "rmse": 13488.370365805235,
+            "r2": 0.763979780566688
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 11950.197894510837,
+            "mse": 200191019.95489833,
+            "rmse": 14148.887587188554,
+            "r2": 0.8521651880996487
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ridge:alpha=100.0",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 100.0
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 23729.18228080236,
+        "mse": 885431570.1521267,
+        "rmse": 29756.20221318787,
+        "r2": 0.44404824991751557,
+        "fold_rmse_std": 7012.96963683182
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 16152.26307210898,
+            "mse": 342916314.7689308,
+            "rmse": 18517.999750754152,
+            "r2": 0.3286793126344222
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 27066.260198521213,
+            "mse": 1343947841.523598,
+            "rmse": 36659.894183202414,
+            "r2": 0.15510782628434294
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 25845.922154147876,
+            "mse": 929125498.9542465,
+            "rmse": 30481.559982294977,
+            "r2": 0.5638823352566091
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 27254.828856100532,
+            "mse": 1114563582.0718017,
+            "rmse": 33385.080231621454,
+            "r2": -0.4458894657294801
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 22326.637123133194,
+            "mse": 696604613.4420563,
+            "rmse": 26393.26833573395,
+            "r2": 0.48557926314414834
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ridge:alpha=1000.0",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 1000.0
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 32603.28084322718,
+        "mse": 1617841911.1440241,
+        "rmse": 40222.40558624041,
+        "r2": -0.015823325231985708,
+        "fold_rmse_std": 7689.375957706201
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 23442.947302034154,
+            "mse": 783988382.7139827,
+            "rmse": 27999.79254769547,
+            "r2": -0.5347990086876542
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 34292.504372056515,
+            "mse": 1996430337.9396222,
+            "rmse": 44681.43169079995,
+            "r2": -0.2550846958327242
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 37313.943251193545,
+            "mse": 1928982594.5760722,
+            "rmse": 43920.18436409474,
+            "r2": 0.09456431297599055
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 37998.14381119312,
+            "mse": 2116390733.1959825,
+            "rmse": 46004.24690391076,
+            "r2": -1.7455293854186134
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 29968.86547965859,
+            "mse": 1263417507.2944608,
+            "rmse": 35544.58478157342,
+            "r2": 0.06700565497609778
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "ridge:alpha=10000.0",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 10000.0
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 34018.09783108405,
+        "mse": 1756605190.931303,
+        "rmse": 41911.87410425956,
+        "r2": -0.10295110658234874,
+        "fold_rmse_std": 7793.377915234793
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 24575.150672685908,
+            "mse": 877677160.0845846,
+            "rmse": 29625.616619482953,
+            "r2": -0.718211729850408
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 35407.7023862394,
+            "mse": 2112707716.2490625,
+            "rmse": 45964.20037647846,
+            "r2": -0.3281841449917382
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 39071.99942221468,
+            "mse": 2114676591.491179,
+            "rmse": 45985.61287501972,
+            "r2": 0.007402317763683164
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 39827.13824838404,
+            "mse": 2304558768.945617,
+            "rmse": 48005.82015699364,
+            "r2": -1.9896340601574636
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 31208.498425896214,
+            "mse": 1373405717.886072,
+            "rmse": 37059.48890481454,
+            "r2": -0.014217201212608055
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "lasso_reg:alpha=0.0001",
+      "method": "lasso_reg",
+      "parameters": {
+        "alpha": 0.0001
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 7782.6198363906105,
+        "mse": 110877961.17693028,
+        "rmse": 10529.860453820376,
+        "r2": 0.930381072191382,
+        "fold_rmse_std": 3326.0116607731666
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8865.478112827535,
+            "mse": 129734215.44421946,
+            "rmse": 11390.092863722379,
+            "r2": 0.7460218165894676
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 10506.503903201665,
+            "mse": 222285614.84689885,
+            "rmse": 14909.245951653586,
+            "r2": 0.8602569456112185
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7875.500441248017,
+            "mse": 104783401.4848376,
+            "rmse": 10236.376384484776,
+            "r2": 0.9508162326716136
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5808.8164301285,
+            "mse": 50305983.16910481,
+            "rmse": 7092.671088462005,
+            "r2": 0.9347395767299641
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5856.80029454734,
+            "mse": 47280590.93959075,
+            "rmse": 6876.088345825026,
+            "r2": 0.9650847611962485
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "lasso_reg:alpha=0.001",
+      "method": "lasso_reg",
+      "parameters": {
+        "alpha": 0.001
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 7746.54750112622,
+        "mse": 109983547.69656587,
+        "rmse": 10487.304119580296,
+        "r2": 0.930942663574012,
+        "fold_rmse_std": 3355.172100378121
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8864.123103272595,
+            "mse": 128785881.08972685,
+            "rmse": 11348.38671749103,
+            "r2": 0.7478783525525913
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 10525.415137932869,
+            "mse": 223038604.93938345,
+            "rmse": 14934.477056106902,
+            "r2": 0.8597835675407537
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7782.349664252915,
+            "mse": 101948471.85314439,
+            "rmse": 10096.953592700344,
+            "r2": 0.9521469063987662
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5788.537546281079,
+            "mse": 50008219.63878488,
+            "rmse": 7071.64900421287,
+            "r2": 0.9351258563094276
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5772.312053891643,
+            "mse": 46136560.96178979,
+            "rmse": 6792.389930045962,
+            "r2": 0.9659295915818207
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "lasso_reg:alpha=0.01",
+      "method": "lasso_reg",
+      "parameters": {
+        "alpha": 0.01
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 7566.792984958139,
+        "mse": 105988485.94887587,
+        "rmse": 10295.070954047664,
+        "r2": 0.9334511144189872,
+        "fold_rmse_std": 3627.4081020889193
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8811.45644134357,
+            "mse": 121053693.85772032,
+            "rmse": 11002.440359198514,
+            "r2": 0.7630155070823421
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 10754.583901683443,
+            "mse": 232124864.7498086,
+            "rmse": 15235.644546582485,
+            "r2": 0.8540713593991995
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7577.956985902415,
+            "mse": 91129701.27217843,
+            "rmse": 9546.187787393375,
+            "r2": 0.9572250761040169
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5606.115275901879,
+            "mse": 47410286.508062094,
+            "rmse": 6885.512799208356,
+            "r2": 0.9384960760140758
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5083.852319959386,
+            "mse": 38223883.356609985,
+            "rmse": 6182.546672416634,
+            "r2": 0.9717728567075661
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "lasso_reg:alpha=0.1",
+      "method": "lasso_reg",
+      "parameters": {
+        "alpha": 0.1
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 7454.070968151062,
+        "mse": 117129178.40270011,
+        "rmse": 10822.623452874082,
+        "r2": 0.926456008669855,
+        "fold_rmse_std": 4010.715789599202
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 6334.876840369277,
+            "mse": 61487383.25823146,
+            "rmse": 7841.389115343752,
+            "r2": 0.8796273300060363
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 11083.15042049298,
+            "mse": 285996351.32245266,
+            "rmse": 16911.426649530567,
+            "r2": 0.8202042732033132
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8909.776646310122,
+            "mse": 113536602.35093613,
+            "rmse": 10655.355571304795,
+            "r2": 0.9467076106124308
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 6282.8205654511,
+            "mse": 78831241.79037474,
+            "rmse": 8878.695951003996,
+            "r2": 0.8977346255444639
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 4659.730368131831,
+            "mse": 45794313.29150563,
+            "rmse": 6767.149569169107,
+            "r2": 0.9661823307904585
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "lasso_reg:alpha=1.0",
+      "method": "lasso_reg",
+      "parameters": {
+        "alpha": 1.0
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 34184.210609375,
+        "mse": 1773346724.785136,
+        "rmse": 42111.12352793661,
+        "r2": -0.11346291275558529,
+        "fold_rmse_std": 7805.656004179767
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 24708.14203125,
+            "mse": 889138354.1970707,
+            "rmse": 29818.423066907322,
+            "r2": -0.7406490895741911
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 35538.655625,
+            "mse": 2126643754.9632487,
+            "rmse": 46115.54786580388,
+            "r2": -0.3369452365151011
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 39277.884374999994,
+            "mse": 2136984285.9114246,
+            "rmse": 46227.527360993736,
+            "r2": -0.0030685816006295052
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 40042.266015625006,
+            "mse": 2327238458.597368,
+            "rmse": 48241.45995507773,
+            "r2": -2.019055732353611
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 31354.105,
+            "mse": 1386728770.256569,
+            "rmse": 37238.807315172824,
+            "r2": -0.02405585901841123
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "lasso_reg:alpha=10.0",
+      "method": "lasso_reg",
+      "parameters": {
+        "alpha": 10.0
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 34184.210609375,
+        "mse": 1773346724.785136,
+        "rmse": 42111.12352793661,
+        "r2": -0.11346291275558529,
+        "fold_rmse_std": 7805.656004179767
+      },
+      "mean_selected_count": 5.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 24708.14203125,
+            "mse": 889138354.1970707,
+            "rmse": 29818.423066907322,
+            "r2": -0.7406490895741911
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 35538.655625,
+            "mse": 2126643754.9632487,
+            "rmse": 46115.54786580388,
+            "r2": -0.3369452365151011
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 39277.884374999994,
+            "mse": 2136984285.9114246,
+            "rmse": 46227.527360993736,
+            "r2": -0.0030685816006295052
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 40042.266015625006,
+            "mse": 2327238458.597368,
+            "rmse": 48241.45995507773,
+            "r2": -2.019055732353611
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 31354.105,
+            "mse": 1386728770.256569,
+            "rmse": 37238.807315172824,
+            "r2": -0.02405585901841123
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    }
+  ],
+  "winner_ids": {
+    "dummy": "dummy",
+    "ols": "ols",
+    "ridge": "ridge:alpha=0.0001",
+    "lasso_reg": "lasso_reg:alpha=0.01"
+  },
+  "models": [
+    {
+      "candidate_id": "dummy",
+      "method": "dummy",
+      "parameters": {},
+      "artifact": {
+        "schema_version": "1.0",
+        "dataset_id": "custom-02798982ac2865a1",
+        "candidate_id": "dummy",
+        "method": "dummy",
+        "parameters": {},
+        "target": "Profit",
+        "target_transform": "identity",
+        "raw_input_fields": [
+          "R&D Spend",
+          "Administration",
+          "Marketing Spend",
+          "State"
+        ],
+        "selected_keys": [],
+        "selected_columns": [],
+        "selected_raw_fields": [],
+        "model": {
+          "coefficients": [],
+          "intercept": 107682.75375,
+          "design_rank": 1,
+          "design_columns": 1,
+          "inference_status": "baseline_only"
+        },
+        "preprocessor": {
+          "fields": [
+            {
+              "field": "R&D Spend",
+              "kind": "numeric",
+              "fill": 65828.5,
+              "all_missing_training": false
+            },
+            {
+              "field": "Administration",
+              "kind": "numeric",
+              "fill": 125736.70999999999,
+              "all_missing_training": false
+            },
+            {
+              "field": "Marketing Spend",
+              "kind": "numeric",
+              "fill": 201273.53000000003,
+              "all_missing_training": false
+            },
+            {
+              "field": "State",
+              "kind": "categorical",
+              "fill": "California",
+              "categories": [
+                "California",
+                "Florida",
+                "New York"
+              ],
+              "reference": "California",
+              "all_missing_training": false
+            }
+          ],
+          "all_columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "n:\"Marketing Spend\"",
+              "field": "Marketing Spend",
+              "category": null,
+              "label": "Marketing Spend"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "keep": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "n:\"Marketing Spend\"",
+              "field": "Marketing Spend",
+              "category": null,
+              "label": "Marketing Spend"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "center": [
+            69579.0315,
+            122351.531,
+            195226.25424999994,
+            0.25,
+            0.375
+          ],
+          "scale": [
+            45655.067761281636,
+            29326.353922813418,
+            122047.82518969814,
+            0.4330127018922193,
+            0.4841229182759271
+          ],
+          "fit_rows": 40,
+          "dropped_constant": [],
+          "categorical_overrides": [],
+          "unknown_policy": "all-zero dummy block, equivalent to training reference; count reported",
+          "scale_scope": "all active encoded columns, including numeric and binary dummies"
+        },
+        "fit_rows": 40,
+        "point_prediction_semantics": "identity",
+        "source_frame_values_sha256": "2143a5ef55b539573d6c5581374ccb2d5be744d6feec1ce4602fa6b23c0701f6"
+      },
+      "selected_count": 0,
+      "test_metrics": {
+        "n": 10,
+        "mae": 27628.173499999997,
+        "mse": 1683657453.4298913,
+        "rmse": 41032.39517052217,
+        "r2": -0.385772202764332
+      },
+      "cv": {
+        "mae": 34184.210609375,
+        "mse": 1773346724.785136,
+        "rmse": 42111.12352793661,
+        "r2": -0.11346291275558529,
+        "fold_rmse_std": 7805.656004179766
+      },
+      "inference": null,
+      "inference_status": "not_applicable_to_baseline_or_regularized_model",
+      "coefficient_intervals": [],
+      "diagnostics": null,
+      "diagnostic_plot": null,
+      "interval_summary": null,
+      "forms": [
+        {
+          "field": "R&D Spend",
+          "kind": "numeric",
+          "fill": 65828.5,
+          "all_missing_training": false,
+          "min": 0.0,
+          "max": 165349.2,
+          "allowed_values": null
+        },
+        {
+          "field": "Administration",
+          "kind": "numeric",
+          "fill": 125736.70999999999,
+          "all_missing_training": false,
+          "min": 51283.14,
+          "max": 182645.56,
+          "allowed_values": null
+        },
+        {
+          "field": "Marketing Spend",
+          "kind": "numeric",
+          "fill": 201273.53000000003,
+          "all_missing_training": false,
+          "min": 0.0,
+          "max": 471784.1,
+          "allowed_values": null
+        },
+        {
+          "field": "State",
+          "kind": "categorical",
+          "fill": "California",
+          "categories": [
+            "California",
+            "Florida",
+            "New York"
+          ],
+          "reference": "California",
+          "all_missing_training": false
+        }
+      ],
+      "defaults": {
+        "R&D Spend": 165349.2,
+        "Administration": 136897.8,
+        "Marketing Spend": 471784.1,
+        "State": "New York"
+      },
+      "test_transform_notes": {},
+      "heldout_plot": {
+        "total_test_rows": 10,
+        "display_rows": 10,
+        "display_rule": "even ranks sorted by prediction; full rows scored",
+        "rows": {
+          "source_row_index_0_based": [
+            2,
+            3,
+            4,
+            18,
+            20,
+            23,
+            24,
+            26,
+            34,
+            36
+          ],
+          "actual": [
+            191050.39,
+            182901.99,
+            166187.94,
+            124266.9,
+            118474.03,
+            108733.99,
+            108552.04,
+            105733.54,
+            96712.8,
+            90708.19
+          ],
+          "prediction": [
+            107682.75375,
+            107682.75375,
+            107682.75375,
+            107682.75375,
+            107682.75375,
+            107682.75375,
+            107682.75375,
+            107682.75375,
+            107682.75375,
+            107682.75375
+          ],
+          "residual": [
+            83367.63625000001,
+            75219.23624999999,
+            58505.18625,
+            16584.14624999999,
+            10791.276249999995,
+            1051.2362500000017,
+            869.2862499999901,
+            -1949.21375000001,
+            -10969.95375,
+            -16974.56375
+          ],
+          "prediction_rank": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "candidate_id": "ols",
+      "method": "ols",
+      "parameters": {},
+      "artifact": {
+        "schema_version": "1.0",
+        "dataset_id": "custom-02798982ac2865a1",
+        "candidate_id": "ols",
+        "method": "ols",
+        "parameters": {},
+        "target": "Profit",
+        "target_transform": "identity",
+        "raw_input_fields": [
+          "R&D Spend",
+          "Administration",
+          "Marketing Spend",
+          "State"
+        ],
+        "selected_keys": [
+          "n:\"R&D Spend\"",
+          "n:\"Administration\"",
+          "n:\"Marketing Spend\"",
+          "c:[\"State\",\"Florida\"]",
+          "c:[\"State\",\"New York\"]"
+        ],
+        "selected_columns": [
+          {
+            "key": "n:\"R&D Spend\"",
+            "field": "R&D Spend",
+            "category": null,
+            "label": "R&D Spend"
+          },
+          {
+            "key": "n:\"Administration\"",
+            "field": "Administration",
+            "category": null,
+            "label": "Administration"
+          },
+          {
+            "key": "n:\"Marketing Spend\"",
+            "field": "Marketing Spend",
+            "category": null,
+            "label": "Marketing Spend"
+          },
+          {
+            "key": "c:[\"State\",\"Florida\"]",
+            "field": "State",
+            "category": "Florida",
+            "label": "State = Florida"
+          },
+          {
+            "key": "c:[\"State\",\"New York\"]",
+            "field": "State",
+            "category": "New York",
+            "label": "State = New York"
+          }
+        ],
+        "selected_raw_fields": [
+          "Administration",
+          "Marketing Spend",
+          "R&D Spend",
+          "State"
+        ],
+        "model": {
+          "coefficients": [
+            38148.15945229961,
+            -1566.3121655169523,
+            1745.4905273541176,
+            344.3988583407834,
+            260.36865827889517
+          ],
+          "intercept": 107682.75374999999,
+          "design_rank": 6,
+          "design_columns": 6,
+          "inference_status": "eligible_pending_diagnostics",
+          "warning_categories": []
+        },
+        "preprocessor": {
+          "fields": [
+            {
+              "field": "R&D Spend",
+              "kind": "numeric",
+              "fill": 65828.5,
+              "all_missing_training": false
+            },
+            {
+              "field": "Administration",
+              "kind": "numeric",
+              "fill": 125736.70999999999,
+              "all_missing_training": false
+            },
+            {
+              "field": "Marketing Spend",
+              "kind": "numeric",
+              "fill": 201273.53000000003,
+              "all_missing_training": false
+            },
+            {
+              "field": "State",
+              "kind": "categorical",
+              "fill": "California",
+              "categories": [
+                "California",
+                "Florida",
+                "New York"
+              ],
+              "reference": "California",
+              "all_missing_training": false
+            }
+          ],
+          "all_columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "n:\"Marketing Spend\"",
+              "field": "Marketing Spend",
+              "category": null,
+              "label": "Marketing Spend"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "keep": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "n:\"Marketing Spend\"",
+              "field": "Marketing Spend",
+              "category": null,
+              "label": "Marketing Spend"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "center": [
+            69579.0315,
+            122351.531,
+            195226.25424999994,
+            0.25,
+            0.375
+          ],
+          "scale": [
+            45655.067761281636,
+            29326.353922813418,
+            122047.82518969814,
+            0.4330127018922193,
+            0.4841229182759271
+          ],
+          "fit_rows": 40,
+          "dropped_constant": [],
+          "categorical_overrides": [],
+          "unknown_policy": "all-zero dummy block, equivalent to training reference; count reported",
+          "scale_scope": "all active encoded columns, including numeric and binary dummies"
+        },
+        "fit_rows": 40,
+        "point_prediction_semantics": "identity",
+        "source_frame_values_sha256": "2143a5ef55b539573d6c5581374ccb2d5be744d6feec1ce4602fa6b23c0701f6"
+      },
+      "selected_count": 5,
+      "test_metrics": {
+        "n": 10,
+        "mae": 7147.687577810733,
+        "mse": 70398015.6784042,
+        "rmse": 8390.352536002536,
+        "r2": 0.9420573270066527
+      },
+      "cv": {
+        "mae": 7786.789648367674,
+        "mse": 110979011.3800983,
+        "rmse": 10534.657629942147,
+        "r2": 0.9303176239936994,
+        "fold_rmse_std": 3322.7897886417513
+      },
+      "inference": {
+        "schema_version": "1.0",
+        "status": "computed_under_conditional_OLS_assumptions",
+        "model_equation_sha256": "9d172c1548a0d4e677c1c69b9361216f8b998d63ccf62780ea3579b8a1c086a8",
+        "alpha": 0.05,
+        "coefficients_with_intercept": [
+          107682.75375,
+          38148.1594522996,
+          -1566.312165516937,
+          1745.4905273541372,
+          344.3988583407936,
+          260.36865827889045
+        ],
+        "covariance_classical": [
+          [
+            2420044.5948893297,
+            2.728770311582446e-10,
+            8.396216343330603e-11,
+            -2.0990540858326507e-10,
+            8.396216343330603e-11,
+            1.2594324514995904e-10
+          ],
+          [
+            2.728770311582446e-10,
+            6436747.870409129,
+            -2298055.276159246,
+            -4498658.104038295,
+            591348.0932851577,
+            170831.1825872157
+          ],
+          [
+            8.396216343330603e-11,
+            -2298055.276159246,
+            3270153.395835565,
+            1520842.8487598207,
+            -474752.683390672,
+            -233624.06724045836
+          ],
+          [
+            -2.0990540858326507e-10,
+            -4498658.104038295,
+            1520842.8487598207,
+            5635309.287560341,
+            -862334.1777476569,
+            -359063.45096390083
+          ],
+          [
+            8.396216343330603e-11,
+            591348.0932851577,
+            -474752.683390672,
+            -862334.1777476569,
+            3192136.7774390457,
+            1432361.5043827088
+          ],
+          [
+            1.2594324514995904e-10,
+            170831.1825872157,
+            -233624.06724045836,
+            -359063.45096390083,
+            1432361.5043827088,
+            3066012.822314672
+          ]
+        ],
+        "covariance_hc3": [
+          [
+            2822678.3484032117,
+            -822440.2531827065,
+            -446711.29072118015,
+            -874857.8816483286,
+            -252832.00415949372,
+            78333.32716713169
+          ],
+          [
+            -822440.2531827065,
+            6780249.116713919,
+            -2867351.884888605,
+            -2949675.3773353854,
+            2946395.0395224295,
+            2234724.367669651
+          ],
+          [
+            -446711.2907211804,
+            -2867351.884888605,
+            4001213.318097683,
+            2436886.4326938447,
+            -1277124.9234726115,
+            -2354455.3543158094
+          ],
+          [
+            -874857.8816483286,
+            -2949675.3773353854,
+            2436886.4326938447,
+            4045431.214860501,
+            -1585721.4413845257,
+            -2001231.7547704694
+          ],
+          [
+            -252832.00415949413,
+            2946395.0395224295,
+            -1277124.9234726112,
+            -1585721.4413845257,
+            3309755.9882260617,
+            2197500.1859306223
+          ],
+          [
+            78333.3271671317,
+            2234724.3676696513,
+            -2354455.3543158094,
+            -2001231.7547704694,
+            2197500.1859306223,
+            4254103.5951348785
+          ]
+        ],
+        "mse_resid": 96801783.79557317,
+        "df_resid": 34.0,
+        "training_rows": 40,
+        "design_columns_including_intercept": 6,
+        "design_rank": 6,
+        "target_transform": "identity",
+        "location_kind": "conditional_arithmetic_mean",
+        "observation_kind": "new observation of the user-selected target under a homoskedastic Gaussian regression error model",
+        "HC3_scope": "coefficient and location CI only; not a robust observation PI",
+        "selection_conditioning": "Intervals condition on selected columns and fitted preprocessing; feature-selection uncertainty not corrected.",
+        "critical_value_95": 2.0322445093177186
+      },
+      "inference_status": "available",
+      "coefficient_intervals": [
+        {
+          "column": "Intercept",
+          "basis": "standardized_encoded",
+          "covariance": "classical",
+          "coefficient": 107682.75375,
+          "standard_error": 1555.6492518846687,
+          "ci_lower": 104521.29409943317,
+          "ci_upper": 110844.21340056683,
+          "p_value": 3.543421868293283e-38,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "R&D Spend",
+          "basis": "standardized_encoded",
+          "covariance": "classical",
+          "coefficient": 38148.1594522996,
+          "standard_error": 2537.074667882112,
+          "ci_lower": 32992.203388767106,
+          "ci_upper": 43304.1155158321,
+          "p_value": 1.3793725533376592e-16,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Administration",
+          "basis": "standardized_encoded",
+          "covariance": "classical",
+          "coefficient": -1566.312165516937,
+          "standard_error": 1808.356545550563,
+          "ci_lower": -5241.334826100825,
+          "ci_upper": 2108.7104950669514,
+          "p_value": 0.39247792333840026,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Marketing Spend",
+          "basis": "standardized_encoded",
+          "covariance": "classical",
+          "coefficient": 1745.4905273541372,
+          "standard_error": 2373.8806388612593,
+          "ci_lower": -3078.8153667472952,
+          "ci_upper": 6569.7964214555695,
+          "p_value": 0.46720500462383063,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "State = Florida",
+          "basis": "standardized_encoded",
+          "covariance": "classical",
+          "coefficient": 344.3988583407936,
+          "standard_error": 1786.655192654432,
+          "ci_lower": -3286.5213469751666,
+          "ci_upper": 3975.3190636567538,
+          "p_value": 0.8482923559178807,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "State = New York",
+          "basis": "standardized_encoded",
+          "covariance": "classical",
+          "coefficient": 260.36865827889045,
+          "standard_error": 1751.0033758718662,
+          "ci_lower": -3298.098338133499,
+          "ci_upper": 3818.83565469128,
+          "p_value": 0.8826713108392631,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Intercept",
+          "basis": "standardized_encoded",
+          "covariance": "HC3",
+          "coefficient": 107682.75375,
+          "standard_error": 1680.0828397442822,
+          "ci_lower": 104268.41462373077,
+          "ci_upper": 111097.09287626923,
+          "p_value": 4.756195045358329e-37,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "R&D Spend",
+          "basis": "standardized_encoded",
+          "covariance": "HC3",
+          "coefficient": 38148.1594522996,
+          "standard_error": 2603.8911491677063,
+          "ci_lower": 32856.41596154252,
+          "ci_upper": 43439.90294305668,
+          "p_value": 2.975880572577024e-16,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Administration",
+          "basis": "standardized_encoded",
+          "covariance": "HC3",
+          "coefficient": -1566.312165516937,
+          "standard_error": 2000.3033065257086,
+          "ci_lower": -5631.4175771738865,
+          "ci_upper": 2498.793246140012,
+          "p_value": 0.4390256234129287,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Marketing Spend",
+          "basis": "standardized_encoded",
+          "covariance": "HC3",
+          "coefficient": 1745.4905273541372,
+          "standard_error": 2011.3257356431604,
+          "ci_lower": -2342.015155356097,
+          "ci_upper": 5832.996210064372,
+          "p_value": 0.39157116831075794,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "State = Florida",
+          "basis": "standardized_encoded",
+          "covariance": "HC3",
+          "coefficient": 344.3988583407936,
+          "standard_error": 1819.2734781296795,
+          "ci_lower": -3352.809678535596,
+          "ci_upper": 4041.6073952171832,
+          "p_value": 0.8509788000660025,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "State = New York",
+          "basis": "standardized_encoded",
+          "covariance": "HC3",
+          "coefficient": 260.36865827889045,
+          "standard_error": 2062.547840689975,
+          "ci_lower": -3931.232866168428,
+          "ci_upper": 4451.970182726209,
+          "p_value": 0.9002883430221915,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Intercept",
+          "basis": "unscaled_encoded",
+          "covariance": "classical",
+          "coefficient": 52886.54177766813,
+          "standard_error": 7563.129961025634,
+          "ci_lower": 37516.412441117456,
+          "ci_upper": 68256.6711142188,
+          "p_value": 4.565926668846354e-08,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "R&D Spend",
+          "basis": "unscaled_encoded",
+          "covariance": "classical",
+          "coefficient": 0.8355733836989645,
+          "standard_error": 0.055570493973370265,
+          "ci_lower": 0.7226405524415094,
+          "ci_upper": 0.9485062149564196,
+          "p_value": 1.3793725533376592e-16,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Administration",
+          "basis": "unscaled_encoded",
+          "covariance": "classical",
+          "coefficient": -0.05340971365344121,
+          "standard_error": 0.06166319039557845,
+          "ci_lower": -0.1787243937618686,
+          "ci_upper": 0.07190496645498617,
+          "p_value": 0.3924779233384002,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Marketing Spend",
+          "basis": "unscaled_encoded",
+          "covariance": "classical",
+          "coefficient": 0.014301693001420817,
+          "standard_error": 0.01945041327177729,
+          "ci_lower": -0.025226302574109065,
+          "ci_upper": 0.0538296885769507,
+          "p_value": 0.46720500462383063,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "State = Florida",
+          "basis": "unscaled_encoded",
+          "covariance": "classical",
+          "coefficient": 795.355094286628,
+          "standard_error": 4126.1034257123165,
+          "ci_lower": -7589.895937494257,
+          "ci_upper": 9180.606126067512,
+          "p_value": 0.8482923559178807,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "State = New York",
+          "basis": "unscaled_encoded",
+          "covariance": "classical",
+          "coefficient": 537.81518794054,
+          "standard_error": 3616.8570207491753,
+          "ci_lower": -6812.522633464214,
+          "ci_upper": 7888.153009345293,
+          "p_value": 0.8826713108392631,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Intercept",
+          "basis": "unscaled_encoded",
+          "covariance": "HC3",
+          "coefficient": 52886.54177766813,
+          "standard_error": 8733.631175725552,
+          "ci_lower": 35137.66777439382,
+          "ci_upper": 70635.41578094244,
+          "p_value": 7.296771853255109e-07,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "R&D Spend",
+          "basis": "unscaled_encoded",
+          "covariance": "HC3",
+          "coefficient": 0.8355733836989645,
+          "standard_error": 0.05703400031695867,
+          "ci_lower": 0.7196663497104002,
+          "ci_upper": 0.9514804176875288,
+          "p_value": 2.975880572577004e-16,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Administration",
+          "basis": "unscaled_encoded",
+          "covariance": "HC3",
+          "coefficient": -0.05340971365344121,
+          "standard_error": 0.0682083873020997,
+          "ci_lower": -0.19202583423754974,
+          "ci_upper": 0.0852064069306673,
+          "p_value": 0.4390256234129287,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Marketing Spend",
+          "basis": "unscaled_encoded",
+          "covariance": "HC3",
+          "coefficient": 0.014301693001420817,
+          "standard_error": 0.016479816272981267,
+          "ci_lower": -0.019189323133910148,
+          "ci_upper": 0.047792709136751786,
+          "p_value": 0.39157116831075794,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "State = Florida",
+          "basis": "unscaled_encoded",
+          "covariance": "HC3",
+          "coefficient": 795.355094286628,
+          "standard_error": 4201.43212931087,
+          "ci_lower": -7742.982281776438,
+          "ci_upper": 9333.692470349693,
+          "p_value": 0.8509788000660025,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "State = New York",
+          "basis": "unscaled_encoded",
+          "covariance": "HC3",
+          "coefficient": 537.81518794054,
+          "standard_error": 4260.380500132448,
+          "ci_lower": -8120.3196910579045,
+          "ci_upper": 9195.950066938984,
+          "p_value": 0.9002883430221915,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        }
+      ],
+      "diagnostics": {
+        "status": "computed",
+        "training_rows": 40,
+        "design_columns_including_intercept": 6,
+        "response_scale": "original target units",
+        "development_ols_r2": 0.9483364333422655,
+        "development_ols_adjusted_r2": 0.9407388500102457,
+        "development_residual_df": 34.0,
+        "residual_std": 9838.78975258508,
+        "normality": {
+          "test": "Jarque-Bera on all development residuals",
+          "statistic": 20.198876824972817,
+          "p_value": 4.1102631469638e-05,
+          "p_display": "4.11e-05",
+          "skewness": -1.1816724235461802,
+          "excess_kurtosis": 3.164433297336527,
+          "interpretation": "Large-sample p-values are sensitive; use residual shape and effects, not a pass/fail label."
+        },
+        "heteroskedasticity": {
+          "status": "computed",
+          "test": "Koenker/studentized Breusch-Pagan",
+          "lm_statistic": 2.878480393856262,
+          "p_value": 0.7187139268749503,
+          "p_display": "0.7187",
+          "f_statistic": 0.5272862449031608,
+          "f_p_value": 0.7539536006835845,
+          "corr_abs_residual_fitted": -0.1818371829430505
+        },
+        "functional_form": {
+          "status": "computed",
+          "test": "Quadratic fitted-value RESET-style test with HC3 covariance",
+          "f_statistic": 0.5906414146138363,
+          "p_value": 0.4476365823534511,
+          "p_display": "0.4476",
+          "diagnostic_only": true,
+          "frozen_model_replaced": false
+        },
+        "vif": [
+          {
+            "key": "n:\"R&D Spend\"",
+            "label": "R&D Spend",
+            "vif": 2.659764156413607,
+            "status": "finite"
+          },
+          {
+            "key": "n:\"Administration\"",
+            "label": "Administration",
+            "vif": 1.3512781552627182,
+            "status": "finite"
+          },
+          {
+            "key": "n:\"Marketing Spend\"",
+            "label": "Marketing Spend",
+            "vif": 2.3285972909181263,
+            "status": "finite"
+          },
+          {
+            "key": "c:[\"State\",\"Florida\"]",
+            "label": "State = Florida",
+            "vif": 1.3190404772623705,
+            "status": "finite"
+          },
+          {
+            "key": "c:[\"State\",\"New York\"]",
+            "label": "State = New York",
+            "vif": 1.2669241008159535,
+            "status": "finite"
+          }
+        ],
+        "condition_number_standardized_design": 2.9862764339210313,
+        "influence": {
+          "status": "available",
+          "cook_heuristic": 0.1,
+          "leverage_heuristic": 0.3,
+          "cook_flagged_rows": 3,
+          "leverage_flagged_rows": 1,
+          "max_cooks_distance": 0.29866314321466675,
+          "max_leverage": 0.342919745073348,
+          "top_rows": [
+            {
+              "development_position": 39,
+              "source_row_index_0_based": 49,
+              "leverage": 0.12495612052951333,
+              "cooks_distance": 0.29866314321466675,
+              "studentized_internal": -3.5424407082585003,
+              "residual": -32603.12175363145
+            },
+            {
+              "development_position": 38,
+              "source_row_index_0_based": 48,
+              "leverage": 0.2908966420504088,
+              "cooks_distance": 0.23746275844683726,
+              "studentized_internal": -1.8636261526883666,
+              "residual": -15440.282693215631
+            },
+            {
+              "development_position": 35,
+              "source_row_index_0_based": 45,
+              "leverage": 0.14571397622284965,
+              "cooks_distance": 0.10252502943504051,
+              "studentized_internal": 1.8990728393223428,
+              "residual": 17269.706362062163
+            },
+            {
+              "development_position": 11,
+              "source_row_index_0_based": 14,
+              "leverage": 0.14286293325559832,
+              "cooks_distance": 0.09234667527354797,
+              "studentized_internal": -1.8232726365933583,
+              "residual": -16608.041927924758
+            },
+            {
+              "development_position": 28,
+              "source_row_index_0_based": 38,
+              "leverage": 0.17152451982916564,
+              "cooks_distance": 0.05964638781234739,
+              "studentized_internal": 1.314753763764819,
+              "residual": 11774.051540508255
+            },
+            {
+              "development_position": 12,
+              "source_row_index_0_based": 15,
+              "leverage": 0.0962376145772065,
+              "cooks_distance": 0.054529359671171666,
+              "studentized_internal": -1.7528531373888636,
+              "residual": -16395.110249768753
+            },
+            {
+              "development_position": 9,
+              "source_row_index_0_based": 12,
+              "leverage": 0.10696777279410283,
+              "cooks_distance": 0.037250479892809656,
+              "studentized_internal": 1.3659935554909801,
+              "residual": 12700.590001391975
+            },
+            {
+              "development_position": 7,
+              "source_row_index_0_based": 10,
+              "leverage": 0.1495672947899641,
+              "cooks_distance": 0.0349933442737595,
+              "studentized_internal": 1.0926221674770937,
+              "residual": 9913.606221305236
+            },
+            {
+              "development_position": 33,
+              "source_row_index_0_based": 43,
+              "leverage": 0.12114611494253444,
+              "cooks_distance": 0.0252712577930159,
+              "studentized_internal": 1.048799923598657,
+              "residual": 9673.701128685228
+            },
+            {
+              "development_position": 13,
+              "source_row_index_0_based": 16,
+              "leverage": 0.0862675018369788,
+              "cooks_distance": 0.024081175598281938,
+              "studentized_internal": 1.2370874250021375,
+              "residual": 11634.604056957178
+            },
+            {
+              "development_position": 8,
+              "source_row_index_0_based": 11,
+              "leverage": 0.12886592380654832,
+              "cooks_distance": 0.02154728983403254,
+              "studentized_internal": 0.9348574802224136,
+              "residual": 8584.788274821767
+            },
+            {
+              "development_position": 15,
+              "source_row_index_0_based": 19,
+              "leverage": 0.24303110478838055,
+              "cooks_distance": 0.02083634199327441,
+              "studentized_internal": 0.624014167908349,
+              "residual": 5341.646544004805
+            },
+            {
+              "development_position": 19,
+              "source_row_index_0_based": 27,
+              "leverage": 0.16679261743643858,
+              "cooks_distance": 0.019632156003411977,
+              "studentized_internal": -0.7670925520591675,
+              "residual": -6889.155709786137
+            },
+            {
+              "development_position": 2,
+              "source_row_index_0_based": 5,
+              "leverage": 0.16073209444046435,
+              "cooks_distance": 0.016520477436116964,
+              "studentized_internal": -0.7194256669887057,
+              "residual": -6484.521223635384
+            },
+            {
+              "development_position": 36,
+              "source_row_index_0_based": 46,
+              "leverage": 0.342919745073348,
+              "cooks_distance": 0.015381743911019262,
+              "studentized_internal": -0.4205245704272362,
+              "residual": -3353.839415951501
+            },
+            {
+              "development_position": 1,
+              "source_row_index_0_based": 1,
+              "leverage": 0.22283126966211134,
+              "cooks_distance": 0.014511744777748567,
+              "studentized_internal": 0.5510677970945271,
+              "residual": 4779.741087268805
+            },
+            {
+              "development_position": 10,
+              "source_row_index_0_based": 13,
+              "leverage": 0.08559644004301278,
+              "cooks_distance": 0.011786922552186604,
+              "studentized_internal": 0.8691944465879732,
+              "residual": 8177.632264544591
+            },
+            {
+              "development_position": 26,
+              "source_row_index_0_based": 35,
+              "leverage": 0.11108639938915761,
+              "cooks_distance": 0.009335002031683144,
+              "studentized_internal": 0.6694716087127449,
+              "residual": 6210.171869101192
+            },
+            {
+              "development_position": 3,
+              "source_row_index_0_based": 6,
+              "leverage": 0.2315865168907177,
+              "cooks_distance": 0.0069575554859104246,
+              "studentized_internal": -0.3721729606730849,
+              "residual": -3209.844442008325
+            },
+            {
+              "development_position": 6,
+              "source_row_index_0_based": 9,
+              "leverage": 0.12782069410730645,
+              "cooks_distance": 0.0064976575646905526,
+              "studentized_internal": -0.515770309560291,
+              "residual": -4739.154937896208
+            }
+          ],
+          "interpretation": "Heuristics locate potentially influential training observations; none are automatically deleted."
+        },
+        "sensitivity": {
+          "status": "diagnostic_only",
+          "deleted_training_position_for_sensitivity": 39,
+          "coefficients_after_one_row_deletion": [
+            108614.22480301053,
+            36480.82219820647,
+            -993.2118632834109,
+            1909.170983040627,
+            -697.3683308379598,
+            -885.8703357271429
+          ],
+          "max_absolute_coefficient_change": 1667.3372540931286,
+          "development_fitted_change_rms": 2082.4669871515066,
+          "development_fitted_change_max_abs": 4955.55639532822,
+          "response_scale": "original target units",
+          "production_model_changed": false,
+          "test_rows_deleted": 0,
+          "source_row_index_0_based": 49
+        },
+        "independence": {
+          "status": "not_established",
+          "reason": "Heldout/CV groups isolated where available; row-level OLS still assumes an error structure not established by splitting.",
+          "source_limit": "User dataset; no independent external population validated. Grouped data may require cluster-aware inference."
+        },
+        "post_selection_caveat": "Intervals condition on selected columns and fitted preprocessing; feature-selection uncertainty not corrected.",
+        "hc3_caveat": "coefficient and location CI only; not a robust observation PI"
+      },
+      "diagnostic_plot": {
+        "scope": "development diagnostics; display thinning only, statistics use every development row",
+        "sample_development_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "sample_source_rows": [
+          0,
+          1,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19,
+          21,
+          22,
+          25,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          35,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "fitted": [
+          191021.38656489103,
+          187012.3189127312,
+          163475.64122363538,
+          159332.35444200833,
+          159414.8122608136,
+          150660.03935601102,
+          154499.1149378962,
+          136208.34377869478,
+          135674.61172517823,
+          128884.92999860802,
+          126129.71773545542,
+          149210.69192792475,
+          146312.15024976875,
+          115358.32594304282,
+          128810.09946451704,
+          117435.2134559952,
+          114998.2674987275,
+          113289.96916532688,
+          101438.2570401592,
+          111897.46570978613,
+          100807.46116221264,
+          101601.41159343673,
+          100609.79766221391,
+          97614.19309037241,
+          99626.81221324643,
+          97616.5345775718,
+          90269.3381308988,
+          89789.05547305096,
+          69455.00845949174,
+          83175.74304755795,
+          73052.65463083307,
+          74816.31005068247,
+          69619.47949591753,
+          60085.27887131477,
+          63554.753889790685,
+          47656.37363793784,
+          52844.5894159515,
+          45653.42875950063,
+          51113.692693215635,
+          47284.52175363145
+        ],
+        "residual": [
+          1240.4434351089585,
+          4779.741087268805,
+          -6484.521223635384,
+          -3209.844442008325,
+          -3662.212260813598,
+          1551.7306439889653,
+          -4739.154937896208,
+          9913.606221305236,
+          8584.788274821767,
+          12700.590001391975,
+          8177.632264544591,
+          -16608.041927924758,
+          -16395.110249768753,
+          11634.604056957178,
+          -3439.7294645170477,
+          5341.646544004805,
+          -3685.247498727491,
+          -2937.719165326882,
+          5966.082959840802,
+          -6889.155709786137,
+          2474.918837787365,
+          -596.7715934367297,
+          -672.2076622139139,
+          -130.6330903724156,
+          -2198.9722132464376,
+          -837.6145775718032,
+          6210.171869101192,
+          160.08452694903826,
+          11774.051540508255,
+          -2169.983047557951,
+          5187.255369166931,
+          2982.5199493175314,
+          1879.010504082471,
+          9673.701128685228,
+          1645.5761102093165,
+          17269.706362062163,
+          -3353.839415951501,
+          -3093.6987595006285,
+          -15440.282693215631,
+          -32603.12175363145
+        ],
+        "qq_theoretical": [
+          -2.241402727604945,
+          -1.7804643416920258,
+          -1.5341205443525463,
+          -1.356311745335247,
+          -1.213339622488518,
+          -1.091620367434168,
+          -0.984234960446325,
+          -0.8871465590188761,
+          -0.7977768461252381,
+          -0.7143674402801876,
+          -0.6356570136975827,
+          -0.5607030318750833,
+          -0.4887764111146695,
+          -0.419295753041396,
+          -0.35178434493515626,
+          -0.2858408748811656,
+          -0.22111871299757055,
+          -0.1573106846101707,
+          -0.0941374143235364,
+          -0.03133798202142662,
+          0.03133798202142648,
+          0.0941374143235364,
+          0.1573106846101707,
+          0.22111871299757055,
+          0.2858408748811657,
+          0.3517843449351561,
+          0.419295753041396,
+          0.4887764111146695,
+          0.5607030318750833,
+          0.6356570136975828,
+          0.7143674402801874,
+          0.7977768461252381,
+          0.8871465590188761,
+          0.984234960446325,
+          1.091620367434168,
+          1.2133396224885171,
+          1.356311745335247,
+          1.5341205443525463,
+          1.7804643416920258,
+          2.241402727604947
+        ],
+        "qq_observed": [
+          -3.3137329461751315,
+          -1.688016752625606,
+          -1.6663746926252836,
+          -1.5693274357406402,
+          -0.7002035700555603,
+          -0.6590771209367103,
+          -0.4816806799485704,
+          -0.37456309072558597,
+          -0.37222182330416953,
+          -0.3496090018198916,
+          -0.340879264654507,
+          -0.3262438290405544,
+          -0.31443895410894196,
+          -0.29858541946737044,
+          -0.22350027478416962,
+          -0.2205538589731325,
+          -0.08513390352220153,
+          -0.06832218993573834,
+          -0.06065497977329293,
+          -0.01327735358285226,
+          0.01627075392143399,
+          0.12607683122642596,
+          0.157715601513007,
+          0.16725391553132352,
+          0.19097984115259428,
+          0.25154708048691615,
+          0.30313890471476873,
+          0.48580579598349055,
+          0.5272249432715047,
+          0.5429170333273278,
+          0.606383824623679,
+          0.6311926593887738,
+          0.8311624163323511,
+          0.8725451494241117,
+          0.9832206370853208,
+          1.0076042349314862,
+          1.182523902790001,
+          1.1966971382242106,
+          1.2908691333763864,
+          1.755267344494749
+        ],
+        "leverage": [
+          0.20674231678339905,
+          0.22283126966211134,
+          0.16073209444046435,
+          0.2315865168907177,
+          0.1401611041477783,
+          0.10755278637972174,
+          0.12782069410730645,
+          0.1495672947899641,
+          0.12886592380654832,
+          0.10696777279410283,
+          0.08559644004301278,
+          0.14286293325559832,
+          0.0962376145772065,
+          0.0862675018369788,
+          0.09626311543191787,
+          0.24303110478838055,
+          0.1538378392552061,
+          0.12124690359034561,
+          0.08214119696446182,
+          0.16679261743643858,
+          0.21904127396833997,
+          0.10839531056416968,
+          0.1617267184140141,
+          0.11468742858449617,
+          0.11932106458853503,
+          0.1163254474521472,
+          0.11108639938915761,
+          0.2056679212438701,
+          0.17152451982916564,
+          0.10599697908915522,
+          0.10848486862832285,
+          0.15765659082938013,
+          0.09845007781959454,
+          0.12114611494253444,
+          0.16382491095261872,
+          0.14571397622284965,
+          0.342919745073348,
+          0.15507284884671896,
+          0.2908966420504088,
+          0.12495612052951333
+        ],
+        "studentized_internal": [
+          0.14155595408730537,
+          0.5510677970945271,
+          -0.7194256669887057,
+          -0.3721729606730849,
+          -0.401414714888728,
+          0.16694883302761584,
+          -0.515770309560291,
+          1.0926221674770937,
+          0.9348574802224136,
+          1.3659935554909801,
+          0.8691944465879732,
+          -1.8232726365933583,
+          -1.7528531373888636,
+          1.2370874250021375,
+          -0.36775755432657903,
+          0.624014167908349,
+          -0.4071910088290153,
+          -0.3185188670206402,
+          0.6329358120890443,
+          -0.7670925520591675,
+          0.2846461015864397,
+          -0.06423626635560906,
+          -0.07462235767559691,
+          -0.014111175892729465,
+          -0.23816023876420536,
+          -0.09056416193703856,
+          0.6694716087127449,
+          0.018256041991625695,
+          1.314753763764819,
+          -0.2332626299138025,
+          0.5583822307636336,
+          0.33029126325947256,
+          0.2011373100309905,
+          1.048799923598657,
+          0.18290588584768508,
+          1.8990728393223428,
+          -0.4205245704272362,
+          -0.3420792331868685,
+          -1.8636261526883666,
+          -3.5424407082585003
+        ],
+        "cooks_distance": [
+          0.0008704024877666878,
+          0.014511744777748567,
+          0.016520477436116964,
+          0.0069575554859104246,
+          0.004377697514860951,
+          0.0005598280478895644,
+          0.0064976575646905526,
+          0.0349933442737595,
+          0.02154728983403254,
+          0.037250479892809656,
+          0.011786922552186604,
+          0.09234667527354797,
+          0.054529359671171666,
+          0.024081175598281938,
+          0.0024009872845878037,
+          0.02083634199327441,
+          0.005024058413507165,
+          0.002333043638739423,
+          0.005975210884061403,
+          0.019632156003411977,
+          0.003787538926042897,
+          8.360793172685691e-05,
+          0.0001790535074166093,
+          4.299266279659045e-06,
+          0.0012808160892485952,
+          0.00017994669637891794,
+          0.009335002031683144,
+          1.4382237576564298e-05,
+          0.05964638781234739,
+          0.0010752107229061812,
+          0.006323425076156237,
+          0.0034030307288415405,
+          0.000736309338293015,
+          0.0252712577930159,
+          0.001092412918649054,
+          0.10252502943504051,
+          0.015381743911019262,
+          0.0035794695222781036,
+          0.23746275844683726,
+          0.29866314321466675
+        ]
+      },
+      "interval_summary": {
+        "rows": 10,
+        "covered_count": 10,
+        "observation_pi_coverage": 1.0,
+        "observation_pi_mean_width": 43074.38497719176,
+        "location_ci_mean_width": 15849.865650178803,
+        "location_ci_hc3_mean_width": 16654.376138344636,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 0,
+        "negative_pi_lower_count": 0,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage"
+      },
+      "forms": [
+        {
+          "field": "R&D Spend",
+          "kind": "numeric",
+          "fill": 65828.5,
+          "all_missing_training": false,
+          "min": 0.0,
+          "max": 165349.2,
+          "allowed_values": null
+        },
+        {
+          "field": "Administration",
+          "kind": "numeric",
+          "fill": 125736.70999999999,
+          "all_missing_training": false,
+          "min": 51283.14,
+          "max": 182645.56,
+          "allowed_values": null
+        },
+        {
+          "field": "Marketing Spend",
+          "kind": "numeric",
+          "fill": 201273.53000000003,
+          "all_missing_training": false,
+          "min": 0.0,
+          "max": 471784.1,
+          "allowed_values": null
+        },
+        {
+          "field": "State",
+          "kind": "categorical",
+          "fill": "California",
+          "categories": [
+            "California",
+            "Florida",
+            "New York"
+          ],
+          "reference": "California",
+          "all_missing_training": false
+        }
+      ],
+      "defaults": {
+        "R&D Spend": 165349.2,
+        "Administration": 136897.8,
+        "Marketing Spend": 471784.1,
+        "State": "New York"
+      },
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "heldout_plot": {
+        "total_test_rows": 10,
+        "display_rows": 10,
+        "display_rule": "even ranks sorted by prediction; full rows scored",
+        "rows": {
+          "source_row_index_0_based": [
+            36,
+            34,
+            23,
+            26,
+            24,
+            20,
+            18,
+            4,
+            3,
+            2
+          ],
+          "actual": [
+            90708.19,
+            96712.8,
+            108733.99,
+            105733.54,
+            108552.04,
+            118474.03,
+            124266.9,
+            166187.94,
+            182901.99,
+            191050.39
+          ],
+          "prediction": [
+            73722.99004469026,
+            86271.30662907922,
+            108820.85805584297,
+            110843.57719707496,
+            114508.15093086865,
+            114792.02527085679,
+            128464.80584488799,
+            172778.62786788808,
+            173200.27389835985,
+            182325.5382754692
+          ],
+          "residual": [
+            16985.19995530974,
+            10441.493370920783,
+            -86.86805584296235,
+            -5110.037197074969,
+            -5956.110930868657,
+            3682.004729143213,
+            -4197.905844887995,
+            -6590.687867888075,
+            9701.716101640137,
+            8724.851724530803
+          ],
+          "location_ci_lower": [
+            66007.99102907607,
+            77474.8233659144,
+            101562.2187656101,
+            103569.71089691231,
+            107445.09197893314,
+            108266.26826677455,
+            121686.88985075391,
+            162635.53649891925,
+            165455.0965738567,
+            172375.19853737386
+          ],
+          "location_ci_upper": [
+            81437.98906030454,
+            95067.7898922441,
+            116079.49734607595,
+            118117.4434972377,
+            121571.20988280413,
+            121317.78227493908,
+            135242.72183902215,
+            182921.71923685697,
+            180945.45122286302,
+            192275.87801356468
+          ],
+          "observation_pi_lower": [
+            52291.37100418346,
+            64427.05789661821,
+            87549.25893325236,
+            89566.77725349492,
+            93302.49398171935,
+            93759.22732662658,
+            107352.41066788298,
+            150358.20442394447,
+            151757.77272255285,
+            159991.65491878433
+          ],
+          "observation_pi_upper": [
+            95154.60908519715,
+            108115.55536154029,
+            130092.45717843369,
+            132120.3771406551,
+            135713.8078800179,
+            135824.82321508706,
+            149577.20102189307,
+            195199.05131183175,
+            194642.77507416686,
+            204659.4216321542
+          ],
+          "location_ci_hc3_lower": [
+            67281.04039222376,
+            75013.22163352832,
+            103225.85848289942,
+            104029.68228789211,
+            105126.73125873765,
+            108192.47849692285,
+            122069.06808486754,
+            161415.37246156918,
+            165203.54464692413,
+            170899.27557773015
+          ],
+          "location_ci_hc3_upper": [
+            80164.93969715685,
+            97529.39162463018,
+            114415.85762878663,
+            117657.4721062579,
+            123889.57060299962,
+            121391.57204479078,
+            134860.5436049085,
+            184141.88327420704,
+            181197.00314979558,
+            193751.8009732084
+          ],
+          "prediction_rank": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "candidate_id": "ridge:alpha=0.0001",
+      "method": "ridge",
+      "parameters": {
+        "alpha": 0.0001
+      },
+      "artifact": {
+        "schema_version": "1.0",
+        "dataset_id": "custom-02798982ac2865a1",
+        "candidate_id": "ridge:alpha=0.0001",
+        "method": "ridge",
+        "parameters": {
+          "alpha": 0.0001
+        },
+        "target": "Profit",
+        "target_transform": "identity",
+        "raw_input_fields": [
+          "R&D Spend",
+          "Administration",
+          "Marketing Spend",
+          "State"
+        ],
+        "selected_keys": [
+          "n:\"R&D Spend\"",
+          "n:\"Administration\"",
+          "n:\"Marketing Spend\"",
+          "c:[\"State\",\"Florida\"]",
+          "c:[\"State\",\"New York\"]"
+        ],
+        "selected_columns": [
+          {
+            "key": "n:\"R&D Spend\"",
+            "field": "R&D Spend",
+            "category": null,
+            "label": "R&D Spend"
+          },
+          {
+            "key": "n:\"Administration\"",
+            "field": "Administration",
+            "category": null,
+            "label": "Administration"
+          },
+          {
+            "key": "n:\"Marketing Spend\"",
+            "field": "Marketing Spend",
+            "category": null,
+            "label": "Marketing Spend"
+          },
+          {
+            "key": "c:[\"State\",\"Florida\"]",
+            "field": "State",
+            "category": "Florida",
+            "label": "State = Florida"
+          },
+          {
+            "key": "c:[\"State\",\"New York\"]",
+            "field": "State",
+            "category": "New York",
+            "label": "State = New York"
+          }
+        ],
+        "selected_raw_fields": [
+          "Administration",
+          "Marketing Spend",
+          "R&D Spend",
+          "State"
+        ],
+        "model": {
+          "coefficients": [
+            38147.90992928532,
+            -1566.2188229956757,
+            1745.6605133665528,
+            344.3748204159014,
+            260.3608614235362
+          ],
+          "intercept": 107682.75374999999,
+          "design_rank": 6,
+          "design_columns": 6,
+          "inference_status": "regularized_not_OLS_inference",
+          "warning_categories": []
+        },
+        "preprocessor": {
+          "fields": [
+            {
+              "field": "R&D Spend",
+              "kind": "numeric",
+              "fill": 65828.5,
+              "all_missing_training": false
+            },
+            {
+              "field": "Administration",
+              "kind": "numeric",
+              "fill": 125736.70999999999,
+              "all_missing_training": false
+            },
+            {
+              "field": "Marketing Spend",
+              "kind": "numeric",
+              "fill": 201273.53000000003,
+              "all_missing_training": false
+            },
+            {
+              "field": "State",
+              "kind": "categorical",
+              "fill": "California",
+              "categories": [
+                "California",
+                "Florida",
+                "New York"
+              ],
+              "reference": "California",
+              "all_missing_training": false
+            }
+          ],
+          "all_columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "n:\"Marketing Spend\"",
+              "field": "Marketing Spend",
+              "category": null,
+              "label": "Marketing Spend"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "keep": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "n:\"Marketing Spend\"",
+              "field": "Marketing Spend",
+              "category": null,
+              "label": "Marketing Spend"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "center": [
+            69579.0315,
+            122351.531,
+            195226.25424999994,
+            0.25,
+            0.375
+          ],
+          "scale": [
+            45655.067761281636,
+            29326.353922813418,
+            122047.82518969814,
+            0.4330127018922193,
+            0.4841229182759271
+          ],
+          "fit_rows": 40,
+          "dropped_constant": [],
+          "categorical_overrides": [],
+          "unknown_policy": "all-zero dummy block, equivalent to training reference; count reported",
+          "scale_scope": "all active encoded columns, including numeric and binary dummies"
+        },
+        "fit_rows": 40,
+        "point_prediction_semantics": "identity",
+        "source_frame_values_sha256": "2143a5ef55b539573d6c5581374ccb2d5be744d6feec1ce4602fa6b23c0701f6"
+      },
+      "selected_count": 5,
+      "test_metrics": {
+        "n": 10,
+        "mae": 7147.6172988308845,
+        "mse": 70396673.39159152,
+        "rmse": 8390.272545727672,
+        "r2": 0.9420584318060579
+      },
+      "cv": {
+        "mae": 7786.807111410506,
+        "mse": 110979378.1571502,
+        "rmse": 10534.675038042236,
+        "r2": 0.9303173936988345,
+        "fold_rmse_std": 3322.7852676448715
+      },
+      "inference": null,
+      "inference_status": "not_applicable_to_baseline_or_regularized_model",
+      "coefficient_intervals": [],
+      "diagnostics": null,
+      "diagnostic_plot": null,
+      "interval_summary": null,
+      "forms": [
+        {
+          "field": "R&D Spend",
+          "kind": "numeric",
+          "fill": 65828.5,
+          "all_missing_training": false,
+          "min": 0.0,
+          "max": 165349.2,
+          "allowed_values": null
+        },
+        {
+          "field": "Administration",
+          "kind": "numeric",
+          "fill": 125736.70999999999,
+          "all_missing_training": false,
+          "min": 51283.14,
+          "max": 182645.56,
+          "allowed_values": null
+        },
+        {
+          "field": "Marketing Spend",
+          "kind": "numeric",
+          "fill": 201273.53000000003,
+          "all_missing_training": false,
+          "min": 0.0,
+          "max": 471784.1,
+          "allowed_values": null
+        },
+        {
+          "field": "State",
+          "kind": "categorical",
+          "fill": "California",
+          "categories": [
+            "California",
+            "Florida",
+            "New York"
+          ],
+          "reference": "California",
+          "all_missing_training": false
+        }
+      ],
+      "defaults": {
+        "R&D Spend": 165349.2,
+        "Administration": 136897.8,
+        "Marketing Spend": 471784.1,
+        "State": "New York"
+      },
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "heldout_plot": {
+        "total_test_rows": 10,
+        "display_rows": 10,
+        "display_rule": "even ranks sorted by prediction; full rows scored",
+        "rows": {
+          "source_row_index_0_based": [
+            36,
+            34,
+            23,
+            26,
+            24,
+            20,
+            18,
+            4,
+            3,
+            2
+          ],
+          "actual": [
+            90708.19,
+            96712.8,
+            108733.99,
+            105733.54,
+            108552.04,
+            118474.03,
+            124266.9,
+            166187.94,
+            182901.99,
+            191050.39
+          ],
+          "prediction": [
+            73723.20126002452,
+            86271.58726537655,
+            108820.93337653413,
+            110843.49430883261,
+            114507.9643970142,
+            114792.12577051835,
+            128464.76190945294,
+            172778.33542018343,
+            173200.1190294533,
+            182325.27309833578
+          ],
+          "residual": [
+            16984.98873997548,
+            10441.212734623448,
+            -86.94337653412367,
+            -5109.954308832617,
+            -5955.924397014212,
+            3681.9042294816463,
+            -4197.861909452942,
+            -6590.395420183428,
+            9701.870970546704,
+            8725.116901664238
+          ],
+          "prediction_rank": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "candidate_id": "lasso_reg:alpha=0.01",
+      "method": "lasso_reg",
+      "parameters": {
+        "alpha": 0.01
+      },
+      "artifact": {
+        "schema_version": "1.0",
+        "dataset_id": "custom-02798982ac2865a1",
+        "candidate_id": "lasso_reg:alpha=0.01",
+        "method": "lasso_reg",
+        "parameters": {
+          "alpha": 0.01
+        },
+        "target": "Profit",
+        "target_transform": "identity",
+        "raw_input_fields": [
+          "R&D Spend",
+          "Administration",
+          "Marketing Spend",
+          "State"
+        ],
+        "selected_keys": [
+          "n:\"R&D Spend\"",
+          "n:\"Administration\"",
+          "n:\"Marketing Spend\"",
+          "c:[\"State\",\"Florida\"]",
+          "c:[\"State\",\"New York\"]"
+        ],
+        "selected_columns": [
+          {
+            "key": "n:\"R&D Spend\"",
+            "field": "R&D Spend",
+            "category": null,
+            "label": "R&D Spend"
+          },
+          {
+            "key": "n:\"Administration\"",
+            "field": "Administration",
+            "category": null,
+            "label": "Administration"
+          },
+          {
+            "key": "n:\"Marketing Spend\"",
+            "field": "Marketing Spend",
+            "category": null,
+            "label": "Marketing Spend"
+          },
+          {
+            "key": "c:[\"State\",\"Florida\"]",
+            "field": "State",
+            "category": "Florida",
+            "label": "State = Florida"
+          },
+          {
+            "key": "c:[\"State\",\"New York\"]",
+            "field": "State",
+            "category": "New York",
+            "label": "State = New York"
+          }
+        ],
+        "selected_raw_fields": [
+          "Administration",
+          "Marketing Spend",
+          "R&D Spend",
+          "State"
+        ],
+        "model": {
+          "coefficients": [
+            37396.447606934926,
+            -851.6925467209633,
+            1891.497764814874,
+            0.0,
+            0.0
+          ],
+          "intercept": 107682.75374999999,
+          "design_rank": 6,
+          "design_columns": 6,
+          "inference_status": "regularized_not_OLS_inference",
+          "warning_categories": []
+        },
+        "preprocessor": {
+          "fields": [
+            {
+              "field": "R&D Spend",
+              "kind": "numeric",
+              "fill": 65828.5,
+              "all_missing_training": false
+            },
+            {
+              "field": "Administration",
+              "kind": "numeric",
+              "fill": 125736.70999999999,
+              "all_missing_training": false
+            },
+            {
+              "field": "Marketing Spend",
+              "kind": "numeric",
+              "fill": 201273.53000000003,
+              "all_missing_training": false
+            },
+            {
+              "field": "State",
+              "kind": "categorical",
+              "fill": "California",
+              "categories": [
+                "California",
+                "Florida",
+                "New York"
+              ],
+              "reference": "California",
+              "all_missing_training": false
+            }
+          ],
+          "all_columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "n:\"Marketing Spend\"",
+              "field": "Marketing Spend",
+              "category": null,
+              "label": "Marketing Spend"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "keep": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "n:\"Marketing Spend\"",
+              "field": "Marketing Spend",
+              "category": null,
+              "label": "Marketing Spend"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "center": [
+            69579.0315,
+            122351.531,
+            195226.25424999994,
+            0.25,
+            0.375
+          ],
+          "scale": [
+            45655.067761281636,
+            29326.353922813418,
+            122047.82518969814,
+            0.4330127018922193,
+            0.4841229182759271
+          ],
+          "fit_rows": 40,
+          "dropped_constant": [],
+          "categorical_overrides": [],
+          "unknown_policy": "all-zero dummy block, equivalent to training reference; count reported",
+          "scale_scope": "all active encoded columns, including numeric and binary dummies"
+        },
+        "fit_rows": 40,
+        "point_prediction_semantics": "identity",
+        "source_frame_values_sha256": "2143a5ef55b539573d6c5581374ccb2d5be744d6feec1ce4602fa6b23c0701f6"
+      },
+      "selected_count": 5,
+      "test_metrics": {
+        "n": 10,
+        "mae": 6904.111115809862,
+        "mse": 68249760.89754748,
+        "rmse": 8261.34134977774,
+        "r2": 0.9438254965079382
+      },
+      "cv": {
+        "mae": 7566.792984958139,
+        "mse": 105988485.94887587,
+        "rmse": 10295.070954047664,
+        "r2": 0.9334511144189872,
+        "fold_rmse_std": 3627.4081020889193
+      },
+      "inference": null,
+      "inference_status": "not_applicable_to_baseline_or_regularized_model",
+      "coefficient_intervals": [],
+      "diagnostics": null,
+      "diagnostic_plot": null,
+      "interval_summary": null,
+      "forms": [
+        {
+          "field": "R&D Spend",
+          "kind": "numeric",
+          "fill": 65828.5,
+          "all_missing_training": false,
+          "min": 0.0,
+          "max": 165349.2,
+          "allowed_values": null
+        },
+        {
+          "field": "Administration",
+          "kind": "numeric",
+          "fill": 125736.70999999999,
+          "all_missing_training": false,
+          "min": 51283.14,
+          "max": 182645.56,
+          "allowed_values": null
+        },
+        {
+          "field": "Marketing Spend",
+          "kind": "numeric",
+          "fill": 201273.53000000003,
+          "all_missing_training": false,
+          "min": 0.0,
+          "max": 471784.1,
+          "allowed_values": null
+        },
+        {
+          "field": "State",
+          "kind": "categorical",
+          "fill": "California",
+          "categories": [
+            "California",
+            "Florida",
+            "New York"
+          ],
+          "reference": "California",
+          "all_missing_training": false
+        }
+      ],
+      "defaults": {
+        "R&D Spend": 165349.2,
+        "Administration": 136897.8,
+        "Marketing Spend": 471784.1,
+        "State": "New York"
+      },
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "heldout_plot": {
+        "total_test_rows": 10,
+        "display_rows": 10,
+        "display_rule": "even ranks sorted by prediction; full rows scored",
+        "rows": {
+          "source_row_index_0_based": [
+            36,
+            34,
+            23,
+            26,
+            24,
+            20,
+            18,
+            4,
+            3,
+            2
+          ],
+          "actual": [
+            90708.19,
+            96712.8,
+            108733.99,
+            105733.54,
+            108552.04,
+            118474.03,
+            124266.9,
+            166187.94,
+            182901.99,
+            191050.39
+          ],
+          "prediction": [
+            74123.52713514432,
+            87932.88580242905,
+            108186.24687855146,
+            110811.72431113034,
+            113620.39348998238,
+            114999.64556224251,
+            127624.97770002327,
+            170639.689711054,
+            171966.71219921595,
+            180287.6264765081
+          ],
+          "residual": [
+            16584.66286485568,
+            8779.91419757095,
+            547.7431214485405,
+            -5078.184311130346,
+            -5068.353489982386,
+            3474.384437757486,
+            -3358.0777000232774,
+            -4451.749711053999,
+            10935.277800784039,
+            10762.763523491914
+          ],
+          "prediction_rank": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    }
+  ],
+  "selection_representative_id": "ols",
+  "folds": [
+    {
+      "fold": 0,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "f9627dc86c9408724714cc405e0550492203c59e50c4cf02b7a1d6cb259d67ff",
+      "validation_row_positions_sha256": "0444e7630685d6e806b62484e784ac62b11e35de561ee13b0e5b5d470451ec70",
+      "encoded_training_fields": 5,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "d650728e8ced4d6cab0ccfcb22bfa6ed8e619aca2d06b5e60740a6890be481d3"
+    },
+    {
+      "fold": 1,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "ccd2d2fa1477ad85e13fbb90bf1b271c34edc21524675c6c0b7ddefbcbcc53ec",
+      "validation_row_positions_sha256": "8f81c98054bbe66eefb163bc00f968b64909a037868e57f781a35184889bef73",
+      "encoded_training_fields": 5,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "8b33f18eb45edf5c7f0b51363ee7a723feb607c7c1328696fdfbd830caf14a21"
+    },
+    {
+      "fold": 2,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "b8724e0b6efbf69b823efc02e33317d584b88740acec7a6686352dd9cab64e26",
+      "validation_row_positions_sha256": "2ed6dbf22cd29412e0a89d6fc92f686765c020d96f910fea35ec732619ca2deb",
+      "encoded_training_fields": 5,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "7a6f1f4c8ffc05dd6c068acd4dee3e1c3fe040c2c830d76231ffb9065efc74ce"
+    },
+    {
+      "fold": 3,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "84f8743e0745265efe6d7a91df350825fb7ca1df3faf6bf350ef3e5e7bcf1b12",
+      "validation_row_positions_sha256": "7dbeaa0a234027af59ae6abb8de95ee302cb2569fcd6c3b8dd5bffcb7a0a6de3",
+      "encoded_training_fields": 5,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "05816eb94b08ab0aafd41b701e238888e0c05328eab4f0a8213fbdca50d0b37b"
+    },
+    {
+      "fold": 4,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "04b82f3ba1420872d091e57c45696c515dcaeac369cb3adb7176dbc75198d79c",
+      "validation_row_positions_sha256": "2113e645c38c21fbc08225a02d3dd5cfc5098356ac7d2eddee2ce008ecea06e6",
+      "encoded_training_fields": 5,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "a7cea1b5c6a99af7dfd6ed7fc2fda051e995a5dd346e189da13e75a27e4b1ec1"
+    }
+  ],
+  "events": [
+    {
+      "sequence": 0,
+      "event": "started",
+      "elapsed_s": 0.0022697499953210354,
+      "rows": 40,
+      "methods": [
+        "dummy",
+        "ols",
+        "ridge",
+        "lasso_reg"
+      ]
+    },
+    {
+      "sequence": 1,
+      "event": "fold_started",
+      "elapsed_s": 0.009269957896322012,
+      "fold": 0
+    },
+    {
+      "sequence": 2,
+      "event": "method_started",
+      "elapsed_s": 0.009271415881812572,
+      "fold": 0,
+      "method": "dummy"
+    },
+    {
+      "sequence": 3,
+      "event": "method_completed",
+      "elapsed_s": 0.00930237490683794,
+      "fold": 0,
+      "method": "dummy"
+    },
+    {
+      "sequence": 4,
+      "event": "method_started",
+      "elapsed_s": 0.009303041035309434,
+      "fold": 0,
+      "method": "ols"
+    },
+    {
+      "sequence": 5,
+      "event": "method_completed",
+      "elapsed_s": 0.018235625000670552,
+      "fold": 0,
+      "method": "ols"
+    },
+    {
+      "sequence": 6,
+      "event": "method_started",
+      "elapsed_s": 0.01823699986562133,
+      "fold": 0,
+      "method": "ridge"
+    },
+    {
+      "sequence": 7,
+      "event": "method_completed",
+      "elapsed_s": 0.02290562493726611,
+      "fold": 0,
+      "method": "ridge"
+    },
+    {
+      "sequence": 8,
+      "event": "method_started",
+      "elapsed_s": 0.022906665923073888,
+      "fold": 0,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 9,
+      "event": "method_completed",
+      "elapsed_s": 0.024903957964852452,
+      "fold": 0,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 10,
+      "event": "fold_completed",
+      "elapsed_s": 0.024904374964535236,
+      "fold": 0
+    },
+    {
+      "sequence": 11,
+      "event": "fold_started",
+      "elapsed_s": 0.02490666601806879,
+      "fold": 1
+    },
+    {
+      "sequence": 12,
+      "event": "method_started",
+      "elapsed_s": 0.02490750001743436,
+      "fold": 1,
+      "method": "dummy"
+    },
+    {
+      "sequence": 13,
+      "event": "method_completed",
+      "elapsed_s": 0.024920125026255846,
+      "fold": 1,
+      "method": "dummy"
+    },
+    {
+      "sequence": 14,
+      "event": "method_started",
+      "elapsed_s": 0.02492049988359213,
+      "fold": 1,
+      "method": "ols"
+    },
+    {
+      "sequence": 15,
+      "event": "method_completed",
+      "elapsed_s": 0.025187040911987424,
+      "fold": 1,
+      "method": "ols"
+    },
+    {
+      "sequence": 16,
+      "event": "method_started",
+      "elapsed_s": 0.025187833001837134,
+      "fold": 1,
+      "method": "ridge"
+    },
+    {
+      "sequence": 17,
+      "event": "method_completed",
+      "elapsed_s": 0.027678499929606915,
+      "fold": 1,
+      "method": "ridge"
+    },
+    {
+      "sequence": 18,
+      "event": "method_started",
+      "elapsed_s": 0.027679249877110124,
+      "fold": 1,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 19,
+      "event": "method_completed",
+      "elapsed_s": 0.029061082983389497,
+      "fold": 1,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 20,
+      "event": "fold_completed",
+      "elapsed_s": 0.029061540961265564,
+      "fold": 1
+    },
+    {
+      "sequence": 21,
+      "event": "fold_started",
+      "elapsed_s": 0.029063249938189983,
+      "fold": 2
+    },
+    {
+      "sequence": 22,
+      "event": "method_started",
+      "elapsed_s": 0.029063957976177335,
+      "fold": 2,
+      "method": "dummy"
+    },
+    {
+      "sequence": 23,
+      "event": "method_completed",
+      "elapsed_s": 0.02907629101537168,
+      "fold": 2,
+      "method": "dummy"
+    },
+    {
+      "sequence": 24,
+      "event": "method_started",
+      "elapsed_s": 0.029076749924570322,
+      "fold": 2,
+      "method": "ols"
+    },
+    {
+      "sequence": 25,
+      "event": "method_completed",
+      "elapsed_s": 0.02933008293621242,
+      "fold": 2,
+      "method": "ols"
+    },
+    {
+      "sequence": 26,
+      "event": "method_started",
+      "elapsed_s": 0.02933074999600649,
+      "fold": 2,
+      "method": "ridge"
+    },
+    {
+      "sequence": 27,
+      "event": "method_completed",
+      "elapsed_s": 0.031789165921509266,
+      "fold": 2,
+      "method": "ridge"
+    },
+    {
+      "sequence": 28,
+      "event": "method_started",
+      "elapsed_s": 0.03178987489081919,
+      "fold": 2,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 29,
+      "event": "method_completed",
+      "elapsed_s": 0.033155665965750813,
+      "fold": 2,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 30,
+      "event": "fold_completed",
+      "elapsed_s": 0.033156124874949455,
+      "fold": 2
+    },
+    {
+      "sequence": 31,
+      "event": "fold_started",
+      "elapsed_s": 0.03315908298827708,
+      "fold": 3
+    },
+    {
+      "sequence": 32,
+      "event": "method_started",
+      "elapsed_s": 0.033159750048071146,
+      "fold": 3,
+      "method": "dummy"
+    },
+    {
+      "sequence": 33,
+      "event": "method_completed",
+      "elapsed_s": 0.033172416035085917,
+      "fold": 3,
+      "method": "dummy"
+    },
+    {
+      "sequence": 34,
+      "event": "method_started",
+      "elapsed_s": 0.0331728330347687,
+      "fold": 3,
+      "method": "ols"
+    },
+    {
+      "sequence": 35,
+      "event": "method_completed",
+      "elapsed_s": 0.033428333001211286,
+      "fold": 3,
+      "method": "ols"
+    },
+    {
+      "sequence": 36,
+      "event": "method_started",
+      "elapsed_s": 0.03342895791865885,
+      "fold": 3,
+      "method": "ridge"
+    },
+    {
+      "sequence": 37,
+      "event": "method_completed",
+      "elapsed_s": 0.035853666020557284,
+      "fold": 3,
+      "method": "ridge"
+    },
+    {
+      "sequence": 38,
+      "event": "method_started",
+      "elapsed_s": 0.03585437498986721,
+      "fold": 3,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 39,
+      "event": "method_completed",
+      "elapsed_s": 0.0371800409629941,
+      "fold": 3,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 40,
+      "event": "fold_completed",
+      "elapsed_s": 0.037180749932304025,
+      "fold": 3
+    },
+    {
+      "sequence": 41,
+      "event": "fold_started",
+      "elapsed_s": 0.03718329104594886,
+      "fold": 4
+    },
+    {
+      "sequence": 42,
+      "event": "method_started",
+      "elapsed_s": 0.03718387498520315,
+      "fold": 4,
+      "method": "dummy"
+    },
+    {
+      "sequence": 43,
+      "event": "method_completed",
+      "elapsed_s": 0.037195832934230566,
+      "fold": 4,
+      "method": "dummy"
+    },
+    {
+      "sequence": 44,
+      "event": "method_started",
+      "elapsed_s": 0.03719629091210663,
+      "fold": 4,
+      "method": "ols"
+    },
+    {
+      "sequence": 45,
+      "event": "method_completed",
+      "elapsed_s": 0.03745254105888307,
+      "fold": 4,
+      "method": "ols"
+    },
+    {
+      "sequence": 46,
+      "event": "method_started",
+      "elapsed_s": 0.037453124998137355,
+      "fold": 4,
+      "method": "ridge"
+    },
+    {
+      "sequence": 47,
+      "event": "method_completed",
+      "elapsed_s": 0.03986070794053376,
+      "fold": 4,
+      "method": "ridge"
+    },
+    {
+      "sequence": 48,
+      "event": "method_started",
+      "elapsed_s": 0.03986150003038347,
+      "fold": 4,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 49,
+      "event": "method_completed",
+      "elapsed_s": 0.04115141602233052,
+      "fold": 4,
+      "method": "lasso_reg"
+    },
+    {
+      "sequence": 50,
+      "event": "fold_completed",
+      "elapsed_s": 0.04115174990147352,
+      "fold": 4
+    },
+    {
+      "sequence": 51,
+      "event": "cv_completed",
+      "elapsed_s": 0.04115216596983373
+    },
+    {
+      "sequence": 52,
+      "event": "refit_completed",
+      "elapsed_s": 0.04192570806480944,
+      "method": "dummy",
+      "candidate_id": "dummy",
+      "selected_count": 0
+    },
+    {
+      "sequence": 53,
+      "event": "refit_completed",
+      "elapsed_s": 0.04231962491758168,
+      "method": "ols",
+      "candidate_id": "ols",
+      "selected_count": 5
+    },
+    {
+      "sequence": 54,
+      "event": "refit_completed",
+      "elapsed_s": 0.04278983292169869,
+      "method": "ridge",
+      "candidate_id": "ridge:alpha=0.0001",
+      "selected_count": 5
+    },
+    {
+      "sequence": 55,
+      "event": "refit_completed",
+      "elapsed_s": 0.043201416032388806,
+      "method": "lasso_reg",
+      "candidate_id": "lasso_reg:alpha=0.01",
+      "selected_count": 5
+    },
+    {
+      "sequence": 56,
+      "event": "finished",
+      "elapsed_s": 0.04321083286777139,
+      "status": "completed",
+      "completed_methods": [
+        "dummy",
+        "ols",
+        "ridge",
+        "lasso_reg"
+      ]
+    }
+  ],
+  "privacy": "CSV/results kept only in current request/browser; no history database or source-row logging.",
+  "interval_caveats": [
+    "Conditional on fitted preprocessing/selected columns; uncorrected selection uncertainty.",
+    "Classical observation PI assumes an error model; HC3 only affects coefficient/location CI.",
+    "Grouped splitting does not by itself establish independent errors."
+  ],
+  "completed_model_count": 4,
+  "elapsed_s": 0.06046450021676719,
+  "validation_note": "Non-finite diagnostic scalars, if any, are represented as null/unavailable, not zero or a passed assumption."
+}

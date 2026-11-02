@@ -1,0 +1,16 @@
+{
+  "url": "https://lms2020.nchu.edu.tw/course/homework/74761",
+  "title": "HW2: Multiple Linear regression",
+  "captured_at": "2026-11-01T16:27:25+08:00",
+  "capture_method": "Authenticated browser, visible .fs-content innerText; page navigation/account excluded.",
+  "snapshot": "lms-assignment.txt",
+  "sha256": "6a111cd511c38d9565ba60b622f62f8edcd2b15c5a8e2fd0c2595f8424dc9f1c",
+  "deadline": "2026-11-04",
+  "deadline_time": "not displayed",
+  "grade_weight": "10%",
+  "late_submission_allowed": true,
+  "late_penalty": "not displayed",
+  "feature_constraint": "14-39 input features excluding target",
+  "contains_authentication_material": false,
+  "scope_note": "Requirement snapshot, not proof of submission or a complete HTML archive."
+}

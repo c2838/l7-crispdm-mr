@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "command": ".venv/bin/python -B -m unittest discover -s tests -q",
+  "tests": 72,
+  "elapsed_s_observed": 0.721,
+  "method": "Actual unittest command observed to exit 0 with Ran 72 tests / OK; original 33 plus 39 service tests.",
+  "source_sha256": {
+    "l7_service/__init__.py": "e7eeea9f7ec2a8460504d6443007cb969b656c2d041bc2db79aab73722128a33",
+    "l7_service/analysis.py": "492e4f9699173726319fa17ffe2495bacaa532a44aa8971578f7fb0e544faa28",
+    "l7_service/api.py": "4b87fc83f233b9e10ea96a73dc6ccbd0532e33a11f93d04aa4ce33b782e59256",
+    "l7_service/contracts.py": "757370865d2d60bd46a7efb81a23f675604613d30391521d7547413d3df0a9e5",
+    "l7_service/ingest.py": "3dea24c5b5cbc558426260e31ad4207bc9ef9f74971fc3a851c6056d026ca840",
+    "l7_service/remote.py": "95b22310cd7a1dca4ec265cf0f4966b6157ffc703f5d0e19c1df50056824a137",
+    "l7_analysis/__init__.py": "9050eb3a76ccf09a17d26e98efbf8d3083e2729c9c06827c66479bf596ff5c09",
+    "l7_analysis/config.py": "6f7908e6ca30ec0bbcf9a85b4425094c47f2b1867073d4a96a884bc76fd38ad2",
+    "l7_analysis/data.py": "30a466afb68b1514247fe8af9d619ef1a12b061297824b51ed94032729da58f7",
+    "l7_analysis/diagnostics.py": "de89e67e978e9419c96b63a3e3a1179d2b022c9809292da6025fc36b052fcf99",
+    "l7_analysis/engine.py": "f6f931424aeb5bcd66620091682d7bc1fda8de02bd1bbe73bcf8711970bebe05",
+    "l7_analysis/inference.py": "ee84590a6e29a3353d72aebdb992ff1d3194674d0a6e7d2f9eca7b21d3c0dca0",
+    "l7_analysis/models.py": "ba1341398d3b97fd28dea31f20c73a4713443dc20fbf3c4c2d8d71174f1c685d",
+    "l7_analysis/preprocessing.py": "ca47de6119484892bb6b2f9cd5ab1c7d2251f03cf58102c5af28488f97802c17",
+    "l7_analysis/selection.py": "db25a967596f48e619d4244f63af349bc3a5ac42d9a061c0a634d59196cd0016",
+    "app.py": "e72a56df4ea6549796b4e7c98e1f80efa3788d4edbf016aeeafa0918fed725b7",
+    "tests/test_analysis.py": "93210b910be2749710d945a9c3cd87318d9f7c892ee893bef6ae523b43406699",
+    "tests/test_custom_service.py": "9f11b1a7b87a05e7187600032087beb440fa5632adf0ced3aafcc3857de061bc",
+    "tests/test_inference.py": "edcfd2d8e9e3d22edab940ea6caaec17c4d227f4f32ee53fcef438e5dde22616"
+  },
+  "limits": [
+    "Transport failure/deadline cases are controlled tests, not actual external failures.",
+    "Does not substitute for live HTTP/browser verification."
+  ]
+}

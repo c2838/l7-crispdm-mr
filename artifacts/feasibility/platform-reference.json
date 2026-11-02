@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-11-01T10:00:57+00:00",
+  "account_basis": "user explicitly requested Hobby evaluation; no live account inspection",
+  "sources": [
+    {
+      "url": "https://vercel.com/docs/functions/limitations",
+      "facts": {
+        "hobby_max_duration_s": 300,
+        "hobby_memory_gb": 2,
+        "hobby_vcpu": 1,
+        "request_response_payload_mb": 4.5
+      }
+    },
+    {
+      "url": "https://vercel.com/docs/functions/runtimes/python",
+      "facts": {
+        "supported_python": [
+          "3.12",
+          "3.13",
+          "3.14"
+        ],
+        "standard_bundle_uncompressed_mb": 500
+      }
+    },
+    {
+      "url": "https://vercel.com/docs/frameworks/backend/fastapi",
+      "facts": [
+        "FastAPI app entrypoint supported",
+        "public/ files served via CDN"
+      ]
+    },
+    {
+      "url": "https://vercel.com/docs/plans/hobby",
+      "facts": [
+        "Free tier has monthly usage limits; account remaining usage not verified"
+      ]
+    },
+    {
+      "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+      "facts": [
+        "UploadFile supports multipart form uploads"
+      ]
+    }
+  ]
+}

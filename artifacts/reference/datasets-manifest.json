@@ -1,0 +1,105 @@
+{
+  "recorded_at": "2026-11-01T09:34:28+00:00",
+  "revision": "sgemm-student-approved",
+  "scope": "Approved source-quality audit and development EDA; no predictive models fitted.",
+  "approval_quote": "ok以這兩份資料為主",
+  "feature_counts": {
+    "dataset_a": 14,
+    "dataset_b": 32
+  },
+  "feature_count_basis": "Original input fields before category encoding; B=30 background fields + G1/G2. User accepted 32 instead of former 35..39 preference.",
+  "datasets": [
+    {
+      "id": "sgemm",
+      "kaggle_ref": "rupals/gpu-runtime",
+      "kaggle_url": "https://www.kaggle.com/datasets/rupals/gpu-runtime",
+      "kaggle_version": 4,
+      "original_source": "https://archive.ics.uci.edu/dataset/440",
+      "doi": "10.24432/C5MK70",
+      "kaggle_license_label": "Other (specified in description)",
+      "original_source_license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_handling": "Retain original UCI authorship and CC BY 4.0 notice; Kaggle mirror label does not replace original terms.",
+      "raw_files": [
+        {
+          "path": "data/raw/sgemm/sgemm_product.csv",
+          "bytes": 14353701,
+          "sha256": "b545b908c203eaa4d0b78c88e3a7196857efc34da3b6da9be774f017f2b5e960",
+          "uci_reference_path": "artifacts/reference/datasets/sgemm-uci-original.csv",
+          "uci_sha256": "b545b908c203eaa4d0b78c88e3a7196857efc34da3b6da9be774f017f2b5e960",
+          "byte_identical_to_uci": true,
+          "parsed_values_equal_to_uci": true
+        }
+      ]
+    },
+    {
+      "id": "student-por",
+      "kaggle_ref": "uciml/student-alcohol-consumption",
+      "kaggle_url": "https://www.kaggle.com/datasets/uciml/student-alcohol-consumption",
+      "kaggle_version": 2,
+      "original_source": "https://archive.ics.uci.edu/dataset/320",
+      "doi": "10.24432/C5TG7T",
+      "kaggle_license_label": "CC0: Public Domain",
+      "original_source_license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_handling": "Retain original UCI authorship and CC BY 4.0 notice; Kaggle mirror label does not replace original terms.",
+      "raw_files": [
+        {
+          "path": "data/raw/student/student-por.csv",
+          "bytes": 68558,
+          "sha256": "3fb408fe4b66d4cdb90ad4ec5e3fb6de94ba662d0471a3d46c03da483069f76b",
+          "uci_reference_path": "artifacts/reference/datasets/student-por-uci-original.csv",
+          "uci_sha256": "a7594a11d7771c0efe1a740824e0e833da9c4cad07c39a9766a874575563fb3f",
+          "byte_identical_to_uci": false,
+          "parsed_values_equal_to_uci": true
+        }
+      ]
+    }
+  ],
+  "retired_datasets": [
+    "garment",
+    "lattice"
+  ],
+  "retired_snapshot": "artifacts/history/stage1-garment-lattice",
+  "schema_files": [
+    "artifacts/analysis/data-audit/dataset-a-schema.json",
+    "artifacts/analysis/data-audit/dataset-b-schema.json"
+  ],
+  "target_contract": {
+    "a": {
+      "name": "runtime_mean_ms",
+      "formula": "(Run1 + Run2 + Run3 + Run4) / 4",
+      "unit": "ms",
+      "excluded_from_X": [
+        "Run1 (ms)",
+        "Run2 (ms)",
+        "Run3 (ms)",
+        "Run4 (ms)"
+      ]
+    },
+    "b": {
+      "name": "G3",
+      "documented_scale": [
+        0,
+        20
+      ],
+      "scenario": "retrospective conditional estimation; no start-of-year or early-warning claim"
+    }
+  },
+  "no_model_training": true,
+  "processed_files": [
+    {
+      "path": "data/processed/sgemm-model-input.csv",
+      "sha256": "395f5c1629f65a6362434d4c3de4dbbf267c18dc6ab83d6266691f14968471d3"
+    },
+    {
+      "path": "data/processed/student-model-input.csv",
+      "sha256": "3fb408fe4b66d4cdb90ad4ec5e3fb6de94ba662d0471a3d46c03da483069f76b"
+    }
+  ],
+  "analysis_runtime": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  }
+}

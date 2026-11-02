@@ -1,0 +1,161 @@
+{
+  "status": "passed_font_only",
+  "before_sha256": {
+    "web/style.css": "06e0b942fd75a81ae5edf1a8d47448fdb1297f9cad28a87ef0a4294e9f2c28a2",
+    "web/charts.mjs": "671e0c83144625789f752d1f305e6621791ab451748819b3765493c855c8fad6",
+    "web/app.mjs": "70bbad52681cb18221b3665aeba24dc0496b77faa03b83ad25bf4f25d891ec93",
+    "web/index.html": "e0d7b1f91de79bd867d9cb9ed03c1d08bd33fe40ba2ed29d488363e9fc29b2b6",
+    "AGENTS.md": "4d787cce793ae098e8dbd5892fa4e5e0b9baad2b0b0c008801c0fdd8af46be07",
+    "docs/DECISIONS.md": "6e84a72b9bec6d4b74a1f9f7729e97b252b8d91e045f725b78de6d9ea28df29e"
+  },
+  "backup": "artifacts/history/font-size-before-20261101T221222",
+  "font_size_rules_increased": 183,
+  "delta_px": 2,
+  "stage6": "deferred_not_started",
+  "recorded_at": "2026-11-01T22:13:54+08:00",
+  "browser": {
+    "fontDiff": [
+      {
+        "selector": "body",
+        "before": "14px",
+        "after": "16px",
+        "delta": 2
+      },
+      {
+        "selector": "h1",
+        "before": "23px",
+        "after": "25px",
+        "delta": 2
+      },
+      {
+        "selector": ".hero h2",
+        "before": "28px",
+        "after": "30px",
+        "delta": 2
+      },
+      {
+        "selector": ".hero-zh",
+        "before": "12px",
+        "after": "14px",
+        "delta": 2
+      },
+      {
+        "selector": ".methods button",
+        "before": "13px",
+        "after": "15px",
+        "delta": 2
+      },
+      {
+        "selector": ".methods button small",
+        "before": "10px",
+        "after": "12px",
+        "delta": 2
+      },
+      {
+        "selector": ".metric-label",
+        "before": "11px",
+        "after": "13px",
+        "delta": 2
+      },
+      {
+        "selector": ".metric-value",
+        "before": "27px",
+        "after": "29px",
+        "delta": 2
+      },
+      {
+        "selector": ".metric-note",
+        "before": "10px",
+        "after": "12px",
+        "delta": 2
+      },
+      {
+        "selector": ".chart-caption",
+        "before": "11px",
+        "after": "13px",
+        "delta": 2
+      },
+      {
+        "selector": "th",
+        "before": "11px",
+        "after": "13px",
+        "delta": 2
+      },
+      {
+        "selector": "td",
+        "before": "12px",
+        "after": "14px",
+        "delta": 2
+      },
+      {
+        "selector": ".input-item label",
+        "before": "12px",
+        "after": "14px",
+        "delta": 2
+      },
+      {
+        "selector": ".input-item input",
+        "before": "13px",
+        "after": "15px",
+        "delta": 2
+      },
+      {
+        "selector": ".chart .tick",
+        "before": "11px",
+        "after": "13px",
+        "delta": 2
+      },
+      {
+        "selector": ".chart .axis-label",
+        "before": "12px",
+        "after": "14px",
+        "delta": 2
+      },
+      {
+        "selector": ".stat-note",
+        "before": "11px",
+        "after": "13px",
+        "delta": 2
+      },
+      {
+        "selector": "footer",
+        "before": "11px",
+        "after": "13px",
+        "delta": 2
+      }
+    ],
+    "fontLayouts": [
+      {
+        "client": 375,
+        "clippedChartLabels": [],
+        "scroll": 375,
+        "viewport": 390
+      },
+      {
+        "client": 305,
+        "clippedChartLabels": [],
+        "scroll": 305,
+        "viewport": 320
+      }
+    ],
+    "console_errors": [],
+    "scope": "font-only; Stage 6 deferred"
+  },
+  "after_sha256": {
+    "web/style.css": "fb78bc512d7242e25403a997d2013165e4d1d048badc00e09f3b8b02a76f10d7",
+    "web/charts.mjs": "c02b2d791c616eb80f210a6418470401d0976961a57aa9dc62b399b4de33c05c",
+    "web/app.mjs": "d52de5133b109de23f756dd303399a89b8128d869db2ea01e3728837431a0db5",
+    "web/index.html": "eb8fbbc72bf7382468efa6c218a2d74432ca6c868243bfce1fd2a19074ee80c5",
+    "AGENTS.md": "9128d59dc9c1501221f48f017b7803958f7b0ba5f1055aac54c72ae2e313e563",
+    "docs/DECISIONS.md": "4b815c360867c4d256c3dd2f24ed8b4793a3c09bfccefd3520ce4c7472f2fde7"
+  },
+  "protected_analysis_files_unchanged": 188,
+  "screenshots": [
+    "artifacts/validation/screenshots/font-adjustment/desktop.jpg",
+    "artifacts/validation/screenshots/font-adjustment/mobile.jpg"
+  ],
+  "limitations": [
+    "Local browser and viewport checks; no public deployment.",
+    "Existing preview service was reused and left running; the attempted new server did not start because its port was already in use."
+  ]
+}

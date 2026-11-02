@@ -1,0 +1,42 @@
+# Local environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+node_modules/
+
+# Secrets and provider-local state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.vercel/
+
+# User uploads and ephemeral analysis jobs
+uploads/
+tmp/
+runtime/
+artifacts/tmp/
+artifacts/user-jobs/
+
+# Dataset redistribution is decided after license review
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Generated CDN output and local release packages
+public/
+artifacts/deployment/
+artifacts/history/
+reports/tmp/
+reports/source/transcripts/
+docs/notebooklm/received/
+docs/notebooklm/research/
+# Contains local attachment paths; the public reviewed summary is separate.
+docs/notebooklm/review.json

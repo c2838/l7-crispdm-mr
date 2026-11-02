@@ -1,0 +1,37 @@
+{
+  "dataset": "sgemm",
+  "method": "log_ols",
+  "status": "passed",
+  "development_rows": 193280,
+  "raw_input_fields": 14,
+  "encoded_columns": 14,
+  "import_s": 1.052322250092402,
+  "load_s": 0.1322889169678092,
+  "preprocess_s": 0.04492641589604318,
+  "operation_s": 0.11569062480702996,
+  "wall_s_including_import": 1.3462637909688056,
+  "cpu_s": 1.31529,
+  "peak_rss_bytes": 465108992,
+  "threads_limit": 1,
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "filepath": "/Users/c2838/NCHU/115-1 \u4e2d\u8208\u4f5c\u696d/AIOT/L7_CRISPDM_MR/.venv/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+      "version": null
+    }
+  ],
+  "warning_categories": [],
+  "final_test_rows_read": 0,
+  "model_scope": "feasibility only; no final scores or model export",
+  "interval_rows": 2000,
+  "interval_s": 0.0015557499136775732,
+  "sklearn_statsmodels_prediction_max_error": 3.197442310920451e-13,
+  "design_rank": 15,
+  "design_columns": 15,
+  "response_scale": "natural log ms",
+  "illustrative_interval_json_bytes": 316699,
+  "fresh_process_wall_s": 1.4860824591014534
+}

@@ -1,0 +1,19 @@
+{
+  "rendered": [
+    "artifacts/analysis/evaluation/sgemm/intervals.png",
+    "artifacts/analysis/evaluation/sgemm/diagnostics.png",
+    "artifacts/analysis/evaluation/sgemm/coefficients-vif.png",
+    "artifacts/analysis/evaluation/sgemm_log/intervals.png",
+    "artifacts/analysis/evaluation/sgemm_log/diagnostics.png",
+    "artifacts/analysis/evaluation/sgemm_log/coefficients-vif.png",
+    "artifacts/analysis/evaluation/student/intervals.png",
+    "artifacts/analysis/evaluation/student/diagnostics.png",
+    "artifacts/analysis/evaluation/student/coefficients-vif.png",
+    "artifacts/analysis/evaluation/student_background/intervals.png",
+    "artifacts/analysis/evaluation/student_background/diagnostics.png",
+    "artifacts/analysis/evaluation/student_background/coefficients-vif.png",
+    "artifacts/analysis/evaluation/test-comparison.png"
+  ],
+  "count": 13,
+  "scope": "4 frozen representatives plus fixed-order primary method comparison"
+}

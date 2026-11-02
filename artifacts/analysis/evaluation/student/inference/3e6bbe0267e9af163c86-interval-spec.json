@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "status": "computed_under_conditional_OLS_assumptions",
+  "model_equation_sha256": "3e6bbe0267e9af163c86ba05f83f660da2733721ae6eba455bb32687c115e5db",
+  "alpha": 0.05,
+  "coefficients_with_intercept": [
+    11.913294797687861,
+    0.4338486946920629,
+    2.5735482848649585
+  ],
+  "covariance_classical": [
+    [
+      0.0035028501439348003,
+      5.17402469050844e-19,
+      5.851575542836926e-19
+    ],
+    [
+      5.17402469050844e-19,
+      0.013545475601054579,
+      -0.011663281617964389
+    ],
+    [
+      5.851575542836926e-19,
+      -0.011663281617964389,
+      0.013545475601054605
+    ]
+  ],
+  "covariance_hc3": [
+    [
+      0.0035333655423438986,
+      -0.0005580362355266688,
+      -0.0024021113821766408
+    ],
+    [
+      -0.0005580362355266688,
+      0.01677509987760175,
+      -0.014345880725493906
+    ],
+    [
+      -0.0024021113821766408,
+      -0.014345880725493906,
+      0.01767815696741594
+    ]
+  ],
+  "mse_resid": 1.8179792247021611,
+  "df_resid": 516.0,
+  "training_rows": 519,
+  "design_columns_including_intercept": 3,
+  "design_rank": 3,
+  "target_transform": "identity",
+  "location_kind": "conditional_arithmetic_mean",
+  "observation_kind": "new row target under homoskedastic Gaussian regression error; GPU target is mean of four runs",
+  "HC3_scope": "coefficient and location CI only; not a robust observation PI",
+  "selection_conditioning": "Intervals condition on selected columns and fitted preprocessing; feature-selection uncertainty not corrected."
+}

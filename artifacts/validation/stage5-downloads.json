@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "method": "Actual browser downloads read from Downloads and compared with current frozen website results",
+  "csv_methods": 9,
+  "model_and_inference": "exact objects match",
+  "files": [
+    {
+      "path": "/Users/c2838/Downloads/student_background-frozen-comparison.csv",
+      "sha256": "176b05558a6619e1e27ebd2416eabf6e4eb7daceec5d8cb8535cedc7feed497f",
+      "bytes": 1037
+    },
+    {
+      "path": "/Users/c2838/Downloads/student_background-kbest-model.json",
+      "sha256": "da37b349c09703a6c057277e89f5717793a58e70f4875e443718befee7d192bc",
+      "bytes": 29532
+    }
+  ]
+}

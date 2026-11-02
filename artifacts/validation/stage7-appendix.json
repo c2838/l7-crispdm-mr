@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "scenario": "sgemm",
+      "predictor": "Intercept",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "MWG",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "NWG",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "KWG",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "MDIMC",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "NDIMC",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "MDIMA",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "NDIMB",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "KWI",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "VWM",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "VWN",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "STRM",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "SA",
+      "passed": true
+    },
+    {
+      "scenario": "sgemm",
+      "predictor": "SB",
+      "passed": true
+    },
+    {
+      "scenario": "student",
+      "predictor": "Intercept",
+      "passed": true
+    },
+    {
+      "scenario": "student",
+      "predictor": "G1",
+      "passed": true
+    },
+    {
+      "scenario": "student",
+      "predictor": "G2",
+      "passed": true
+    }
+  ],
+  "method": "All17 displayed coefficient/classical/HC3 interval rows in newly generated PDF pages19/20 compared against frozen JSON at5 decimal display precision."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "models": 18,
+  "fixture_cases": 21,
+  "checks": 129,
+  "max_absolute_error": 8.731149137020111e-11,
+  "tolerance": "1e-7 absolute + 1e-8 relative",
+  "method": "Actual browser-shared JavaScript module against Python reference for newly computed custom models; independent unscaled equation replay.",
+  "source_sha256": "316eb62a5cadd9c53ab6eb40b2733ee8c3370302b619ac67d2cfd977f3568ead"
+}

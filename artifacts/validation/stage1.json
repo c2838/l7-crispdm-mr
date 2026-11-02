@@ -1,0 +1,327 @@
+{
+  "recorded_at": "2026-11-01T09:40:28+00:00",
+  "status": "passed_source_audit_with_limits",
+  "revision": "sgemm-student-approved",
+  "scope": "actual project files",
+  "checks": [
+    {
+      "name": "active dataset IDs",
+      "method": "independent file inspection",
+      "expected": [
+        "sgemm",
+        "student-por"
+      ],
+      "actual": [
+        "sgemm",
+        "student-por"
+      ],
+      "passed": true
+    },
+    {
+      "name": "approved original input counts",
+      "method": "independent file inspection",
+      "expected": {
+        "dataset_a": 14,
+        "dataset_b": 32
+      },
+      "actual": {
+        "dataset_a": 14,
+        "dataset_b": 32
+      },
+      "passed": true
+    },
+    {
+      "name": "sgemm raw SHA-256",
+      "method": "SHA-256 of installed raw bytes versus source manifest",
+      "expected": "b545b908c203eaa4d0b78c88e3a7196857efc34da3b6da9be774f017f2b5e960",
+      "actual": "b545b908c203eaa4d0b78c88e3a7196857efc34da3b6da9be774f017f2b5e960",
+      "passed": true
+    },
+    {
+      "name": "sgemm UCI source SHA-256",
+      "method": "independent file inspection",
+      "expected": "b545b908c203eaa4d0b78c88e3a7196857efc34da3b6da9be774f017f2b5e960",
+      "actual": "b545b908c203eaa4d0b78c88e3a7196857efc34da3b6da9be774f017f2b5e960",
+      "passed": true
+    },
+    {
+      "name": "student-por raw SHA-256",
+      "method": "SHA-256 of installed raw bytes versus source manifest",
+      "expected": "3fb408fe4b66d4cdb90ad4ec5e3fb6de94ba662d0471a3d46c03da483069f76b",
+      "actual": "3fb408fe4b66d4cdb90ad4ec5e3fb6de94ba662d0471a3d46c03da483069f76b",
+      "passed": true
+    },
+    {
+      "name": "student-por UCI source SHA-256",
+      "method": "independent file inspection",
+      "expected": "a7594a11d7771c0efe1a740824e0e833da9c4cad07c39a9766a874575563fb3f",
+      "actual": "a7594a11d7771c0efe1a740824e0e833da9c4cad07c39a9766a874575563fb3f",
+      "passed": true
+    },
+    {
+      "name": "GPU X/header excludes all raw timing outputs",
+      "method": "independent file inspection",
+      "expected": [
+        "MWG",
+        "NWG",
+        "KWG",
+        "MDIMC",
+        "NDIMC",
+        "MDIMA",
+        "NDIMB",
+        "KWI",
+        "VWM",
+        "VWN",
+        "STRM",
+        "STRN",
+        "SA",
+        "SB",
+        "runtime_mean_ms"
+      ],
+      "actual": [
+        "MWG",
+        "NWG",
+        "KWG",
+        "MDIMC",
+        "NDIMC",
+        "MDIMA",
+        "NDIMB",
+        "KWI",
+        "VWM",
+        "VWN",
+        "STRM",
+        "STRN",
+        "SA",
+        "SB",
+        "runtime_mean_ms"
+      ],
+      "passed": true
+    },
+    {
+      "name": "GPU all input values and row order preserved",
+      "method": "independent file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "GPU raw/processed row count",
+      "method": "independent file inspection",
+      "expected": 241600,
+      "actual": 241600,
+      "passed": true
+    },
+    {
+      "name": "GPU all derived targets match independent four-run mean",
+      "method": "csv parser + math.fsum / 4 across every row; max absolute error 4.54747e-13 ms; tolerance 1e-9 ms",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "student Kaggle vs UCI parsed cells and ordering",
+      "method": "independent file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "student preparation preserves all parsed source cells",
+      "method": "independent file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "student selected course row count",
+      "method": "independent file inspection",
+      "expected": 649,
+      "actual": 649,
+      "passed": true
+    },
+    {
+      "name": "student target and prior-grade header",
+      "method": "independent file inspection",
+      "expected": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "actual": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "passed": true
+    },
+    {
+      "name": "a split covers each source row exactly once",
+      "method": "independent file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "a split sizes",
+      "method": "independent file inspection",
+      "expected": {
+        "development": 193280,
+        "final_test": 48320
+      },
+      "actual": {
+        "development": 193280,
+        "final_test": 48320
+      },
+      "passed": true
+    },
+    {
+      "name": "a source-quality zero checks",
+      "method": "independent file inspection",
+      "expected": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "name": "a no fitted model recorded",
+      "method": "independent file inspection",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "name": "a plot histogram scope",
+      "method": "independent file inspection",
+      "expected": 193280,
+      "actual": 193280,
+      "passed": true
+    },
+    {
+      "name": "b split covers each source row exactly once",
+      "method": "independent file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "b split sizes",
+      "method": "independent file inspection",
+      "expected": {
+        "development": 519,
+        "final_test": 130
+      },
+      "actual": {
+        "development": 519,
+        "final_test": 130
+      },
+      "passed": true
+    },
+    {
+      "name": "b source-quality zero checks",
+      "method": "independent file inspection",
+      "expected": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "name": "b no fitted model recorded",
+      "method": "independent file inspection",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "name": "b plot histogram scope",
+      "method": "independent file inspection",
+      "expected": 519,
+      "actual": 519,
+      "passed": true
+    },
+    {
+      "name": "data/processed/sgemm-model-input.csv hash",
+      "method": "independent file inspection",
+      "expected": "395f5c1629f65a6362434d4c3de4dbbf267c18dc6ab83d6266691f14968471d3",
+      "actual": "395f5c1629f65a6362434d4c3de4dbbf267c18dc6ab83d6266691f14968471d3",
+      "passed": true
+    },
+    {
+      "name": "data/processed/student-model-input.csv hash",
+      "method": "independent file inspection",
+      "expected": "3fb408fe4b66d4cdb90ad4ec5e3fb6de94ba662d0471a3d46c03da483069f76b",
+      "actual": "3fb408fe4b66d4cdb90ad4ec5e3fb6de94ba662d0471a3d46c03da483069f76b",
+      "passed": true
+    },
+    {
+      "name": "dataset-a-overview.png saved PNG signature",
+      "method": "independent file inspection",
+      "expected": "89504e470d0a1a0a",
+      "actual": "89504e470d0a1a0a",
+      "passed": true
+    },
+    {
+      "name": "dataset-a-correlations.png saved PNG signature",
+      "method": "independent file inspection",
+      "expected": "89504e470d0a1a0a",
+      "actual": "89504e470d0a1a0a",
+      "passed": true
+    },
+    {
+      "name": "dataset-b-overview.png saved PNG signature",
+      "method": "independent file inspection",
+      "expected": "89504e470d0a1a0a",
+      "actual": "89504e470d0a1a0a",
+      "passed": true
+    },
+    {
+      "name": "stage2 remains pending",
+      "method": "independent file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "all archived pre-revision snapshots match original hashes",
+      "method": "independent file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "retired raw and processed files retained unchanged",
+      "method": "independent file inspection",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "passed_checks": 32,
+  "visual_review": {
+    "reviewer": "Agent inspected all three rendered development EDA images",
+    "result": "titles, labels, units and development-only scope legible; no clipping observed"
+  },
+  "limitations": [
+    "No predictive model, R2, residual diagnostics or interval coverage tested.",
+    "No new independent environment or online runtime benchmark performed.",
+    "Student analysis is retrospective conditional estimation; timing does not establish prospective early warning.",
+    "No NotebookLM research execution, API, public service, push, deployment or submission."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "status": "removed_from_active_deliverables",
+  "recorded_at": "2026-11-02T01:34:53.561641+08:00",
+  "authorization": "User explicitly requested removal of Lecture 6 conversation snapshot.",
+  "method": "Reversible local archive; original chat and old L5V2 project unchanged.",
+  "archived_files": [
+    {
+      "previous": "reports/output/pdf/Lecture6_conversation_snapshot.pdf",
+      "archived_as": "artifacts/history/stage7-lecture6-retired/reports/output/pdf/Lecture6_conversation_snapshot.pdf",
+      "sha256": "1986db0bb104e7423033dec36f1fd29d24370b4e5ea39463de7fa3ef978bd11a"
+    },
+    {
+      "previous": "web/downloads/Lecture6_conversation_snapshot.pdf",
+      "archived_as": "artifacts/history/stage7-lecture6-retired/web/downloads/Lecture6_conversation_snapshot.pdf",
+      "sha256": "1986db0bb104e7423033dec36f1fd29d24370b4e5ea39463de7fa3ef978bd11a"
+    },
+    {
+      "previous": "reports/source/transcripts/lecture6.json",
+      "archived_as": "artifacts/history/stage7-lecture6-retired/reports/source/transcripts/lecture6.json",
+      "sha256": "ebb8c7d3d570eebe8ab13d15e4d543ac6483a5ae3bfb52843e6189e8aa434a44"
+    },
+    {
+      "previous": "artifacts/validation/stage7-pdf-pages/Lecture6_conversation_snapshot-contact-1.jpg",
+      "archived_as": "artifacts/history/stage7-lecture6-retired/artifacts/validation/stage7-pdf-pages/Lecture6_conversation_snapshot-contact-1.jpg",
+      "sha256": "a6394ff3c90ff211ca1858c2e37135de7caa20d2d72a9f5b7f880c43ec0db5b8"
+    },
+    {
+      "previous": "artifacts/validation/stage7-pdf-pages/Lecture6_conversation_snapshot-contact-2.jpg",
+      "archived_as": "artifacts/history/stage7-lecture6-retired/artifacts/validation/stage7-pdf-pages/Lecture6_conversation_snapshot-contact-2.jpg",
+      "sha256": "b977add6cfb9477797fec4a2b382a88d712cd4748b3f977370845433ae286899"
+    },
+    {
+      "previous": "artifacts/validation/stage7-pdf-pages/Lecture6_conversation_snapshot-contact-3.jpg",
+      "archived_as": "artifacts/history/stage7-lecture6-retired/artifacts/validation/stage7-pdf-pages/Lecture6_conversation_snapshot-contact-3.jpg",
+      "sha256": "7c789e6bd721159af7202fda4179a12115540f035160e45c668bd3470d05cba9"
+    }
+  ],
+  "remaining_pdf_names": [
+    "HW2_conversation_snapshot.pdf",
+    "L7_CRISPDM_MR_infographic.pdf",
+    "L7_CRISPDM_MR_report_draft.pdf"
+  ],
+  "future_generator": "HW2 conversation only",
+  "notebooklm": "awaiting user output later"
+}

@@ -1,0 +1,181 @@
+{
+  "stage": 0,
+  "recorded_at": "2026-11-01T16:28:05+08:00",
+  "project": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR",
+  "scope": "Local baseline documents, live LMS requirement snapshot and metadata consistency; no application/model/deployment tests.",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Created baseline files",
+      "expected": "13 approved files exist",
+      "actual": {
+        "count": 13,
+        "missing": []
+      },
+      "passed": true
+    },
+    {
+      "name": "JSON parsing",
+      "expected": "Both metadata files are valid JSON",
+      "actual": [
+        "docs/environment-baseline.json",
+        "artifacts/reference/lms-source.json"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Requirement mapping",
+      "expected": "Unique R01-R21 entries",
+      "actual": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20",
+        "R21"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Stage approval boundaries",
+      "expected": "Only six stage-0 checklist items checked",
+      "actual": {
+        "stage0_checked": 6,
+        "later_checked": 0,
+        "remaining_unchecked": 82
+      },
+      "passed": true
+    },
+    {
+      "name": "Internal document links",
+      "expected": "All README and decision links resolve; evidence self-link reserved",
+      "actual": {
+        "links": [
+          {
+            "file": "README.md",
+            "target": "docs/REQUIREMENTS.md",
+            "exists_or_this_report": true
+          },
+          {
+            "file": "README.md",
+            "target": "docs/PLAN.md",
+            "exists_or_this_report": true
+          },
+          {
+            "file": "README.md",
+            "target": "docs/DECISIONS.md",
+            "exists_or_this_report": true
+          },
+          {
+            "file": "README.md",
+            "target": "docs/environment-baseline.json",
+            "exists_or_this_report": true
+          },
+          {
+            "file": "README.md",
+            "target": "artifacts/validation/stage0.json",
+            "exists_or_this_report": true
+          },
+          {
+            "file": "README.md",
+            "target": "docs/STAGE1_PROPOSAL.md",
+            "exists_or_this_report": true
+          },
+          {
+            "file": "README.md",
+            "target": "artifacts/reference/lms-assignment.txt",
+            "exists_or_this_report": true
+          },
+          {
+            "file": "README.md",
+            "target": "AGENTS.md",
+            "exists_or_this_report": true
+          },
+          {
+            "file": "docs/DECISIONS.md",
+            "target": "STAGE1_PROPOSAL.md",
+            "exists_or_this_report": true
+          }
+        ],
+        "broken": []
+      },
+      "passed": true
+    },
+    {
+      "name": "Confirmed project location",
+      "expected": "No obsolete proposed HW2 directory in project documents",
+      "actual": [],
+      "passed": true
+    },
+    {
+      "name": "Live LMS source snapshot",
+      "expected": "Saved text matches metadata SHA-256 and deadline",
+      "actual": {
+        "hash_match": true,
+        "deadline": "2026-11-04",
+        "grade_weight": "10%"
+      },
+      "passed": true
+    },
+    {
+      "name": "L5V2 reference files",
+      "expected": "Three inventoried reference files unchanged",
+      "actual": {
+        "README.md": true,
+        "analysis.py": true,
+        "web/app.js": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Git ignore rules",
+      "expected": "Secret names/uploads/local state ignored; docs and placeholders retained",
+      "actual": {
+        ".env": true,
+        ".env.local": true,
+        ".env.example": false,
+        ".venv/bin/python": true,
+        "uploads/example.csv": true,
+        "artifacts/user-jobs/job.json": true,
+        ".vercel/project.json": true,
+        "data/raw/source.csv": true,
+        "data/raw/.gitkeep": false,
+        "README.md": false,
+        "docs/PLAN.md": false
+      },
+      "passed": true
+    },
+    {
+      "name": "Stage-0-only scope",
+      "expected": "No new runtime, source code, models or deployment",
+      "actual": {
+        "venv_exists": false,
+        "git_exists": false,
+        "python_code_files": 0,
+        "raw_data_files": []
+      },
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Reference package versions are inventory only, not new-environment compatibility validation.",
+    "No dataset selection, training, API, deployment, NotebookLM research or LMS submission performed.",
+    "Internal links checked in README and DECISIONS; other code-formatted future artifact paths remain planned.",
+    "Only stage 0 is approved; stage 1 awaits explicit confirmation."
+  ]
+}

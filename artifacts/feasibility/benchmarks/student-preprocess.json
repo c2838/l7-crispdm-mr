@@ -1,0 +1,31 @@
+{
+  "dataset": "student",
+  "method": "preprocess",
+  "status": "passed",
+  "development_rows": 519,
+  "raw_input_fields": 32,
+  "encoded_columns": 41,
+  "import_s": 1.4949598340317607,
+  "load_s": 0.005552458809688687,
+  "preprocess_s": 0.014913334045559168,
+  "operation_s": 5.707843229174614e-06,
+  "wall_s_including_import": 1.5157599169760942,
+  "cpu_s": 1.2913109999999999,
+  "peak_rss_bytes": 174866432,
+  "threads_limit": 1,
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "filepath": "/Users/c2838/NCHU/115-1 \u4e2d\u8208\u4f5c\u696d/AIOT/L7_CRISPDM_MR/.venv/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+      "version": null
+    }
+  ],
+  "warning_categories": [],
+  "final_test_rows_read": 0,
+  "model_scope": "feasibility only; no final scores or model export",
+  "operation": "load/preprocess only",
+  "fresh_process_wall_s": 1.7022255840711296
+}

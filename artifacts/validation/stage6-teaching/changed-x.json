@@ -1,0 +1,1870 @@
+{
+  "schema_version": "1.0",
+  "analysis_id": "df933ce0517189611692857fa238fc1dff6623497e59657014df064ba2d13da1",
+  "data_sha256": "c6075ca5a7551243b31193bad9228f0a1b9468cdde2475c6586c56dcfac5630d",
+  "request_method": "kbest",
+  "options": {
+    "target": "Profit",
+    "exclude": [
+      "Marketing Spend"
+    ],
+    "categorical": [],
+    "group": null,
+    "target_transform": "identity",
+    "seed": 0
+  },
+  "source": {
+    "sha256": "c6075ca5a7551243b31193bad9228f0a1b9468cdde2475c6586c56dcfac5630d",
+    "bytes": 2436,
+    "delimiter": ",",
+    "encoding": "UTF-8",
+    "rows": 50,
+    "source_columns": 5
+  },
+  "split": {
+    "development_rows": 40,
+    "test_rows": 10,
+    "grouped": false,
+    "group_column": null,
+    "duplicate_input_rows": 0,
+    "effective_groups": null,
+    "training_test_groups_disjoint": null,
+    "development_source_rows_sha256": "538e726807bfce87e49343b9a2d2ca271c29ed4fd2b72ec28ae3440e5d625044",
+    "test_source_rows_sha256": "466689132fbff89553b3f8d67a926b83057ef088dbbfad5ed6a259c035404b93",
+    "seed": 0,
+    "policy": "PCG64(0), first ceil(20%) reserved",
+    "final_test_used_for_selection": false
+  },
+  "raw_input_fields": 3,
+  "scope": "One stateless method request; common development/test split; selection uses development CV only.",
+  "engine_status": "completed",
+  "status": "completed",
+  "warnings": [
+    "少於14個原始輸入：可用於教學／任意Dataset示範，不符合正式題目最低特徵數。"
+  ],
+  "cv_policy": {
+    "outer_folds": 5,
+    "inner_sfs_folds": 3,
+    "seed": 17,
+    "k_grid": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "alphas": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "l1_ratios": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "ridge_alphas": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0
+    ]
+  },
+  "cv_candidates": [
+    {
+      "id": "kbest:k=1",
+      "method": "kbest",
+      "parameters": {
+        "k": 1
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 6989.176374728949,
+        "mse": 96831524.42439549,
+        "rmse": 9840.301033220248,
+        "r2": 0.9392006595635072,
+        "fold_rmse_std": 3718.6976455170593
+      },
+      "mean_selected_count": 1.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8239.81813800643,
+            "mse": 110305637.26161945,
+            "rmse": 10502.649059243075,
+            "r2": 0.7840567711785125
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 9807.180638548947,
+            "mse": 219925574.56550893,
+            "rmse": 14829.887881083556,
+            "r2": 0.8617406189367691
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7079.471522766877,
+            "mse": 81222768.7814041,
+            "rmse": 9012.367545845214,
+            "r2": 0.9618752425966057
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5699.5768070193335,
+            "mse": 45515043.60388757,
+            "rmse": 6746.483795569924,
+            "r2": 0.940954717041132
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 4119.834767303152,
+            "mse": 27188597.909557424,
+            "rmse": 5214.268684058909,
+            "r2": 0.9799220701373156
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "kbest:k=2",
+      "method": "kbest",
+      "parameters": {
+        "k": 2
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 6871.122705371135,
+        "mse": 93908443.05327572,
+        "rmse": 9690.636875524524,
+        "r2": 0.9410360269241135,
+        "fold_rmse_std": 3679.1249543257186
+      },
+      "mean_selected_count": 2.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7452.689697698807,
+            "mse": 100669398.85893534,
+            "rmse": 10033.414117783404,
+            "r2": 0.8029214501380643
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 9568.24659189202,
+            "mse": 210554754.875764,
+            "rmse": 14510.504983485724,
+            "r2": 0.8676317197462994
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7400.891212090489,
+            "mse": 88214371.52632955,
+            "rmse": 9392.250610281306,
+            "r2": 0.9585934884467494
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5860.879576547335,
+            "mse": 47757479.104585886,
+            "rmse": 6910.678628368265,
+            "r2": 0.9380456736090735
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 4072.9064486270263,
+            "mse": 22346210.900763806,
+            "rmse": 4727.177900266057,
+            "r2": 0.9834980216098391
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "kbest:k=3",
+      "method": "kbest",
+      "parameters": {
+        "k": 3
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 6912.486256597374,
+        "mse": 97047488.52494092,
+        "rmse": 9851.26837137944,
+        "r2": 0.9390650583225976,
+        "fold_rmse_std": 3713.045082467725
+      },
+      "mean_selected_count": 3.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7309.627560938009,
+            "mse": 112820846.1939444,
+            "rmse": 10621.715783899717,
+            "r2": 0.7791327949295137
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 9606.289643504133,
+            "mse": 210306228.88709885,
+            "rmse": 14501.938797522862,
+            "r2": 0.8677879591897514
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7708.098531478025,
+            "mse": 91017035.34965838,
+            "rmse": 9540.284867322274,
+            "r2": 0.9572779598092653
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 5886.707686451751,
+            "mse": 48748663.81348707,
+            "rmse": 6982.024334925156,
+            "r2": 0.9367598398062784
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 4051.7078606149507,
+            "mse": 22344668.38051592,
+            "rmse": 4727.014742997521,
+            "r2": 0.9834991607128356
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    },
+    {
+      "id": "kbest:k=4",
+      "method": "kbest",
+      "parameters": {
+        "k": 4
+      },
+      "status": "completed",
+      "cv": {
+        "mae": 7136.309990280613,
+        "mse": 102807983.98218483,
+        "rmse": 10139.427201878065,
+        "r2": 0.9354481130512122,
+        "fold_rmse_std": 3662.3139642272054
+      },
+      "mean_selected_count": 4.0,
+      "completed_folds": 5,
+      "fold_metrics": [
+        {
+          "fold": 0,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 8241.284789718655,
+            "mse": 128293229.03898087,
+            "rmse": 11326.660100796742,
+            "r2": 0.7488428080161982
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 1,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 9617.980325165972,
+            "mse": 210201167.8613426,
+            "rmse": 14498.316035365715,
+            "r2": 0.8678540073172765
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 2,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 7527.855932087053,
+            "mse": 97307782.70880033,
+            "rmse": 9864.470726237689,
+            "r2": 0.9543251767343767
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 3,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 6122.516031644323,
+            "mse": 53465550.5468829,
+            "rmse": 7312.014123815879,
+            "r2": 0.9306407659835193
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        },
+        {
+          "fold": 4,
+          "status": "completed",
+          "metrics": {
+            "n": 8,
+            "mae": 4171.91287278706,
+            "mse": 24772189.754917443,
+            "rmse": 4977.166840172976,
+            "r2": 0.9817065120423328
+          },
+          "training_rows": 32,
+          "validation_rows": 8
+        }
+      ]
+    }
+  ],
+  "winner_ids": {
+    "kbest": "kbest:k=2"
+  },
+  "models": [
+    {
+      "candidate_id": "kbest:k=2",
+      "method": "kbest",
+      "parameters": {
+        "k": 2
+      },
+      "artifact": {
+        "schema_version": "1.0",
+        "dataset_id": "custom-df933ce051718961",
+        "candidate_id": "kbest:k=2",
+        "method": "kbest",
+        "parameters": {
+          "k": 2
+        },
+        "target": "Profit",
+        "target_transform": "identity",
+        "raw_input_fields": [
+          "R&D Spend",
+          "Administration",
+          "State"
+        ],
+        "selected_keys": [
+          "n:\"R&D Spend\"",
+          "n:\"Administration\""
+        ],
+        "selected_columns": [
+          {
+            "key": "n:\"R&D Spend\"",
+            "field": "R&D Spend",
+            "category": null,
+            "label": "R&D Spend"
+          },
+          {
+            "key": "n:\"Administration\"",
+            "field": "Administration",
+            "category": null,
+            "label": "Administration"
+          }
+        ],
+        "selected_raw_fields": [
+          "Administration",
+          "R&D Spend"
+        ],
+        "model": {
+          "coefficients": [
+            39563.84268249195,
+            -1987.9128625697188
+          ],
+          "intercept": 107682.75374999999,
+          "design_rank": 3,
+          "design_columns": 3,
+          "inference_status": "eligible_pending_diagnostics",
+          "warning_categories": []
+        },
+        "preprocessor": {
+          "fields": [
+            {
+              "field": "R&D Spend",
+              "kind": "numeric",
+              "fill": 65828.5,
+              "all_missing_training": false
+            },
+            {
+              "field": "Administration",
+              "kind": "numeric",
+              "fill": 125736.70999999999,
+              "all_missing_training": false
+            },
+            {
+              "field": "State",
+              "kind": "categorical",
+              "fill": "California",
+              "categories": [
+                "California",
+                "Florida",
+                "New York"
+              ],
+              "reference": "California",
+              "all_missing_training": false
+            }
+          ],
+          "all_columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "keep": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "columns": [
+            {
+              "key": "n:\"R&D Spend\"",
+              "field": "R&D Spend",
+              "category": null,
+              "label": "R&D Spend"
+            },
+            {
+              "key": "n:\"Administration\"",
+              "field": "Administration",
+              "category": null,
+              "label": "Administration"
+            },
+            {
+              "key": "c:[\"State\",\"Florida\"]",
+              "field": "State",
+              "category": "Florida",
+              "label": "State = Florida"
+            },
+            {
+              "key": "c:[\"State\",\"New York\"]",
+              "field": "State",
+              "category": "New York",
+              "label": "State = New York"
+            }
+          ],
+          "center": [
+            69579.0315,
+            122351.531,
+            0.25,
+            0.375
+          ],
+          "scale": [
+            45655.067761281636,
+            29326.353922813418,
+            0.4330127018922193,
+            0.4841229182759271
+          ],
+          "fit_rows": 40,
+          "dropped_constant": [],
+          "categorical_overrides": [],
+          "unknown_policy": "all-zero dummy block, equivalent to training reference; count reported",
+          "scale_scope": "all active encoded columns, including numeric and binary dummies"
+        },
+        "fit_rows": 40,
+        "point_prediction_semantics": "identity",
+        "source_frame_values_sha256": "d2bd7e7bab417bae5fa902736a2842c6567175c21488e638bb616235d30feb95"
+      },
+      "selected_count": 2,
+      "test_metrics": {
+        "n": 10,
+        "mae": 7807.971381325546,
+        "mse": 82956605.26265725,
+        "rmse": 9108.051672155645,
+        "r2": 0.9317206968825558
+      },
+      "cv": {
+        "mae": 6871.122705371135,
+        "mse": 93908443.05327572,
+        "rmse": 9690.636875524524,
+        "r2": 0.9410360269241135,
+        "fold_rmse_std": 3679.1249543257186
+      },
+      "inference": {
+        "schema_version": "1.0",
+        "status": "computed_under_conditional_OLS_assumptions",
+        "model_equation_sha256": "43955ef7034b83ea75dbc887809803071e5145932752a4e7abce37d3bf9a2815",
+        "alpha": 0.05,
+        "coefficients_with_intercept": [
+          107682.75375,
+          39563.84268249196,
+          -1987.9128625697085
+        ],
+        "covariance_classical": [
+          [
+            2267429.6949759354,
+            -1.9666817610008426e-11,
+            1.9666817610008426e-11
+          ],
+          [
+            -1.9666817610008426e-11,
+            2661137.4445540295,
+            -1023577.2733962822
+          ],
+          [
+            1.9666817610008426e-11,
+            -1023577.2733962822,
+            2661137.4445540286
+          ]
+        ],
+        "covariance_hc3": [
+          [
+            2514797.322452166,
+            -1387474.3459406595,
+            -275786.0506332582
+          ],
+          [
+            -1387474.3459406598,
+            4356491.340930978,
+            -793939.2072523583
+          ],
+          [
+            -275786.0506332582,
+            -793939.2072523584,
+            2554757.709247451
+          ]
+        ],
+        "mse_resid": 90697187.7990374,
+        "df_resid": 37.0,
+        "training_rows": 40,
+        "design_columns_including_intercept": 3,
+        "design_rank": 3,
+        "target_transform": "identity",
+        "location_kind": "conditional_arithmetic_mean",
+        "observation_kind": "new observation of the user-selected target under a homoskedastic Gaussian regression error model",
+        "HC3_scope": "coefficient and location CI only; not a robust observation PI",
+        "selection_conditioning": "Intervals condition on selected columns and fitted preprocessing; feature-selection uncertainty not corrected.",
+        "critical_value_95": 2.0261924630291093
+      },
+      "inference_status": "available",
+      "coefficient_intervals": [
+        {
+          "column": "Intercept",
+          "basis": "standardized_encoded",
+          "covariance": "classical",
+          "coefficient": 107682.75375,
+          "standard_error": 1505.7986900565213,
+          "ci_lower": 104631.71579336838,
+          "ci_upper": 110733.79170663163,
+          "p_value": 2.8719013839020727e-41,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "R&D Spend",
+          "basis": "standardized_encoded",
+          "covariance": "classical",
+          "coefficient": 39563.84268249196,
+          "standard_error": 1631.299311761649,
+          "ci_lower": 36258.51631205593,
+          "ci_upper": 42869.16905292799,
+          "p_value": 2.586752777591898e-24,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Administration",
+          "basis": "standardized_encoded",
+          "covariance": "classical",
+          "coefficient": -1987.9128625697085,
+          "standard_error": 1631.2993117616486,
+          "ci_lower": -5293.239233005734,
+          "ci_upper": 1317.413507866317,
+          "p_value": 0.23070645100248732,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Intercept",
+          "basis": "standardized_encoded",
+          "covariance": "HC3",
+          "coefficient": 107682.75375,
+          "standard_error": 1585.8112505756055,
+          "ci_lower": 104469.59494629694,
+          "ci_upper": 110895.91255370306,
+          "p_value": 1.9229437007301344e-40,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "R&D Spend",
+          "basis": "standardized_encoded",
+          "covariance": "HC3",
+          "coefficient": 39563.84268249196,
+          "standard_error": 2087.2209612139723,
+          "ci_lower": 35334.731302203836,
+          "ci_upper": 43792.95406278008,
+          "p_value": 1.2113993182651997e-20,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Administration",
+          "basis": "standardized_encoded",
+          "covariance": "HC3",
+          "coefficient": -1987.9128625697085,
+          "standard_error": 1598.3609446077726,
+          "ci_lower": -5226.499761734065,
+          "ci_upper": 1250.674036594648,
+          "p_value": 0.22142524374169376,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Intercept",
+          "basis": "unscaled_encoded",
+          "covariance": "classical",
+          "coefficient": 55680.55060490027,
+          "standard_error": 6461.577809726237,
+          "ci_lower": 42588.15034755683,
+          "ci_upper": 68772.95086224371,
+          "p_value": 2.2494665363647297e-10,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "R&D Spend",
+          "basis": "unscaled_encoded",
+          "covariance": "classical",
+          "coefficient": 0.8665816222059051,
+          "standard_error": 0.03573095806781593,
+          "ci_lower": 0.7941838242720873,
+          "ci_upper": 0.9389794201397228,
+          "p_value": 2.586752777591881e-24,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Administration",
+          "basis": "unscaled_encoded",
+          "covariance": "classical",
+          "coefficient": -0.06778588527581264,
+          "standard_error": 0.05562571181044896,
+          "ci_lower": -0.18049428329677364,
+          "ci_upper": 0.044922512745148344,
+          "p_value": 0.23070645100248732,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Intercept",
+          "basis": "unscaled_encoded",
+          "covariance": "HC3",
+          "coefficient": 55680.55060490027,
+          "standard_error": 7316.818765689624,
+          "ci_lower": 40855.267568510004,
+          "ci_upper": 70505.83364129053,
+          "p_value": 4.432862085850604e-09,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "R&D Spend",
+          "basis": "unscaled_encoded",
+          "covariance": "HC3",
+          "coefficient": 0.8665816222059051,
+          "standard_error": 0.045717180229093136,
+          "ci_lower": 0.7739498161947731,
+          "ci_upper": 0.959213428217037,
+          "p_value": 1.2113993182651997e-20,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        },
+        {
+          "column": "Administration",
+          "basis": "unscaled_encoded",
+          "covariance": "HC3",
+          "coefficient": -0.06778588527581264,
+          "standard_error": 0.05450254569029064,
+          "ci_lower": -0.1782185325693792,
+          "ci_upper": 0.042646762017753914,
+          "p_value": 0.22142524374169376,
+          "response_scale": "original target units",
+          "interpretation": "conditional association after model selection; not causal"
+        }
+      ],
+      "diagnostics": {
+        "status": "computed",
+        "training_rows": 40,
+        "design_columns_including_intercept": 3,
+        "response_scale": "original target units",
+        "development_ols_r2": 0.9473234100348505,
+        "development_ols_adjusted_r2": 0.9444760267934911,
+        "development_residual_df": 37.0,
+        "residual_std": 9523.507116553092,
+        "normality": {
+          "test": "Jarque-Bera on all development residuals",
+          "statistic": 22.122654564554548,
+          "p_value": 1.570820638831604e-05,
+          "p_display": "1.571e-05",
+          "skewness": -1.245396582504502,
+          "excess_kurtosis": 3.2873715261568837,
+          "interpretation": "Large-sample p-values are sensitive; use residual shape and effects, not a pass/fail label."
+        },
+        "heteroskedasticity": {
+          "status": "computed",
+          "test": "Koenker/studentized Breusch-Pagan",
+          "lm_statistic": 2.53526222658357,
+          "p_value": 0.28149766865778975,
+          "p_display": "0.2815",
+          "f_statistic": 1.2519065654604995,
+          "f_p_value": 0.2977899648463726,
+          "corr_abs_residual_fitted": -0.15377056989579688
+        },
+        "functional_form": {
+          "status": "computed",
+          "test": "Quadratic fitted-value RESET-style test with HC3 covariance",
+          "f_statistic": 0.5230365040290832,
+          "p_value": 0.4742222733423521,
+          "p_display": "0.4742",
+          "diagnostic_only": true,
+          "frozen_model_replaced": false
+        },
+        "vif": [
+          {
+            "key": "n:\"R&D Spend\"",
+            "label": "R&D Spend",
+            "vif": 1.1736361442431724,
+            "status": "finite"
+          },
+          {
+            "key": "n:\"Administration\"",
+            "label": "Administration",
+            "vif": 1.1736361442431724,
+            "status": "finite"
+          }
+        ],
+        "condition_number_standardized_design": 1.5000415923673365,
+        "influence": {
+          "status": "available",
+          "cook_heuristic": 0.1,
+          "leverage_heuristic": 0.15,
+          "cook_flagged_rows": 3,
+          "leverage_flagged_rows": 3,
+          "max_cooks_distance": 0.4242809500961212,
+          "max_leverage": 0.18000017314949426,
+          "top_rows": [
+            {
+              "development_position": 39,
+              "source_row_index_0_based": 49,
+              "leverage": 0.08783462748315785,
+              "cooks_distance": 0.4242809500961212,
+              "studentized_internal": -3.635727311673122,
+              "residual": -33069.30015897166
+            },
+            {
+              "development_position": 38,
+              "source_row_index_0_based": 48,
+              "leverage": 0.18000017314949426,
+              "cooks_distance": 0.28331144251429846,
+              "studentized_internal": -1.9677191124620859,
+              "residual": -16969.415943507818
+            },
+            {
+              "development_position": 35,
+              "source_row_index_0_based": 45,
+              "leverage": 0.09339610208453834,
+              "cooks_distance": 0.11779216441304988,
+              "studentized_internal": 1.852094933560632,
+              "residual": 16794.572185204095
+            },
+            {
+              "development_position": 28,
+              "source_row_index_0_based": 38,
+              "leverage": 0.12089240196407548,
+              "cooks_distance": 0.08966099186129578,
+              "studentized_internal": 1.398569040945884,
+              "residual": 12488.257293496688
+            },
+            {
+              "development_position": 11,
+              "source_row_index_0_based": 14,
+              "leverage": 0.07156571912280438,
+              "cooks_distance": 0.08213637584862048,
+              "studentized_internal": -1.7879339027871735,
+              "residual": -16406.80264438805
+            },
+            {
+              "development_position": 12,
+              "source_row_index_0_based": 15,
+              "leverage": 0.053236178019244004,
+              "cooks_distance": 0.06084527642343526,
+              "studentized_internal": -1.8017372371571847,
+              "residual": -16695.87529045403
+            },
+            {
+              "development_position": 33,
+              "source_row_index_0_based": 43,
+              "leverage": 0.07160801807643337,
+              "cooks_distance": 0.02627370265971475,
+              "studentized_internal": 1.0108951928401912,
+              "residual": 9276.170712182102
+            },
+            {
+              "development_position": 2,
+              "source_row_index_0_based": 5,
+              "leverage": 0.12062787656975256,
+              "cooks_distance": 0.02207703705479582,
+              "studentized_internal": -0.694853942922292,
+              "residual": -6205.50005748769
+            },
+            {
+              "development_position": 9,
+              "source_row_index_0_based": 12,
+              "leverage": 0.03210967790917265,
+              "cooks_distance": 0.021932106465168726,
+              "studentized_internal": 1.4083023343582086,
+              "residual": 13194.893325723067
+            },
+            {
+              "development_position": 8,
+              "source_row_index_0_based": 11,
+              "leverage": 0.08649111604880726,
+              "cooks_distance": 0.021773607374787746,
+              "studentized_internal": 0.8306086663766584,
+              "residual": 7560.48674650857
+            },
+            {
+              "development_position": 7,
+              "source_row_index_0_based": 10,
+              "leverage": 0.05084183730749031,
+              "cooks_distance": 0.01920305122698556,
+              "studentized_internal": 1.0370612875728016,
+              "residual": 9622.116857340152
+            },
+            {
+              "development_position": 1,
+              "source_row_index_0_based": 1,
+              "leverage": 0.1300234496498729,
+              "cooks_distance": 0.01888178251395311,
+              "studentized_internal": 0.6156374832863114,
+              "residual": 5468.59471121963
+            },
+            {
+              "development_position": 13,
+              "source_row_index_0_based": 16,
+              "leverage": 0.026127912820664016,
+              "cooks_distance": 0.014459049836152107,
+              "studentized_internal": 1.2715373004937824,
+              "residual": 11950.249552091904
+            },
+            {
+              "development_position": 3,
+              "source_row_index_0_based": 6,
+              "leverage": 0.07836039461179195,
+              "cooks_distance": 0.013181856413893087,
+              "studentized_internal": -0.6819949725238322,
+              "residual": -6235.318591145129
+            },
+            {
+              "development_position": 26,
+              "source_row_index_0_based": 35,
+              "leverage": 0.06547290045382174,
+              "cooks_distance": 0.012328049145942434,
+              "studentized_internal": 0.7265624773721758,
+              "residual": 6689.0713101263245
+            },
+            {
+              "development_position": 6,
+              "source_row_index_0_based": 9,
+              "leverage": 0.08444444490371332,
+              "cooks_distance": 0.010930316005322328,
+              "studentized_internal": -0.5962574175269655,
+              "residual": -5433.417240380368
+            },
+            {
+              "development_position": 10,
+              "source_row_index_0_based": 13,
+              "leverage": 0.03299882776420088,
+              "cooks_distance": 0.008493739589395958,
+              "studentized_internal": 0.8641205677031529,
+              "residual": 8092.538108759647
+            },
+            {
+              "development_position": 37,
+              "source_row_index_0_based": 47,
+              "leverage": 0.11431760687283031,
+              "cooks_distance": 0.008317789719297239,
+              "studentized_internal": -0.4396904563772752,
+              "residual": -3940.786942523613
+            },
+            {
+              "development_position": 30,
+              "source_row_index_0_based": 40,
+              "leverage": 0.0463357460192729,
+              "cooks_distance": 0.006034877057036651,
+              "studentized_internal": 0.6104280941237508,
+              "residual": 5677.134403456555
+            },
+            {
+              "development_position": 20,
+              "source_row_index_0_based": 28,
+              "leverage": 0.1527847441820903,
+              "cooks_distance": 0.005888638031949848,
+              "studentized_internal": 0.31298602407752046,
+              "residual": 2743.587020630497
+            }
+          ],
+          "interpretation": "Heuristics locate potentially influential training observations; none are automatically deleted."
+        },
+        "sensitivity": {
+          "status": "diagnostic_only",
+          "deleted_training_position_for_sensitivity": 39,
+          "coefficients_after_one_row_deletion": [
+            108589.09434226912,
+            38017.61369804697,
+            -1559.0643641636657
+          ],
+          "max_absolute_coefficient_change": 1546.22898444499,
+          "development_fitted_change_rms": 1698.8471608068937,
+          "development_fitted_change_max_abs": 3454.023077080369,
+          "response_scale": "original target units",
+          "production_model_changed": false,
+          "test_rows_deleted": 0,
+          "source_row_index_0_based": 49
+        },
+        "independence": {
+          "status": "not_established",
+          "reason": "Heldout/CV groups isolated where available; row-level OLS still assumes an error structure not established by splitting.",
+          "source_limit": "User dataset; no independent external population validated. Grouped data may require cluster-aware inference."
+        },
+        "post_selection_caveat": "Intervals condition on selected columns and fitted preprocessing; feature-selection uncertainty not corrected.",
+        "hc3_caveat": "coefficient and location CI only; not a robust observation PI"
+      },
+      "diagnostic_plot": {
+        "scope": "development diagnostics; display thinning only, statistics use every development row",
+        "sample_development_positions": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "sample_source_rows": [
+          0,
+          1,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19,
+          21,
+          22,
+          25,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          35,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "fitted": [
+          189689.3900060378,
+          186323.46528878037,
+          163196.6200574877,
+          162357.82859114514,
+          158729.63151935406,
+          150059.4374482487,
+          155193.37724038036,
+          136499.83314265986,
+          136698.91325349142,
+          128390.62667427692,
+          126214.81189124036,
+          149009.45264438805,
+          146612.91529045402,
+          115042.68044790809,
+          127874.49367713166,
+          120164.18457276945,
+          113187.7565969132,
+          111479.93903876365,
+          102258.06540253756,
+          109500.25986913139,
+          100538.79297936951,
+          102159.64022621606,
+          101564.98111188368,
+          98309.1791305806,
+          101870.23770708214,
+          96784.74462456045,
+          89790.43868987367,
+          90394.48632180995,
+          68740.80270650331,
+          83469.63231785574,
+          72562.77559654345,
+          74109.84792971404,
+          69647.04685085366,
+          60482.809287817894,
+          64405.70126492967,
+          48131.50781479591,
+          48969.79974150783,
+          46500.516942523616,
+          52642.82594350782,
+          47750.70015897166
+        ],
+        "residual": [
+          2572.43999396218,
+          5468.59471121963,
+          -6205.50005748769,
+          -6235.318591145129,
+          -2977.031519354059,
+          2152.332551751286,
+          -5433.417240380368,
+          9622.116857340152,
+          7560.48674650857,
+          13194.893325723067,
+          8092.538108759647,
+          -16406.80264438805,
+          -16695.87529045403,
+          11950.249552091904,
+          -2504.1236771316617,
+          2612.675427230555,
+          -1874.7365969131934,
+          -1127.6890387636522,
+          5146.274597462441,
+          -4491.949869131393,
+          2743.587020630497,
+          -1155.000226216056,
+          -1627.391111883684,
+          -825.6191305805987,
+          -4442.397707082142,
+          -5.8246245604532305,
+          6689.0713101263245,
+          -445.3463218099496,
+          12488.257293496688,
+          -2463.872317855741,
+          5677.134403456555,
+          3688.982070285958,
+          1851.4431491463474,
+          9276.170712182102,
+          794.6287350703351,
+          16794.572185204095,
+          520.950258492172,
+          -3940.786942523613,
+          -16969.415943507818,
+          -33069.30015897166
+        ],
+        "qq_theoretical": [
+          -2.241402727604945,
+          -1.7804643416920258,
+          -1.5341205443525463,
+          -1.356311745335247,
+          -1.213339622488518,
+          -1.091620367434168,
+          -0.984234960446325,
+          -0.8871465590188761,
+          -0.7977768461252381,
+          -0.7143674402801876,
+          -0.6356570136975827,
+          -0.5607030318750833,
+          -0.4887764111146695,
+          -0.419295753041396,
+          -0.35178434493515626,
+          -0.2858408748811656,
+          -0.22111871299757055,
+          -0.1573106846101707,
+          -0.0941374143235364,
+          -0.03133798202142662,
+          0.03133798202142648,
+          0.0941374143235364,
+          0.1573106846101707,
+          0.22111871299757055,
+          0.2858408748811657,
+          0.3517843449351561,
+          0.419295753041396,
+          0.4887764111146695,
+          0.5607030318750833,
+          0.6356570136975828,
+          0.7143674402801874,
+          0.7977768461252381,
+          0.8871465590188761,
+          0.984234960446325,
+          1.091620367434168,
+          1.2133396224885171,
+          1.356311745335247,
+          1.5341205443525463,
+          1.7804643416920258,
+          2.241402727604947
+        ],
+        "qq_observed": [
+          -3.47238677456259,
+          -1.781845252576414,
+          -1.7531225719813273,
+          -1.7227689803340305,
+          -0.6547292415319705,
+          -0.6515981960785986,
+          -0.5705269260455933,
+          -0.4716697130749029,
+          -0.4664665708455951,
+          -0.41379576812349034,
+          -0.3125982353895228,
+          -0.26294133521244184,
+          -0.25871480828456683,
+          -0.1968535933211682,
+          -0.1708814927071422,
+          -0.12127887469192056,
+          -0.11841110894993528,
+          -0.0866927614455777,
+          -0.046762848639644514,
+          -0.0006116049989955146,
+          0.05470151406583115,
+          0.08343866659050081,
+          0.1944077036418967,
+          0.2260020941245744,
+          0.2701147762562119,
+          0.274339630900195,
+          0.2880857846855374,
+          0.3873554169843616,
+          0.5403759911637539,
+          0.574220677770535,
+          0.5961180407571659,
+          0.7023747899027503,
+          0.7938763161490647,
+          0.8497434831222802,
+          0.9740288528853948,
+          1.0103543515619013,
+          1.2548160468448455,
+          1.3113086534886371,
+          1.3855077929000157,
+          1.7634860749999282
+        ],
+        "leverage": [
+          0.13784251704307857,
+          0.1300234496498729,
+          0.12062787656975256,
+          0.07836039461179195,
+          0.0715002508687248,
+          0.06262587076578753,
+          0.08444444490371332,
+          0.05084183730749031,
+          0.08649111604880726,
+          0.03210967790917265,
+          0.03299882776420088,
+          0.07156571912280438,
+          0.053236178019244004,
+          0.026127912820664016,
+          0.04186496868591593,
+          0.05327529125049823,
+          0.05510954018722033,
+          0.025248693455384125,
+          0.036859819436813095,
+          0.025891895882885957,
+          0.1527847441820903,
+          0.05939060220670052,
+          0.026487930056961567,
+          0.06174881013409268,
+          0.02785957527203013,
+          0.03591129805750065,
+          0.06547290045382174,
+          0.1759077635471497,
+          0.12089240196407548,
+          0.07083537119348136,
+          0.0463357460192729,
+          0.07134554836740735,
+          0.057795719657139394,
+          0.07160801807643337,
+          0.11849708155809144,
+          0.09339610208453834,
+          0.08453169735990809,
+          0.11431760687283031,
+          0.18000017314949426,
+          0.08783462748315785
+        ],
+        "studentized_internal": [
+          0.29090758255101434,
+          0.6156374832863114,
+          -0.694853942922292,
+          -0.6819949725238322,
+          -0.32441104113258085,
+          0.23342963004203596,
+          -0.5962574175269655,
+          1.0370612875728016,
+          0.8306086663766584,
+          1.4083023343582086,
+          0.8641205677031529,
+          -1.7879339027871735,
+          -1.8017372371571847,
+          1.2715373004937824,
+          -0.26862442840504686,
+          0.28195298320006573,
+          -0.20251286354453385,
+          -0.11993488841776614,
+          0.55061912824171,
+          -0.4778971184833569,
+          0.31298602407752046,
+          -0.12504908026748224,
+          -0.1731906167784981,
+          -0.08950004938126908,
+          -0.4731033510376056,
+          -0.0006228916796487113,
+          0.7265624773721758,
+          -0.05151254983670847,
+          1.398569040945884,
+          -0.26839532884760736,
+          0.6104280941237508,
+          0.4019597443042027,
+          0.20028154546023322,
+          1.0108951928401912,
+          0.08887006092452368,
+          1.852094933560632,
+          0.05717125046180163,
+          -0.4396904563772752,
+          -1.9677191124620859,
+          -3.635727311673122
+        ],
+        "cooks_distance": [
+          0.004510092206404433,
+          0.01888178251395311,
+          0.02207703705479582,
+          0.013181856413893087,
+          0.0027014427834155634,
+          0.0012134769268191763,
+          0.010930316005322328,
+          0.01920305122698556,
+          0.021773607374787746,
+          0.021932106465168726,
+          0.008493739589395958,
+          0.08213637584862048,
+          0.06084527642343526,
+          0.014459049836152107,
+          0.0010509784368956917,
+          0.0014911943650988617,
+          0.0007973138311358474,
+          0.00012419808505345138,
+          0.003867631034739117,
+          0.002023504919540039,
+          0.005888638031949848,
+          0.00032911536973917466,
+          0.000272040862777721,
+          0.00017572549069027452,
+          0.0021381407075040043,
+          4.817457754393893e-09,
+          0.012328049145942434,
+          0.00018880523204305071,
+          0.08966099186129578,
+          0.0018305692243326763,
+          0.006034877057036651,
+          0.004137677171419364,
+          0.0008201838550271061,
+          0.02627370265971475,
+          0.0003538943270439368,
+          0.11779216441304988,
+          0.00010060287813895448,
+          0.008317789719297239,
+          0.28331144251429846,
+          0.4242809500961212
+        ]
+      },
+      "interval_summary": {
+        "rows": 10,
+        "covered_count": 10,
+        "observation_pi_coverage": 1.0,
+        "observation_pi_mean_width": 40050.70998503972,
+        "location_ci_mean_width": 10202.253530143022,
+        "location_ci_hc3_mean_width": 10578.901655537495,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 0,
+        "negative_pi_lower_count": 0,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage"
+      },
+      "forms": [
+        {
+          "field": "R&D Spend",
+          "kind": "numeric",
+          "fill": 65828.5,
+          "all_missing_training": false,
+          "min": 0.0,
+          "max": 165349.2,
+          "allowed_values": null
+        },
+        {
+          "field": "Administration",
+          "kind": "numeric",
+          "fill": 125736.70999999999,
+          "all_missing_training": false,
+          "min": 51283.14,
+          "max": 182645.56,
+          "allowed_values": null
+        },
+        {
+          "field": "State",
+          "kind": "categorical",
+          "fill": "California",
+          "categories": [
+            "California",
+            "Florida",
+            "New York"
+          ],
+          "reference": "California",
+          "all_missing_training": false
+        }
+      ],
+      "defaults": {
+        "R&D Spend": 165349.2,
+        "Administration": 136897.8,
+        "State": "New York"
+      },
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "heldout_plot": {
+        "total_test_rows": 10,
+        "display_rows": 10,
+        "display_rule": "even ranks sorted by prediction; full rows scored",
+        "rows": {
+          "source_row_index_0_based": [
+            36,
+            34,
+            23,
+            26,
+            20,
+            24,
+            18,
+            4,
+            3,
+            2
+          ],
+          "actual": [
+            90708.19,
+            96712.8,
+            108733.99,
+            105733.54,
+            118474.03,
+            108552.04,
+            124266.9,
+            166187.94,
+            182901.99,
+            191050.39
+          ],
+          "prediction": [
+            71907.42056958143,
+            85223.10768833198,
+            107034.5728165902,
+            111188.77996404115,
+            114042.1485686957,
+            115715.60024867929,
+            127449.17951151411,
+            172633.08779309288,
+            172746.75145490782,
+            181793.9026059649
+          ],
+          "residual": [
+            18800.76943041857,
+            11489.692311668026,
+            1699.4171834098088,
+            -5455.23996404116,
+            4431.881431304297,
+            -7163.560248679292,
+            -3182.27951151412,
+            -6445.147793092881,
+            10155.238545092172,
+            9256.487394035124
+          ],
+          "location_ci_lower": [
+            67483.30432011207,
+            79467.90070237349,
+            103482.35793797794,
+            107351.55350379198,
+            110753.95134253279,
+            111539.11533485538,
+            123724.66904002038,
+            164686.26912350446,
+            166380.48913940633,
+            173853.6731261097
+          ],
+          "location_ci_upper": [
+            76331.53681905082,
+            90978.3146742905,
+            110586.78769520245,
+            115026.00642429036,
+            117330.34579485861,
+            119892.08516250322,
+            131173.6899830079,
+            180579.90646268136,
+            179113.01377040936,
+            189734.13208582014
+          ],
+          "observation_pi_lower": [
+            52110.29681129032,
+            65086.68020072879,
+            87413.88131358474,
+            91514.49188493872,
+            94467.53374463283,
+            95972.3398606969,
+            107796.56434801636,
+            151764.3256956518,
+            152427.23865607206,
+            160927.64878058847
+          ],
+          "observation_pi_upper": [
+            91704.54432787257,
+            105359.53517593519,
+            126655.26431959565,
+            130863.06804314362,
+            133616.76339275856,
+            135458.8606366617,
+            147101.79467501192,
+            193501.84989053404,
+            193066.26425374363,
+            202660.15643134137
+          ],
+          "location_ci_hc3_lower": [
+            65928.91784651694,
+            79124.76823976033,
+            103116.89969965888,
+            107629.4550233027,
+            110748.24605880234,
+            111467.01436616029,
+            124081.87694221635,
+            164735.21813846822,
+            166308.51840951882,
+            173699.12821930728
+          ],
+          "location_ci_hc3_upper": [
+            77885.92329264595,
+            91321.44713690365,
+            110952.24593352151,
+            114748.10490477964,
+            117336.05107858907,
+            119964.18613119831,
+            130816.48208081194,
+            180530.9574477176,
+            179184.98450029688,
+            189888.67699262255
+          ],
+          "prediction_rank": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    }
+  ],
+  "selection_representative_id": "kbest:k=2",
+  "folds": [
+    {
+      "fold": 0,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "f9627dc86c9408724714cc405e0550492203c59e50c4cf02b7a1d6cb259d67ff",
+      "validation_row_positions_sha256": "0444e7630685d6e806b62484e784ac62b11e35de561ee13b0e5b5d470451ec70",
+      "encoded_training_fields": 4,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "8cd78b3f0cbc0ff1e7197723aecbf89a7a8223043c005df4a945fb99fa8a85d0"
+    },
+    {
+      "fold": 1,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "ccd2d2fa1477ad85e13fbb90bf1b271c34edc21524675c6c0b7ddefbcbcc53ec",
+      "validation_row_positions_sha256": "8f81c98054bbe66eefb163bc00f968b64909a037868e57f781a35184889bef73",
+      "encoded_training_fields": 4,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "504756f227af38d45fd75c705d0da863848e81ab27bd407b05073631b21f8da8"
+    },
+    {
+      "fold": 2,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "b8724e0b6efbf69b823efc02e33317d584b88740acec7a6686352dd9cab64e26",
+      "validation_row_positions_sha256": "2ed6dbf22cd29412e0a89d6fc92f686765c020d96f910fea35ec732619ca2deb",
+      "encoded_training_fields": 4,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "965fbfbaef29e69401ea70226754ac1824d715a052beb668180e128195c73ad2"
+    },
+    {
+      "fold": 3,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "84f8743e0745265efe6d7a91df350825fb7ca1df3faf6bf350ef3e5e7bcf1b12",
+      "validation_row_positions_sha256": "7dbeaa0a234027af59ae6abb8de95ee302cb2569fcd6c3b8dd5bffcb7a0a6de3",
+      "encoded_training_fields": 4,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "a22a854617611747f0959cb9ff628991d4076f77e6563fefc3310c5cd6e392b6"
+    },
+    {
+      "fold": 4,
+      "training_rows": 32,
+      "validation_rows": 8,
+      "training_row_positions_sha256": "04b82f3ba1420872d091e57c45696c515dcaeac369cb3adb7176dbc75198d79c",
+      "validation_row_positions_sha256": "2113e645c38c21fbc08225a02d3dd5cfc5098356ac7d2eddee2ce008ecea06e6",
+      "encoded_training_fields": 4,
+      "preprocessing_fit_rows": 32,
+      "validation_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "training_only_preprocessor_sha256": "46b11ae852e80e18fc55c7be637e7cd1d4b5ccf902fe1fdf8137d036f18966d2"
+    }
+  ],
+  "events": [
+    {
+      "sequence": 0,
+      "event": "started",
+      "elapsed_s": 0.0021586669608950615,
+      "rows": 40,
+      "methods": [
+        "kbest"
+      ]
+    },
+    {
+      "sequence": 1,
+      "event": "fold_started",
+      "elapsed_s": 0.006442666985094547,
+      "fold": 0
+    },
+    {
+      "sequence": 2,
+      "event": "method_started",
+      "elapsed_s": 0.0064438749104738235,
+      "fold": 0,
+      "method": "kbest"
+    },
+    {
+      "sequence": 3,
+      "event": "method_completed",
+      "elapsed_s": 0.00880045909434557,
+      "fold": 0,
+      "method": "kbest"
+    },
+    {
+      "sequence": 4,
+      "event": "fold_completed",
+      "elapsed_s": 0.008801167132332921,
+      "fold": 0
+    },
+    {
+      "sequence": 5,
+      "event": "fold_started",
+      "elapsed_s": 0.008803250035271049,
+      "fold": 1
+    },
+    {
+      "sequence": 6,
+      "event": "method_started",
+      "elapsed_s": 0.008804084034636617,
+      "fold": 1,
+      "method": "kbest"
+    },
+    {
+      "sequence": 7,
+      "event": "method_completed",
+      "elapsed_s": 0.01078224997036159,
+      "fold": 1,
+      "method": "kbest"
+    },
+    {
+      "sequence": 8,
+      "event": "fold_completed",
+      "elapsed_s": 0.010782666970044374,
+      "fold": 1
+    },
+    {
+      "sequence": 9,
+      "event": "fold_started",
+      "elapsed_s": 0.010784292127937078,
+      "fold": 2
+    },
+    {
+      "sequence": 10,
+      "event": "method_started",
+      "elapsed_s": 0.010784958954900503,
+      "fold": 2,
+      "method": "kbest"
+    },
+    {
+      "sequence": 11,
+      "event": "method_completed",
+      "elapsed_s": 0.012703249929472804,
+      "fold": 2,
+      "method": "kbest"
+    },
+    {
+      "sequence": 12,
+      "event": "fold_completed",
+      "elapsed_s": 0.012703666929155588,
+      "fold": 2
+    },
+    {
+      "sequence": 13,
+      "event": "fold_started",
+      "elapsed_s": 0.012705124914646149,
+      "fold": 3
+    },
+    {
+      "sequence": 14,
+      "event": "method_started",
+      "elapsed_s": 0.012705834116786718,
+      "fold": 3,
+      "method": "kbest"
+    },
+    {
+      "sequence": 15,
+      "event": "method_completed",
+      "elapsed_s": 0.014612874947488308,
+      "fold": 3,
+      "method": "kbest"
+    },
+    {
+      "sequence": 16,
+      "event": "fold_completed",
+      "elapsed_s": 0.014613250037655234,
+      "fold": 3
+    },
+    {
+      "sequence": 17,
+      "event": "fold_started",
+      "elapsed_s": 0.01461470895446837,
+      "fold": 4
+    },
+    {
+      "sequence": 18,
+      "event": "method_started",
+      "elapsed_s": 0.014615500112995505,
+      "fold": 4,
+      "method": "kbest"
+    },
+    {
+      "sequence": 19,
+      "event": "method_completed",
+      "elapsed_s": 0.016455250093713403,
+      "fold": 4,
+      "method": "kbest"
+    },
+    {
+      "sequence": 20,
+      "event": "fold_completed",
+      "elapsed_s": 0.016455624951049685,
+      "fold": 4
+    },
+    {
+      "sequence": 21,
+      "event": "cv_completed",
+      "elapsed_s": 0.01645604195073247
+    },
+    {
+      "sequence": 22,
+      "event": "refit_completed",
+      "elapsed_s": 0.017502875067293644,
+      "method": "kbest",
+      "candidate_id": "kbest:k=2",
+      "selected_count": 2
+    },
+    {
+      "sequence": 23,
+      "event": "finished",
+      "elapsed_s": 0.017511416925117373,
+      "status": "completed",
+      "completed_methods": [
+        "kbest"
+      ]
+    }
+  ],
+  "privacy": "CSV/results kept only in current request/browser; no history database or source-row logging.",
+  "interval_caveats": [
+    "Conditional on fitted preprocessing/selected columns; uncorrected selection uncertainty.",
+    "Classical observation PI assumes an error model; HC3 only affects coefficient/location CI.",
+    "Grouped splitting does not by itself establish independent errors."
+  ],
+  "completed_model_count": 1,
+  "elapsed_s": 0.02407416608184576,
+  "validation_note": "Non-finite diagnostic scalars, if any, are represented as null/unavailable, not zero or a passed assumption."
+}

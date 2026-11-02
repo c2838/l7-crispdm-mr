@@ -1,0 +1,37 @@
+{
+  "dataset": "student",
+  "method": "elasticnet",
+  "status": "passed",
+  "development_rows": 519,
+  "raw_input_fields": 32,
+  "encoded_columns": 41,
+  "import_s": 1.0647151248995215,
+  "load_s": 0.0027198749594390392,
+  "preprocess_s": 0.010909500066190958,
+  "operation_s": 0.002865375019609928,
+  "wall_s_including_import": 1.0814684589859098,
+  "cpu_s": 1.070097,
+  "peak_rss_bytes": 198590464,
+  "threads_limit": 1,
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "filepath": "/Users/c2838/NCHU/115-1 \u4e2d\u8208\u4f5c\u696d/AIOT/L7_CRISPDM_MR/.venv/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+      "version": null
+    }
+  ],
+  "warning_categories": [],
+  "final_test_rows_read": 0,
+  "model_scope": "feasibility only; no final scores or model export",
+  "selected_encoded_columns": 40,
+  "candidate_encoded_columns": 41,
+  "alpha": 0.001,
+  "target_standardized_for_selector": true,
+  "refit_ols": true,
+  "iterations": 44,
+  "parameter_scope": "single fixed feasibility setting; not tuned performance",
+  "fresh_process_wall_s": 1.2096674588974565
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "pdf_links": [
+    {
+      "href": "downloads/L7_CRISPDM_MR_report_draft.pdf",
+      "text": "Analysis report · 分析報告草稿19頁；NotebookLM與公開部署待補 · PDF"
+    },
+    {
+      "href": "downloads/L7_CRISPDM_MR_infographic.pdf",
+      "text": "Infographic · 資訊圖表1頁A3；兩題結果、流程與限制 · PDF"
+    },
+    {
+      "href": "downloads/HW2_conversation_snapshot.pdf",
+      "text": "HW2 · 對話快照53頁；122則訊息，最終繳交前更新 · PDF"
+    }
+  ],
+  "expected": 3,
+  "removed_link_absent": true,
+  "no_horizontal_overflow": true
+}

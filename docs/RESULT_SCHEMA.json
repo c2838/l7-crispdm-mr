@@ -1,0 +1,221 @@
+{
+  "$defs": {
+    "CVMetrics": {
+      "additionalProperties": true,
+      "properties": {
+        "mae": {
+          "minimum": 0,
+          "title": "Mae",
+          "type": "number"
+        },
+        "mse": {
+          "minimum": 0,
+          "title": "Mse",
+          "type": "number"
+        },
+        "rmse": {
+          "minimum": 0,
+          "title": "Rmse",
+          "type": "number"
+        },
+        "r2": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "R2"
+        },
+        "fold_rmse_std": {
+          "minimum": 0,
+          "title": "Fold Rmse Std",
+          "type": "number"
+        }
+      },
+      "required": [
+        "mae",
+        "mse",
+        "rmse",
+        "r2",
+        "fold_rmse_std"
+      ],
+      "title": "CVMetrics",
+      "type": "object"
+    },
+    "Candidate": {
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "method": {
+          "title": "Method",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        },
+        "status": {
+          "enum": [
+            "completed",
+            "incomplete_or_failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "folds": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "title": "Folds",
+          "type": "array"
+        },
+        "cv": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CVMetrics"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "method",
+        "parameters",
+        "status",
+        "folds"
+      ],
+      "title": "Candidate",
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "dataset_id": {
+      "title": "Dataset Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "completed",
+        "partial_timeout",
+        "cancelled",
+        "running"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "rows": {
+      "exclusiveMinimum": 0,
+      "title": "Rows",
+      "type": "integer"
+    },
+    "raw_input_fields": {
+      "exclusiveMinimum": 0,
+      "title": "Raw Input Fields",
+      "type": "integer"
+    },
+    "cv_results": {
+      "items": {
+        "$ref": "#/$defs/Candidate"
+      },
+      "title": "Cv Results",
+      "type": "array"
+    },
+    "representative_candidate_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Representative Candidate Id"
+    },
+    "representative_model_available": {
+      "title": "Representative Model Available",
+      "type": "boolean"
+    },
+    "completed_methods": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Completed Methods",
+      "type": "array"
+    },
+    "unavailable_methods": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unavailable Methods",
+      "type": "array"
+    },
+    "method_winner_ids": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Method Winner Ids",
+      "type": "object"
+    },
+    "models": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Models"
+    },
+    "model_files": {
+      "anyOf": [
+        {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model Files"
+    }
+  },
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "status",
+    "rows",
+    "raw_input_fields",
+    "cv_results",
+    "representative_candidate_id",
+    "representative_model_available",
+    "completed_methods",
+    "unavailable_methods",
+    "method_winner_ids"
+  ],
+  "title": "Result",
+  "type": "object"
+}

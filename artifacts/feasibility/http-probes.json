@@ -1,0 +1,88 @@
+{
+  "scope": "real localhost HTTP probes; no Vercel request or production API tested",
+  "csv_source": "student development rows only",
+  "checks": [
+    {
+      "name": "native real CSV request status",
+      "method": "localhost HTTP, actual development CSV bytes",
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    {
+      "name": "native parsed rows",
+      "method": "response parsed from real CSV upload",
+      "expected": 519,
+      "actual": 519,
+      "passed": true
+    },
+    {
+      "name": "native manual missing-target validation",
+      "method": "localhost HTTP invalid query",
+      "expected": 422,
+      "actual": 422,
+      "passed": true
+    },
+    {
+      "name": "FastAPI multipart upload status",
+      "method": "localhost HTTP multipart with actual development CSV",
+      "expected": 200,
+      "actual": 200,
+      "passed": true
+    },
+    {
+      "name": "FastAPI parsed rows",
+      "method": "response parsed from real CSV upload",
+      "expected": 519,
+      "actual": 519,
+      "passed": true
+    },
+    {
+      "name": "FastAPI missing form target",
+      "method": "real malformed multipart request",
+      "expected": 422,
+      "actual": 422,
+      "passed": true
+    },
+    {
+      "name": "FastAPI nonexistent target",
+      "method": "real CSV with target absent from its header",
+      "expected": 400,
+      "actual": 400,
+      "passed": true
+    },
+    {
+      "name": "FastAPI typed parameter upper bound",
+      "method": "real JSON request with max_features outside 1..64",
+      "expected": 422,
+      "actual": 422,
+      "passed": true
+    },
+    {
+      "name": "FastAPI oversize file",
+      "method": "real multipart fixture, 3500001 file bytes; not analytical data",
+      "expected": 413,
+      "actual": 413,
+      "passed": true
+    },
+    {
+      "name": "native download attachment",
+      "method": "localhost HTTP GET and response headers",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "FastAPI download attachment",
+      "method": "localhost HTTP GET and response headers",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "passed_checks": 11,
+  "native_scope": "raw CSV body, manual parameter validation and attachment response; multipart not implemented",
+  "fastapi_scope": "multipart upload, typed JSON/form parameters, errors and attachment response",
+  "no_model_analysis": true,
+  "server_cleanup": "both stopped after probes"
+}

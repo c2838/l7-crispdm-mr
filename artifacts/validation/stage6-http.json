@@ -1,0 +1,270 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "actual HTTP health",
+      "passed": true,
+      "method": "live localhost request"
+    },
+    {
+      "name": "actual public HTTPS through API",
+      "passed": true,
+      "method": "API fetch uses actual public DNS, pinned IP and verified TLS"
+    },
+    {
+      "name": "URL body equals uploaded fixture bytes",
+      "passed": true,
+      "method": "byte comparison and SHA-256"
+    },
+    {
+      "name": "upload actual preview",
+      "passed": true,
+      "method": "real multipart HTTP preview; no preset JSON"
+    },
+    {
+      "name": "url actual preview",
+      "passed": true,
+      "method": "real multipart HTTP preview; no preset JSON"
+    },
+    {
+      "name": "baseline actual HTTP success",
+      "passed": true,
+      "method": "real shared-engine execution, not a mock"
+    },
+    {
+      "name": "baseline complete status",
+      "passed": true,
+      "method": "no timeout or partial result relabelled as complete"
+    },
+    {
+      "name": "baseline response bounded",
+      "passed": true,
+      "method": "actual serialized HTTP response bytes"
+    },
+    {
+      "name": "kbest actual HTTP success",
+      "passed": true,
+      "method": "real shared-engine execution, not a mock"
+    },
+    {
+      "name": "kbest complete status",
+      "passed": true,
+      "method": "no timeout or partial result relabelled as complete"
+    },
+    {
+      "name": "kbest response bounded",
+      "passed": true,
+      "method": "actual serialized HTTP response bytes"
+    },
+    {
+      "name": "rfe actual HTTP success",
+      "passed": true,
+      "method": "real shared-engine execution, not a mock"
+    },
+    {
+      "name": "rfe complete status",
+      "passed": true,
+      "method": "no timeout or partial result relabelled as complete"
+    },
+    {
+      "name": "rfe response bounded",
+      "passed": true,
+      "method": "actual serialized HTTP response bytes"
+    },
+    {
+      "name": "sfs actual HTTP success",
+      "passed": true,
+      "method": "real shared-engine execution, not a mock"
+    },
+    {
+      "name": "sfs complete status",
+      "passed": true,
+      "method": "no timeout or partial result relabelled as complete"
+    },
+    {
+      "name": "sfs response bounded",
+      "passed": true,
+      "method": "actual serialized HTTP response bytes"
+    },
+    {
+      "name": "lasso_select actual HTTP success",
+      "passed": true,
+      "method": "real shared-engine execution, not a mock"
+    },
+    {
+      "name": "lasso_select complete status",
+      "passed": true,
+      "method": "no timeout or partial result relabelled as complete"
+    },
+    {
+      "name": "lasso_select response bounded",
+      "passed": true,
+      "method": "actual serialized HTTP response bytes"
+    },
+    {
+      "name": "elasticnet_select actual HTTP success",
+      "passed": true,
+      "method": "real shared-engine execution, not a mock"
+    },
+    {
+      "name": "elasticnet_select complete status",
+      "passed": true,
+      "method": "no timeout or partial result relabelled as complete"
+    },
+    {
+      "name": "elasticnet_select response bounded",
+      "passed": true,
+      "method": "actual serialized HTTP response bytes"
+    },
+    {
+      "name": "all six stateless requests bound to identical data/options/split",
+      "passed": true,
+      "method": "independent HTTP requests carry same bytes/settings; no cross-instance memory dependency"
+    },
+    {
+      "name": "independent patient holdout split",
+      "passed": true,
+      "method": "sklearn direct GroupShuffleSplit with original patient IDs"
+    },
+    {
+      "name": "nine actual models",
+      "passed": true,
+      "method": "four baselines plus five selection models"
+    },
+    {
+      "name": "CLI shared core matches HTTP CV and chosen model",
+      "passed": true,
+      "method": "actual separate direct core execution with same bytes/settings"
+    },
+    {
+      "name": "dummy independent full-test metrics",
+      "passed": true,
+      "method": "sklearn metrics on every retained patient test record"
+    },
+    {
+      "name": "ols independent full-test metrics",
+      "passed": true,
+      "method": "sklearn metrics on every retained patient test record"
+    },
+    {
+      "name": "ols independent coefficients and classical covariance",
+      "passed": true,
+      "method": "numpy least-squares and pseudoinverse covariance; stable for ill-conditioned voice measures"
+    },
+    {
+      "name": "ols full-test PI coverage",
+      "passed": true,
+      "method": "independent Student-t observation PI, all test rows"
+    },
+    {
+      "name": "ridge independent full-test metrics",
+      "passed": true,
+      "method": "sklearn metrics on every retained patient test record"
+    },
+    {
+      "name": "lasso_reg independent full-test metrics",
+      "passed": true,
+      "method": "sklearn metrics on every retained patient test record"
+    },
+    {
+      "name": "kbest independent full-test metrics",
+      "passed": true,
+      "method": "sklearn metrics on every retained patient test record"
+    },
+    {
+      "name": "kbest independent coefficients and classical covariance",
+      "passed": true,
+      "method": "numpy least-squares and pseudoinverse covariance; stable for ill-conditioned voice measures"
+    },
+    {
+      "name": "kbest full-test PI coverage",
+      "passed": true,
+      "method": "independent Student-t observation PI, all test rows"
+    },
+    {
+      "name": "rfe independent full-test metrics",
+      "passed": true,
+      "method": "sklearn metrics on every retained patient test record"
+    },
+    {
+      "name": "rfe independent coefficients and classical covariance",
+      "passed": true,
+      "method": "numpy least-squares and pseudoinverse covariance; stable for ill-conditioned voice measures"
+    },
+    {
+      "name": "rfe full-test PI coverage",
+      "passed": true,
+      "method": "independent Student-t observation PI, all test rows"
+    },
+    {
+      "name": "sfs independent full-test metrics",
+      "passed": true,
+      "method": "sklearn metrics on every retained patient test record"
+    },
+    {
+      "name": "sfs independent coefficients and classical covariance",
+      "passed": true,
+      "method": "numpy least-squares and pseudoinverse covariance; stable for ill-conditioned voice measures"
+    },
+    {
+      "name": "sfs full-test PI coverage",
+      "passed": true,
+      "method": "independent Student-t observation PI, all test rows"
+    },
+    {
+      "name": "lasso_select independent full-test metrics",
+      "passed": true,
+      "method": "sklearn metrics on every retained patient test record"
+    },
+    {
+      "name": "lasso_select independent coefficients and classical covariance",
+      "passed": true,
+      "method": "numpy least-squares and pseudoinverse covariance; stable for ill-conditioned voice measures"
+    },
+    {
+      "name": "lasso_select full-test PI coverage",
+      "passed": true,
+      "method": "independent Student-t observation PI, all test rows"
+    },
+    {
+      "name": "elasticnet_select independent full-test metrics",
+      "passed": true,
+      "method": "sklearn metrics on every retained patient test record"
+    },
+    {
+      "name": "elasticnet_select independent coefficients and classical covariance",
+      "passed": true,
+      "method": "numpy least-squares and pseudoinverse covariance; stable for ill-conditioned voice measures"
+    },
+    {
+      "name": "elasticnet_select full-test PI coverage",
+      "passed": true,
+      "method": "independent Student-t observation PI, all test rows"
+    }
+  ],
+  "passed_checks": 48,
+  "models": 9,
+  "split": {
+    "development_rows": 4623,
+    "test_rows": 1252,
+    "grouped": true,
+    "group_column": "subject#",
+    "duplicate_input_rows": 0,
+    "effective_groups": 42,
+    "training_test_groups_disjoint": true,
+    "development_source_rows_sha256": "59c71a6a7f2514793f2f6e31da7fe1b5798ee01233b8839101bed26f6e38cba5",
+    "test_source_rows_sha256": "c9e0f149715933a45c230c13e5f946f8736bd5f4bd16491263627f9ab2fb530c",
+    "seed": 0,
+    "policy": "GroupShuffleSplit on union of groups/identical-X",
+    "final_test_used_for_selection": false
+  },
+  "source_sha256": "f2c7d5025dec4e92e7feae367a5f7ccf58789a10ac6b54bdf15976c599f9dd39",
+  "real_public_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.data",
+  "elapsed_s": 25.020716917002574,
+  "scope": "Live localhost HTTP, actual external CSV, source equality, CLI equivalence and independent sklearn/numpy metrics/PI.",
+  "limitations": [
+    "Not public Vercel execution.",
+    "Third data are validation material, not an added preset or a saved user upload.",
+    "Good software agreement is not proof of clinical suitability or OLS assumptions."
+  ]
+}

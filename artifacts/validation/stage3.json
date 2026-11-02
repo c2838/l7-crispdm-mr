@@ -1,0 +1,4389 @@
+{
+  "status": "passed_development_engine_final_test_unrevealed",
+  "checks": [
+    {
+      "name": "sgemm completed all planned methods",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual completed result and exported model map"
+    },
+    {
+      "name": "sgemm source manifest and final-test exclusion",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "source loader verifies hashes and skips final-test data records"
+    },
+    {
+      "name": "sgemm exact engine source version",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "SHA-256 each executed engine module versus current source"
+    },
+    {
+      "name": "sgemm development row identities",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "saved source row index mapping equals fixed development set"
+    },
+    {
+      "name": "sgemm all rows validated once",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "assignment coverage and five-fold labels"
+    },
+    {
+      "name": "sgemm every grid candidate completed five folds",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no hidden failed candidates or partial fold averages"
+    },
+    {
+      "name": "sgemm entire requested k range executed",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "not a single-k prototype"
+    },
+    {
+      "name": "sgemm representative chosen only from OLS family CV",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independently sort completed candidate CV RMSE and complexity"
+    },
+    {
+      "name": "sgemm independent baseline CV agreement",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "separate sklearn imputer/OneHotEncoder/StandardScaler/OLS in saved folds; RMSE absolute tolerance 1e-7"
+    },
+    {
+      "name": "sgemm pooled metrics dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics kbest:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics rfe:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics sfs:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_select:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_select:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_select:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_select:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_select:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_select:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ridge:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ridge:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ridge:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ridge:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ridge:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ridge:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ridge:alpha=100.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ridge:alpha=1000.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics ridge:alpha=10000.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_reg:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_reg:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_reg:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_reg:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_reg:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm pooled metrics lasso_reg:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm exported model identity dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm finite full development replay dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm exported model identity ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm finite full development replay ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm independent selected OLS solve ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm exported model identity kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm finite full development replay kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm independent selected OLS solve kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm exported model identity rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm finite full development replay rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm independent selected OLS solve rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm exported model identity sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm finite full development replay sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm independent selected OLS solve sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm exported model identity lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm finite full development replay lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm independent selected OLS solve lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm exported model identity elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm finite full development replay elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm independent selected OLS solve elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm exported model identity ridge",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm finite full development replay ridge",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm exported model identity lasso_reg",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm finite full development replay lasso_reg",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm_log completed all planned methods",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual completed result and exported model map"
+    },
+    {
+      "name": "sgemm_log source manifest and final-test exclusion",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "source loader verifies hashes and skips final-test data records"
+    },
+    {
+      "name": "sgemm_log exact engine source version",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "SHA-256 each executed engine module versus current source"
+    },
+    {
+      "name": "sgemm_log development row identities",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "saved source row index mapping equals fixed development set"
+    },
+    {
+      "name": "sgemm_log all rows validated once",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "assignment coverage and five-fold labels"
+    },
+    {
+      "name": "sgemm_log every grid candidate completed five folds",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no hidden failed candidates or partial fold averages"
+    },
+    {
+      "name": "sgemm_log entire requested k range executed",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "not a single-k prototype"
+    },
+    {
+      "name": "sgemm_log representative chosen only from OLS family CV",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independently sort completed candidate CV RMSE and complexity"
+    },
+    {
+      "name": "sgemm_log independent baseline CV agreement",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "separate sklearn imputer/OneHotEncoder/StandardScaler/OLS in saved folds; RMSE absolute tolerance 1e-7"
+    },
+    {
+      "name": "sgemm_log pooled metrics dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics kbest:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics rfe:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics sfs:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_select:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_select:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_select:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_select:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_select:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_select:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ridge:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ridge:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ridge:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ridge:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ridge:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ridge:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ridge:alpha=100.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ridge:alpha=1000.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics ridge:alpha=10000.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_reg:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_reg:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_reg:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_reg:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_reg:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log pooled metrics lasso_reg:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "sgemm_log exported model identity dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm_log finite full development replay dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm_log exported model identity ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm_log finite full development replay ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm_log independent selected OLS solve ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm_log exported model identity kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm_log finite full development replay kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm_log independent selected OLS solve kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm_log exported model identity rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm_log finite full development replay rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm_log independent selected OLS solve rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm_log exported model identity sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm_log finite full development replay sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm_log independent selected OLS solve sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm_log exported model identity lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm_log finite full development replay lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm_log independent selected OLS solve lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm_log exported model identity elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm_log finite full development replay elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm_log independent selected OLS solve elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "sgemm_log exported model identity ridge",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm_log finite full development replay ridge",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "sgemm_log exported model identity lasso_reg",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "sgemm_log finite full development replay lasso_reg",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student completed all planned methods",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual completed result and exported model map"
+    },
+    {
+      "name": "student source manifest and final-test exclusion",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "source loader verifies hashes and skips final-test data records"
+    },
+    {
+      "name": "student exact engine source version",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "SHA-256 each executed engine module versus current source"
+    },
+    {
+      "name": "student development row identities",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "saved source row index mapping equals fixed development set"
+    },
+    {
+      "name": "student all rows validated once",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "assignment coverage and five-fold labels"
+    },
+    {
+      "name": "student every grid candidate completed five folds",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no hidden failed candidates or partial fold averages"
+    },
+    {
+      "name": "student entire requested k range executed",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "not a single-k prototype"
+    },
+    {
+      "name": "student representative chosen only from OLS family CV",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independently sort completed candidate CV RMSE and complexity"
+    },
+    {
+      "name": "student independent baseline CV agreement",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "separate sklearn imputer/OneHotEncoder/StandardScaler/OLS in saved folds; RMSE absolute tolerance 1e-7"
+    },
+    {
+      "name": "student pooled metrics dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=15",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=16",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=17",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=18",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=19",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=20",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=21",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=22",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=23",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=24",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=25",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=26",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=27",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=28",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=29",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=30",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=31",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=32",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=33",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=34",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=35",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=36",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=37",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=38",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=39",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=40",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics kbest:k=41",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=15",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=16",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=17",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=18",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=19",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=20",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=21",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=22",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=23",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=24",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=25",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=26",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=27",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=28",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=29",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=30",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=31",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=32",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=33",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=34",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=35",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=36",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=37",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=38",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=39",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=40",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics rfe:k=41",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=15",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=16",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=17",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=18",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=19",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=20",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=21",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=22",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=23",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=24",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=25",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=26",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=27",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=28",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=29",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=30",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=31",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=32",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=33",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=34",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=35",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=36",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=37",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=38",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=39",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=40",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics sfs:k=41",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_select:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_select:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_select:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_select:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_select:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_select:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ridge:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ridge:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ridge:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ridge:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ridge:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ridge:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ridge:alpha=100.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ridge:alpha=1000.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics ridge:alpha=10000.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_reg:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_reg:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_reg:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_reg:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_reg:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student pooled metrics lasso_reg:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student exported model identity dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student finite full development replay dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student exported model identity ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student finite full development replay ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student independent selected OLS solve ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student exported model identity kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student finite full development replay kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student independent selected OLS solve kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student exported model identity rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student finite full development replay rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student independent selected OLS solve rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student exported model identity sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student finite full development replay sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student independent selected OLS solve sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student exported model identity lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student finite full development replay lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student independent selected OLS solve lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student exported model identity elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student finite full development replay elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student independent selected OLS solve elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student exported model identity ridge",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student finite full development replay ridge",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student exported model identity lasso_reg",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student finite full development replay lasso_reg",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student_background completed all planned methods",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual completed result and exported model map"
+    },
+    {
+      "name": "student_background source manifest and final-test exclusion",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "source loader verifies hashes and skips final-test data records"
+    },
+    {
+      "name": "student_background exact engine source version",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "SHA-256 each executed engine module versus current source"
+    },
+    {
+      "name": "student_background development row identities",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "saved source row index mapping equals fixed development set"
+    },
+    {
+      "name": "student_background all rows validated once",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "assignment coverage and five-fold labels"
+    },
+    {
+      "name": "student_background every grid candidate completed five folds",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "no hidden failed candidates or partial fold averages"
+    },
+    {
+      "name": "student_background entire requested k range executed",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "not a single-k prototype"
+    },
+    {
+      "name": "student_background representative chosen only from OLS family CV",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independently sort completed candidate CV RMSE and complexity"
+    },
+    {
+      "name": "student_background independent baseline CV agreement",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "separate sklearn imputer/OneHotEncoder/StandardScaler/OLS in saved folds; RMSE absolute tolerance 1e-7"
+    },
+    {
+      "name": "student_background pooled metrics dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=15",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=16",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=17",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=18",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=19",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=20",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=21",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=22",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=23",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=24",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=25",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=26",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=27",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=28",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=29",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=30",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=31",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=32",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=33",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=34",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=35",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=36",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=37",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=38",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics kbest:k=39",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=15",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=16",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=17",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=18",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=19",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=20",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=21",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=22",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=23",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=24",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=25",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=26",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=27",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=28",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=29",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=30",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=31",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=32",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=33",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=34",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=35",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=36",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=37",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=38",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics rfe:k=39",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=3",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=4",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=6",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=7",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=9",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=10",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=11",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=12",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=13",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=14",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=15",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=16",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=17",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=18",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=19",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=20",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=21",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=22",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=23",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=24",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=25",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=26",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=27",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=28",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=29",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=30",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=31",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=32",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=33",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=34",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=35",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=36",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=37",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=38",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics sfs:k=39",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_select:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_select:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_select:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_select:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_select:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_select:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.0001,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.001,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.01,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=0.1,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=1.0,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.2",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.5",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics elasticnet_select:alpha=10.0,l1_ratio=0.8",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ridge:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ridge:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ridge:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ridge:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ridge:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ridge:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ridge:alpha=100.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ridge:alpha=1000.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics ridge:alpha=10000.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_reg:alpha=0.0001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_reg:alpha=0.001",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_reg:alpha=0.01",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_reg:alpha=0.1",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_reg:alpha=1.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background pooled metrics lasso_reg:alpha=10.0",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "independent weighted fold MSE aggregation; all development rows covered"
+    },
+    {
+      "name": "student_background exported model identity dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student_background finite full development replay dummy",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student_background exported model identity ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student_background finite full development replay ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student_background independent selected OLS solve ols",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student_background exported model identity kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student_background finite full development replay kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student_background independent selected OLS solve kbest",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student_background exported model identity rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student_background finite full development replay rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student_background independent selected OLS solve rfe",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student_background exported model identity sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student_background finite full development replay sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student_background independent selected OLS solve sfs",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student_background exported model identity lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student_background finite full development replay lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student_background independent selected OLS solve lasso_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student_background exported model identity elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student_background finite full development replay elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student_background independent selected OLS solve elasticnet_select",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "numpy least-squares solve of exported selected design; tolerance 1e-7"
+    },
+    {
+      "name": "student_background exported model identity ridge",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student_background finite full development replay ridge",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "student_background exported model identity lasso_reg",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual JSON model dimensions and full development refit"
+    },
+    {
+      "name": "student_background finite full development replay lasso_reg",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "replay exported JSON on all development records, no fitting or final-test scores"
+    },
+    {
+      "name": "raw and prepared source files unchanged",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "compare with approved Stage 1 SHA-256 manifest"
+    },
+    {
+      "name": "unit suite matches current engine",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "method": "actual unittest execution report and engine source hashes"
+    }
+  ],
+  "passed_checks": 622,
+  "scope": "four real development scenarios; independent baseline CV and selected OLS solves; artifact replay and freeze",
+  "candidate_configurations": 488,
+  "exported_models": 36,
+  "unit_tests": {
+    "tests": 20,
+    "result": "passed",
+    "evidence": "artifacts/validation/stage3-unit.json; not rerun by integration verifier"
+  },
+  "limitations": [
+    "Tuning CV is not unbiased external performance.",
+    "No final-test scoring, interval coverage or full residual diagnostics yet.",
+    "Log backtransform is exp(log prediction), without arithmetic-mean smearing; mean-CI semantics need separate treatment.",
+    "No online API, Vercel execution, public deployment or third-dataset bonus proof."
+  ],
+  "completed_at": "2026-11-01T18:40:50+08:00",
+  "additional_verification": {
+    "contract": "artifacts/validation/stage3-contract.json",
+    "actual_cli_timeout": "artifacts/validation/stage3-cli.json",
+    "four_cv_plots": "visually inspected; final-grid image bytes equal inspected initial-grid images",
+    "selection_freeze_hashes": "all 36 model hashes and all four result hashes rechecked after documentation update",
+    "stage4": "pending approval; no final-test scores"
+  },
+  "completion_evidence_sha256": {
+    "docs/STAGE3_RESULTS.md": "3dca5bb804d739d89d7036797331e0e81b699edbb54cba400adbb235793a0990",
+    "docs/RESULT_SCHEMA.md": "f9c2450f87da88413b556ff66e590a2a1a08e819bca0a28cc408f6f606507daf",
+    "docs/RESULT_SCHEMA.json": "c1d1db3d7a96da304fc5947a71f3d929cc058fda11c57ee72dba5d172e66b9a0",
+    "docs/STAGE4_PROPOSAL.md": "4c95078ee44d293a039630178adf98c52e833c2dc914a114f284b4897209070c",
+    "artifacts/analysis/models/selection-freeze.json": "3a4fec9047f6e08b4eace272bd2f43d7fb4be1fb8356525549340561f15425f3"
+  }
+}

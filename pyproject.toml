@@ -1,0 +1,4 @@
+# Runtime dependencies remain pinned in the existing requirements.txt.
+# .python-version continues to select Python 3.12.
+[tool.vercel]
+entrypoint = "vercel_app:app"

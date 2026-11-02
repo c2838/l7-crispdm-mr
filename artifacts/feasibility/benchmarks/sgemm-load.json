@@ -1,0 +1,31 @@
+{
+  "dataset": "sgemm",
+  "method": "load",
+  "status": "passed",
+  "development_rows": 193280,
+  "raw_input_fields": 14,
+  "encoded_columns": 14,
+  "import_s": 26.34010066697374,
+  "load_s": 0.1262866670731455,
+  "preprocess_s": 0.034169250167906284,
+  "operation_s": 4.708068445324898e-06,
+  "wall_s_including_import": 26.50113470898941,
+  "cpu_s": 2.428639,
+  "peak_rss_bytes": 319438848,
+  "threads_limit": 1,
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "filepath": "/Users/c2838/NCHU/115-1 \u4e2d\u8208\u4f5c\u696d/AIOT/L7_CRISPDM_MR/.venv/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+      "version": null
+    }
+  ],
+  "warning_categories": [],
+  "final_test_rows_read": 0,
+  "model_scope": "feasibility only; no final scores or model export",
+  "operation": "load/preprocess only",
+  "fresh_process_wall_s": 26.641550917178392
+}

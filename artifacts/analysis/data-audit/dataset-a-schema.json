@@ -1,0 +1,190 @@
+[
+  {
+    "column": "MWG",
+    "position_1_based": 1,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 4,
+    "min": 16.0,
+    "max": 128.0
+  },
+  {
+    "column": "NWG",
+    "position_1_based": 2,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 4,
+    "min": 16.0,
+    "max": 128.0
+  },
+  {
+    "column": "KWG",
+    "position_1_based": 3,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "min": 16.0,
+    "max": 32.0
+  },
+  {
+    "column": "MDIMC",
+    "position_1_based": 4,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 3,
+    "min": 8.0,
+    "max": 32.0
+  },
+  {
+    "column": "NDIMC",
+    "position_1_based": 5,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 3,
+    "min": 8.0,
+    "max": 32.0
+  },
+  {
+    "column": "MDIMA",
+    "position_1_based": 6,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 3,
+    "min": 8.0,
+    "max": 32.0
+  },
+  {
+    "column": "NDIMB",
+    "position_1_based": 7,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 3,
+    "min": 8.0,
+    "max": 32.0
+  },
+  {
+    "column": "KWI",
+    "position_1_based": 8,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "min": 2.0,
+    "max": 8.0
+  },
+  {
+    "column": "VWM",
+    "position_1_based": 9,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 4,
+    "min": 1.0,
+    "max": 8.0
+  },
+  {
+    "column": "VWN",
+    "position_1_based": 10,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 4,
+    "min": 1.0,
+    "max": 8.0
+  },
+  {
+    "column": "STRM",
+    "position_1_based": 11,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "min": 0.0,
+    "max": 1.0
+  },
+  {
+    "column": "STRN",
+    "position_1_based": 12,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "min": 0.0,
+    "max": 1.0
+  },
+  {
+    "column": "SA",
+    "position_1_based": 13,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "min": 0.0,
+    "max": 1.0
+  },
+  {
+    "column": "SB",
+    "position_1_based": 14,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "min": 0.0,
+    "max": 1.0
+  },
+  {
+    "column": "Run1 (ms)",
+    "position_1_based": 15,
+    "role": "excluded_repeat_measurement",
+    "storage_type": "float64",
+    "missing": 0,
+    "unique_nonmissing": 58161,
+    "min": 13.29,
+    "max": 3339.63
+  },
+  {
+    "column": "Run2 (ms)",
+    "position_1_based": 16,
+    "role": "excluded_repeat_measurement",
+    "storage_type": "float64",
+    "missing": 0,
+    "unique_nonmissing": 58269,
+    "min": 13.25,
+    "max": 3375.42
+  },
+  {
+    "column": "Run3 (ms)",
+    "position_1_based": 17,
+    "role": "excluded_repeat_measurement",
+    "storage_type": "float64",
+    "missing": 0,
+    "unique_nonmissing": 58264,
+    "min": 13.36,
+    "max": 3397.08
+  },
+  {
+    "column": "Run4 (ms)",
+    "position_1_based": 18,
+    "role": "excluded_repeat_measurement",
+    "storage_type": "float64",
+    "missing": 0,
+    "unique_nonmissing": 58154,
+    "min": 13.37,
+    "max": 3361.71
+  },
+  {
+    "column": "runtime_mean_ms",
+    "role": "derived_target",
+    "definition": "arithmetic mean of Run1..Run4 (ms)",
+    "missing": 0,
+    "min": 13.317499999999999,
+    "max": 3341.5074999999997
+  }
+]

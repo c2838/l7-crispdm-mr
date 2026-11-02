@@ -1,0 +1,276 @@
+{
+  "status": "frozen_before_final_test_evaluation",
+  "selection_basis": "development CV only; do not change representatives after seeing final test",
+  "models": [
+    {
+      "scenario": "sgemm",
+      "method": "dummy",
+      "candidate_id": "dummy",
+      "model_path": "artifacts/analysis/models/sgemm/models/b5a2c96250612366.json",
+      "model_sha256": "1490b6fade8435a42d7d7daa7ea496a0677bebb34565fb132c40820b93e79458"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "ols",
+      "candidate_id": "ols",
+      "model_path": "artifacts/analysis/models/sgemm/models/56b3097935e4a664.json",
+      "model_sha256": "fc5df14865e115b8cc60dea1a87ee07cf7c5ccedf5e77506e3e8e05e72a50115"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "kbest",
+      "candidate_id": "kbest:k=13",
+      "model_path": "artifacts/analysis/models/sgemm/models/e8bdf42a699b8cc8.json",
+      "model_sha256": "db582e8dce97840bd01dabb16d0db715abec58f22d88cbe9e32378c3693797df"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "rfe",
+      "candidate_id": "rfe:k=13",
+      "model_path": "artifacts/analysis/models/sgemm/models/38fc8ca61fe51107.json",
+      "model_sha256": "da8e9c1438de2b27450b2d7a44d52d2dbb68a9b8764f9aabf42c8f4eb5c6316f"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "sfs",
+      "candidate_id": "sfs:k=13",
+      "model_path": "artifacts/analysis/models/sgemm/models/218af8d9e0f13c19.json",
+      "model_sha256": "65da7ab923367b56ae8929eed12aa2a022092385df215527bdfff9cb19ceaf59"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "lasso_select",
+      "candidate_id": "lasso_select:alpha=0.001",
+      "model_path": "artifacts/analysis/models/sgemm/models/edd20bf36d51718f.json",
+      "model_sha256": "32b1af0458c9b3c0156c741485b878d5f879699f1e9a2fb5ed83e9c34e9ecb04"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "elasticnet_select",
+      "candidate_id": "elasticnet_select:alpha=0.001,l1_ratio=0.8",
+      "model_path": "artifacts/analysis/models/sgemm/models/1437b3e3fc5f5545.json",
+      "model_sha256": "7ccae7cef280d4a65dc9930ab8a630dc87738cb430c0dd2bab1508892a62568b"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "ridge",
+      "candidate_id": "ridge:alpha=10.0",
+      "model_path": "artifacts/analysis/models/sgemm/models/74ba7544eae0bffb.json",
+      "model_sha256": "5563d7c12a80ed29f85dbe51aeaa0986afaf81e44ae61e274741464da20e9d5e"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "lasso_reg",
+      "candidate_id": "lasso_reg:alpha=0.0001",
+      "model_path": "artifacts/analysis/models/sgemm/models/93dc9c7f7ffa3044.json",
+      "model_sha256": "5d9069e0d3b400d86c2113c34ed51e1dc1d7397d8267c4c76f0452ac22883f19"
+    },
+    {
+      "scenario": "sgemm_log",
+      "method": "dummy",
+      "candidate_id": "dummy",
+      "model_path": "artifacts/analysis/models/sgemm_log/models/b5a2c96250612366.json",
+      "model_sha256": "ab4532f5f037a6efac22360e8e51cc2ef01626444df285cc0b4753ab58a517c1"
+    },
+    {
+      "scenario": "sgemm_log",
+      "method": "ols",
+      "candidate_id": "ols",
+      "model_path": "artifacts/analysis/models/sgemm_log/models/56b3097935e4a664.json",
+      "model_sha256": "cc536723eac81bee0399df559a8aa24dd98a3107b4b948e95108ed0b2bc25d5a"
+    },
+    {
+      "scenario": "sgemm_log",
+      "method": "kbest",
+      "candidate_id": "kbest:k=6",
+      "model_path": "artifacts/analysis/models/sgemm_log/models/509d882243ddb9c5.json",
+      "model_sha256": "bedd1354c4bcb0c54e59985dd8151a0d9f1a70835527493c0f1954514da09762"
+    },
+    {
+      "scenario": "sgemm_log",
+      "method": "rfe",
+      "candidate_id": "rfe:k=8",
+      "model_path": "artifacts/analysis/models/sgemm_log/models/4bdc78af7efec26d.json",
+      "model_sha256": "012fe273a344aa1e06588135bdbc1c58371d7bb7b372a445b13d6b8335bf1bcf"
+    },
+    {
+      "scenario": "sgemm_log",
+      "method": "sfs",
+      "candidate_id": "sfs:k=10",
+      "model_path": "artifacts/analysis/models/sgemm_log/models/1f22b2c465e8c649.json",
+      "model_sha256": "ccf290384bd41329e9063f2f44cf9850802de1b7c0ec0338ac39a0ad1957dea5"
+    },
+    {
+      "scenario": "sgemm_log",
+      "method": "lasso_select",
+      "candidate_id": "lasso_select:alpha=0.1",
+      "model_path": "artifacts/analysis/models/sgemm_log/models/c2b6291619557b90.json",
+      "model_sha256": "b8d2555482e73bfd931e79c7f65ebdcdc13c4c1fe25e7acc2c5bc0dfe8ce5d81"
+    },
+    {
+      "scenario": "sgemm_log",
+      "method": "elasticnet_select",
+      "candidate_id": "elasticnet_select:alpha=0.1,l1_ratio=0.5",
+      "model_path": "artifacts/analysis/models/sgemm_log/models/02f3f9acd14ab8b4.json",
+      "model_sha256": "e862721c6c544fb7fd8623788ef2134b22780875a4710a6a4f3c83b32b8bbecc"
+    },
+    {
+      "scenario": "sgemm_log",
+      "method": "ridge",
+      "candidate_id": "ridge:alpha=0.0001",
+      "model_path": "artifacts/analysis/models/sgemm_log/models/535f48549a7eb00d.json",
+      "model_sha256": "2d635ca162a97a8ce7a98a13ad50f1ca1dc85b80d423f7ecfe12551d99e01377"
+    },
+    {
+      "scenario": "sgemm_log",
+      "method": "lasso_reg",
+      "candidate_id": "lasso_reg:alpha=0.0001",
+      "model_path": "artifacts/analysis/models/sgemm_log/models/93dc9c7f7ffa3044.json",
+      "model_sha256": "da8631e49c6f1e16c0272f9c83de7798d797138985527a919842b2541b933351"
+    },
+    {
+      "scenario": "student",
+      "method": "dummy",
+      "candidate_id": "dummy",
+      "model_path": "artifacts/analysis/models/student/models/b5a2c96250612366.json",
+      "model_sha256": "3dd9787d5e6ec9419ddfbacdb6239d3d47e590d06987185e51924eafd04b2f66"
+    },
+    {
+      "scenario": "student",
+      "method": "ols",
+      "candidate_id": "ols",
+      "model_path": "artifacts/analysis/models/student/models/56b3097935e4a664.json",
+      "model_sha256": "bac327ac75ff17f022f0d3a8b8ed96ca2929f8112bca703b21d0225c24d15f3f"
+    },
+    {
+      "scenario": "student",
+      "method": "kbest",
+      "candidate_id": "kbest:k=2",
+      "model_path": "artifacts/analysis/models/student/models/f37219abef807058.json",
+      "model_sha256": "c8d6e9ad24fa8acf6384c21a5d4c134b7577e6d451273af51e6175dc605c8351"
+    },
+    {
+      "scenario": "student",
+      "method": "rfe",
+      "candidate_id": "rfe:k=2",
+      "model_path": "artifacts/analysis/models/student/models/797b9d041754c9c0.json",
+      "model_sha256": "c3cac5e77b96f59371ad72cff482fd1e0f04a95b6fe981a9e038f1c38fcbc3dd"
+    },
+    {
+      "scenario": "student",
+      "method": "sfs",
+      "candidate_id": "sfs:k=1",
+      "model_path": "artifacts/analysis/models/student/models/5117a2ba69ea9590.json",
+      "model_sha256": "a58d45227f84ff7c985619a61e4d54db9976739ae3e00cbc0d6b683ca6b0044b"
+    },
+    {
+      "scenario": "student",
+      "method": "lasso_select",
+      "candidate_id": "lasso_select:alpha=0.1",
+      "model_path": "artifacts/analysis/models/student/models/c2b6291619557b90.json",
+      "model_sha256": "a2cab80d93a65234f8ac3513b7274ae9e05583d4ae0aaab61a5e8043276c7335"
+    },
+    {
+      "scenario": "student",
+      "method": "elasticnet_select",
+      "candidate_id": "elasticnet_select:alpha=0.1,l1_ratio=0.8",
+      "model_path": "artifacts/analysis/models/student/models/4e91b01431a71eed.json",
+      "model_sha256": "9cb50f38b55661b296db76c19ce896f5e263ffc55c1e0475f2760cae54abb009"
+    },
+    {
+      "scenario": "student",
+      "method": "ridge",
+      "candidate_id": "ridge:alpha=1.0",
+      "model_path": "artifacts/analysis/models/student/models/60445be0db5fe2f8.json",
+      "model_sha256": "9f47d999a26adafc9b8c32c3d657d3056602d73fd32e7a170fe6eb2026c47442"
+    },
+    {
+      "scenario": "student",
+      "method": "lasso_reg",
+      "candidate_id": "lasso_reg:alpha=0.01",
+      "model_path": "artifacts/analysis/models/student/models/f327ab445bb208bc.json",
+      "model_sha256": "b2889d435fcf3594e2357e912b1b0dd70fb999d2d34aedf83c45337052d5c3be"
+    },
+    {
+      "scenario": "student_background",
+      "method": "dummy",
+      "candidate_id": "dummy",
+      "model_path": "artifacts/analysis/models/student_background/models/b5a2c96250612366.json",
+      "model_sha256": "d4ea0dea9a0ef4c9a3816450871252648480441ad7c720dfb1f870138b656704"
+    },
+    {
+      "scenario": "student_background",
+      "method": "ols",
+      "candidate_id": "ols",
+      "model_path": "artifacts/analysis/models/student_background/models/56b3097935e4a664.json",
+      "model_sha256": "7921a9697706542425461cdc00492cb4d062138beded39137178f654162aae9f"
+    },
+    {
+      "scenario": "student_background",
+      "method": "kbest",
+      "candidate_id": "kbest:k=7",
+      "model_path": "artifacts/analysis/models/student_background/models/0c8272239860ac75.json",
+      "model_sha256": "91535dd4f2b00e72a778d731c363cac4caca6aa169fd337b7dc9537124fc7a2f"
+    },
+    {
+      "scenario": "student_background",
+      "method": "rfe",
+      "candidate_id": "rfe:k=4",
+      "model_path": "artifacts/analysis/models/student_background/models/5c7f55e584e068bf.json",
+      "model_sha256": "186c844b348ca8d085d7fbfd0f5f9a5b9c7abf8d6e26c21f3e6c38932687ff69"
+    },
+    {
+      "scenario": "student_background",
+      "method": "sfs",
+      "candidate_id": "sfs:k=4",
+      "model_path": "artifacts/analysis/models/student_background/models/e356a75ffa361aa6.json",
+      "model_sha256": "811fc3869adfd454f95a7d76360789b668f68a2367368f23bfca81db65e35afb"
+    },
+    {
+      "scenario": "student_background",
+      "method": "lasso_select",
+      "candidate_id": "lasso_select:alpha=0.01",
+      "model_path": "artifacts/analysis/models/student_background/models/7d181f95c1c32a0b.json",
+      "model_sha256": "2acf29f75603af3f490ada8256173e939b7484cca562b7b0b32eb77cddc5f80a"
+    },
+    {
+      "scenario": "student_background",
+      "method": "elasticnet_select",
+      "candidate_id": "elasticnet_select:alpha=0.1,l1_ratio=0.2",
+      "model_path": "artifacts/analysis/models/student_background/models/2b6b12f216fc3a6f.json",
+      "model_sha256": "d1d0b41d24b6fd09938454f26fe11688d6621e9ac06fd55cf4575f9a534fce71"
+    },
+    {
+      "scenario": "student_background",
+      "method": "ridge",
+      "candidate_id": "ridge:alpha=100.0",
+      "model_path": "artifacts/analysis/models/student_background/models/f093950d42965cca.json",
+      "model_sha256": "1b1a2e9e20e762136510ee92953174d2de76156f4e233f2edba78c5276d22ac8"
+    },
+    {
+      "scenario": "student_background",
+      "method": "lasso_reg",
+      "candidate_id": "lasso_reg:alpha=0.01",
+      "model_path": "artifacts/analysis/models/student_background/models/f327ab445bb208bc.json",
+      "model_sha256": "561e1965ab7c9f3dfc70dbec1415423bece070ef095560fa5843a8ab0dc71ed0"
+    }
+  ],
+  "scenario_result_sha256": {
+    "sgemm": "801f8ed833fd0ab508a072224bb2d0f1389a2218225f5f08e5a8e2e224e58fb2",
+    "sgemm_log": "eccb8fdb03522b7bf2ddfbeb122d223829e7a6e6497a0389dd0eae7ccc10b42f",
+    "student": "96ccbb531532057b8ce71daeae01d528993334f95ba44b579f888880c692718f",
+    "student_background": "6cc3b61e3060b211d58459d06c283ce51ba7606ae1036ec59b241329d863e363"
+  },
+  "primary_scenarios": [
+    "sgemm",
+    "student"
+  ],
+  "supplementary_scenarios": [
+    "sgemm_log",
+    "student_background"
+  ],
+  "primary_representatives": {
+    "sgemm": "kbest:k=13",
+    "student": "elasticnet_select:alpha=0.1,l1_ratio=0.8"
+  }
+}

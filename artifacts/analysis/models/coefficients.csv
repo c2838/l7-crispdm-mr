@@ -1,0 +1,549 @@
+scenario,method,candidate_id,encoded_key,raw_field,category,standardized_design_coefficient,unscaled_encoded_coefficient,response_scale
+sgemm,dummy,dummy,(intercept),,,217.2197807972889,217.2197807972889,source target units
+sgemm,ols,ols,(intercept),,,217.21978079728888,-51.05334886987578,source target units
+sgemm,ols,ols,"n:""MWG""",MWG,,140.9891417214648,3.3196960297115914,source target units
+sgemm,ols,ols,"n:""NWG""",NWG,,129.63058545807309,3.052769073596828,source target units
+sgemm,ols,ols,"n:""KWG""",KWG,,40.78530200791226,5.192165576748014,source target units
+sgemm,ols,ols,"n:""MDIMC""",MDIMC,,-131.6999268922918,-16.70985098398224,source target units
+sgemm,ols,ols,"n:""NDIMC""",NDIMC,,-128.8007776798365,-16.332939649102432,source target units
+sgemm,ols,ols,"n:""MDIMA""",MDIMA,,9.851930526445054,1.0491788565705193,source target units
+sgemm,ols,ols,"n:""NDIMB""",NDIMB,,10.032336536435714,1.0680010202086239,source target units
+sgemm,ols,ols,"n:""KWI""",KWI,,11.630655340919818,3.8768853678947095,source target units
+sgemm,ols,ols,"n:""VWM""",VWM,,-2.786633913362136,-1.4258920951872276,source target units
+sgemm,ols,ols,"n:""VWN""",VWN,,-5.17302244868736,-2.645576346249836,source target units
+sgemm,ols,ols,"n:""STRM""",STRM,,-4.718745873969081,-9.437491747938163,source target units
+sgemm,ols,ols,"n:""STRN""",STRN,,-0.050312881379455957,-0.10062579898262321,source target units
+sgemm,ols,ols,"n:""SA""",SA,,19.203025592839225,38.406055536504354,source target units
+sgemm,ols,ols,"n:""SB""",SB,,23.576111748370366,47.1522288383758,source target units
+sgemm,kbest,kbest:k=13,(intercept),,,217.21978079728888,-51.10388535435766,source target units
+sgemm,kbest,kbest:k=13,"n:""MWG""",MWG,,140.9891374012287,3.3196959279883638,source target units
+sgemm,kbest,kbest:k=13,"n:""NWG""",NWG,,129.6305763393564,3.0527688588532453,source target units
+sgemm,kbest,kbest:k=13,"n:""KWG""",KWG,,40.78537629257,5.192175033543081,source target units
+sgemm,kbest,kbest:k=13,"n:""MDIMC""",MDIMC,,-131.69991237733169,-16.70984914235008,source target units
+sgemm,kbest,kbest:k=13,"n:""NDIMC""",NDIMC,,-128.8007020631653,-16.332930060320827,source target units
+sgemm,kbest,kbest:k=13,"n:""MDIMA""",MDIMA,,9.85194525955851,1.049180425569721,source target units
+sgemm,kbest,kbest:k=13,"n:""NDIMB""",NDIMB,,10.032338403341225,1.0680012189516568,source target units
+sgemm,kbest,kbest:k=13,"n:""KWI""",KWI,,11.630647299281392,3.8768826873483917,source target units
+sgemm,kbest,kbest:k=13,"n:""VWM""",VWM,,-2.786555492764075,-1.425851968168627,source target units
+sgemm,kbest,kbest:k=13,"n:""VWN""",VWN,,-5.173054420220276,-2.6455926970644854,source target units
+sgemm,kbest,kbest:k=13,"n:""STRM""",STRM,,-4.718710537593862,-9.437421075187723,source target units
+sgemm,kbest,kbest:k=13,"n:""SA""",SA,,19.20290874966519,38.40582185012981,source target units
+sgemm,kbest,kbest:k=13,"n:""SB""",SB,,23.576008638715717,47.15202261904314,source target units
+sgemm,rfe,rfe:k=13,(intercept),,,217.21978079728888,-51.10388535435766,source target units
+sgemm,rfe,rfe:k=13,"n:""MWG""",MWG,,140.9891374012287,3.3196959279883638,source target units
+sgemm,rfe,rfe:k=13,"n:""NWG""",NWG,,129.6305763393564,3.0527688588532453,source target units
+sgemm,rfe,rfe:k=13,"n:""KWG""",KWG,,40.78537629257,5.192175033543081,source target units
+sgemm,rfe,rfe:k=13,"n:""MDIMC""",MDIMC,,-131.69991237733169,-16.70984914235008,source target units
+sgemm,rfe,rfe:k=13,"n:""NDIMC""",NDIMC,,-128.8007020631653,-16.332930060320827,source target units
+sgemm,rfe,rfe:k=13,"n:""MDIMA""",MDIMA,,9.85194525955851,1.049180425569721,source target units
+sgemm,rfe,rfe:k=13,"n:""NDIMB""",NDIMB,,10.032338403341225,1.0680012189516568,source target units
+sgemm,rfe,rfe:k=13,"n:""KWI""",KWI,,11.630647299281392,3.8768826873483917,source target units
+sgemm,rfe,rfe:k=13,"n:""VWM""",VWM,,-2.786555492764075,-1.425851968168627,source target units
+sgemm,rfe,rfe:k=13,"n:""VWN""",VWN,,-5.173054420220276,-2.6455926970644854,source target units
+sgemm,rfe,rfe:k=13,"n:""STRM""",STRM,,-4.718710537593862,-9.437421075187723,source target units
+sgemm,rfe,rfe:k=13,"n:""SA""",SA,,19.20290874966519,38.40582185012981,source target units
+sgemm,rfe,rfe:k=13,"n:""SB""",SB,,23.576008638715717,47.15202261904314,source target units
+sgemm,sfs,sfs:k=13,(intercept),,,217.21978079728888,-51.10388535435766,source target units
+sgemm,sfs,sfs:k=13,"n:""MWG""",MWG,,140.9891374012287,3.3196959279883638,source target units
+sgemm,sfs,sfs:k=13,"n:""NWG""",NWG,,129.6305763393564,3.0527688588532453,source target units
+sgemm,sfs,sfs:k=13,"n:""KWG""",KWG,,40.78537629257,5.192175033543081,source target units
+sgemm,sfs,sfs:k=13,"n:""MDIMC""",MDIMC,,-131.69991237733169,-16.70984914235008,source target units
+sgemm,sfs,sfs:k=13,"n:""NDIMC""",NDIMC,,-128.8007020631653,-16.332930060320827,source target units
+sgemm,sfs,sfs:k=13,"n:""MDIMA""",MDIMA,,9.85194525955851,1.049180425569721,source target units
+sgemm,sfs,sfs:k=13,"n:""NDIMB""",NDIMB,,10.032338403341225,1.0680012189516568,source target units
+sgemm,sfs,sfs:k=13,"n:""KWI""",KWI,,11.630647299281392,3.8768826873483917,source target units
+sgemm,sfs,sfs:k=13,"n:""VWM""",VWM,,-2.786555492764075,-1.425851968168627,source target units
+sgemm,sfs,sfs:k=13,"n:""VWN""",VWN,,-5.173054420220276,-2.6455926970644854,source target units
+sgemm,sfs,sfs:k=13,"n:""STRM""",STRM,,-4.718710537593862,-9.437421075187723,source target units
+sgemm,sfs,sfs:k=13,"n:""SA""",SA,,19.20290874966519,38.40582185012981,source target units
+sgemm,sfs,sfs:k=13,"n:""SB""",SB,,23.576008638715717,47.15202261904314,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,(intercept),,,217.21978079728888,-51.10388535435766,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""MWG""",MWG,,140.9891374012287,3.3196959279883638,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""NWG""",NWG,,129.6305763393564,3.0527688588532453,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""KWG""",KWG,,40.78537629257,5.192175033543081,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""MDIMC""",MDIMC,,-131.69991237733169,-16.70984914235008,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""NDIMC""",NDIMC,,-128.8007020631653,-16.332930060320827,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""MDIMA""",MDIMA,,9.85194525955851,1.049180425569721,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""NDIMB""",NDIMB,,10.032338403341225,1.0680012189516568,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""KWI""",KWI,,11.630647299281392,3.8768826873483917,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""VWM""",VWM,,-2.786555492764075,-1.425851968168627,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""VWN""",VWN,,-5.173054420220276,-2.6455926970644854,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""STRM""",STRM,,-4.718710537593862,-9.437421075187723,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""SA""",SA,,19.20290874966519,38.40582185012981,source target units
+sgemm,lasso_select,lasso_select:alpha=0.001,"n:""SB""",SB,,23.576008638715717,47.15202261904314,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8",(intercept),,,217.21978079728888,-51.10388535435766,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""MWG""",MWG,,140.9891374012287,3.3196959279883638,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""NWG""",NWG,,129.6305763393564,3.0527688588532453,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""KWG""",KWG,,40.78537629257,5.192175033543081,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""MDIMC""",MDIMC,,-131.69991237733169,-16.70984914235008,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""NDIMC""",NDIMC,,-128.8007020631653,-16.332930060320827,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""MDIMA""",MDIMA,,9.85194525955851,1.049180425569721,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""NDIMB""",NDIMB,,10.032338403341225,1.0680012189516568,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""KWI""",KWI,,11.630647299281392,3.8768826873483917,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""VWM""",VWM,,-2.786555492764075,-1.425851968168627,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""VWN""",VWN,,-5.173054420220276,-2.6455926970644854,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""STRM""",STRM,,-4.718710537593862,-9.437421075187723,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""SA""",SA,,19.20290874966519,38.40582185012981,source target units
+sgemm,elasticnet_select,"elasticnet_select:alpha=0.001,l1_ratio=0.8","n:""SB""",SB,,23.576008638715717,47.15202261904314,source target units
+sgemm,ridge,ridge:alpha=10.0,(intercept),,,217.21978079728888,-51.04595687487529,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""MWG""",MWG,,140.97926568413837,3.319463490939446,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""NWG""",NWG,,129.6213597145362,3.0525518095580146,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""KWG""",KWG,,40.7798860828711,5.19147610337941,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""MDIMC""",MDIMC,,-131.6879165382731,-16.708327131762626,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""NDIMC""",NDIMC,,-128.78896593386244,-16.331441827912062,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""MDIMA""",MDIMA,,9.850744888843103,1.0490525923931397,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""NDIMB""",NDIMB,,10.03101371507773,1.0678601981224878,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""KWI""",KWI,,11.630059603154965,3.8766867886267353,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""VWM""",VWM,,-2.781853906697002,-1.4234462146264282,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""VWN""",VWN,,-5.168405054579829,-2.6432149281904,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""STRM""",STRM,,-4.718498593869004,-9.436997187738008,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""STRN""",STRN,,-0.050294611708007426,-0.10058925962657256,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""SA""",SA,,19.202070041876258,38.404144434361925,source target units
+sgemm,ridge,ridge:alpha=10.0,"n:""SB""",SB,,23.574881613371872,47.14976856810009,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,(intercept),,,217.21978079728888,-50.88737535900452,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""MWG""",MWG,,140.92994189873576,3.318302125088344,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""NWG""",NWG,,129.57104748785568,3.051366968734444,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""KWG""",KWG,,40.722469723078135,5.184166723966174,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""MDIMC""",MDIMC,,-131.61158630458567,-16.698642488341886,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""NDIMC""",NDIMC,,-128.71245491748485,-16.321739636391968,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""MDIMA""",MDIMA,,9.814819225958983,1.0452266979854272,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""NDIMB""",NDIMB,,9.995028148287403,1.064029323639233,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""KWI""",KWI,,11.593626385416744,3.8645423819175377,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""VWM""",VWM,,-2.726804662300006,-1.395278078849669,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""VWN""",VWN,,-5.113477782044612,-2.6151241370862435,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""STRM""",STRM,,-4.681928311973014,-9.363856623946027,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""STRN""",STRN,,-0.01326531689620977,-0.026530643343035534,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""SA""",SA,,19.16643700858426,38.33287835970456,source target units
+sgemm,lasso_reg,lasso_reg:alpha=0.0001,"n:""SB""",SB,,23.539056331466313,47.07811799617205,source target units
+sgemm_log,dummy,dummy,(intercept),,,217.2197807972889,217.2197807972889,log(ms)
+sgemm_log,ols,ols,(intercept),,,4.622025960214728,4.239006994441853,log(ms)
+sgemm_log,ols,ols,"n:""MWG""",MWG,,0.565845062387346,0.01332325017447212,log(ms)
+sgemm_log,ols,ols,"n:""NWG""",NWG,,0.44539280061162645,0.010488893207611242,log(ms)
+sgemm_log,ols,ols,"n:""KWG""",KWG,,0.09751176848961707,0.01241371824539612,log(ms)
+sgemm_log,ols,ols,"n:""MDIMC""",MDIMC,,-0.4487906440085875,-0.0569417535859531,log(ms)
+sgemm_log,ols,ols,"n:""NDIMC""",NDIMC,,-0.43218671942420506,-0.05480463497701504,log(ms)
+sgemm_log,ols,ols,"n:""MDIMA""",MDIMA,,0.0020887249546621914,0.00022243823723080432,log(ms)
+sgemm_log,ols,ols,"n:""NDIMB""",NDIMB,,-0.00040738215077810975,-4.3368217470142936e-05,log(ms)
+sgemm_log,ols,ols,"n:""KWI""",KWI,,-0.013060105161788295,-0.004353368672766371,log(ms)
+sgemm_log,ols,ols,"n:""VWM""",VWM,,-0.017702520606342267,-0.009058198881609658,log(ms)
+sgemm_log,ols,ols,"n:""VWN""",VWN,,-0.04407275374059584,-0.0225395957521508,log(ms)
+sgemm_log,ols,ols,"n:""STRM""",STRM,,-0.06685699802198357,-0.13371399604396714,log(ms)
+sgemm_log,ols,ols,"n:""STRN""",STRN,,-0.00812036313920876,-0.016240732124826667,log(ms)
+sgemm_log,ols,ols,"n:""SA""",SA,,-0.096129471216876,-0.19225896421378824,log(ms)
+sgemm_log,ols,ols,"n:""SB""",SB,,-0.02287286672318302,-0.045745738628667015,log(ms)
+sgemm_log,kbest,kbest:k=6,(intercept),,,4.622025960214728,4.2766319157020005,log(ms)
+sgemm_log,kbest,kbest:k=6,"n:""MWG""",MWG,,0.5650032087625358,0.013303428093836991,log(ms)
+sgemm_log,kbest,kbest:k=6,"n:""NWG""",NWG,,0.44376783214354576,0.010450625591466508,log(ms)
+sgemm_log,kbest,kbest:k=6,"n:""MDIMC""",MDIMC,,-0.4295452350508711,-0.054499930546277144,log(ms)
+sgemm_log,kbest,kbest:k=6,"n:""NDIMC""",NDIMC,,-0.4132103001670153,-0.05239827753052374,log(ms)
+sgemm_log,kbest,kbest:k=6,"n:""VWM""",VWM,,-0.016672890805130472,-0.00853134783473291,log(ms)
+sgemm_log,kbest,kbest:k=6,"n:""VWN""",VWN,,-0.04231947546093786,-0.021642937832904042,log(ms)
+sgemm_log,rfe,rfe:k=8,(intercept),,,4.622025960214728,4.173028373894969,log(ms)
+sgemm_log,rfe,rfe:k=8,"n:""MWG""",MWG,,0.5595153131819871,0.01317421143964804,log(ms)
+sgemm_log,rfe,rfe:k=8,"n:""NWG""",NWG,,0.44526908657764896,0.010485979771900359,log(ms)
+sgemm_log,rfe,rfe:k=8,"n:""KWG""",KWG,,0.09709839426714599,0.012361093713945724,log(ms)
+sgemm_log,rfe,rfe:k=8,"n:""MDIMC""",MDIMC,,-0.44517112386496727,-0.05648251534899584,log(ms)
+sgemm_log,rfe,rfe:k=8,"n:""NDIMC""",NDIMC,,-0.43150908712889824,-0.05471870593541376,log(ms)
+sgemm_log,rfe,rfe:k=8,"n:""VWN""",VWN,,-0.043991331178910756,-0.022497954795556885,log(ms)
+sgemm_log,rfe,rfe:k=8,"n:""STRM""",STRM,,-0.06682477028131166,-0.13364954056262332,log(ms)
+sgemm_log,rfe,rfe:k=8,"n:""SA""",SA,,-0.09615351620518461,-0.19230705419585337,log(ms)
+sgemm_log,sfs,sfs:k=10,(intercept),,,4.622025960214728,4.090284907188889,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""MWG""",MWG,,0.5658555011420753,0.013323495962851331,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""NWG""",NWG,,0.4453792774660755,0.010488574740789776,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""KWG""",KWG,,0.09722345331825878,0.012377014334078012,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""MDIMC""",MDIMC,,-0.4485433637825228,-0.056910379113496445,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""NDIMC""",NDIMC,,-0.4319898059054152,-0.05477966481242115,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""MDIMA""",MDIMA,,0.002097672489422927,0.00022339110268841135,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""NDIMB""",NDIMB,,-0.0004445708619679616,-4.732717372592226e-05,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""VWM""",VWM,,-0.01781953311865903,-0.009118072988341233,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""VWN""",VWN,,-0.043957236989658255,-0.022480518416433136,log(ms)
+sgemm_log,sfs,sfs:k=10,"n:""STRM""",STRM,,-0.06683717976104253,-0.13367435952208506,log(ms)
+sgemm_log,lasso_select,lasso_select:alpha=0.1,(intercept),,,4.622025960214728,4.223174178403238,log(ms)
+sgemm_log,lasso_select,lasso_select:alpha=0.1,"n:""MWG""",MWG,,0.5588044603584967,0.013157473872009589,log(ms)
+sgemm_log,lasso_select,lasso_select:alpha=0.1,"n:""NWG""",NWG,,0.427988533703529,0.01007902691272477,log(ms)
+sgemm_log,lasso_select,lasso_select:alpha=0.1,"n:""MDIMC""",MDIMC,,-0.42554203515175687,-0.05399201170872153,log(ms)
+sgemm_log,lasso_select,lasso_select:alpha=0.1,"n:""NDIMC""",NDIMC,,-0.4052502051603028,-0.051388875617835526,log(ms)
+sgemm_log,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.5",(intercept),,,4.622025960214728,4.1347584246986475,log(ms)
+sgemm_log,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.5","n:""MWG""",MWG,,0.5595159286512071,0.013174225931336558,log(ms)
+sgemm_log,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.5","n:""NWG""",NWG,,0.42887789095635664,0.010099971061879211,log(ms)
+sgemm_log,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.5","n:""KWG""",KWG,,0.096452414014659,0.012278857313450976,log(ms)
+sgemm_log,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.5","n:""MDIMC""",MDIMC,,-0.4439747592818691,-0.056330722752159904,log(ms)
+sgemm_log,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.5","n:""NDIMC""",NDIMC,,-0.4234987326458424,-0.05370293073050869,log(ms)
+sgemm_log,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.5","n:""STRM""",STRM,,-0.06686097053016293,-0.13372194106032587,log(ms)
+sgemm_log,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.5","n:""SA""",SA,,-0.09609433926706708,-0.19218870030621057,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,(intercept),,,4.622025960214728,4.239006994380571,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""MWG""",MWG,,0.565845061989493,0.013323250165104371,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""NWG""",NWG,,0.4453928002835201,0.010488893199884415,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""KWG""",KWG,,0.09751176833270477,0.012413718225420428,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""MDIMC""",MDIMC,,-0.44879064360449816,-0.05694175353468297,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""NDIMC""",NDIMC,,-0.4321867190349473,-0.05480463492765414,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""MDIMA""",MDIMA,,0.00208872494853459,0.00022243823657824697,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""NDIMB""",NDIMB,,-0.000407382168338483,-4.3368219339547585e-05,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""KWI""",KWI,,-0.013060105154560681,-0.004353368670357165,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""VWM""",VWM,,-0.01770252041043313,-0.009058198781364955,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""VWN""",VWN,,-0.04407275355982253,-0.02253959565970009,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""STRM""",STRM,,-0.06685699798727071,-0.13371399597454142,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""STRN""",STRN,,-0.008120363134726784,-0.016240732115862713,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""SA""",SA,,-0.09612947116594725,-0.19225896411193075,log(ms)
+sgemm_log,ridge,ridge:alpha=0.0001,"n:""SB""",SB,,-0.022872866711612483,-0.045745738605525936,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,(intercept),,,4.622025960214728,4.238318429877751,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""MWG""",MWG,,0.5656645827580823,0.013319000645030384,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""NWG""",NWG,,0.4451483279201953,0.01048313593459498,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""KWG""",KWG,,0.09734135609174828,0.012392023925567527,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""MDIMC""",MDIMC,,-0.4485543605615806,-0.05691177436513929,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""NDIMC""",NDIMC,,-0.43196180274835694,-0.0547761137944657,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""MDIMA""",MDIMA,,0.0019653416757937714,0.0002092985660673089,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""NDIMB""",NDIMB,,-0.00025798988657609214,-2.7464535411674397e-05,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""KWI""",KWI,,-0.012946857920650208,-0.004315619589911339,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""VWM""",VWM,,-0.017521714247611144,-0.008965682115615362,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""VWN""",VWN,,-0.04382044093219722,-0.022410558462176416,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""STRM""",STRM,,-0.0667441022184984,-0.1334882044369968,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""STRN""",STRN,,-0.008007858532195787,-0.0160157228298009,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""SA""",SA,,-0.0960159510677724,-0.19203192388986082,log(ms)
+sgemm_log,lasso_reg,lasso_reg:alpha=0.0001,"n:""SB""",SB,,-0.02276061616684048,-0.04552123749054935,log(ms)
+student,dummy,dummy,(intercept),,,11.913294797687861,11.913294797687861,source target units
+student,ols,ols,(intercept),,,11.913294797687861,1.2150324831457997,source target units
+student,ols,ols,"c:[""school"",""MS""]",school,MS,-0.08411567175393424,-0.1767291439405683,source target units
+student,ols,ols,"c:[""sex"",""M""]",sex,M,-0.07534771237850897,-0.15285837532478963,source target units
+student,ols,ols,"n:""age""",age,,-0.010562855843205174,-0.008738094803196492,source target units
+student,ols,ols,"c:[""address"",""U""]",address,U,0.034788261793620955,0.07495166524914859,source target units
+student,ols,ols,"c:[""famsize"",""LE3""]",famsize,LE3,-0.00460133532169645,-0.010233410546784455,source target units
+student,ols,ols,"c:[""Pstatus"",""T""]",Pstatus,T,-0.05551252913782371,-0.17116084709917956,source target units
+student,ols,ols,"n:""Medu""",Medu,,-0.14598181095103288,-0.1287281126577576,source target units
+student,ols,ols,"n:""Fedu""",Fedu,,0.09003122120050308,0.08104399586675994,source target units
+student,ols,ols,"c:[""Mjob"",""health""]",Mjob,health,0.08261744455005667,0.3062902968937733,source target units
+student,ols,ols,"c:[""Mjob"",""other""]",Mjob,other,-0.09498714513635197,-0.19338180385245116,source target units
+student,ols,ols,"c:[""Mjob"",""services""]",Mjob,services,0.08071323611783734,0.1988288174108816,source target units
+student,ols,ols,"c:[""Mjob"",""teacher""]",Mjob,teacher,0.09231042807772617,0.2929905839403843,source target units
+student,ols,ols,"c:[""Fjob"",""health""]",Fjob,health,-0.04998269350936725,-0.28916320522993655,source target units
+student,ols,ols,"c:[""Fjob"",""other""]",Fjob,other,-0.12964108374682712,-0.2623391313437654,source target units
+student,ols,ols,"c:[""Fjob"",""services""]",Fjob,services,-0.19211379575933663,-0.432854849835886,source target units
+student,ols,ols,"c:[""Fjob"",""teacher""]",Fjob,teacher,-0.09896794826653652,-0.42407909830044344,source target units
+student,ols,ols,"c:[""reason"",""home""]",reason,home,-0.03335339523193797,-0.07957821945847085,source target units
+student,ols,ols,"c:[""reason"",""other""]",reason,other,-0.1119074068968591,-0.38271829332954754,source target units
+student,ols,ols,"c:[""reason"",""reputation""]",reason,reputation,-0.06550163951732489,-0.15581743542338763,source target units
+student,ols,ols,"c:[""guardian"",""mother""]",guardian,mother,-0.021457849902346775,-0.04743070333158802,source target units
+student,ols,ols,"c:[""guardian"",""other""]",guardian,other,0.07898689485707698,0.3283847111906147,source target units
+student,ols,ols,"n:""traveltime""",traveltime,,0.11171554606048671,0.14925954272306874,source target units
+student,ols,ols,"n:""studytime""",studytime,,0.057317487260074046,0.06990677350510546,source target units
+student,ols,ols,"n:""failures""",failures,,-0.14635527103823645,-0.24232139817104736,source target units
+student,ols,ols,"c:[""schoolsup"",""yes""]",schoolsup,yes,-0.05631991816807664,-0.1844616192245907,source target units
+student,ols,ols,"c:[""famsup"",""yes""]",famsup,yes,0.05261725049312027,0.10811480487361458,source target units
+student,ols,ols,"c:[""paid"",""yes""]",paid,yes,-0.03132992042804144,-0.12839601508908058,source target units
+student,ols,ols,"c:[""activities"",""yes""]",activities,yes,-0.014077459450297912,-0.028155389274221055,source target units
+student,ols,ols,"c:[""nursery"",""yes""]",nursery,yes,-0.03709557865033522,-0.09201561844026643,source target units
+student,ols,ols,"c:[""higher"",""yes""]",higher,yes,0.04347997069257321,0.14014321989667577,source target units
+student,ols,ols,"c:[""internet"",""yes""]",internet,yes,0.031184086299318094,0.07354026877204814,source target units
+student,ols,ols,"c:[""romantic"",""yes""]",romantic,yes,-0.03998813036764597,-0.08282738810994729,source target units
+student,ols,ols,"n:""famrel""",famrel,,0.001608096115202857,0.0016403511261970042,source target units
+student,ols,ols,"n:""freetime""",freetime,,-0.020022865180066365,-0.01931867493409326,source target units
+student,ols,ols,"n:""goout""",goout,,-0.04644101743403882,-0.039355968433115764,source target units
+student,ols,ols,"n:""Dalc""",Dalc,,-0.047958235491939824,-0.05073913216367167,source target units
+student,ols,ols,"n:""Walc""",Walc,,0.016726147050018417,0.013010309907826308,source target units
+student,ols,ols,"n:""health""",health,,-0.09605325920566303,-0.06663562349746495,source target units
+student,ols,ols,"n:""absences""",absences,,0.07721531909476914,0.016855508579881624,source target units
+student,ols,ols,"n:""G1""",G1,,0.39344597838487716,0.14154383849252283,source target units
+student,ols,ols,"n:""G2""",G2,,2.4823037601285542,0.8600540780788556,source target units
+student,kbest,kbest:k=2,(intercept),,,11.913294797687861,-0.2043193871157314,source target units
+student,kbest,kbest:k=2,"n:""G1""",G1,,0.43384869469206255,0.15607888489233446,source target units
+student,kbest,kbest:k=2,"n:""G2""",G2,,2.573548284864956,0.8916679469624306,source target units
+student,rfe,rfe:k=2,(intercept),,,11.913294797687861,-0.2043193871157314,source target units
+student,rfe,rfe:k=2,"n:""G1""",G1,,0.43384869469206255,0.15607888489233446,source target units
+student,rfe,rfe:k=2,"n:""G2""",G2,,2.573548284864956,0.8916679469624306,source target units
+student,sfs,sfs:k=1,(intercept),,,11.913294797687861,0.0772129638130199,source target units
+student,sfs,sfs:k=1,"n:""G2""",G2,,2.947112097226467,1.0210981502295615,source target units
+student,lasso_select,lasso_select:alpha=0.1,(intercept),,,11.913294797687861,-0.2043193871157314,source target units
+student,lasso_select,lasso_select:alpha=0.1,"n:""G1""",G1,,0.43384869469206255,0.15607888489233446,source target units
+student,lasso_select,lasso_select:alpha=0.1,"n:""G2""",G2,,2.573548284864956,0.8916679469624306,source target units
+student,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.8",(intercept),,,11.913294797687861,-0.2043193871157314,source target units
+student,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.8","n:""G1""",G1,,0.43384869469206255,0.15607888489233446,source target units
+student,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.8","n:""G2""",G2,,2.573548284864956,0.8916679469624306,source target units
+student,ridge,ridge:alpha=1.0,(intercept),,,11.913294797687861,1.2090203502440477,source target units
+student,ridge,ridge:alpha=1.0,"c:[""school"",""MS""]",school,MS,-0.08405590146580391,-0.1766035650605083,source target units
+student,ridge,ridge:alpha=1.0,"c:[""sex"",""M""]",sex,M,-0.07554006847714567,-0.1532486093450836,source target units
+student,ridge,ridge:alpha=1.0,"n:""age""",age,,-0.009134506343380356,-0.007556496424231934,source target units
+student,ridge,ridge:alpha=1.0,"c:[""address"",""U""]",address,U,0.034808462430302126,0.07499518772714216,source target units
+student,ridge,ridge:alpha=1.0,"c:[""famsize"",""LE3""]",famsize,LE3,-0.0048474376049867565,-0.010780744206545257,source target units
+student,ridge,ridge:alpha=1.0,"c:[""Pstatus"",""T""]",Pstatus,T,-0.05569538462815418,-0.17172464235599438,source target units
+student,ridge,ridge:alpha=1.0,"n:""Medu""",Medu,,-0.144333746728657,-0.12727483436573542,source target units
+student,ridge,ridge:alpha=1.0,"n:""Fedu""",Fedu,,0.08925076324430198,0.08034144590094665,source target units
+student,ridge,ridge:alpha=1.0,"c:[""Mjob"",""health""]",Mjob,health,0.08217339957789781,0.30464407475391614,source target units
+student,ridge,ridge:alpha=1.0,"c:[""Mjob"",""other""]",Mjob,other,-0.09595707998167828,-0.1953564684214231,source target units
+student,ridge,ridge:alpha=1.0,"c:[""Mjob"",""services""]",Mjob,services,0.07985457219159556,0.19671358648693765,source target units
+student,ridge,ridge:alpha=1.0,"c:[""Mjob"",""teacher""]",Mjob,teacher,0.09107291604149223,0.28906275713164997,source target units
+student,ridge,ridge:alpha=1.0,"c:[""Fjob"",""health""]",Fjob,health,-0.04895480974522947,-0.2832166236639353,source target units
+student,ridge,ridge:alpha=1.0,"c:[""Fjob"",""other""]",Fjob,other,-0.12783820696871037,-0.2586908655762975,source target units
+student,ridge,ridge:alpha=1.0,"c:[""Fjob"",""services""]",Fjob,services,-0.19040137428949816,-0.42899656399413827,source target units
+student,ridge,ridge:alpha=1.0,"c:[""Fjob"",""teacher""]",Fjob,teacher,-0.0973613855387873,-0.4171949536366366,source target units
+student,ridge,ridge:alpha=1.0,"c:[""reason"",""home""]",reason,home,-0.033401543862062746,-0.07969309778579105,source target units
+student,ridge,ridge:alpha=1.0,"c:[""reason"",""other""]",reason,other,-0.11238899433320153,-0.3843653006799707,source target units
+student,ridge,ridge:alpha=1.0,"c:[""reason"",""reputation""]",reason,reputation,-0.06507795792727053,-0.15480956784503622,source target units
+student,ridge,ridge:alpha=1.0,"c:[""guardian"",""mother""]",guardian,mother,-0.021428574301125634,-0.04736599217167716,source target units
+student,ridge,ridge:alpha=1.0,"c:[""guardian"",""other""]",guardian,other,0.07926462578978583,0.32953936592531874,source target units
+student,ridge,ridge:alpha=1.0,"n:""traveltime""",traveltime,,0.11104643268686319,0.14836556189677563,source target units
+student,ridge,ridge:alpha=1.0,"n:""studytime""",studytime,,0.057050424396306615,0.06958105261220758,source target units
+student,ridge,ridge:alpha=1.0,"n:""failures""",failures,,-0.14752075755662075,-0.2442511019711285,source target units
+student,ridge,ridge:alpha=1.0,"c:[""schoolsup"",""yes""]",schoolsup,yes,-0.055932066497714136,-0.18319130936866157,source target units
+student,ridge,ridge:alpha=1.0,"c:[""famsup"",""yes""]",famsup,yes,0.052714703658565044,0.10831504585670729,source target units
+student,ridge,ridge:alpha=1.0,"c:[""paid"",""yes""]",paid,yes,-0.031095800463000173,-0.1274365466271949,source target units
+student,ridge,ridge:alpha=1.0,"c:[""activities"",""yes""]",activities,yes,-0.013955256334150866,-0.027910978958724096,source target units
+student,ridge,ridge:alpha=1.0,"c:[""nursery"",""yes""]",nursery,yes,-0.03700862231752497,-0.0917999231732845,source target units
+student,ridge,ridge:alpha=1.0,"c:[""higher"",""yes""]",higher,yes,0.04354913698359185,0.14036615442439657,source target units
+student,ridge,ridge:alpha=1.0,"c:[""internet"",""yes""]",internet,yes,0.031097890698875655,0.0733369968992518,source target units
+student,ridge,ridge:alpha=1.0,"c:[""romantic"",""yes""]",romantic,yes,-0.04103183510558489,-0.08498921304666404,source target units
+student,ridge,ridge:alpha=1.0,"n:""famrel""",famrel,,0.002423472376290603,0.002472082112613114,source target units
+student,ridge,ridge:alpha=1.0,"n:""freetime""",freetime,,-0.019988279386077796,-0.01928530549843088,source target units
+student,ridge,ridge:alpha=1.0,"n:""goout""",goout,,-0.04642538137211716,-0.03934271781128602,source target units
+student,ridge,ridge:alpha=1.0,"n:""Dalc""",Dalc,,-0.04811533767048934,-0.050905344037792115,source target units
+student,ridge,ridge:alpha=1.0,"n:""Walc""",Walc,,0.016632401770886505,0.012937390835056317,source target units
+student,ridge,ridge:alpha=1.0,"n:""health""",health,,-0.09691652228676628,-0.06723450035107063,source target units
+student,ridge,ridge:alpha=1.0,"n:""absences""",absences,,0.07675294318186095,0.016754575484499483,source target units
+student,ridge,ridge:alpha=1.0,"n:""G1""",G1,,0.40654739924522804,0.14625712951634423,source target units
+student,ridge,ridge:alpha=1.0,"n:""G2""",G2,,2.4651552736173397,0.8541125708412053,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,(intercept),,,11.913294797687861,0.5518034860058592,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""school"",""MS""]",school,MS,-0.05297784776688033,-0.11130779185885296,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""sex"",""M""]",sex,M,-0.05572677236030239,-0.11305325160103794,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""age""",age,,-0.0,-0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""address"",""U""]",address,U,0.014204982433108268,0.030604779695879963,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""famsize"",""LE3""]",famsize,LE3,0.0,0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""Pstatus"",""T""]",Pstatus,T,-0.016257896851016928,-0.05012769982362641,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""Medu""",Medu,,-0.0,-0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""Fedu""",Fedu,,0.0,0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""Mjob"",""health""]",Mjob,health,0.0,0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""Mjob"",""other""]",Mjob,other,-0.11745615191138695,-0.23912585747878046,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""Mjob"",""services""]",Mjob,services,0.0,0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""Mjob"",""teacher""]",Mjob,teacher,0.0,0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""Fjob"",""health""]",Fjob,health,0.0,0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""Fjob"",""other""]",Fjob,other,0.0,0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""Fjob"",""services""]",Fjob,services,-0.029973971124374117,-0.06753486244308718,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""Fjob"",""teacher""]",Fjob,teacher,-0.0,-0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""reason"",""home""]",reason,home,-0.0,-0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""reason"",""other""]",reason,other,-0.0916776045719564,-0.3135332801577502,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""reason"",""reputation""]",reason,reputation,-0.0,-0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""guardian"",""mother""]",guardian,mother,-0.0,-0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""guardian"",""other""]",guardian,other,0.0540308034288221,0.22463080504019725,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""traveltime""",traveltime,,0.05464345683233915,0.0730073626027546,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""studytime""",studytime,,0.0295780923504327,0.03607466240229108,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""failures""",failures,,-0.11621532255213,-0.19241848448611049,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""schoolsup"",""yes""]",schoolsup,yes,-0.01995199665142854,-0.06534770874671189,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""famsup"",""yes""]",famsup,yes,0.03528477778193066,0.07250106816966942,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""paid"",""yes""]",paid,yes,-0.0065184672782667655,-0.026713927503911584,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""activities"",""yes""]",activities,yes,-0.0,-0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""nursery"",""yes""]",nursery,yes,-0.010816713758551338,-0.02683086885815288,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""higher"",""yes""]",higher,yes,0.013256697983506479,0.04272855549379896,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""internet"",""yes""]",internet,yes,0.0,0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"c:[""romantic"",""yes""]",romantic,yes,-0.005638860671113451,-0.011679768396526964,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""famrel""",famrel,,-0.0,-0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""freetime""",freetime,,-0.0018202011631325515,-0.0017561859538575621,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""goout""",goout,,-0.015352821998922609,-0.013010593034638775,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""Dalc""",Dalc,,-0.0260991741338505,-0.027612555636303254,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""Walc""",Walc,,-0.0,-0.0,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""health""",health,,-0.04640893747640364,-0.03219556015245238,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""absences""",absences,,0.04411560046856615,0.009630095309091589,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""G1""",G1,,0.3851928647972522,0.1385747463149825,source target units
+student,lasso_reg,lasso_reg:alpha=0.01,"n:""G2""",G2,,2.48984351831183,0.8626664093645798,source target units
+student_background,dummy,dummy,(intercept),,,11.913294797687861,11.913294797687861,source target units
+student_background,ols,ols,(intercept),,,11.913294797687861,10.31159944081274,source target units
+student_background,ols,ols,"c:[""school"",""MS""]",school,MS,-0.6161787305883537,-1.294607025071669,source target units
+student_background,ols,ols,"c:[""sex"",""M""]",sex,M,-0.29759184507454844,-0.6037264372339016,source target units
+student_background,ols,ols,"n:""age""",age,,0.16239195604164586,0.1343383198854526,source target units
+student_background,ols,ols,"c:[""address"",""U""]",address,U,0.10075879416330459,0.21708585084928486,source target units
+student_background,ols,ols,"c:[""famsize"",""LE3""]",famsize,LE3,0.08566880470331617,0.19052818112332487,source target units
+student_background,ols,ols,"c:[""Pstatus"",""T""]",Pstatus,T,-0.05016579151983894,-0.15467534095984967,source target units
+student_background,ols,ols,"n:""Medu""",Medu,,-0.03785208248325365,-0.033378316836125896,source target units
+student_background,ols,ols,"n:""Fedu""",Fedu,,0.22661930764956578,0.20399739098925807,source target units
+student_background,ols,ols,"c:[""Mjob"",""health""]",Mjob,health,0.2620167100298453,0.9713829366574855,source target units
+student_background,ols,ols,"c:[""Mjob"",""other""]",Mjob,other,-0.07542675939932587,-0.15355933448097997,source target units
+student_background,ols,ols,"c:[""Mjob"",""services""]",Mjob,services,0.1838227555695373,0.45282859244722307,source target units
+student_background,ols,ols,"c:[""Mjob"",""teacher""]",Mjob,teacher,0.12001562010775588,0.3809260486554217,source target units
+student_background,ols,ols,"c:[""Fjob"",""health""]",Fjob,health,-0.013678782789550672,-0.07913540462418824,source target units
+student_background,ols,ols,"c:[""Fjob"",""other""]",Fjob,other,-0.11439598370502813,-0.23148944861491189,source target units
+student_background,ols,ols,"c:[""Fjob"",""services""]",Fjob,services,-0.3156224838262586,-0.7111343685728252,source target units
+student_background,ols,ols,"c:[""Fjob"",""teacher""]",Fjob,teacher,0.1132253468960558,0.4851722588723183,source target units
+student_background,ols,ols,"c:[""reason"",""home""]",reason,home,-0.007021840537711131,-0.01675348381856163,source target units
+student_background,ols,ols,"c:[""reason"",""other""]",reason,other,-0.14816503922847407,-0.5067177635247181,source target units
+student_background,ols,ols,"c:[""reason"",""reputation""]",reason,reputation,0.12689116654350804,0.301852843598851,source target units
+student_background,ols,ols,"c:[""guardian"",""mother""]",guardian,mother,-0.08172551926458728,-0.1806471233837218,source target units
+student_background,ols,ols,"c:[""guardian"",""other""]",guardian,other,0.21858290454792084,0.9087492819037369,source target units
+student_background,ols,ols,"n:""traveltime""",traveltime,,0.013497403446635432,0.018033445992402815,source target units
+student_background,ols,ols,"n:""studytime""",studytime,,0.20065417406219724,0.2447261136095014,source target units
+student_background,ols,ols,"n:""failures""",failures,,-0.8485305573009254,-1.4049177018181955,source target units
+student_background,ols,ols,"c:[""schoolsup"",""yes""]",schoolsup,yes,-0.33631750017749207,-1.1015227414068058,source target units
+student_background,ols,ols,"c:[""famsup"",""yes""]",famsup,yes,0.03653881616634243,0.0750777918480081,source target units
+student_background,ols,ols,"c:[""paid"",""yes""]",paid,yes,-0.062259428261894394,-0.25515106266905546,source target units
+student_background,ols,ols,"c:[""activities"",""yes""]",activities,yes,0.0700734911842736,0.1401493237513938,source target units
+student_background,ols,ols,"c:[""nursery"",""yes""]",nursery,yes,-0.07231208976243245,-0.1793702080487199,source target units
+student_background,ols,ols,"c:[""higher"",""yes""]",higher,yes,0.4461236566694337,1.4379311835279769,source target units
+student_background,ols,ols,"c:[""internet"",""yes""]",internet,yes,0.06098263333994477,0.14381307193678686,source target units
+student_background,ols,ols,"c:[""romantic"",""yes""]",romantic,yes,-0.29805614069736724,-0.6173634880431441,source target units
+student_background,ols,ols,"n:""famrel""",famrel,,0.16806633741259777,0.17143739310369716,source target units
+student_background,ols,ols,"n:""freetime""",freetime,,-0.13189213108008344,-0.12725357653796604,source target units
+student_background,ols,ols,"n:""goout""",goout,,-0.08960854785472616,-0.07593785355191446,source target units
+student_background,ols,ols,"n:""Dalc""",Dalc,,-0.30932857542684283,-0.3272652404657522,source target units
+student_background,ols,ols,"n:""Walc""",Walc,,0.04404264991255369,0.03425824984144162,source target units
+student_background,ols,ols,"n:""health""",health,,-0.33238230395733454,-0.23058563808124363,source target units
+student_background,ols,ols,"n:""absences""",absences,,-0.1950184688268839,-0.042571027525153377,source target units
+student_background,kbest,kbest:k=7,(intercept),,,11.913294797687861,10.894497992588892,source target units
+student_background,kbest,kbest:k=7,"c:[""school"",""MS""]",school,MS,-0.6401259943405356,-1.3449208290798285,source target units
+student_background,kbest,kbest:k=7,"n:""Medu""",Medu,,0.13575048048724483,0.11970603071480211,source target units
+student_background,kbest,kbest:k=7,"n:""Fedu""",Fedu,,0.22977548105230114,0.2068385043363314,source target units
+student_background,kbest,kbest:k=7,"n:""studytime""",studytime,,0.28997078534813253,0.35366033968746013,source target units
+student_background,kbest,kbest:k=7,"n:""failures""",failures,,-0.8714370541070114,-1.4428441413230715,source target units
+student_background,kbest,kbest:k=7,"c:[""higher"",""yes""]",higher,yes,0.3920210541880865,1.2635494441718145,source target units
+student_background,kbest,kbest:k=7,"n:""Dalc""",Dalc,,-0.4757129919418227,-0.5032975905497709,source target units
+student_background,rfe,rfe:k=4,(intercept),,,11.913294797687861,12.244799008275505,source target units
+student_background,rfe,rfe:k=4,"c:[""school"",""MS""]",school,MS,-0.754746183837327,-1.5857407327397692,source target units
+student_background,rfe,rfe:k=4,"n:""failures""",failures,,-0.9441792332991972,-1.5632838524644224,source target units
+student_background,rfe,rfe:k=4,"c:[""higher"",""yes""]",higher,yes,0.47774284673991146,1.5398451231286454,source target units
+student_background,rfe,rfe:k=4,"n:""Dalc""",Dalc,,-0.4922766217414468,-0.5208216756811871,source target units
+student_background,sfs,sfs:k=4,(intercept),,,11.913294797687861,12.244799008275505,source target units
+student_background,sfs,sfs:k=4,"c:[""school"",""MS""]",school,MS,-0.754746183837327,-1.5857407327397692,source target units
+student_background,sfs,sfs:k=4,"n:""failures""",failures,,-0.9441792332991972,-1.5632838524644224,source target units
+student_background,sfs,sfs:k=4,"c:[""higher"",""yes""]",higher,yes,0.47774284673991146,1.5398451231286454,source target units
+student_background,sfs,sfs:k=4,"n:""Dalc""",Dalc,,-0.4922766217414468,-0.5208216756811871,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,(intercept),,,11.913294797687861,10.134880544947842,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""school"",""MS""]",school,MS,-0.6018002528095721,-1.2643974812847978,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""sex"",""M""]",sex,M,-0.29460301210925394,-0.5976629731051301,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""age""",age,,0.16113184591100616,0.133295897083566,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""address"",""U""]",address,U,0.10134298127072162,0.21834448793721256,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""famsize"",""LE3""]",famsize,LE3,0.08849739164185619,0.1968189835503647,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""Pstatus"",""T""]",Pstatus,T,-0.0397943218594253,-0.1226971630545972,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""Fedu""",Fedu,,0.21526663967492832,0.19377798527483156,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""Mjob"",""health""]",Mjob,health,0.25110032856792247,0.9309122862132905,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""Mjob"",""other""]",Mjob,other,-0.09150465742495663,-0.18629189969166285,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""Mjob"",""services""]",Mjob,services,0.1710870019042428,0.4214553634465934,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""Mjob"",""teacher""]",Mjob,teacher,0.10205140074512688,0.3239081447122394,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""Fjob"",""services""]",Fjob,services,-0.2235098861163693,-0.5035939132290823,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""Fjob"",""teacher""]",Fjob,teacher,0.15629687963001196,0.6697344033258095,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""reason"",""other""]",reason,other,-0.14675164916925174,-0.5018840331553506,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""reason"",""reputation""]",reason,reputation,0.12750579454801514,0.30331494073271525,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""guardian"",""mother""]",guardian,mother,-0.08622010066259508,-0.1905820030598662,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""guardian"",""other""]",guardian,other,0.215805714630282,0.8972032309964882,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""studytime""",studytime,,0.19781001360366668,0.24125725810848278,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""failures""",failures,,-0.8482892972710041,-1.4045182459779064,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""schoolsup"",""yes""]",schoolsup,yes,-0.33599146207280495,-1.1004548862202976,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""famsup"",""yes""]",famsup,yes,0.03904121900527349,0.08021958075013984,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""paid"",""yes""]",paid,yes,-0.06565795420434666,-0.26907887296113575,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""activities"",""yes""]",activities,yes,0.07368409857834476,0.14737065918165165,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""nursery"",""yes""]",nursery,yes,-0.07578972813376457,-0.1879964933660628,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""higher"",""yes""]",higher,yes,0.44205410394399963,1.4248143342431856,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""internet"",""yes""]",internet,yes,0.05359607658308379,0.12639363036695567,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"c:[""romantic"",""yes""]",romantic,yes,-0.29883017768174974,-0.6189667503394172,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""famrel""",famrel,,0.1613230365351102,0.16455883585572034,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""freetime""",freetime,,-0.13198578509535555,-0.12734393680664105,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""goout""",goout,,-0.07897682803878418,-0.06692811060086397,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""Dalc""",Dalc,,-0.2887986444067029,-0.3055448649628417,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""health""",health,,-0.32456103580355733,-0.22515974119572615,source target units
+student_background,lasso_select,lasso_select:alpha=0.01,"n:""absences""",absences,,-0.18811505000171183,-0.04106406444318527,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2",(intercept),,,11.913294797687861,10.080196333998186,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""school"",""MS""]",school,MS,-0.601942208284636,-1.2646957333115914,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""sex"",""M""]",sex,M,-0.29241577466582486,-0.593225710824723,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""age""",age,,0.15098232853933014,0.12489973544727472,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""address"",""U""]",address,U,0.10401395368150822,0.22409912526892592,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""famsize"",""LE3""]",famsize,LE3,0.08895218614799529,0.19783045056382018,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""Medu""",Medu,,-0.04581879044084633,-0.040403433683186,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""Fedu""",Fedu,,0.23445279947415287,0.21104891678873913,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""Mjob"",""health""]",Mjob,health,0.2630227391330533,0.9751126205563705,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""Mjob"",""other""]",Mjob,other,-0.0870242495688829,-0.1771703564348517,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""Mjob"",""services""]",Mjob,services,0.18645421419204433,0.459310922126272,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""Mjob"",""teacher""]",Mjob,teacher,0.1207746782062953,0.383335276736874,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""Fjob"",""services""]",Fjob,services,-0.2299383177504873,-0.5180779215152554,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""Fjob"",""teacher""]",Fjob,teacher,0.1664183208954211,0.7131049264145148,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""reason"",""other""]",reason,other,-0.1540199629543131,-0.5267413390686769,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""reason"",""reputation""]",reason,reputation,0.1394283940912632,0.3316768092004137,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""guardian"",""mother""]",guardian,mother,-0.07883194052546823,-0.1742511202722108,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""guardian"",""other""]",guardian,other,0.2267933149791581,0.9428837198139354,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""studytime""",studytime,,0.21392056498406395,0.260906351609068,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""failures""",failures,,-0.84609007538546,-1.4008769796373577,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""schoolsup"",""yes""]",schoolsup,yes,-0.3384759762876922,-1.108592282899336,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""paid"",""yes""]",paid,yes,-0.05511118246880775,-0.22585618217877054,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""higher"",""yes""]",higher,yes,0.4392552247314326,1.4157930782785852,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""internet"",""yes""]",internet,yes,0.05825676802456554,0.13738476533176774,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","c:[""romantic"",""yes""]",romantic,yes,-0.28933080221339275,-0.5992907001843863,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""famrel""",famrel,,0.16401058063395563,0.1673002864117955,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""freetime""",freetime,,-0.13056346317110773,-0.12597163695549227,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""goout""",goout,,-0.08431870180378122,-0.07145502725525281,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""Dalc""",Dalc,,-0.30210455470434644,-0.31962232911941113,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""Walc""",Walc,,0.03222385681279678,0.02506508894763332,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""health""",health,,-0.32967820960416333,-0.22870970992732512,source target units
+student_background,elasticnet_select,"elasticnet_select:alpha=0.1,l1_ratio=0.2","n:""absences""",absences,,-0.18078565664913607,-0.039464114407518874,source target units
+student_background,ridge,ridge:alpha=100.0,(intercept),,,11.913294797687861,10.803216014359096,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""school"",""MS""]",school,MS,-0.4935412933053873,-1.0369426819812855,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""sex"",""M""]",sex,M,-0.24191992149376743,-0.4907844576949015,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""age""",age,,0.08772906302866663,0.07257363738739411,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""address"",""U""]",address,U,0.11908055746237978,0.2565602769563756,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""famsize"",""LE3""]",famsize,LE3,0.07420803327978123,0.16503932387641426,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""Pstatus"",""T""]",Pstatus,T,-0.03169434892609819,-0.09772265279031765,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""Medu""",Medu,,0.050923098399834596,0.04490445970624947,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""Fedu""",Fedu,,0.18991560394463392,0.17095757689262714,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""Mjob"",""health""]",Mjob,health,0.18105118998194514,0.6712168723512387,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""Mjob"",""other""]",Mjob,other,-0.11091588274600934,-0.2258106973372083,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""Mjob"",""services""]",Mjob,services,0.11191411745867204,0.27568900339225405,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""Mjob"",""teacher""]",Mjob,teacher,0.07814948791248387,0.24804417631820677,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""Fjob"",""health""]",Fjob,health,0.024897600886374677,0.14403925777810592,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""Fjob"",""other""]",Fjob,other,0.0034033774902996225,0.006887007333136237,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""Fjob"",""services""]",Fjob,services,-0.18260681083228397,-0.4114345009394096,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""Fjob"",""teacher""]",Fjob,teacher,0.14275818260657241,0.6117208895930561,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""reason"",""home""]",reason,home,0.0011659941780708643,0.0027819578769891617,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""reason"",""other""]",reason,other,-0.14401327805954847,-0.49251892724619034,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""reason"",""reputation""]",reason,reputation,0.15027307552019556,0.3574744909178757,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""guardian"",""mother""]",guardian,mother,-0.0741506960542102,-0.16390363817361556,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""guardian"",""other""]",guardian,other,0.15690524105260864,0.6523269760203538,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""traveltime""",traveltime,,-0.017736926137194027,-0.02369773570382969,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""studytime""",studytime,,0.205424417412845,0.2505440993136699,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""failures""",failures,,-0.711234625386933,-1.1775959118438286,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""schoolsup"",""yes""]",schoolsup,yes,-0.26923631211915844,-0.8818153098046894,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""famsup"",""yes""]",famsup,yes,0.03888503712256708,0.07989866748281117,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""paid"",""yes""]",paid,yes,-0.06769808643316241,-0.27743972561750885,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""activities"",""yes""]",activities,yes,0.055908646974616526,0.11181916203864592,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""nursery"",""yes""]",nursery,yes,-0.05813939124815883,-0.14421481578348705,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""higher"",""yes""]",higher,yes,0.39567079072588496,1.2753131556471073,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""internet"",""yes""]",internet,yes,0.0813810324361252,0.191917856462265,source target units
+student_background,ridge,ridge:alpha=100.0,"c:[""romantic"",""yes""]",romantic,yes,-0.24112386498461078,-0.4994397028326628,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""famrel""",famrel,,0.13457804740356652,0.13727739874055134,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""freetime""",freetime,,-0.1374146236754352,-0.1325818469086695,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""goout""",goout,,-0.05970892663438109,-0.05059972329709496,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""Dalc""",Dalc,,-0.2593732034954522,-0.2744131663076402,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""Walc""",Walc,,-0.03316552781483243,-0.025797560779374368,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""health""",health,,-0.2552662105962264,-0.17708741214594714,source target units
+student_background,ridge,ridge:alpha=100.0,"n:""absences""",absences,,-0.14778489275968307,-0.03226030219250201,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,(intercept),,,11.913294797687861,10.717264982052129,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""school"",""MS""]",school,MS,-0.5902606666573696,-1.2401525202735724,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""sex"",""M""]",sex,M,-0.2558075938231259,-0.5189584654025895,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""age""",age,,0.10623441645048673,0.08788214248931116,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""address"",""U""]",address,U,0.09398376369880033,0.20248897853526138,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""famsize"",""LE3""]",famsize,LE3,0.05563764839377585,0.12373862326148286,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""Pstatus"",""T""]",Pstatus,T,-0.00791428940214191,-0.024401995356678762,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""Medu""",Medu,,0.0,0.0,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""Fedu""",Fedu,,0.20725073479261577,0.18656225551477754,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""Mjob"",""health""]",Mjob,health,0.19360128587475506,0.7177442446028105,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""Mjob"",""other""]",Mjob,other,-0.11778592901998527,-0.23979724192810195,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""Mjob"",""services""]",Mjob,services,0.10101049205795781,0.24882903533509235,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""Mjob"",""teacher""]",Mjob,teacher,0.05537149267130548,0.17574748930593542,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""Fjob"",""health""]",Fjob,health,0.0,0.0,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""Fjob"",""other""]",Fjob,other,-0.0,-0.0,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""Fjob"",""services""]",Fjob,services,-0.17990272777299016,-0.405341885560342,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""Fjob"",""teacher""]",Fjob,teacher,0.13661555711237033,0.5853996499755291,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""reason"",""home""]",reason,home,-0.0,-0.0,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""reason"",""other""]",reason,other,-0.13396797160921245,-0.45816443144245633,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""reason"",""reputation""]",reason,reputation,0.13396300719781698,0.31867556868782865,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""guardian"",""mother""]",guardian,mother,-0.05820852324291865,-0.12866485737710248,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""guardian"",""other""]",guardian,other,0.1832315274233246,0.7617774103260948,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""traveltime""",traveltime,,-0.0,-0.0,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""studytime""",studytime,,0.19893806965491223,0.24263308183427995,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""failures""",failures,,-0.8306651429924679,-1.3753378162191354,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""schoolsup"",""yes""]",schoolsup,yes,-0.295478602077321,-0.9677652801756992,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""famsup"",""yes""]",famsup,yes,0.011420494092530521,0.023466153757609323,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""paid"",""yes""]",paid,yes,-0.03382761977204824,-0.13863206542944628,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""activities"",""yes""]",activities,yes,0.027108662448775245,0.05421823068597603,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""nursery"",""yes""]",nursery,yes,-0.03312776033539556,-0.08217344130241257,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""higher"",""yes""]",higher,yes,0.42031873377433226,1.354757599781227,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""internet"",""yes""]",internet,yes,0.04787943899479086,0.11291229694963992,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"c:[""romantic"",""yes""]",romantic,yes,-0.2516895255180574,-0.5213243485411752,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""famrel""",famrel,,0.1165684026076343,0.11890651851509368,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""freetime""",freetime,,-0.10984770596303947,-0.10598443852423639,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""goout""",goout,,-0.04358661861146085,-0.036937037148579266,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""Dalc""",Dalc,,-0.2921972587856169,-0.3091405507168361,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""Walc""",Walc,,-0.0,-0.0,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""health""",health,,-0.2793416088422482,-0.19378938755355363,source target units
+student_background,lasso_reg,lasso_reg:alpha=0.01,"n:""absences""",absences,,-0.143980043475562,-0.0314297329414063,source target units

@@ -1,0 +1,38 @@
+{
+  "dataset": "stress",
+  "method": "sfs",
+  "status": "passed",
+  "development_rows": 10000,
+  "raw_input_fields": 39,
+  "encoded_columns": 64,
+  "import_s": 1.0004947090055794,
+  "load_s": 0.004379375139251351,
+  "preprocess_s": 0.017574917059391737,
+  "operation_s": 6.5458792499266565,
+  "wall_s_including_import": 7.569142958847806,
+  "cpu_s": 7.520128,
+  "peak_rss_bytes": 255606784,
+  "threads_limit": 1,
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "filepath": "/Users/c2838/NCHU/115-1 \u4e2d\u8208\u4f5c\u696d/AIOT/L7_CRISPDM_MR/.venv/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+      "version": null
+    }
+  ],
+  "warning_categories": [],
+  "final_test_rows_read": 0,
+  "model_scope": "feasibility only; no final scores or model export",
+  "source_nature": "generated resource-bound fixture, not formal data or third-dataset bonus evidence",
+  "selected_encoded_columns": 32,
+  "candidate_encoded_columns": 64,
+  "cv_folds": 3,
+  "cv_regression_fits": 4656,
+  "fold_preprocessing_cache_s": 0.04935695789754391,
+  "preprocessing_scope": "Each CV training fold fit independently; held-out fold transformed only.",
+  "refit_ols": true,
+  "fresh_process_wall_s": 7.790114833042026
+}

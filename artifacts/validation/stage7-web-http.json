@@ -1,0 +1,72 @@
+{
+  "status": "passed_local",
+  "checked_at": "2026-11-02T23:11:46.817369+08:00",
+  "files": [
+    {
+      "path": "downloads/HW2_conversation_snapshot.pdf",
+      "status_code": 200,
+      "bytes": 543813,
+      "sha256": "a63a1eaa5072bc9d1756aef1ddb83c8fa079eb8c1aa65ff29c6ba7769f05fce6",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "downloads/L7_CRISPDM_MR_infographic.pdf",
+      "status_code": 200,
+      "bytes": 127161,
+      "sha256": "31a92669643a57cb8abb3793c16fe343e001b802cca8b313cef28fae1972a15f",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "downloads/L7_CRISPDM_MR_report_draft.pdf",
+      "status_code": 200,
+      "bytes": 1621848,
+      "sha256": "284ff5cd55c759b2541a3ed7955896a280c6bc7ab976994dee7762dd93fdeddd",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "downloads/notebooklm/A_GPU_PROMPT.txt",
+      "status_code": 200,
+      "bytes": 1425,
+      "sha256": "096cf6c335eb18fd64ac5b2e11ae3578687603405b58502c6cab7f702bba5e4a",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "downloads/notebooklm/B_STUDENT_PROMPT.txt",
+      "status_code": 200,
+      "bytes": 1624,
+      "sha256": "2884723596f1f313fe1cbff8cd031030a77aa9124591ad64612594e026013042",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "downloads/notebooklm/RETURN_TEMPLATE.md",
+      "status_code": 200,
+      "bytes": 923,
+      "sha256": "701d755e6f5df3b374f9f5f76250968eead5653e749b367015ced9b9924b4e8e",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "downloads/notebooklm/REVIEWED_SUMMARIES.md",
+      "status_code": 200,
+      "bytes": 6541,
+      "sha256": "bfbec777e6d182329924f92cfaa4e4d94de9d501e907c8a98f15c872386b464e",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "downloads/notebooklm/START_HERE.md",
+      "status_code": 200,
+      "bytes": 4281,
+      "sha256": "97953409d8b096cdbfb8787fe60ed5d5a8360f760f3ea1783b478253b698fe39",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "downloads/notebooklm/sources.json",
+      "status_code": 200,
+      "bytes": 6202,
+      "sha256": "b8dd0021bcc7c78a72fefa0b346699757bf3c34ed626c772fcae7c4c92155234",
+      "matches_local_bytes": true
+    }
+  ],
+  "file_count": 9,
+  "retired_lecture6_status": 404,
+  "method": "Actual localhost HTTP status and byte-for-byte comparison to each served file."
+}

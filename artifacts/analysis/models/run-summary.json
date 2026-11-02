@@ -1,0 +1,61 @@
+{
+  "scope": "development tuning CV only",
+  "scenarios": [
+    {
+      "scenario": "sgemm",
+      "representative": "kbest:k=13",
+      "cv": {
+        "mae": 176.18912052338547,
+        "mse": 80394.31819513228,
+        "rmse": 283.5389183077559,
+        "r2": 0.40670447909407736,
+        "fold_rmse_std": 3.439271535115916
+      },
+      "candidates": 83,
+      "elapsed_s": 21.243336333194748,
+      "peak_rss_mib": 521.53125
+    },
+    {
+      "scenario": "sgemm_log",
+      "representative": "sfs:k=10",
+      "cv": {
+        "mae": 117.05525078661222,
+        "mse": 81724.47025310606,
+        "rmse": 285.87492064381246,
+        "r2": 0.3968881975976142,
+        "fold_rmse_std": 4.751451066122314
+      },
+      "candidates": 83,
+      "elapsed_s": 21.309151833876967,
+      "peak_rss_mib": 502.578125
+    },
+    {
+      "scenario": "student",
+      "representative": "elasticnet_select:alpha=0.1,l1_ratio=0.8",
+      "cv": {
+        "mae": 0.8169622282131901,
+        "mse": 1.832043540983752,
+        "rmse": 1.3535300295832937,
+        "r2": 0.8262084591502291,
+        "fold_rmse_std": 0.27301017987609283
+      },
+      "candidates": 164,
+      "elapsed_s": 4.564221791923046,
+      "peak_rss_mib": 160.53125
+    },
+    {
+      "scenario": "student_background",
+      "representative": "kbest:k=7",
+      "cv": {
+        "mae": 2.0596922415230887,
+        "mse": 8.071288193939656,
+        "rmse": 2.8410012660925825,
+        "r2": 0.23434046162782884,
+        "fold_rmse_std": 0.5768459029809976
+      },
+      "candidates": 158,
+      "elapsed_s": 4.163639625068754,
+      "peak_rss_mib": 160.59375
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "dataset": "stress",
+  "method": "kbest",
+  "status": "passed",
+  "development_rows": 10000,
+  "raw_input_fields": 39,
+  "encoded_columns": 64,
+  "import_s": 1.0048044580034912,
+  "load_s": 0.004285916918888688,
+  "preprocess_s": 0.02060283301398158,
+  "operation_s": 0.007935333997011185,
+  "wall_s_including_import": 1.0383252918254584,
+  "cpu_s": 1.034106,
+  "peak_rss_bytes": 228556800,
+  "threads_limit": 1,
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libomp",
+      "filepath": "/Users/c2838/NCHU/115-1 \u4e2d\u8208\u4f5c\u696d/AIOT/L7_CRISPDM_MR/.venv/lib/python3.12/site-packages/sklearn/.dylibs/libomp.dylib",
+      "version": null
+    }
+  ],
+  "warning_categories": [],
+  "final_test_rows_read": 0,
+  "model_scope": "feasibility only; no final scores or model export",
+  "source_nature": "generated resource-bound fixture, not formal data or third-dataset bonus evidence",
+  "selected_encoded_columns": 32,
+  "candidate_encoded_columns": 64,
+  "refit_ols": true,
+  "fresh_process_wall_s": 1.1396839160006493
+}

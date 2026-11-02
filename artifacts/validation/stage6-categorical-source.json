@@ -1,0 +1,20 @@
+{
+  "url": "https://raw.githubusercontent.com/Avik-Jain/100-Days-Of-ML-Code/master/datasets/50_Startups.csv",
+  "purpose": "Assignment-provided categorical teaching example; not the third-dataset proof (which uses UCI telemonitoring).",
+  "source": {
+    "sha256": "c6075ca5a7551243b31193bad9228f0a1b9468cdde2475c6586c56dcfac5630d",
+    "bytes": 2436,
+    "delimiter": ",",
+    "encoding": "UTF-8",
+    "rows": 50,
+    "source_columns": 5
+  },
+  "columns": [
+    "R&D Spend",
+    "Administration",
+    "Marketing Spend",
+    "State",
+    "Profit"
+  ],
+  "redistribution": "Raw example CSV is not saved or added to public assets."
+}

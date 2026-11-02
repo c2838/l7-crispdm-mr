@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "actual assignment example URL",
+      "passed": true
+    },
+    {
+      "name": "50-row categorical preview",
+      "passed": true
+    },
+    {
+      "name": "baseline actual complete categorical request",
+      "passed": true
+    },
+    {
+      "name": "kbest actual complete categorical request",
+      "passed": true
+    },
+    {
+      "name": "rfe actual complete categorical request",
+      "passed": true
+    },
+    {
+      "name": "sfs actual complete categorical request",
+      "passed": true
+    },
+    {
+      "name": "lasso_select actual complete categorical request",
+      "passed": true
+    },
+    {
+      "name": "elasticnet_select actual complete categorical request",
+      "passed": true
+    },
+    {
+      "name": "four raw inputs and five encoded columns",
+      "passed": true
+    },
+    {
+      "name": "teaching scope below 14 disclosed",
+      "passed": true
+    },
+    {
+      "name": "changed Target executes",
+      "passed": true
+    },
+    {
+      "name": "changed excluded field executes",
+      "passed": true
+    },
+    {
+      "name": "same CSV new settings have different analysis binding",
+      "passed": true
+    },
+    {
+      "name": "actual new target and exclusion used",
+      "passed": true
+    }
+  ],
+  "passed_checks": 14,
+  "source_sha256": "c6075ca5a7551243b31193bad9228f0a1b9468cdde2475c6586c56dcfac5630d",
+  "url": "https://raw.githubusercontent.com/Avik-Jain/100-Days-Of-ML-Code/master/datasets/50_Startups.csv",
+  "scope": "Actual localhost HTTP with real assignment-provided public example; categorical/minimum-row/change-setting validation. UCI remains the independent third dataset proof.",
+  "raw_csv_saved": false
+}

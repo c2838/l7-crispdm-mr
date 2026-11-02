@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "executed_with": "v24.11.1",
+  "fixture_cases": 498,
+  "candidate_models": 488,
+  "scalar_comparisons": 3590,
+  "unscaled_equation_comparisons": 488,
+  "invalid_input_checks": 16,
+  "active_extrapolation_checks": 4,
+  "max_absolute_error": 4.000639819423668e-10,
+  "tolerance": "1e-7 absolute + 1e-8 relative",
+  "method": "Executed browser prediction module in Node.js; independently generated Python point/CI/PI reference fixtures; additional unscaled equation replay.",
+  "protected_files_unchanged": 188,
+  "source_sha256": "316eb62a5cadd9c53ab6eb40b2733ee8c3370302b619ac67d2cfd977f3568ead",
+  "limitations": [
+    "Node module execution does not replace DOM/browser interaction tests.",
+    "No public API or Vercel execution tested."
+  ]
+}

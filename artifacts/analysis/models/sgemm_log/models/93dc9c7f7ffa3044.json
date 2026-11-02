@@ -1,0 +1,484 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "sgemm_log",
+  "candidate_id": "lasso_reg:alpha=0.0001",
+  "method": "lasso_reg",
+  "parameters": {
+    "alpha": 0.0001
+  },
+  "target": "runtime_mean_ms",
+  "target_transform": "log",
+  "raw_input_fields": [
+    "MWG",
+    "NWG",
+    "KWG",
+    "MDIMC",
+    "NDIMC",
+    "MDIMA",
+    "NDIMB",
+    "KWI",
+    "VWM",
+    "VWN",
+    "STRM",
+    "STRN",
+    "SA",
+    "SB"
+  ],
+  "selected_keys": [
+    "n:\"MWG\"",
+    "n:\"NWG\"",
+    "n:\"KWG\"",
+    "n:\"MDIMC\"",
+    "n:\"NDIMC\"",
+    "n:\"MDIMA\"",
+    "n:\"NDIMB\"",
+    "n:\"KWI\"",
+    "n:\"VWM\"",
+    "n:\"VWN\"",
+    "n:\"STRM\"",
+    "n:\"STRN\"",
+    "n:\"SA\"",
+    "n:\"SB\""
+  ],
+  "selected_columns": [
+    {
+      "key": "n:\"MWG\"",
+      "field": "MWG",
+      "category": null,
+      "label": "MWG"
+    },
+    {
+      "key": "n:\"NWG\"",
+      "field": "NWG",
+      "category": null,
+      "label": "NWG"
+    },
+    {
+      "key": "n:\"KWG\"",
+      "field": "KWG",
+      "category": null,
+      "label": "KWG"
+    },
+    {
+      "key": "n:\"MDIMC\"",
+      "field": "MDIMC",
+      "category": null,
+      "label": "MDIMC"
+    },
+    {
+      "key": "n:\"NDIMC\"",
+      "field": "NDIMC",
+      "category": null,
+      "label": "NDIMC"
+    },
+    {
+      "key": "n:\"MDIMA\"",
+      "field": "MDIMA",
+      "category": null,
+      "label": "MDIMA"
+    },
+    {
+      "key": "n:\"NDIMB\"",
+      "field": "NDIMB",
+      "category": null,
+      "label": "NDIMB"
+    },
+    {
+      "key": "n:\"KWI\"",
+      "field": "KWI",
+      "category": null,
+      "label": "KWI"
+    },
+    {
+      "key": "n:\"VWM\"",
+      "field": "VWM",
+      "category": null,
+      "label": "VWM"
+    },
+    {
+      "key": "n:\"VWN\"",
+      "field": "VWN",
+      "category": null,
+      "label": "VWN"
+    },
+    {
+      "key": "n:\"STRM\"",
+      "field": "STRM",
+      "category": null,
+      "label": "STRM"
+    },
+    {
+      "key": "n:\"STRN\"",
+      "field": "STRN",
+      "category": null,
+      "label": "STRN"
+    },
+    {
+      "key": "n:\"SA\"",
+      "field": "SA",
+      "category": null,
+      "label": "SA"
+    },
+    {
+      "key": "n:\"SB\"",
+      "field": "SB",
+      "category": null,
+      "label": "SB"
+    }
+  ],
+  "selected_raw_fields": [
+    "KWG",
+    "KWI",
+    "MDIMA",
+    "MDIMC",
+    "MWG",
+    "NDIMB",
+    "NDIMC",
+    "NWG",
+    "SA",
+    "SB",
+    "STRM",
+    "STRN",
+    "VWM",
+    "VWN"
+  ],
+  "model": {
+    "coefficients": [
+      0.5656645827580823,
+      0.4451483279201953,
+      0.09734135609174828,
+      -0.4485543605615806,
+      -0.43196180274835694,
+      0.0019653416757937714,
+      -0.00025798988657609214,
+      -0.012946857920650208,
+      -0.017521714247611144,
+      -0.04382044093219722,
+      -0.0667441022184984,
+      -0.008007858532195787,
+      -0.0960159510677724,
+      -0.02276061616684048
+    ],
+    "intercept": 4.622025960214728,
+    "design_rank": 15,
+    "design_columns": 15,
+    "inference_status": "regularized_not_OLS_inference",
+    "warning_categories": []
+  },
+  "preprocessor": {
+    "fields": [
+      {
+        "field": "MWG",
+        "kind": "numeric",
+        "fill": 64.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "NWG",
+        "kind": "numeric",
+        "fill": 64.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "KWG",
+        "kind": "numeric",
+        "fill": 32.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "MDIMC",
+        "kind": "numeric",
+        "fill": 8.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "NDIMC",
+        "kind": "numeric",
+        "fill": 8.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "MDIMA",
+        "kind": "numeric",
+        "fill": 16.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "NDIMB",
+        "kind": "numeric",
+        "fill": 16.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "KWI",
+        "kind": "numeric",
+        "fill": 2.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "VWM",
+        "kind": "numeric",
+        "fill": 2.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "VWN",
+        "kind": "numeric",
+        "fill": 2.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "STRM",
+        "kind": "numeric",
+        "fill": 0.5,
+        "all_missing_training": false
+      },
+      {
+        "field": "STRN",
+        "kind": "numeric",
+        "fill": 0.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "SA",
+        "kind": "numeric",
+        "fill": 1.0,
+        "all_missing_training": false
+      },
+      {
+        "field": "SB",
+        "kind": "numeric",
+        "fill": 0.0,
+        "all_missing_training": false
+      }
+    ],
+    "all_columns": [
+      {
+        "key": "n:\"MWG\"",
+        "field": "MWG",
+        "category": null,
+        "label": "MWG"
+      },
+      {
+        "key": "n:\"NWG\"",
+        "field": "NWG",
+        "category": null,
+        "label": "NWG"
+      },
+      {
+        "key": "n:\"KWG\"",
+        "field": "KWG",
+        "category": null,
+        "label": "KWG"
+      },
+      {
+        "key": "n:\"MDIMC\"",
+        "field": "MDIMC",
+        "category": null,
+        "label": "MDIMC"
+      },
+      {
+        "key": "n:\"NDIMC\"",
+        "field": "NDIMC",
+        "category": null,
+        "label": "NDIMC"
+      },
+      {
+        "key": "n:\"MDIMA\"",
+        "field": "MDIMA",
+        "category": null,
+        "label": "MDIMA"
+      },
+      {
+        "key": "n:\"NDIMB\"",
+        "field": "NDIMB",
+        "category": null,
+        "label": "NDIMB"
+      },
+      {
+        "key": "n:\"KWI\"",
+        "field": "KWI",
+        "category": null,
+        "label": "KWI"
+      },
+      {
+        "key": "n:\"VWM\"",
+        "field": "VWM",
+        "category": null,
+        "label": "VWM"
+      },
+      {
+        "key": "n:\"VWN\"",
+        "field": "VWN",
+        "category": null,
+        "label": "VWN"
+      },
+      {
+        "key": "n:\"STRM\"",
+        "field": "STRM",
+        "category": null,
+        "label": "STRM"
+      },
+      {
+        "key": "n:\"STRN\"",
+        "field": "STRN",
+        "category": null,
+        "label": "STRN"
+      },
+      {
+        "key": "n:\"SA\"",
+        "field": "SA",
+        "category": null,
+        "label": "SA"
+      },
+      {
+        "key": "n:\"SB\"",
+        "field": "SB",
+        "category": null,
+        "label": "SB"
+      }
+    ],
+    "keep": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "columns": [
+      {
+        "key": "n:\"MWG\"",
+        "field": "MWG",
+        "category": null,
+        "label": "MWG"
+      },
+      {
+        "key": "n:\"NWG\"",
+        "field": "NWG",
+        "category": null,
+        "label": "NWG"
+      },
+      {
+        "key": "n:\"KWG\"",
+        "field": "KWG",
+        "category": null,
+        "label": "KWG"
+      },
+      {
+        "key": "n:\"MDIMC\"",
+        "field": "MDIMC",
+        "category": null,
+        "label": "MDIMC"
+      },
+      {
+        "key": "n:\"NDIMC\"",
+        "field": "NDIMC",
+        "category": null,
+        "label": "NDIMC"
+      },
+      {
+        "key": "n:\"MDIMA\"",
+        "field": "MDIMA",
+        "category": null,
+        "label": "MDIMA"
+      },
+      {
+        "key": "n:\"NDIMB\"",
+        "field": "NDIMB",
+        "category": null,
+        "label": "NDIMB"
+      },
+      {
+        "key": "n:\"KWI\"",
+        "field": "KWI",
+        "category": null,
+        "label": "KWI"
+      },
+      {
+        "key": "n:\"VWM\"",
+        "field": "VWM",
+        "category": null,
+        "label": "VWM"
+      },
+      {
+        "key": "n:\"VWN\"",
+        "field": "VWN",
+        "category": null,
+        "label": "VWN"
+      },
+      {
+        "key": "n:\"STRM\"",
+        "field": "STRM",
+        "category": null,
+        "label": "STRM"
+      },
+      {
+        "key": "n:\"STRN\"",
+        "field": "STRN",
+        "category": null,
+        "label": "STRN"
+      },
+      {
+        "key": "n:\"SA\"",
+        "field": "SA",
+        "category": null,
+        "label": "SA"
+      },
+      {
+        "key": "n:\"SB\"",
+        "field": "SB",
+        "category": null,
+        "label": "SB"
+      }
+    ],
+    "center": [
+      80.44412251655629,
+      80.43336092715232,
+      25.51539735099338,
+      13.955463576158941,
+      13.948468543046358,
+      17.37342715231788,
+      17.387748344370863,
+      4.998913493377484,
+      2.4508433360927153,
+      2.4493429221854304,
+      0.5,
+      0.4995757450331126,
+      0.5002379966887417,
+      0.49976200331125825
+    ],
+    "scale": [
+      42.470497436993845,
+      42.463279184540475,
+      7.855162052335229,
+      7.881573990009664,
+      7.88595197478212,
+      9.390134451096678,
+      9.393564562771665,
+      2.9999998032533237,
+      1.9543091113049724,
+      1.955348011793436,
+      0.5,
+      0.49999982000783266,
+      0.4999999433575533,
+      0.49999994335755493
+    ],
+    "fit_rows": 193280,
+    "dropped_constant": [],
+    "categorical_overrides": [],
+    "unknown_policy": "all-zero dummy block, equivalent to training reference; count reported",
+    "scale_scope": "all active encoded columns, including numeric and binary dummies"
+  },
+  "fit_rows": 193280,
+  "point_prediction_semantics": "exp(log prediction), geometric location; no arithmetic-mean smearing correction",
+  "source_frame_values_sha256": "1bbf1d5e875f1f81f8bea6fdf2447b22ff8091683eef1f5474ae19f88c6a7aa2"
+}

@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "browser download parses as JSON",
+      "passed": true
+    },
+    {
+      "name": "download source matches public third data",
+      "passed": true
+    },
+    {
+      "name": "all six requests genuinely succeeded",
+      "passed": true
+    },
+    {
+      "name": "nine computed model outputs downloaded",
+      "passed": true
+    },
+    {
+      "name": "baseline actual download agrees with independent HTTP outputs",
+      "passed": true
+    },
+    {
+      "name": "kbest actual download agrees with independent HTTP outputs",
+      "passed": true
+    },
+    {
+      "name": "rfe actual download agrees with independent HTTP outputs",
+      "passed": true
+    },
+    {
+      "name": "sfs actual download agrees with independent HTTP outputs",
+      "passed": true
+    },
+    {
+      "name": "lasso_select actual download agrees with independent HTTP outputs",
+      "passed": true
+    },
+    {
+      "name": "elasticnet_select actual download agrees with independent HTTP outputs",
+      "passed": true
+    }
+  ],
+  "passed_checks": 10,
+  "numeric_scalars_compared": 2894,
+  "max_absolute_difference": 0.0,
+  "file": "/Users/c2838/Downloads/custom-analysis-f2c7d5025dec.json",
+  "bytes": 4147362,
+  "sha256": "43834eb336ba34f1ae9e65aea660c48a185700bfde791633f159b4772a8d10c3",
+  "scope": "Actual browser Save download, not reconstructed export. Numeric model/prediction/inference/metrics/split replay against separate live HTTP run. dataset_id excluded because list-order-sensitive options fingerprint differs; data/target/fields/split verified explicitly."
+}

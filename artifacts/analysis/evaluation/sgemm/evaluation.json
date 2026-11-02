@@ -1,0 +1,632 @@
+{
+  "scenario": "sgemm",
+  "test_rows": 48320,
+  "frozen_representative_id": "kbest:k=13",
+  "models": [
+    {
+      "scenario": "sgemm",
+      "method": "dummy",
+      "candidate_id": "dummy",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 48320,
+        "mae": 217.53269380467654,
+        "mse": 137862.50161870505,
+        "rmse": 371.2983996985512,
+        "r2": -2.2491271116420464e-05
+      },
+      "selected_encoded_fields": 0,
+      "selected_raw_fields": 0,
+      "test_transform_notes": {},
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "not_applicable_to_baseline_or_regularized_model",
+      "interval_summary": null,
+      "model_path": "artifacts/analysis/models/sgemm/models/b5a2c96250612366.json",
+      "model_sha256": "1490b6fade8435a42d7d7daa7ea496a0677bebb34565fb132c40820b93e79458",
+      "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/b5a2c96250612366.csv.gz",
+      "predictions_sha256": "fbf490445959558fb003f154ded8a52779fb409997957c4ea995270d859b3860",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/b5a2c96250612366.json"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "ols",
+      "candidate_id": "ols",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 48320,
+        "mae": 176.37455017013608,
+        "mse": 81354.53526680975,
+        "rmse": 285.2271643213699,
+        "r2": 0.40987314114804496
+      },
+      "selected_encoded_fields": 14,
+      "selected_raw_fields": 14,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 48320,
+        "covered_count": 47025,
+        "observation_pi_coverage": 0.9731995033112583,
+        "observation_pi_mean_width": 1111.4134771686242,
+        "location_ci_mean_width": 9.718414543364087,
+        "location_ci_hc3_mean_width": 10.057656083398657,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 8894,
+        "negative_pi_lower_count": 44349,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/sgemm/models/56b3097935e4a664.json",
+      "model_sha256": "fc5df14865e115b8cc60dea1a87ee07cf7c5ccedf5e77506e3e8e05e72a50115",
+      "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/082c0a235fcd84638d9e-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/082c0a235fcd84638d9e-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/082c0a235fcd84638d9e-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.4068021759362692,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          50.175819023997214,
+          218.00446785587562,
+          379.2013611819805
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 11996,
+            "coverage": 0.9947482494164721
+          },
+          {
+            "bin": 1,
+            "rows": 11973,
+            "coverage": 1.0
+          },
+          {
+            "bin": 2,
+            "rows": 12151,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 12200,
+            "coverage": 0.899016393442623
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/56b3097935e4a664.csv.gz",
+      "predictions_sha256": "2945f6e82df9e8f990be8fc9dc255c97e481e205e7f7697d2857983898a551f2",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/56b3097935e4a664.json"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "kbest",
+      "candidate_id": "kbest:k=13",
+      "representative_frozen": true,
+      "test_metrics": {
+        "n": 48320,
+        "mae": 176.37443299244615,
+        "mse": 81354.53250240185,
+        "rmse": 285.22715947539405,
+        "r2": 0.4098731612004163
+      },
+      "selected_encoded_fields": 13,
+      "selected_raw_fields": 13,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 48320,
+        "covered_count": 47025,
+        "observation_pi_coverage": 0.9731995033112583,
+        "observation_pi_mean_width": 1111.4077438286315,
+        "location_ci_mean_width": 9.379209716854962,
+        "location_ci_hc3_mean_width": 9.720266077402627,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 8892,
+        "negative_pi_lower_count": 44349,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/sgemm/models/e8bdf42a699b8cc8.json",
+      "model_sha256": "db582e8dce97840bd01dabb16d0db715abec58f22d88cbe9e32378c3693797df",
+      "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.4068052265877632,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          50.18369085992569,
+          217.99992126177972,
+          379.207667772969
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 11996,
+            "coverage": 0.9947482494164721
+          },
+          {
+            "bin": 1,
+            "rows": 11972,
+            "coverage": 1.0
+          },
+          {
+            "bin": 2,
+            "rows": 12150,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 12202,
+            "coverage": 0.8990329454187838
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/e8bdf42a699b8cc8.csv.gz",
+      "predictions_sha256": "5a7117f521f540dfa456dc538256fcf5b00fe63c36ce71ab36d1732922f018d0",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/e8bdf42a699b8cc8.json"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "rfe",
+      "candidate_id": "rfe:k=13",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 48320,
+        "mae": 176.37443299244615,
+        "mse": 81354.53250240185,
+        "rmse": 285.22715947539405,
+        "r2": 0.4098731612004163
+      },
+      "selected_encoded_fields": 13,
+      "selected_raw_fields": 13,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 48320,
+        "covered_count": 47025,
+        "observation_pi_coverage": 0.9731995033112583,
+        "observation_pi_mean_width": 1111.4077438286315,
+        "location_ci_mean_width": 9.379209716854962,
+        "location_ci_hc3_mean_width": 9.720266077402627,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 8892,
+        "negative_pi_lower_count": 44349,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/sgemm/models/38fc8ca61fe51107.json",
+      "model_sha256": "da8e9c1438de2b27450b2d7a44d52d2dbb68a9b8764f9aabf42c8f4eb5c6316f",
+      "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.4068052265877632,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          50.18369085992569,
+          217.99992126177972,
+          379.207667772969
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 11996,
+            "coverage": 0.9947482494164721
+          },
+          {
+            "bin": 1,
+            "rows": 11972,
+            "coverage": 1.0
+          },
+          {
+            "bin": 2,
+            "rows": 12150,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 12202,
+            "coverage": 0.8990329454187838
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/38fc8ca61fe51107.csv.gz",
+      "predictions_sha256": "baa41013c13a42d3bb6cfba170bd5e56810eab0f35c2f2a85a6bceedf74f92ba",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/38fc8ca61fe51107.json"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "sfs",
+      "candidate_id": "sfs:k=13",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 48320,
+        "mae": 176.37443299244615,
+        "mse": 81354.53250240185,
+        "rmse": 285.22715947539405,
+        "r2": 0.4098731612004163
+      },
+      "selected_encoded_fields": 13,
+      "selected_raw_fields": 13,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 48320,
+        "covered_count": 47025,
+        "observation_pi_coverage": 0.9731995033112583,
+        "observation_pi_mean_width": 1111.4077438286315,
+        "location_ci_mean_width": 9.379209716854962,
+        "location_ci_hc3_mean_width": 9.720266077402627,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 8892,
+        "negative_pi_lower_count": 44349,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/sgemm/models/218af8d9e0f13c19.json",
+      "model_sha256": "65da7ab923367b56ae8929eed12aa2a022092385df215527bdfff9cb19ceaf59",
+      "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.4068052265877632,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          50.18369085992569,
+          217.99992126177972,
+          379.207667772969
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 11996,
+            "coverage": 0.9947482494164721
+          },
+          {
+            "bin": 1,
+            "rows": 11972,
+            "coverage": 1.0
+          },
+          {
+            "bin": 2,
+            "rows": 12150,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 12202,
+            "coverage": 0.8990329454187838
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/218af8d9e0f13c19.csv.gz",
+      "predictions_sha256": "952b22c47e42b81837817539e9961853af251dd14f13280355d794b5026b97ae",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/218af8d9e0f13c19.json"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "lasso_select",
+      "candidate_id": "lasso_select:alpha=0.001",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 48320,
+        "mae": 176.37443299244615,
+        "mse": 81354.53250240185,
+        "rmse": 285.22715947539405,
+        "r2": 0.4098731612004163
+      },
+      "selected_encoded_fields": 13,
+      "selected_raw_fields": 13,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 48320,
+        "covered_count": 47025,
+        "observation_pi_coverage": 0.9731995033112583,
+        "observation_pi_mean_width": 1111.4077438286315,
+        "location_ci_mean_width": 9.379209716854962,
+        "location_ci_hc3_mean_width": 9.720266077402627,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 8892,
+        "negative_pi_lower_count": 44349,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/sgemm/models/edd20bf36d51718f.json",
+      "model_sha256": "32b1af0458c9b3c0156c741485b878d5f879699f1e9a2fb5ed83e9c34e9ecb04",
+      "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.4068052265877632,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          50.18369085992569,
+          217.99992126177972,
+          379.207667772969
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 11996,
+            "coverage": 0.9947482494164721
+          },
+          {
+            "bin": 1,
+            "rows": 11972,
+            "coverage": 1.0
+          },
+          {
+            "bin": 2,
+            "rows": 12150,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 12202,
+            "coverage": 0.8990329454187838
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/edd20bf36d51718f.csv.gz",
+      "predictions_sha256": "0d4e693c0c7f0623328fc1ab5ea6b654c9c36a11aa6e5ceef8a62954e11562cd",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/edd20bf36d51718f.json"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "elasticnet_select",
+      "candidate_id": "elasticnet_select:alpha=0.001,l1_ratio=0.8",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 48320,
+        "mae": 176.37443299244615,
+        "mse": 81354.53250240185,
+        "rmse": 285.22715947539405,
+        "r2": 0.4098731612004163
+      },
+      "selected_encoded_fields": 13,
+      "selected_raw_fields": 13,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 48320,
+        "covered_count": 47025,
+        "observation_pi_coverage": 0.9731995033112583,
+        "observation_pi_mean_width": 1111.4077438286315,
+        "location_ci_mean_width": 9.379209716854962,
+        "location_ci_hc3_mean_width": 9.720266077402627,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 8892,
+        "negative_pi_lower_count": 44349,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/sgemm/models/1437b3e3fc5f5545.json",
+      "model_sha256": "7ccae7cef280d4a65dc9930ab8a630dc87738cb430c0dd2bab1508892a62568b",
+      "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.4068052265877632,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          50.18369085992569,
+          217.99992126177972,
+          379.207667772969
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 11996,
+            "coverage": 0.9947482494164721
+          },
+          {
+            "bin": 1,
+            "rows": 11972,
+            "coverage": 1.0
+          },
+          {
+            "bin": 2,
+            "rows": 12150,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 12202,
+            "coverage": 0.8990329454187838
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/1437b3e3fc5f5545.csv.gz",
+      "predictions_sha256": "8b5051873536807c93e89d5459f0ad7c496ffbd9ce4d31e91bca7ad354e53191",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/1437b3e3fc5f5545.json"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "ridge",
+      "candidate_id": "ridge:alpha=10.0",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 48320,
+        "mae": 176.36974779855316,
+        "mse": 81354.64769362751,
+        "rmse": 285.2273614042445,
+        "r2": 0.4098723256300827
+      },
+      "selected_encoded_fields": 14,
+      "selected_raw_fields": 14,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "not_applicable_to_baseline_or_regularized_model",
+      "interval_summary": null,
+      "model_path": "artifacts/analysis/models/sgemm/models/74ba7544eae0bffb.json",
+      "model_sha256": "5563d7c12a80ed29f85dbe51aeaa0986afaf81e44ae61e274741464da20e9d5e",
+      "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/74ba7544eae0bffb.csv.gz",
+      "predictions_sha256": "e56742d4e20e6e695d21dfd756a2bccbef6c3f98cf1c1e0bfaa12e70fc762db4",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/74ba7544eae0bffb.json"
+    },
+    {
+      "scenario": "sgemm",
+      "method": "lasso_reg",
+      "candidate_id": "lasso_reg:alpha=0.0001",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 48320,
+        "mae": 176.3381796794145,
+        "mse": 81355.45686358758,
+        "rmse": 285.2287798655451,
+        "r2": 0.4098664560995735
+      },
+      "selected_encoded_fields": 14,
+      "selected_raw_fields": 14,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "not_applicable_to_baseline_or_regularized_model",
+      "interval_summary": null,
+      "model_path": "artifacts/analysis/models/sgemm/models/93dc9c7f7ffa3044.json",
+      "model_sha256": "5d9069e0d3b400d86c2113c34ed51e1dc1d7397d8267c4c76f0452ac22883f19",
+      "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/93dc9c7f7ffa3044.csv.gz",
+      "predictions_sha256": "7f439354efce031a69922b60d82b24ac4f1d5976344b76802122a71ab5923584",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/93dc9c7f7ffa3044.json"
+    }
+  ],
+  "representative": {
+    "scenario": "sgemm",
+    "method": "kbest",
+    "candidate_id": "kbest:k=13",
+    "representative_frozen": true,
+    "test_metrics": {
+      "n": 48320,
+      "mae": 176.37443299244615,
+      "mse": 81354.53250240185,
+      "rmse": 285.22715947539405,
+      "r2": 0.4098731612004163
+    },
+    "selected_encoded_fields": 13,
+    "selected_raw_fields": 13,
+    "test_transform_notes": {
+      "unknown_categories": {},
+      "imputed_values": {}
+    },
+    "test_adjusted_r2": null,
+    "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+    "interval_status": "available",
+    "interval_summary": {
+      "rows": 48320,
+      "covered_count": 47025,
+      "observation_pi_coverage": 0.9731995033112583,
+      "observation_pi_mean_width": 1111.4077438286315,
+      "location_ci_mean_width": 9.379209716854962,
+      "location_ci_hc3_mean_width": 9.720266077402627,
+      "location_ci_coverage_against_individual_y": null,
+      "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+      "negative_prediction_count": 8892,
+      "negative_pi_lower_count": 44349,
+      "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+      "nominal_level": 0.95,
+      "location_kind": "conditional_arithmetic_mean"
+    },
+    "model_path": "artifacts/analysis/models/sgemm/models/e8bdf42a699b8cc8.json",
+    "model_sha256": "db582e8dce97840bd01dabb16d0db715abec58f22d88cbe9e32378c3693797df",
+    "interval_spec_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-interval-spec.json",
+    "diagnostics_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostics.json",
+    "diagnostic_plot_data_path": "artifacts/analysis/evaluation/sgemm/inference/53c81af84d011dfceae1-diagnostic-plot-data.json",
+    "development_ols_adjusted_r2": 0.4068052265877632,
+    "development_adjusted_r2_scale": "original target units",
+    "coverage_by_prediction_bin": {
+      "edges_from_development_predictions": [
+        50.18369085992569,
+        217.99992126177972,
+        379.207667772969
+      ],
+      "groups": [
+        {
+          "bin": 0,
+          "rows": 11996,
+          "coverage": 0.9947482494164721
+        },
+        {
+          "bin": 1,
+          "rows": 11972,
+          "coverage": 1.0
+        },
+        {
+          "bin": 2,
+          "rows": 12150,
+          "coverage": 1.0
+        },
+        {
+          "bin": 3,
+          "rows": 12202,
+          "coverage": 0.8990329454187838
+        }
+      ],
+      "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+    },
+    "predictions_path": "artifacts/analysis/evaluation/sgemm/predictions/e8bdf42a699b8cc8.csv.gz",
+    "predictions_sha256": "5a7117f521f540dfa456dc538256fcf5b00fe63c36ce71ab36d1732922f018d0",
+    "interval_plot_data_path": "artifacts/analysis/evaluation/sgemm/plot-data/e8bdf42a699b8cc8.json"
+  },
+  "limits": [
+    "No retuning, replacement, clipping or test-row deletion.",
+    "Classical PI depends on conditional homoskedastic normal errors.",
+    "Selection uncertainty is not corrected."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "file_bytes": 3500000,
+  "rows_min": 50,
+  "rows_max": 10000,
+  "raw_features_max": 39,
+  "formal_features_min": 14,
+  "encoded_features_max_excluding_intercept": 64,
+  "category_cardinality_max": 20,
+  "method_soft_deadline_s": 120,
+  "candidate_function_duration_s": 240,
+  "url_fetch_deadline_s": 15,
+  "result_json_bytes": 3000000,
+  "plot_points_max": 2000,
+  "status": "initial engineering budget from local probes; enforce/retest in stages 3 and 6; cloud gate in stage 8",
+  "source_scope": "generated 10000x39 raw /64 encoded resource fixture, not a homework dataset or bonus proof"
+}

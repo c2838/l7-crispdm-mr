@@ -1,0 +1,10 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/320/data.csv",
+  "status": 200,
+  "bytes": 93220,
+  "content_type": null,
+  "rows": 649,
+  "columns": 33,
+  "target_present": true,
+  "scope": "Real public HTTPS CSV fetch/parser only; no training or final-test evaluation."
+}

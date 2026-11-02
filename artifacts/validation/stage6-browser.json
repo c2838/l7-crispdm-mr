@@ -1,0 +1,361 @@
+{
+  "status": "passed_local_browser",
+  "checks": [
+    {
+      "name": "Actual uploaded third dataset completes all six requests",
+      "actual": {
+        "message": "6/6 個方法請求成功，取得 9 個模型。完整比較已完成。",
+        "models": 9,
+        "prediction": "28.0593",
+        "selected": "rfe",
+        "statuses": [
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded"
+        ]
+      },
+      "expected": "6 succeeded requests / 9 models",
+      "passed": true
+    },
+    {
+      "name": "Real public URL loads same third dataset",
+      "actual": "5,875 rows · 22 columns · 0 missing cells · 0 exact duplicate rows · 911,261 bytes · SHA-256 f2c7d5025dec4e92…",
+      "expected": "5875 rows and f2c7d5025dec4e92",
+      "passed": true
+    },
+    {
+      "name": "Cancel retains received results and does not claim complete",
+      "actual": {
+        "message": "已取消。保留 8 個已回應模型；伺服器的在途求解不保證立即停止。",
+        "models": 8,
+        "statuses": [
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "cancelled"
+        ]
+      },
+      "expected": "8 models and cancelled last request",
+      "passed": true
+    },
+    {
+      "name": "Busy response during cancellation tail is explicit and preserves models",
+      "actual": "Baseline + regularized models\nsucceeded\n4 model(s) · 4.0s\nSelectKBest → OLS\nsucceeded\n1 model(s) · 0.2s\nRFE → OLS\nsucceeded\n1 model(s) · 0.2s\nForward SFS → OLS\nsucceeded\n1 model(s) · 1.1s\nLasso selection → OLS\nsucceeded\n1 model(s) · 3.7s\nElasticNet selection → OLS\nfailed\n此執行個體正在分析；前一工作可能仍在收尾，請稍後重試。\nRetry · 重試",
+      "expected": "instance busy with retry",
+      "passed": false,
+      "resolved_by": "Busy response preserves the eight completed models (corrected test expected count)"
+    },
+    {
+      "name": "Busy response preserves the eight completed models",
+      "actual": {
+        "text": "Baseline + regularized models\nsucceeded\n4 model(s) · 4.0s\nSelectKBest → OLS\nsucceeded\n1 model(s) · 0.2s\nRFE → OLS\nsucceeded\n1 model(s) · 0.2s\nForward SFS → OLS\nsucceeded\n1 model(s) · 1.1s\nLasso selection → OLS\nsucceeded\n1 model(s) · 3.7s\nElasticNet selection → OLS\nfailed\n此執行個體正在分析；前一工作可能仍在收尾，請稍後重試。\nRetry · 重試",
+        "models": 8
+      },
+      "expected": "busy message; 8 models retained",
+      "passed": true
+    },
+    {
+      "name": "Final URL workflow completed in fresh page",
+      "actual": {
+        "message": "6/6 個方法請求成功，取得 9 個模型。完整比較已完成。",
+        "models": 9,
+        "prediction": "28.0593",
+        "selected": "rfe",
+        "statuses": [
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded"
+        ]
+      },
+      "expected": "6 succeeded and 9 models",
+      "passed": true
+    },
+    {
+      "name": "Final upload and URL point prediction agree",
+      "actual": "28.0593",
+      "expected": "28.0593",
+      "passed": true
+    },
+    {
+      "name": "Custom model switch dummy",
+      "actual": {
+        "inputs": 0,
+        "intervals": "OLS CI / PINot available",
+        "model": "dummy",
+        "prediction": "28.2315"
+      },
+      "expected": "correct model; finite point; correct interval family",
+      "passed": true
+    },
+    {
+      "name": "Custom model switch ols",
+      "actual": {
+        "inputs": 16,
+        "intervals": "95% Mean-response CI[30.107, 32.228]95% Observation PI[10.308, 52.028]95% HC3 location CI[30.109, 32.227]",
+        "model": "ols",
+        "prediction": "31.1676"
+      },
+      "expected": "correct model; finite point; correct interval family",
+      "passed": true
+    },
+    {
+      "name": "Custom model switch kbest",
+      "actual": {
+        "inputs": 16,
+        "intervals": "95% Mean-response CI[30.107, 32.228]95% Observation PI[10.308, 52.028]95% HC3 location CI[30.109, 32.227]",
+        "model": "kbest",
+        "prediction": "31.1676"
+      },
+      "expected": "correct model; finite point; correct interval family",
+      "passed": true
+    },
+    {
+      "name": "Custom model switch rfe",
+      "actual": {
+        "inputs": 1,
+        "intervals": "95% Mean-response CI[27.727, 28.392]95% Observation PI[5.872, 50.247]95% HC3 location CI[27.726, 28.392]",
+        "model": "rfe",
+        "prediction": "28.0593"
+      },
+      "expected": "correct model; finite point; correct interval family",
+      "passed": true
+    },
+    {
+      "name": "Custom model switch sfs",
+      "actual": {
+        "inputs": 16,
+        "intervals": "95% Mean-response CI[30.107, 32.228]95% Observation PI[10.308, 52.028]95% HC3 location CI[30.109, 32.227]",
+        "model": "sfs",
+        "prediction": "31.1676"
+      },
+      "expected": "correct model; finite point; correct interval family",
+      "passed": true
+    },
+    {
+      "name": "Custom model switch lasso_select",
+      "actual": {
+        "inputs": 0,
+        "intervals": "95% Mean-response CI[27.904, 28.559]95% Observation PI[5.980, 50.483]95% HC3 location CI[27.904, 28.559]",
+        "model": "lasso_select",
+        "prediction": "28.2315"
+      },
+      "expected": "correct model; finite point; correct interval family",
+      "passed": true
+    },
+    {
+      "name": "Custom model switch elasticnet_select",
+      "actual": {
+        "inputs": 0,
+        "intervals": "95% Mean-response CI[27.904, 28.559]95% Observation PI[5.980, 50.483]95% HC3 location CI[27.904, 28.559]",
+        "model": "elasticnet_select",
+        "prediction": "28.2315"
+      },
+      "expected": "correct model; finite point; correct interval family",
+      "passed": true
+    },
+    {
+      "name": "Custom model switch ridge",
+      "actual": {
+        "inputs": 16,
+        "intervals": "OLS CI / PINot available",
+        "model": "ridge",
+        "prediction": "28.1753"
+      },
+      "expected": "correct model; finite point; correct interval family",
+      "passed": true
+    },
+    {
+      "name": "Custom model switch lasso_reg",
+      "actual": {
+        "inputs": 16,
+        "intervals": "OLS CI / PINot available",
+        "model": "lasso_reg",
+        "prediction": "28.2315"
+      },
+      "expected": "correct model; finite point; correct interval family",
+      "passed": true
+    },
+    {
+      "name": "Custom page responsive 390",
+      "actual": {
+        "client": 375,
+        "scroll": 375,
+        "viewport": 390
+      },
+      "expected": "no page horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Custom page responsive 320",
+      "actual": {
+        "client": 305,
+        "scroll": 305,
+        "viewport": 320
+      },
+      "expected": "no page horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Changing Target clears and isolates old results",
+      "actual": {
+        "downloadDisabled": true,
+        "hidden": true,
+        "message": "設定已變更，舊結果已隔離；請重新執行分析。"
+      },
+      "expected": "hidden old results and disabled download",
+      "passed": true
+    },
+    {
+      "name": "Assignment categorical example real URL preview",
+      "actual": {
+        "inputs": "4 raw inputs · 5 schema-estimated encoded fields (not a fitted encoder) · 教學示範：低於正式題目14欄下限",
+        "quality": "50 rows · 5 columns · 0 missing cells · 0 exact duplicate rows · 2,436 bytes · SHA-256 c6075ca5a7551243…",
+        "target": "Profit"
+      },
+      "expected": "50 rows / 4 raw / 5 encoded / Profit",
+      "passed": true
+    },
+    {
+      "name": "Categorical minimum-row example completes all methods",
+      "actual": {
+        "message": "6/6 個方法請求成功，取得 9 個模型。完整比較已完成。",
+        "models": 9,
+        "statuses": [
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded"
+        ]
+      },
+      "expected": "6 successes / 9 models",
+      "passed": true
+    },
+    {
+      "name": "Custom unknown category prediction disclosed",
+      "actual": "State=NEW_REGION 是未知類別，依凍結規則採 reference「California」的效果。",
+      "expected": "contains 未知類別",
+      "passed": true
+    },
+    {
+      "name": "Custom nonfinite numeric value rejected",
+      "actual": "—",
+      "expected": "—",
+      "passed": true
+    },
+    {
+      "name": "Custom missing numeric input disclosed",
+      "actual": "R&D Spend：缺值使用 training median 65828.5。\nState=NEW_REGION 是未知類別，依凍結規則採 reference「California」的效果。",
+      "expected": "contains 缺值",
+      "passed": true
+    },
+    {
+      "name": "Target plus excluded-field change invalidates old results",
+      "actual": {
+        "downloadDisabled": true,
+        "hidden": true,
+        "summary": "3 raw inputs · 4 schema-estimated encoded fields (not a fitted encoder) · 教學示範：低於正式題目14欄下限",
+        "target": "Administration"
+      },
+      "expected": "Administration, 3 raw inputs, old results hidden",
+      "passed": true
+    },
+    {
+      "name": "Changed Target actually recomputes new models",
+      "actual": {
+        "equation": "Administration = 104,223.57827 + 0.24518 × R&D Spend + 4,275.51896 × I(State=\"Florida\")",
+        "models": 9,
+        "warning": "40 development / 10 test · 3 raw / 4 encoded / 2 selected · OLS區間已計算（有條件假設）。少於14個原始輸入：可用於教學／任意Dataset示範，不符合正式題目最低特徵數。"
+      },
+      "expected": "Administration equation and 9 models",
+      "passed": true
+    },
+    {
+      "name": "Custom log transform is actual geometric-location prediction",
+      "actual": {
+        "equation": "ln(Administration) = 11.56647 + 0.00000 × R&D Spend − 0.00000 × Marketing Spend",
+        "label": "Geometric-location prediction",
+        "warning": "40 development / 10 test · 3 raw / 4 encoded / 2 selected · OLS區間已計算（有條件假設）。少於14個原始輸入：可用於教學／任意Dataset示範，不符合正式題目最低特徵數。 exp回轉換為幾何位置，不是原尺度算術平均。"
+      },
+      "expected": "ln(Administration) and geometric location",
+      "passed": true
+    },
+    {
+      "name": "Private URL rejected in actual browser flow",
+      "actual": "不能讀取非公開IP位址。",
+      "expected": "non-public IP refusal",
+      "passed": true
+    },
+    {
+      "name": "Custom failure does not break preset analysis",
+      "actual": "MAE\n0.67\ngrade points\nHeld-out test\nRMSE\n0.84\ngrade points\nHeld-out test\nR²\n0.9290\nHeld-out test\nAdjusted R²\n0.8279\nDevelopment OLS\nCV RMSE\n1.35\ngrade points\nSelection score · 5 folds",
+      "expected": "student frozen R² 0.9290",
+      "passed": true
+    },
+    {
+      "name": "Small nonzero log coefficients remain visible",
+      "actual": "ln(Profit) = 10.89875 + 9.147e-6 × R&D Spend − 5.929e-7 × Administration + 8.328e-8 × Marketing Spend + 0.05974 × I(State=\"Florida\")",
+      "expected": "scientific notation rather than all zero coefficients",
+      "passed": true
+    },
+    {
+      "name": "Cancelled method retry completes with nine models and preserved earlier results",
+      "actual": {
+        "message": "6/6 個方法請求成功，取得 9 個模型。完整比較已完成。",
+        "models": 9,
+        "statuses": [
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded",
+          "succeeded"
+        ]
+      },
+      "expected": "6 succeeded requests / 9 models",
+      "passed": true
+    },
+    {
+      "name": "Keyboard model selection updates actual equation",
+      "actual": {
+        "equation": "total_UPDRS = 27.15870 + 20.87724 × Shimmer:DDA",
+        "value": "rfe"
+      },
+      "expected": "ArrowDown from RFE selects SFS and equation updates",
+      "passed": false,
+      "resolved_by": "Native select requires Enter to commit; keyboard selection committed and equation updated"
+    },
+    {
+      "name": "Keyboard selection commits on Enter and updates actual model",
+      "actual": {
+        "equation": "total_UPDRS = 28.23151 ",
+        "model": "lasso_select"
+      },
+      "expected": "lasso_select with total_UPDRS intercept equation",
+      "passed": true
+    }
+  ],
+  "passed_checks": 31,
+  "resolved_failed_assertions": 2,
+  "unresolved_failures": 0,
+  "console_errors_current_tab": [],
+  "screenshots": [
+    "artifacts/validation/screenshots/stage6/custom-model-mobile.jpg",
+    "artifacts/validation/screenshots/stage6/final-custom-results.jpg",
+    "artifacts/validation/screenshots/stage6/final-six-methods.jpg",
+    "artifacts/validation/screenshots/stage6/upload-results.jpg",
+    "artifacts/validation/screenshots/stage6/url-profile-desktop.jpg",
+    "artifacts/validation/screenshots/stage6/url-results-desktop.jpg"
+  ],
+  "scope": "Actual local browser with real native file upload, public URL requests, six methods, cancellation/busy/retry, model switching, categorical/numeric input, source invalidation, log, 390/320 viewports and actual browser JSON download. Network rejection tests are expected errors. Not public Vercel validation.",
+  "temporary_viewport_override": "reset after final screenshot"
+}

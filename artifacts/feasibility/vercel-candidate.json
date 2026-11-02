@@ -1,0 +1,14 @@
+{
+  "scope": "candidate only; app.py not implemented or deployed",
+  "plan_basis": "user selected Hobby evaluation; account/project settings not verified",
+  "configuration": {
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "functions": {
+      "app.py": {
+        "maxDuration": 240,
+        "excludeFiles": "{.venv/**,docs/**,scripts/**,artifacts/history/**,artifacts/feasibility/**,data/raw/**,data/processed/**,tests/**,**/__pycache__/**}"
+      }
+    }
+  },
+  "note": "Runtime preset artifacts and static public assets selected at implementation/build stage; raw/processed full datasets not required in function bundle."
+}

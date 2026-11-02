@@ -1,0 +1,74 @@
+{
+  "captured_at": "2026-11-01T16:27:25+08:00",
+  "timezone": "Asia/Taipei",
+  "scope": "Read-only runtime and metadata inventory, not a new-project compatibility test.",
+  "project": {
+    "name": "Lesson 7 | CRISP-DM | Multiple Regression",
+    "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR",
+    "initial_items": []
+  },
+  "system_python": {
+    "version": "3.12.14",
+    "executable": "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "resolved_executable": "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/bin/python3.12"
+  },
+  "command_paths": {
+    "python3.12": "/opt/homebrew/bin/python3.12",
+    "python3": "/opt/homebrew/bin/python3",
+    "volta": "/Users/c2838/.volta/bin/volta",
+    "node": "/Users/c2838/.volta/bin/node",
+    "npm": "/Users/c2838/.volta/bin/npm",
+    "git": "/usr/bin/git"
+  },
+  "reference_only": {
+    "project": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L5V2",
+    "python_version": "3.12.14",
+    "executable": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L5V2/.venv/bin/python",
+    "packages": {
+      "numpy": {
+        "status": "present",
+        "version": "2.5.4"
+      },
+      "pandas": {
+        "status": "present",
+        "version": "3.0.6"
+      },
+      "scikit-learn": {
+        "status": "present",
+        "version": "1.9.1"
+      },
+      "scipy": {
+        "status": "present",
+        "version": "1.18.1"
+      },
+      "matplotlib": {
+        "status": "present",
+        "version": "3.11.2"
+      },
+      "fastapi": {
+        "status": "missing"
+      },
+      "statsmodels": {
+        "status": "missing"
+      },
+      "uvicorn": {
+        "status": "missing"
+      }
+    }
+  },
+  "reference_code_sha256": {
+    "README.md": "ae6472bf3f7ec68c76b9a61f12fc0045b60fc22ec0dcd3d785f9254fe6df239b",
+    "analysis.py": "228a6a27b3c8912983da4a5cc70f7880bfe09bafa50fde08e4a77abf59716f43",
+    "web/app.js": "6eed1da005849a6d83ee4fd779f64b240ea71388e43a4407fb71bbabcd8c8578"
+  },
+  "ancestor_agents_files": [],
+  "new_project": {
+    "venv_created": false,
+    "packages_installed": false,
+    "runtime_compatibility_verified": false,
+    "git_initialized": false,
+    "remote_configured": false,
+    "deployed": false
+  },
+  "secrets_read": false
+}

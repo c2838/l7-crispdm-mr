@@ -1,0 +1,63 @@
+{
+  "status": "completed_local_stage4",
+  "recorded_at": "2026-11-01T19:27:26+08:00",
+  "authorization": "User: 階段4 go",
+  "unit_tests_passed": 33,
+  "independent_checks_passed": 279,
+  "frozen_models_evaluated": 36,
+  "ols_models_with_intervals": 24,
+  "unique_covariance_specs_verified": 16,
+  "figures_visually_reviewed": 13,
+  "freeze_sha256": "3a4fec9047f6e08b4eace272bd2f43d7fb4be1fb8356525549340561f15425f3",
+  "data_and_model_freeze_unchanged": true,
+  "documentation_backup": "artifacts/history/stage4-docs-before",
+  "documentation_sha256": {
+    "AGENTS.md": "8a14088729a6d5b7beb4bfc9820f12c49a72210bb6fbf25a68be682b96aba4dd",
+    "README.md": "8c447c9c73912d94e83ff1e7636be3dd9988c92995b59a4902cd533595cbcb19",
+    "docs/PLAN.md": "655a4e9307161653808887212c1157dcce79e8761ccc98b3161cd097096d0ff7",
+    "docs/REQUIREMENTS.md": "0672637926f029b5215e37ba4d7eb89986afe00670346bd20b9e67b5651b48d8",
+    "docs/DECISIONS.md": "e16b583a390fd34270b90481ace3c4e4c26586ce49a94f8b1b9adbaf308da8bb",
+    "docs/STAGE4_PROPOSAL.md": "c10a060b40d00fcfa91c4dbd98842d124486d7262f6b3227a082e3c708540da8",
+    "docs/STAGE4_RESULTS.md": "c7638c5b75a422e3e613e5de777823f6669f0300f19d95b8f59260e5dc1b5279",
+    "docs/INFERENCE_SCHEMA.md": "d7b2e4bdffbc587504aa8572ad35477ee9d8346597f1c4dedb9c13deb8610b5c",
+    "docs/STAGE5_PROPOSAL.md": "0e70c0e44125b8d62284bfac02b7e89f602a3d9d92a9615909f2213dae13ce2c"
+  },
+  "numerical_source_sha256": {
+    "l7_analysis/__init__.py": "9050eb3a76ccf09a17d26e98efbf8d3083e2729c9c06827c66479bf596ff5c09",
+    "l7_analysis/config.py": "6f7908e6ca30ec0bbcf9a85b4425094c47f2b1867073d4a96a884bc76fd38ad2",
+    "l7_analysis/data.py": "30a466afb68b1514247fe8af9d619ef1a12b061297824b51ed94032729da58f7",
+    "l7_analysis/diagnostics.py": "de89e67e978e9419c96b63a3e3a1179d2b022c9809292da6025fc36b052fcf99",
+    "l7_analysis/engine.py": "f6f931424aeb5bcd66620091682d7bc1fda8de02bd1bbe73bcf8711970bebe05",
+    "l7_analysis/inference.py": "ee84590a6e29a3353d72aebdb992ff1d3194674d0a6e7d2f9eca7b21d3c0dca0",
+    "l7_analysis/models.py": "ba1341398d3b97fd28dea31f20c73a4713443dc20fbf3c4c2d8d71174f1c685d",
+    "l7_analysis/preprocessing.py": "ca47de6119484892bb6b2f9cd5ab1c7d2251f03cf58102c5af28488f97802c17",
+    "l7_analysis/selection.py": "db25a967596f48e619d4244f63af349bc3a5ac42d9a061c0a634d59196cd0016",
+    "tests/test_analysis.py": "93210b910be2749710d945a9c3cd87318d9f7c892ee893bef6ae523b43406699",
+    "tests/test_inference.py": "edcfd2d8e9e3d22edab940ea6caaec17c4d227f4f32ee53fcef438e5dde22616"
+  },
+  "evidence_sha256": {
+    "artifacts/validation/stage4-unit.json": "7ec8360923ecde1d46e32d4ab56b4e22a6253658a86b96b914a83266dac43239",
+    "artifacts/validation/stage4.json": "1578fd638df3abbe3976713f82bd3326db2933180fa56525c6e4be1ab80120c8",
+    "artifacts/validation/stage4-visual.json": "402a1460de670837ba0c488cd1e23704497143bf04654fac2e74069c6d038bc5",
+    "artifacts/analysis/evaluation/evaluation-manifest.json": "e0a7e738ccd13c57461d03788449b069e2ea8b9dcef482db0faed8aa5529993d",
+    "artifacts/analysis/evaluation/site-summary.json": "a8f4108ed51370e57ec974df464568894274b5c886bee424c3e295e41211ed84"
+  },
+  "next_stage": {
+    "stage": 5,
+    "status": "awaiting_user_approval",
+    "proposal": "docs/STAGE5_PROPOSAL.md"
+  },
+  "not_verified": [
+    "Product website and API",
+    "Public Vercel runtime/deployment",
+    "NotebookLM actual research",
+    "Final PDF deliverables",
+    "LMS submission"
+  ],
+  "statistical_limitations": [
+    "Observed heteroskedasticity, non-normal residuals and functional-form limitations",
+    "Independence not established",
+    "Classical PI not guaranteed; HC3 location CI does not repair PI",
+    "Uncorrected post-selection uncertainty"
+  ]
+}

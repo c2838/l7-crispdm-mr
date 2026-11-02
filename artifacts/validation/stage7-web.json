@@ -1,0 +1,17 @@
+{
+  "status": "passed_local",
+  "checked_at": "2026-11-02T23:11:46.817369+08:00",
+  "http_evidence": "artifacts/validation/stage7-web-http.json",
+  "latest_browser_evidence": "artifacts/validation/notebooklm-browser.json",
+  "http_files": 9,
+  "browser_viewports": [
+    1280,
+    390,
+    320
+  ],
+  "retired_download_status": 404,
+  "limitations": [
+    "Local verification only.",
+    "Native Save dialog not exercised; actual HTTP byte matching verifies delivered contents."
+  ]
+}

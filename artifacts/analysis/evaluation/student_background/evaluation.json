@@ -1,0 +1,733 @@
+{
+  "scenario": "student_background",
+  "test_rows": 130,
+  "frozen_representative_id": "kbest:k=7",
+  "models": [
+    {
+      "scenario": "student_background",
+      "method": "dummy",
+      "candidate_id": "dummy",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 130,
+        "mae": 2.406669630947088,
+        "mse": 9.940021126923462,
+        "rmse": 3.152779904611716,
+        "r2": -0.00013310617159945082
+      },
+      "selected_encoded_fields": 0,
+      "selected_raw_fields": 0,
+      "test_transform_notes": {},
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "not_applicable_to_baseline_or_regularized_model",
+      "interval_summary": null,
+      "model_path": "artifacts/analysis/models/student_background/models/b5a2c96250612366.json",
+      "model_sha256": "d4ea0dea9a0ef4c9a3816450871252648480441ad7c720dfb1f870138b656704",
+      "prediction_outside_documented_0_20": 0,
+      "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/b5a2c96250612366.csv.gz",
+      "predictions_sha256": "12215fd1e6fda963994ede12a5383730c31b78ee3a0ea30ae30c82d451d4bc4d",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/b5a2c96250612366.json"
+    },
+    {
+      "scenario": "student_background",
+      "method": "ols",
+      "candidate_id": "ols",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 130,
+        "mae": 1.9055855078288282,
+        "mse": 6.245792495990793,
+        "rmse": 2.4991583575257477,
+        "r2": 0.37156835284796497
+      },
+      "selected_encoded_fields": 39,
+      "selected_raw_fields": 30,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 130,
+        "covered_count": 125,
+        "observation_pi_coverage": 0.9615384615384616,
+        "observation_pi_mean_width": 11.22695991521973,
+        "location_ci_mean_width": 3.076928748268542,
+        "location_ci_hc3_mean_width": 3.2607874670905463,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 0,
+        "negative_pi_lower_count": 0,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/student_background/models/56b3097935e4a664.json",
+      "model_sha256": "7921a9697706542425461cdc00492cb4d062138beded39137178f654162aae9f",
+      "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/ad272b995cd9870da515-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/ad272b995cd9870da515-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/ad272b995cd9870da515-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.2869605360636751,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          10.806821334954098,
+          12.276434421663067,
+          13.2868775727983
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 24,
+            "coverage": 0.8333333333333334
+          },
+          {
+            "bin": 1,
+            "rows": 46,
+            "coverage": 0.9782608695652174
+          },
+          {
+            "bin": 2,
+            "rows": 28,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 32,
+            "coverage": 1.0
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "coverage_by_school": [
+        {
+          "school": "GP",
+          "rows": 84,
+          "coverage": 1.0
+        },
+        {
+          "school": "MS",
+          "rows": 46,
+          "coverage": 0.8913043478260869
+        }
+      ],
+      "prediction_outside_documented_0_20": 0,
+      "pi_endpoint_outside_documented_0_20": 7,
+      "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/56b3097935e4a664.csv.gz",
+      "predictions_sha256": "c7ccd6ba10d34e1b9b875ac62825798644a48bb1baf401469d7958ae63f5f7c9",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/56b3097935e4a664.json"
+    },
+    {
+      "scenario": "student_background",
+      "method": "kbest",
+      "candidate_id": "kbest:k=7",
+      "representative_frozen": true,
+      "test_metrics": {
+        "n": 130,
+        "mae": 1.975094794000784,
+        "mse": 6.307355617465699,
+        "rmse": 2.511444926225877,
+        "r2": 0.36537406863869437
+      },
+      "selected_encoded_fields": 7,
+      "selected_raw_fields": 7,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 130,
+        "covered_count": 125,
+        "observation_pi_coverage": 0.9615384615384616,
+        "observation_pi_mean_width": 11.036533193878642,
+        "location_ci_mean_width": 1.283573423815178,
+        "location_ci_hc3_mean_width": 1.3064323416796566,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 0,
+        "negative_pi_lower_count": 0,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/student_background/models/0c8272239860ac75.json",
+      "model_sha256": "91535dd4f2b00e72a778d731c363cac4caca6aa169fd337b7dc9537124fc7a2f",
+      "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/f0cb2dd503c661d6dea1-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/f0cb2dd503c661d6dea1-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/f0cb2dd503c661d6dea1-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.26411148421042974,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          11.111874962197952,
+          12.334954720949531,
+          13.221998100024456
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 22,
+            "coverage": 0.8636363636363636
+          },
+          {
+            "bin": 1,
+            "rows": 42,
+            "coverage": 0.9523809523809523
+          },
+          {
+            "bin": 2,
+            "rows": 38,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 28,
+            "coverage": 1.0
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "coverage_by_school": [
+        {
+          "school": "GP",
+          "rows": 84,
+          "coverage": 1.0
+        },
+        {
+          "school": "MS",
+          "rows": 46,
+          "coverage": 0.8913043478260869
+        }
+      ],
+      "prediction_outside_documented_0_20": 0,
+      "pi_endpoint_outside_documented_0_20": 0,
+      "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/0c8272239860ac75.csv.gz",
+      "predictions_sha256": "dd9eecc9c6d65ea02c21ca89266ab482787428f2dd3aa2d27ac95648c3eb5261",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/0c8272239860ac75.json"
+    },
+    {
+      "scenario": "student_background",
+      "method": "rfe",
+      "candidate_id": "rfe:k=4",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 130,
+        "mae": 2.084264671017446,
+        "mse": 6.836758599465428,
+        "rmse": 2.6147196024555726,
+        "r2": 0.31210723529467177
+      },
+      "selected_encoded_fields": 4,
+      "selected_raw_fields": 4,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 130,
+        "covered_count": 126,
+        "observation_pi_coverage": 0.9692307692307692,
+        "observation_pi_mean_width": 11.099299619100627,
+        "location_ci_mean_width": 0.9583005973977312,
+        "location_ci_hc3_mean_width": 0.9781789707155472,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 0,
+        "negative_pi_lower_count": 1,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/student_background/models/5c7f55e584e068bf.json",
+      "model_sha256": "186c844b348ca8d085d7fbfd0f5f9a5b9c7abf8d6e26c21f3e6c38932687ff69",
+      "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.2512481314481343,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          11.180535752998214,
+          12.743000780041775,
+          13.263822455722963
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 28,
+            "coverage": 0.8928571428571429
+          },
+          {
+            "bin": 1,
+            "rows": 35,
+            "coverage": 0.9714285714285714
+          },
+          {
+            "bin": 2,
+            "rows": 14,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 53,
+            "coverage": 1.0
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "coverage_by_school": [
+        {
+          "school": "GP",
+          "rows": 84,
+          "coverage": 1.0
+        },
+        {
+          "school": "MS",
+          "rows": 46,
+          "coverage": 0.9130434782608695
+        }
+      ],
+      "prediction_outside_documented_0_20": 0,
+      "pi_endpoint_outside_documented_0_20": 1,
+      "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/5c7f55e584e068bf.csv.gz",
+      "predictions_sha256": "6a19ae779ad7420b0b6dbe2158f739cafe88d2f291abb7c6b10a761016260e24",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/5c7f55e584e068bf.json"
+    },
+    {
+      "scenario": "student_background",
+      "method": "sfs",
+      "candidate_id": "sfs:k=4",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 130,
+        "mae": 2.084264671017446,
+        "mse": 6.836758599465428,
+        "rmse": 2.6147196024555726,
+        "r2": 0.31210723529467177
+      },
+      "selected_encoded_fields": 4,
+      "selected_raw_fields": 4,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 130,
+        "covered_count": 126,
+        "observation_pi_coverage": 0.9692307692307692,
+        "observation_pi_mean_width": 11.099299619100627,
+        "location_ci_mean_width": 0.9583005973977312,
+        "location_ci_hc3_mean_width": 0.9781789707155472,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 0,
+        "negative_pi_lower_count": 1,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/student_background/models/e356a75ffa361aa6.json",
+      "model_sha256": "811fc3869adfd454f95a7d76360789b668f68a2367368f23bfca81db65e35afb",
+      "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/b0303c2520d506162609-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.2512481314481343,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          11.180535752998214,
+          12.743000780041775,
+          13.263822455722963
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 28,
+            "coverage": 0.8928571428571429
+          },
+          {
+            "bin": 1,
+            "rows": 35,
+            "coverage": 0.9714285714285714
+          },
+          {
+            "bin": 2,
+            "rows": 14,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 53,
+            "coverage": 1.0
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "coverage_by_school": [
+        {
+          "school": "GP",
+          "rows": 84,
+          "coverage": 1.0
+        },
+        {
+          "school": "MS",
+          "rows": 46,
+          "coverage": 0.9130434782608695
+        }
+      ],
+      "prediction_outside_documented_0_20": 0,
+      "pi_endpoint_outside_documented_0_20": 1,
+      "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/e356a75ffa361aa6.csv.gz",
+      "predictions_sha256": "96b82a7aa06893d5adbdc3598d44257266a12b557ef0832c49c7015c317b4a18",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/e356a75ffa361aa6.json"
+    },
+    {
+      "scenario": "student_background",
+      "method": "lasso_select",
+      "candidate_id": "lasso_select:alpha=0.01",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 130,
+        "mae": 1.9054585970171365,
+        "mse": 6.168105238273267,
+        "rmse": 2.4835670392146185,
+        "r2": 0.3793849960299932
+      },
+      "selected_encoded_fields": 33,
+      "selected_raw_fields": 27,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 130,
+        "covered_count": 125,
+        "observation_pi_coverage": 0.9615384615384616,
+        "observation_pi_mean_width": 11.086271840220881,
+        "location_ci_mean_width": 2.785804680763972,
+        "location_ci_hc3_mean_width": 2.9341656839278047,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 0,
+        "negative_pi_lower_count": 0,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/student_background/models/7d181f95c1c32a0b.json",
+      "model_sha256": "2acf29f75603af3f490ada8256173e939b7484cca562b7b0b32eb77cddc5f80a",
+      "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/cfc03cea6b4860ddc52e-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/cfc03cea6b4860ddc52e-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/cfc03cea6b4860ddc52e-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.2952966135363919,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          10.80654538975568,
+          12.292809358932491,
+          13.30690896741573
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 26,
+            "coverage": 0.8461538461538461
+          },
+          {
+            "bin": 1,
+            "rows": 43,
+            "coverage": 0.9767441860465116
+          },
+          {
+            "bin": 2,
+            "rows": 30,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 31,
+            "coverage": 1.0
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "coverage_by_school": [
+        {
+          "school": "GP",
+          "rows": 84,
+          "coverage": 1.0
+        },
+        {
+          "school": "MS",
+          "rows": 46,
+          "coverage": 0.8913043478260869
+        }
+      ],
+      "prediction_outside_documented_0_20": 0,
+      "pi_endpoint_outside_documented_0_20": 6,
+      "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/7d181f95c1c32a0b.csv.gz",
+      "predictions_sha256": "333e6e6cd9f3c847ac53ebd7ef32bbf2f2d193940e646400551a70c87a30b381",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/7d181f95c1c32a0b.json"
+    },
+    {
+      "scenario": "student_background",
+      "method": "elasticnet_select",
+      "candidate_id": "elasticnet_select:alpha=0.1,l1_ratio=0.2",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 130,
+        "mae": 1.9170698800166366,
+        "mse": 6.201432653147897,
+        "rmse": 2.4902675866556785,
+        "r2": 0.3760316982317671
+      },
+      "selected_encoded_fields": 31,
+      "selected_raw_fields": 25,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "available",
+      "interval_summary": {
+        "rows": 130,
+        "covered_count": 126,
+        "observation_pi_coverage": 0.9692307692307692,
+        "observation_pi_mean_width": 11.049158889628405,
+        "location_ci_mean_width": 2.6894040712075524,
+        "location_ci_hc3_mean_width": 2.8603053972225063,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 0,
+        "negative_pi_lower_count": 0,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "model_path": "artifacts/analysis/models/student_background/models/2b6b12f216fc3a6f.json",
+      "model_sha256": "d1d0b41d24b6fd09938454f26fe11688d6621e9ac06fd55cf4575f9a534fce71",
+      "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/0ce988f192407ce040c4-interval-spec.json",
+      "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/0ce988f192407ce040c4-diagnostics.json",
+      "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/0ce988f192407ce040c4-diagnostic-plot-data.json",
+      "development_ols_adjusted_r2": 0.29714622901448295,
+      "development_adjusted_r2_scale": "original target units",
+      "coverage_by_prediction_bin": {
+        "edges_from_development_predictions": [
+          10.787984738137078,
+          12.298127096957659,
+          13.290766820941666
+        ],
+        "groups": [
+          {
+            "bin": 0,
+            "rows": 27,
+            "coverage": 0.8888888888888888
+          },
+          {
+            "bin": 1,
+            "rows": 40,
+            "coverage": 0.975
+          },
+          {
+            "bin": 2,
+            "rows": 33,
+            "coverage": 1.0
+          },
+          {
+            "bin": 3,
+            "rows": 30,
+            "coverage": 1.0
+          }
+        ],
+        "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+      },
+      "coverage_by_school": [
+        {
+          "school": "GP",
+          "rows": 84,
+          "coverage": 1.0
+        },
+        {
+          "school": "MS",
+          "rows": 46,
+          "coverage": 0.9130434782608695
+        }
+      ],
+      "prediction_outside_documented_0_20": 0,
+      "pi_endpoint_outside_documented_0_20": 6,
+      "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/2b6b12f216fc3a6f.csv.gz",
+      "predictions_sha256": "1adc0876603c5b37e259859407d7cbdc5093d5431267fb91ae8f564f0b8d91a2",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/2b6b12f216fc3a6f.json"
+    },
+    {
+      "scenario": "student_background",
+      "method": "ridge",
+      "candidate_id": "ridge:alpha=100.0",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 130,
+        "mae": 1.9143832108375447,
+        "mse": 6.199264335809668,
+        "rmse": 2.4898321902910783,
+        "r2": 0.37624986738120414
+      },
+      "selected_encoded_fields": 39,
+      "selected_raw_fields": 30,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "not_applicable_to_baseline_or_regularized_model",
+      "interval_summary": null,
+      "model_path": "artifacts/analysis/models/student_background/models/f093950d42965cca.json",
+      "model_sha256": "1b1a2e9e20e762136510ee92953174d2de76156f4e233f2edba78c5276d22ac8",
+      "prediction_outside_documented_0_20": 0,
+      "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/f093950d42965cca.csv.gz",
+      "predictions_sha256": "364cf3b2212f9679297efd3b996afa5a170da687d1d185418494d74fa33f57de",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/f093950d42965cca.json"
+    },
+    {
+      "scenario": "student_background",
+      "method": "lasso_reg",
+      "candidate_id": "lasso_reg:alpha=0.01",
+      "representative_frozen": false,
+      "test_metrics": {
+        "n": 130,
+        "mae": 1.9186675643336977,
+        "mse": 6.19295248098292,
+        "rmse": 2.488564341338781,
+        "r2": 0.3768849460086009
+      },
+      "selected_encoded_fields": 39,
+      "selected_raw_fields": 30,
+      "test_transform_notes": {
+        "unknown_categories": {},
+        "imputed_values": {}
+      },
+      "test_adjusted_r2": null,
+      "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+      "interval_status": "not_applicable_to_baseline_or_regularized_model",
+      "interval_summary": null,
+      "model_path": "artifacts/analysis/models/student_background/models/f327ab445bb208bc.json",
+      "model_sha256": "561e1965ab7c9f3dfc70dbec1415423bece070ef095560fa5843a8ab0dc71ed0",
+      "prediction_outside_documented_0_20": 0,
+      "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/f327ab445bb208bc.csv.gz",
+      "predictions_sha256": "e92c72f4a3930bee12fc020bdcb61c2918344fbd151385c84131112e100e1fb7",
+      "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/f327ab445bb208bc.json"
+    }
+  ],
+  "representative": {
+    "scenario": "student_background",
+    "method": "kbest",
+    "candidate_id": "kbest:k=7",
+    "representative_frozen": true,
+    "test_metrics": {
+      "n": 130,
+      "mae": 1.975094794000784,
+      "mse": 6.307355617465699,
+      "rmse": 2.511444926225877,
+      "r2": 0.36537406863869437
+    },
+    "selected_encoded_fields": 7,
+    "selected_raw_fields": 7,
+    "test_transform_notes": {
+      "unknown_categories": {},
+      "imputed_values": {}
+    },
+    "test_adjusted_r2": null,
+    "test_adjusted_r2_reason": "Adjusted R2 is reported on fitted development OLS, not relabeled held-out R2.",
+    "interval_status": "available",
+    "interval_summary": {
+      "rows": 130,
+      "covered_count": 125,
+      "observation_pi_coverage": 0.9615384615384616,
+      "observation_pi_mean_width": 11.036533193878642,
+      "location_ci_mean_width": 1.283573423815178,
+      "location_ci_hc3_mean_width": 1.3064323416796566,
+      "location_ci_coverage_against_individual_y": null,
+      "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+      "negative_prediction_count": 0,
+      "negative_pi_lower_count": 0,
+      "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+      "nominal_level": 0.95,
+      "location_kind": "conditional_arithmetic_mean"
+    },
+    "model_path": "artifacts/analysis/models/student_background/models/0c8272239860ac75.json",
+    "model_sha256": "91535dd4f2b00e72a778d731c363cac4caca6aa169fd337b7dc9537124fc7a2f",
+    "interval_spec_path": "artifacts/analysis/evaluation/student_background/inference/f0cb2dd503c661d6dea1-interval-spec.json",
+    "diagnostics_path": "artifacts/analysis/evaluation/student_background/inference/f0cb2dd503c661d6dea1-diagnostics.json",
+    "diagnostic_plot_data_path": "artifacts/analysis/evaluation/student_background/inference/f0cb2dd503c661d6dea1-diagnostic-plot-data.json",
+    "development_ols_adjusted_r2": 0.26411148421042974,
+    "development_adjusted_r2_scale": "original target units",
+    "coverage_by_prediction_bin": {
+      "edges_from_development_predictions": [
+        11.111874962197952,
+        12.334954720949531,
+        13.221998100024456
+      ],
+      "groups": [
+        {
+          "bin": 0,
+          "rows": 22,
+          "coverage": 0.8636363636363636
+        },
+        {
+          "bin": 1,
+          "rows": 42,
+          "coverage": 0.9523809523809523
+        },
+        {
+          "bin": 2,
+          "rows": 38,
+          "coverage": 1.0
+        },
+        {
+          "bin": 3,
+          "rows": 28,
+          "coverage": 1.0
+        }
+      ],
+      "scope": "descriptive heldout coverage by training-defined predicted-value bins"
+    },
+    "coverage_by_school": [
+      {
+        "school": "GP",
+        "rows": 84,
+        "coverage": 1.0
+      },
+      {
+        "school": "MS",
+        "rows": 46,
+        "coverage": 0.8913043478260869
+      }
+    ],
+    "prediction_outside_documented_0_20": 0,
+    "pi_endpoint_outside_documented_0_20": 0,
+    "predictions_path": "artifacts/analysis/evaluation/student_background/predictions/0c8272239860ac75.csv.gz",
+    "predictions_sha256": "dd9eecc9c6d65ea02c21ca89266ab482787428f2dd3aa2d27ac95648c3eb5261",
+    "interval_plot_data_path": "artifacts/analysis/evaluation/student_background/plot-data/0c8272239860ac75.json"
+  },
+  "limits": [
+    "No retuning, replacement, clipping or test-row deletion.",
+    "Classical PI depends on conditional homoskedastic normal errors.",
+    "Selection uncertainty is not corrected."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "package_id": "edbffe7726eba9e3393539c1f7e00da4c366f5f07490744eecd22cfa344721f3",
+  "manifest": "artifacts/deployment/edbffe7726eba9e3/manifest.json",
+  "source_directory": "artifacts/deployment/edbffe7726eba9e3/source",
+  "archive": "artifacts/deployment/edbffe7726eba9e3/l7-crispdm-mr-source.tar.gz",
+  "archive_bytes": 95808503,
+  "archive_sha256": "184654642cd4fe1318292dd4c50ba5774b97052005179862f0faa82114649220",
+  "github_file_count": 920,
+  "github_source_bytes": 194027371,
+  "vercel_upload_bytes": 82020041
+}

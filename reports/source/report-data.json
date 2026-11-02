@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-11-02T23:06:47.305727+08:00",
+  "status": "research_integrated_pending_public_deployment",
+  "scenario_values": [
+    {
+      "scenario": "sgemm",
+      "candidate": "kbest:k=13",
+      "test_metrics": {
+        "n": 48320,
+        "mae": 176.37443299244615,
+        "mse": 81354.53250240185,
+        "rmse": 285.22715947539405,
+        "r2": 0.4098731612004163
+      },
+      "interval_summary": {
+        "rows": 48320,
+        "covered_count": 47025,
+        "observation_pi_coverage": 0.9731995033112583,
+        "observation_pi_mean_width": 1111.4077438286315,
+        "location_ci_mean_width": 9.379209716854962,
+        "location_ci_hc3_mean_width": 9.720266077402627,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 8892,
+        "negative_pi_lower_count": 44349,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "source": "artifacts/analysis/evaluation/sgemm/evaluation.json"
+    },
+    {
+      "scenario": "student",
+      "candidate": "elasticnet_select:alpha=0.1,l1_ratio=0.8",
+      "test_metrics": {
+        "n": 130,
+        "mae": 0.6749451376412697,
+        "mse": 0.7057873071430901,
+        "rmse": 0.8401114849489264,
+        "r2": 0.9289859404948785
+      },
+      "interval_summary": {
+        "rows": 130,
+        "covered_count": 130,
+        "observation_pi_coverage": 1.0,
+        "observation_pi_mean_width": 5.312169220225538,
+        "location_ci_mean_width": 0.36083038165301107,
+        "location_ci_hc3_mean_width": 0.3900740112599958,
+        "location_ci_coverage_against_individual_y": null,
+        "location_ci_coverage_reason": "Individual observations do not reveal the true conditional mean.",
+        "negative_prediction_count": 0,
+        "negative_pi_lower_count": 3,
+        "coverage_interpretation": "descriptive held-out observation-PI coverage; not an assumption test or guaranteed future coverage",
+        "nominal_level": 0.95,
+        "location_kind": "conditional_arithmetic_mean"
+      },
+      "source": "artifacts/analysis/evaluation/student/evaluation.json"
+    }
+  ],
+  "freeze_sha256": "3a4fec9047f6e08b4eace272bd2f43d7fb4be1fb8356525549340561f15425f3"
+}

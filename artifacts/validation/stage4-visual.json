@@ -1,0 +1,83 @@
+{
+  "status": "reviewed",
+  "recorded_at": "2026-11-01T19:27:26+08:00",
+  "method": "Each of the 13 saved PNG files was opened with view_image and visually inspected by the agent.",
+  "criteria": [
+    "Readable titles, axes, units and legends",
+    "No title/label clipping or obscured data",
+    "CI and PI labelled separately; log geometric location and HC3 scope disclosed",
+    "Negative predictions and interval endpoints remain visible",
+    "Correct representative identity and CV versus held-out labels"
+  ],
+  "figures": [
+    {
+      "path": "artifacts/analysis/evaluation/sgemm/intervals.png",
+      "sha256": "eacd33a3161ffaf3024e0c4ee8af59d65ae62e71785a35dd7f70a71cb3c345cd",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/sgemm/diagnostics.png",
+      "sha256": "7e4e65543d3781d425c529c0f8038980626b4970334ba850adb496e979ab78e6",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/sgemm/coefficients-vif.png",
+      "sha256": "0ada40989d10f667bcb458a532841ec27d1567a864723096846cee3d73d600a7",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/sgemm_log/intervals.png",
+      "sha256": "c7b4cef65321d8c294b26f887a1d4024883418eb86ac0774608da9a47540d574",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/sgemm_log/diagnostics.png",
+      "sha256": "bac792fb0b31a42bb0362905807723d32e54e4a5740e10a16b30e456cc9f0a19",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/sgemm_log/coefficients-vif.png",
+      "sha256": "e7bed8c10dd34b57f115daf71554120bccbab528d3e4a09786d9035411a4c367",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/student/intervals.png",
+      "sha256": "cd7ebe0f5184f8e1a52cde15f9d8434e1fca06f4919caa26464ff766fd774c50",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/student/diagnostics.png",
+      "sha256": "0a9513bdefd4b60f37efb95fbdef94db574ab5a8251751c92988974ca1f8da84",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/student/coefficients-vif.png",
+      "sha256": "4227ed1b155caafa76ed9da36c7fc12c1bd0da3fd2859c3275ef6c8980d0f2e7",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/student_background/intervals.png",
+      "sha256": "bb36bee068aea2dc95e6a2b944c0b67b6c2ff9072bf0051b762252ab197d3ee7",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/student_background/diagnostics.png",
+      "sha256": "8cb85b8d5b86828fe4bb9ee1ce89a59646964589860007d63143f2cbb39cc75b",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/student_background/coefficients-vif.png",
+      "sha256": "dee4eb974cf3924b12a0990904d55977ff17ffb38b0913660dbba5df22a13cc7",
+      "judgment": "readable_with_stated_statistical_limits"
+    },
+    {
+      "path": "artifacts/analysis/evaluation/test-comparison.png",
+      "sha256": "c6a67e402dc6b3c697fd1723627886dcb821db94f5df32ce8042d394b0978f25",
+      "judgment": "readable_with_stated_statistical_limits"
+    }
+  ],
+  "limitations": [
+    "Static PNG visual review; no browser or responsive-layout test at Stage 4.",
+    "Readable and numerically checked figures do not establish OLS assumptions."
+  ]
+}

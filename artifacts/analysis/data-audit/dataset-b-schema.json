@@ -1,0 +1,375 @@
+[
+  {
+    "column": "school",
+    "position_1_based": 1,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "GP",
+      "MS"
+    ]
+  },
+  {
+    "column": "sex",
+    "position_1_based": 2,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "F",
+      "M"
+    ]
+  },
+  {
+    "column": "age",
+    "position_1_based": 3,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 8,
+    "min": 15.0,
+    "max": 22.0
+  },
+  {
+    "column": "address",
+    "position_1_based": 4,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "R",
+      "U"
+    ]
+  },
+  {
+    "column": "famsize",
+    "position_1_based": 5,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "GT3",
+      "LE3"
+    ]
+  },
+  {
+    "column": "Pstatus",
+    "position_1_based": 6,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "A",
+      "T"
+    ]
+  },
+  {
+    "column": "Medu",
+    "position_1_based": 7,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "min": 0.0,
+    "max": 4.0
+  },
+  {
+    "column": "Fedu",
+    "position_1_based": 8,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "min": 0.0,
+    "max": 4.0
+  },
+  {
+    "column": "Mjob",
+    "position_1_based": 9,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "categories": [
+      "at_home",
+      "health",
+      "other",
+      "services",
+      "teacher"
+    ]
+  },
+  {
+    "column": "Fjob",
+    "position_1_based": 10,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "categories": [
+      "at_home",
+      "health",
+      "other",
+      "services",
+      "teacher"
+    ]
+  },
+  {
+    "column": "reason",
+    "position_1_based": 11,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 4,
+    "categories": [
+      "course",
+      "home",
+      "other",
+      "reputation"
+    ]
+  },
+  {
+    "column": "guardian",
+    "position_1_based": 12,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 3,
+    "categories": [
+      "father",
+      "mother",
+      "other"
+    ]
+  },
+  {
+    "column": "traveltime",
+    "position_1_based": 13,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 4,
+    "min": 1.0,
+    "max": 4.0
+  },
+  {
+    "column": "studytime",
+    "position_1_based": 14,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 4,
+    "min": 1.0,
+    "max": 4.0
+  },
+  {
+    "column": "failures",
+    "position_1_based": 15,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 4,
+    "min": 0.0,
+    "max": 3.0
+  },
+  {
+    "column": "schoolsup",
+    "position_1_based": 16,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "column": "famsup",
+    "position_1_based": 17,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "column": "paid",
+    "position_1_based": 18,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "column": "activities",
+    "position_1_based": 19,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "column": "nursery",
+    "position_1_based": 20,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "column": "higher",
+    "position_1_based": 21,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "column": "internet",
+    "position_1_based": 22,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "column": "romantic",
+    "position_1_based": 23,
+    "role": "feature",
+    "storage_type": "object",
+    "missing": 0,
+    "unique_nonmissing": 2,
+    "categories": [
+      "no",
+      "yes"
+    ]
+  },
+  {
+    "column": "famrel",
+    "position_1_based": 24,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "min": 1.0,
+    "max": 5.0
+  },
+  {
+    "column": "freetime",
+    "position_1_based": 25,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "min": 1.0,
+    "max": 5.0
+  },
+  {
+    "column": "goout",
+    "position_1_based": 26,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "min": 1.0,
+    "max": 5.0
+  },
+  {
+    "column": "Dalc",
+    "position_1_based": 27,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "min": 1.0,
+    "max": 5.0
+  },
+  {
+    "column": "Walc",
+    "position_1_based": 28,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "min": 1.0,
+    "max": 5.0
+  },
+  {
+    "column": "health",
+    "position_1_based": 29,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 5,
+    "min": 1.0,
+    "max": 5.0
+  },
+  {
+    "column": "absences",
+    "position_1_based": 30,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 24,
+    "min": 0.0,
+    "max": 32.0
+  },
+  {
+    "column": "G1",
+    "position_1_based": 31,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 17,
+    "min": 0.0,
+    "max": 19.0
+  },
+  {
+    "column": "G2",
+    "position_1_based": 32,
+    "role": "feature",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 16,
+    "min": 0.0,
+    "max": 19.0
+  },
+  {
+    "column": "G3",
+    "position_1_based": 33,
+    "role": "target",
+    "storage_type": "int64",
+    "missing": 0,
+    "unique_nonmissing": 17,
+    "min": 0.0,
+    "max": 19.0
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "status": "completed_local_stage5",
+  "recorded_at": "2026-11-01T20:24:00+08:00",
+  "authorization": "User: Ok, 階段5 go",
+  "candidate_details": 488,
+  "ols_candidates_with_intervals": 424,
+  "unique_ols_equations_independently_verified": 298,
+  "python_to_frontend_fixture_cases": 498,
+  "scalar_comparisons_including_unscaled_equations": 3590,
+  "data_checks": 1891,
+  "browser_passed_checks": 42,
+  "browser_resolved_failed_attempts": 2,
+  "unresolved_browser_failures": 0,
+  "download_files_content_verified": 2,
+  "screenshots": 8,
+  "protected_analysis_files_unchanged": 188,
+  "source_data_unchanged": true,
+  "freeze_sha256": "3a4fec9047f6e08b4eace272bd2f43d7fb4be1fb8356525549340561f15425f3",
+  "preview": {
+    "origin": "http://127.0.0.1:8767/",
+    "http_status_observed": 200,
+    "cache_control_observed": "no-store",
+    "state_after_validation": "owned preview server stopped; restart with scripts/preview_stage5.py",
+    "listening_after_teardown": false
+  },
+  "document_sha256": {
+    "AGENTS.md": "4d787cce793ae098e8dbd5892fa4e5e0b9baad2b0b0c008801c0fdd8af46be07",
+    "README.md": "e1000b4d6f646e91519e9b6c070892540b3ea7eb7b052d9d674274f0ea9b68fe",
+    "docs/PLAN.md": "69824ba518c5f99a28283f7a9d982b01a5a38cb637781e1badaed50ec975c9fe",
+    "docs/REQUIREMENTS.md": "8d43be3e71567b8e8f1a4baa2b99a69949e6c7a0d1e661a3d71880fc4894b128",
+    "docs/DECISIONS.md": "6e84a72b9bec6d4b74a1f9f7729e97b252b8d91e045f725b78de6d9ea28df29e",
+    "docs/STAGE5_PROPOSAL.md": "dea8d88ef822e6a4d5605f7c367a1e0155053342e47ef3391f63322ad8fc2567",
+    "docs/STAGE5_RESULTS.md": "0863f36a46f64f6ff67bc51efbc1c0737064595b2ba9e9061c8e249b1d69f681",
+    "docs/STAGE6_PROPOSAL.md": "cca589211d8c86a4926e100ec89d84fee870816ca81db4fc47399ccf655d1432"
+  },
+  "code_sha256": {
+    "web/app.mjs": "70bbad52681cb18221b3665aeba24dc0496b77faa03b83ad25bf4f25d891ec93",
+    "web/charts.mjs": "671e0c83144625789f752d1f305e6621791ab451748819b3765493c855c8fad6",
+    "web/prediction.mjs": "316eb62a5cadd9c53ab6eb40b2733ee8c3370302b619ac67d2cfd977f3568ead",
+    "web/index.html": "e0d7b1f91de79bd867d9cb9ed03c1d08bd33fe40ba2ed29d488363e9fc29b2b6",
+    "web/style.css": "06e0b942fd75a81ae5edf1a8d47448fdb1297f9cad28a87ef0a4294e9f2c28a2",
+    "web/favicon.svg": "60b407db580add52cb5394679f2f617756d49abe9ee58f7f33045a5df2ba9893",
+    "scripts/export_stage5.py": "086c95ee23eca886b6d24a4eaf344c2d610ca9cd2193d437be079560b2dbed6e",
+    "scripts/prepare_stage5_intervals.py": "f97386bbf15fbb7feef5c725b4af5d9f0a0ac6ad5e1d12d4c96d82e7992237ac",
+    "scripts/preview_stage5.py": "26bf044fbb087ef54c1cedf51313b079064de00cf189a7133e39a2b60b919d34",
+    "scripts/verify_stage5.mjs": "1e8369e263fb3eec6e6a0b9ebc0661e348b01228b71f1c21f53ea402b15c4008",
+    "scripts/verify_stage5_data.py": "eed2a131618ec768af4f933fb9e3e88896e19dbed267a37d8131fd5087ae5191"
+  },
+  "evidence_sha256": {
+    "artifacts/validation/stage5-prediction.json": "49db286441f0c6137473854918d7b863c584b898f2e2b64678489b57fe945c9f",
+    "artifacts/validation/stage5-data.json": "1272d34441c2f4a1ceea99920a14e53882d8bfaf67a355640c5872c7405efe4e",
+    "artifacts/validation/stage5-browser.json": "9e032aa00bdfa97a2ad290456351bb6034aadcbbc2d5adb845bf730b6fd21bc3",
+    "artifacts/validation/stage5-downloads.json": "774fea4fd123353e66aa3a5bbfaf2f9f59d9dca551a42f3b2a4c3fb19cf59f9a",
+    "artifacts/analysis/website/export-manifest.json": "a2b47f3e71335f630440822902e56dbbc637d0766b2595cd351d8b4cbc0c402b"
+  },
+  "next_stage": {
+    "stage": 6,
+    "status": "awaiting_user_approval",
+    "proposal": "docs/STAGE6_PROPOSAL.md"
+  },
+  "not_completed": [
+    "Custom dataset actual analysis and product API",
+    "Public hosting and Vercel runtime/build checks",
+    "NotebookLM actual research",
+    "Final report/infographic/conversation PDFs",
+    "GitHub publication and LMS submission"
+  ],
+  "limitations": [
+    "Browser viewport simulation, not physical mobile hardware",
+    "Representative accessibility checks, not complete WCAG certification",
+    "Numerical agreement does not establish OLS assumptions or future PI coverage"
+  ]
+}
