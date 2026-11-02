@@ -6,7 +6,7 @@
   "functions": {
     "vercel_app.py": {
       "maxDuration": 300,
-      "excludeFiles": "{web/**,public/**,docs/**,reports/**,data/**,artifacts/**,scripts/**,tests/**,deployment/**,.venv/**,.git/**,**/__pycache__/**}"
+      "excludeFiles": "{public/**,docs/**,reports/**,data/**,artifacts/**,scripts/**,tests/**,deployment/**,.venv/**,.git/**,**/__pycache__/**}"
     }
   },
   "headers": [

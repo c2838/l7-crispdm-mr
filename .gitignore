@@ -40,3 +40,6 @@ docs/notebooklm/received/
 docs/notebooklm/research/
 # Contains local attachment paths; the public reviewed summary is separate.
 docs/notebooklm/review.json
+
+# Generated release stamp, collected by the FastAPI frontend build
+web/release.json

@@ -1,24 +1,29 @@
 {
-  "status": "stage8_in_progress_initial_public500_dependency_fix_pending_user_push",
+  "status": "stage8_in_progress_public_api200_static404_local_fix_pending_user_push",
   "github": {
     "url": "https://github.com/c2838/l7-crispdm-mr",
     "owner": "c2838",
     "visibility": "public",
     "branch": "main",
-    "head_at_verification": "12ca7c43005911dbe370b5dd6187331ba2fc3a7d"
+    "head_at_verification": "d7ff5c4c21270554a4644f5e86f3f0596636b708"
   },
   "vercel": {
     "url": "https://l7-crispdm-mr.vercel.app/",
-    "deployment_status_url": "https://vercel.com/colin-f439/l7-crispdm-mr/GHPcUFrGFxsqY8HRyjZuDqDCNsLp",
+    "deployment_status_url": "https://vercel.com/colin-f439/l7-crispdm-mr/GKrUmsCjHqx8NrCVwWg3gY4t6ZCC",
     "github_deployment_status": "success",
-    "observed_home_status": 500,
-    "observed_release_status": 500,
-    "observed_health_status": 500,
-    "error": "FUNCTION_INVOCATION_FAILED",
-    "user_runtime_log": "ModuleNotFoundError: No module named fastapi",
+    "observed_home_status": 404,
+    "observed_release_status": 404,
+    "observed_health_status": 200,
+    "error": "Static assets missing from deployment; API dependency fix effective.",
+    "user_runtime_log": "Prior missing-fastapi failure resolved in d7ff5c4.",
     "plan": "Hobby expected; actual settings not verified",
     "execution_region": null,
-    "observed_request_edge": "hnd1"
+    "observed_request_edge": "hnd1",
+    "python_runtime": "3.12.15",
+    "build_region": "iad1",
+    "project_id": "prj_NjIyTkrTrpsS1LpeEyHVuUEjpByL",
+    "team_id": "team_VebHG43ERpwu8PA40ERTShkZ",
+    "deployment_id": "dpl_GKrUmsCjHqx8NrCVwWg3gY4t6ZCC"
   },
   "local_validation": {
     "existing_unit_tests": 72,
@@ -30,19 +35,25 @@
   },
   "fix": {
     "files": [
+      "vercel_app.py",
       "pyproject.toml",
-      "scripts/build_vercel_static.py"
+      "vercel.json",
+      "scripts/build_vercel_static.py",
+      ".gitignore",
+      ".vercelignore"
     ],
     "dependency_versions_changed": false,
-    "release_id": "0f0e21f43b8d078d3f4137bae5ce92f0d07f0a20fa2339df16a0f592f0c6c630",
+    "release_id": "563dc658d6df7734ea309dd62ec1afd1de13ebec2670faa8f4e41365ddc8a91a",
+    "local_checks": 23,
+    "browser_dataset_switch": "passed",
     "cloud_verification": "pending user push/redeploy"
   },
   "platform_operations_owner": "user",
   "external_writes_by_agent": false,
   "stage9_started": false,
   "limitations": [
-    "Actual plan, project settings, Python runtime and Function region need user-provided effective evidence.",
-    "Cloud still500 at last checked deployment; local success does not prove fix deployed.",
-    "Public two datasets/custom upload+URL/CI/PI/downloads/cold-start/concurrency remain pending repaired deployment."
+    "Actual project plan, Function memory and execution region not verified. Build machine settings are not Function settings.",
+    "Public API is healthy; public static files still404 before the local fix is deployed.",
+    "Public two datasets/custom upload+URL/CI/PI/downloads/cold-start/concurrency await new deployment."
   ]
 }

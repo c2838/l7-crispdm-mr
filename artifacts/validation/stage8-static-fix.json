@@ -1,0 +1,219 @@
+{
+  "status": "passed_local_pending_user_push_redeploy",
+  "checks": [
+    {
+      "name": "official collector finds1 frontend atroot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frontend has no fallback masking missing files",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all4 API routes shadow static lookup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "official collector reproduces0 frontends in previous entrypoint",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real entrypoint serves index atroot",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "all509 static assets byte-exact viaactualentrypoint",
+      "passed": true,
+      "detail": 509
+    },
+    {
+      "name": "generated release stamp served",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "API health remains200",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "missing/private path404 /downloads/Lecture6_conversation_snapshot.pdf",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "missing/private path404 /docs/notebooklm/received/gpu-original.txt",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "missing/private path404 /artifacts/reference/lms-assignment.txt",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "missing/private path404 /does-not-exist.js",
+      "passed": true,
+      "detail": 404
+    },
+    {
+      "name": "actual5875-row preview unaffected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cross-origin API guard preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CDN promotion explicit and source excluded fromFunction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all36 exact dependency pins retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "protected_sha256 unchanged",
+      "passed": true,
+      "detail": 188
+    },
+    {
+      "name": "export_sha256 unchanged",
+      "passed": true,
+      "detail": 493
+    },
+    {
+      "name": "source_sha256 unchanged",
+      "passed": true,
+      "detail": 11
+    },
+    {
+      "name": "old ignore-rule matching",
+      "ignored_formal_jsons": 493,
+      "expected": 493,
+      "passed": true
+    },
+    {
+      "name": "fixed ignore-rule matching",
+      "ignored_formal_jsons": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "build refuses missing formal dataset JSONs",
+      "passed": true
+    },
+    {
+      "name": "latest release stamp served by real entrypoint",
+      "passed": true
+    }
+  ],
+  "passed_checks": 23,
+  "official_collector": {
+    "source": "https://raw.githubusercontent.com/vercel/vercel/main/packages/python/templates/vc_fastapi_static.py",
+    "sha256": "77fad21b5642e2284ab4040089114cffad30765d06f5cb242582d302830b3c72",
+    "discovery": {
+      "mounts": [
+        {
+          "urlPath": "/",
+          "directory": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/web",
+          "fallback": null,
+          "frontend": true,
+          "html": true
+        }
+      ],
+      "shadowRoutes": [
+        {
+          "body": "api/analyze/(?:[^/]+)",
+          "methods": [
+            "POST"
+          ]
+        },
+        {
+          "body": "api/data/preview",
+          "methods": [
+            "POST"
+          ]
+        },
+        {
+          "body": "api/data/url",
+          "methods": [
+            "POST"
+          ]
+        },
+        {
+          "body": "api/health",
+          "methods": [
+            "GET",
+            "HEAD"
+          ]
+        }
+      ],
+      "excludedFiles": []
+    },
+    "before_mounts": 0,
+    "after_mounts": 1
+  },
+  "release_id": "563dc658d6df7734ea309dd62ec1afd1de13ebec2670faa8f4e41365ddc8a91a",
+  "runtime_files": [
+    "vercel_app.py",
+    "pyproject.toml",
+    "vercel.json",
+    "scripts/build_vercel_static.py",
+    ".gitignore",
+    ".vercelignore"
+  ],
+  "limits": [
+    "Actual Vercel collector run locally and actual localhostHTTP; CDN deployment/routing not yet verified.",
+    "Public d7ff5c4 API healthy but static404; new fixed deployment pending user."
+  ],
+  "build_log_evidence": {
+    "commit": "d7ff5c4",
+    "static_files": 16,
+    "expected_static_files": 509,
+    "missing_formal_jsons": 493,
+    "cause": "Unanchored data/ in .vercelignore matches web/data/. Confirmed with Git ignore-rule matching."
+  },
+  "user_confirmed_metadata": {
+    "project_id": "prj_NjIyTkrTrpsS1LpeEyHVuUEjpByL",
+    "team_id": "team_VebHG43ERpwu8PA40ERTShkZ",
+    "team_slug": "colin-f439",
+    "deployment_id": "dpl_GKrUmsCjHqx8NrCVwWg3gY4t6ZCC",
+    "python_runtime": "3.12.15",
+    "build_region": "iad1",
+    "build_machine": "2 cores,8GB (build machine only; not Function memory)"
+  },
+  "browser_verification": {
+    "entrypoint": "vercel_app:app on localhost:8769",
+    "gpu_test_r2": "0.4099",
+    "gpu_test_rmse": "285.23",
+    "student_test_r2": "0.9290",
+    "student_test_rmse": "0.84",
+    "console_errors": 0,
+    "screenshot": "outputs/hw2/stage8/native-static-fix.png",
+    "scope": "Real local entrypoint and actual frozen assets; not Vercel CDN."
+  },
+  "public_before_fixed_deployment": {
+    "/": {
+      "status": 404,
+      "content_type": "application/json"
+    },
+    "/api/health": {
+      "status": 200,
+      "content_type": "application/json"
+    },
+    "/release.json": {
+      "status": 404,
+      "content_type": "application/json"
+    }
+  }
+}

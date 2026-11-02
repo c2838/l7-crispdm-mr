@@ -18,10 +18,20 @@ def main():
         raise ValueError('pyproject.toml project.dependencies must exactly match requirements.txt; Vercel prioritizes pyproject.')
     if project.get('requires-python')!='~=3.12.0':
         raise ValueError('Deployment must use the validated Python 3.12.x runtime.')
+    # These are frozen presets, not user uploads; they must survive .vercelignore.
+    data_files=[p for p in (STATIC/'data').rglob('*.json') if p.is_file()]
+    if len(data_files)!=493:
+        raise ValueError(f'Expected493 frozen analysis JSON files, found{len(data_files)}; check root-anchored .vercelignore rules.')
+    for scenario in ['sgemm','sgemm_log','student','student_background']:
+        case=json.loads((STATIC/'data'/f'{scenario}.json').read_text())
+        for candidate in case['candidates']:
+            if not (STATIC/candidate['detail']).is_file():
+                raise ValueError('Missing preset candidate detail: '+candidate['detail'])
     entries=[]
     for p in sorted(STATIC.rglob('*')):
         if p.is_symlink():raise ValueError('Static symlink is not allowed: '+str(p.relative_to(ROOT)))
         if not p.is_file():continue
+        if p==STATIC/'release.json':continue  # Generated stamp must not recursively hash itself.
         if p.suffix.lower() not in EXTENSIONS or any(x.startswith('.') for x in p.relative_to(STATIC).parts):
             raise ValueError('Unexpected static file: '+str(p.relative_to(ROOT)))
         entries.append({'path':p.relative_to(STATIC).as_posix(),'bytes':p.stat().st_size,'sha256':digest(p)})
@@ -42,6 +52,7 @@ def main():
         p=PUBLIC/entry['path'];p.parent.mkdir(parents=True,exist_ok=True)
         if not p.exists() or digest(p)!=entry['sha256']:shutil.copyfile(STATIC/entry['path'],p)
     (PUBLIC/'release.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
+    (STATIC/'release.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'release_id':payload['release_id'],'files':len(entries),'static_bytes':sum(x['bytes'] for x in entries),'output':'public/'},ensure_ascii=False))
 
 if __name__=='__main__':main()

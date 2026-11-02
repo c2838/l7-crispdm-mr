@@ -11,3 +11,7 @@ os.environ.setdefault('MPLCONFIGDIR',str(Path(tempfile.gettempdir())/'l7-matplot
 from l7_service.api import create_app
 
 app=create_app()
+
+# Explicit frontend discovery: these assets are public; only /api/* uses BodyLimit.
+# check_dir=False keeps API imports valid after Vercel excludes the CDN directory.
+app.frontend('/', directory=Path(__file__).resolve().parent/'web', fallback=None, check_dir=False)

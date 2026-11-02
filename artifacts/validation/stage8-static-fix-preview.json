@@ -1,0 +1,44 @@
+{
+  "status": "prepared_pending_user_push_and_deployment",
+  "repository": "https://github.com/c2838/l7-crispdm-mr",
+  "branch": "main",
+  "base_commit": "d7ff5c4c21270554a4644f5e86f3f0596636b708",
+  "deployment_target": "https://l7-crispdm-mr.vercel.app/",
+  "files": [
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/vercel_app.py",
+      "sha256": "d3657738a7b41c438a5212dab819f9f765069c681165ebb2bf3974f568ebe792"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/pyproject.toml",
+      "sha256": "34e35be066762348e04f1c2b744d1927bb3d13cd5e53516fa0ffacaeec344cc1"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/vercel.json",
+      "sha256": "3dbdb583e1f76c3d89903dd28ce1cf88163fedb88eae1eb77f3ee65124cb7c75"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/scripts/build_vercel_static.py",
+      "sha256": "24f1b1912eb34443f21274f1d0d6fc10ab21a13c605b279073d29a2245aa6b12"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/.gitignore",
+      "sha256": "ede4202a0bb7c0acac0bcb3fbbb41f87c41fb40d961ac44d339279ed509ae591"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/.vercelignore",
+      "sha256": "1a828259a5f2f1ef897a8af7f7a86fe61cc8fcd4fac8ce6a677bb1c33ef2bedc"
+    }
+  ],
+  "operation_owner": "user",
+  "proposed_operation": "Commit and push these six local files; Vercel builds the new main commit. No platform settings change requested.",
+  "impact": "Deployment packaging and static frontend discovery only; frozen analysis and model files unchanged.",
+  "verification": [
+    "Build output must report 509 static files.",
+    "Public / must return HTML200; release.json must match expected release_id.",
+    "Both frozen datasets, custom dataset analysis and downloads must be checked on public deployment."
+  ],
+  "expected_release_id": "563dc658d6df7734ea309dd62ec1afd1de13ebec2670faa8f4e41365ddc8a91a",
+  "rollback": "Revert only this deployment-fix commit and deploy the prior revision; d7ff5c4 is known API200/static404, so rollback does not restore a working frontend.",
+  "external_writes_by_agent": false
+}

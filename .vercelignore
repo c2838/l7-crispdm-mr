@@ -1,7 +1,7 @@
 # CLI upload exclusions; the Function excludes these paths independently.
-.git/
-.venv/
-.vercel/
+/.git/
+/.venv/
+/.vercel/
 __pycache__/
 **/__pycache__/
 *.pyc
@@ -9,13 +9,13 @@ __pycache__/
 .env.*
 *.key
 *.pem
-node_modules/
-public/
-artifacts/
-data/
-docs/
-reports/
-tests/
-deployment/
-scripts/*
-!scripts/build_vercel_static.py
+/node_modules/
+/public/
+/artifacts/
+/data/
+/docs/
+/reports/
+/tests/
+/deployment/
+/scripts/*
+!/scripts/build_vercel_static.py

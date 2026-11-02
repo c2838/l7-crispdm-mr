@@ -44,3 +44,8 @@ dependencies = [
 
 [tool.vercel]
 entrypoint = "vercel_app:app"
+
+[tool.vercel.fastapi.static]
+# BodyLimit only protects API POST bodies; all frontend assets are public.
+cdn = true
+exclude = true
