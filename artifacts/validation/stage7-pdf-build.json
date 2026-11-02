@@ -1,8 +1,8 @@
 {
-  "status": "reviewed_local_research_integrated_pending_public_deployment",
-  "created_at": "2026-11-02T23:06:47.305727+08:00",
+  "status": "passed_stage8_render_and_visual_review_pending_user_publish",
+  "created_at": "2026-11-03T00:17:33.554090+08:00",
   "notebooklm_status": "user_outputs_received_summaries_reviewed",
-  "public_deployment": "not_done",
+  "public_deployment": "public_functionality_verified_pending_final_asset_deployment",
   "artifacts": [
     {
       "path": "reports/output/pdf/HW2_conversation_snapshot.pdf",
@@ -14,16 +14,16 @@
     {
       "path": "reports/output/pdf/L7_CRISPDM_MR_infographic.pdf",
       "pages": 1,
-      "bytes": 127161,
-      "sha256": "31a92669643a57cb8abb3793c16fe343e001b802cca8b313cef28fae1972a15f",
-      "text_characters": 1239
+      "bytes": 123402,
+      "sha256": "3892c1211b71a07ee19c7a840d80827fdbf97857b447ecae3d6eeed2d7075137",
+      "text_characters": 1276
     },
     {
       "path": "reports/output/pdf/L7_CRISPDM_MR_report_draft.pdf",
       "pages": 20,
-      "bytes": 1621848,
-      "sha256": "284ff5cd55c759b2541a3ed7955896a280c6bc7ab976994dee7762dd93fdeddd",
-      "text_characters": 15966
+      "bytes": 1620658,
+      "sha256": "2a07f6e9fe04eb48dc80abbf6947db1bc38ff4929fd6f08c730d2f0c81a3e032",
+      "text_characters": 16161
     }
   ],
   "transcripts": [
@@ -39,5 +39,6 @@
   ],
   "font": "Arial Unicode embedded; unsupported characters visibly annotated",
   "glyph_substitutions": {},
-  "source_script": "reports/source/build_deliverables.py"
+  "source_script": "reports/source/build_deliverables.py",
+  "stage8_pdf_validation": "artifacts/validation/stage8-public/pdf/checks.json"
 }

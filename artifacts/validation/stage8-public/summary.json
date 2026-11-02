@@ -1,0 +1,297 @@
+{
+  "status": "passed_actual_public_http",
+  "base_url": "https://l7-crispdm-mr.vercel.app",
+  "local_head": "1234731f98644bf5722af175ddcf592dcddca287",
+  "release_id": "9d3fd76d99ed3c9c1428f59f448b7d9a619a13f0ef0c0f108c93e2115338e841",
+  "checks": [
+    {
+      "name": "public release200",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "public release hash internally reproducible",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "all509 public assets declared",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "509 public assets200 byte-exact to release",
+      "passed": true,
+      "evidence": 509
+    },
+    {
+      "name": "all static assets match reviewed local web",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "reviewed runtime source hashes match except vercel.json",
+      "passed": true,
+      "evidence": [
+        "vercel.json"
+      ]
+    },
+    {
+      "name": "public homepage HTML200",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "public API health200",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "public API health200",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "public API health200",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "private/retired/missing404 /downloads/Lecture6_conversation_snapshot.pdf",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "private/retired/missing404 /docs/notebooklm/received/gpu-original.txt",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "private/retired/missing404 /artifacts/analysis/models/selection-freeze.json",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "private/retired/missing404 /missing.js",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "public API retrieves actual UCI CSV",
+      "passed": true,
+      "evidence": {
+        "status": 200,
+        "seconds": 2.11,
+        "bytes": 911261
+      }
+    },
+    {
+      "name": "upload public preview5875 rows",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "url public preview5875 rows",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "baseline actual public analysis completes",
+      "passed": true,
+      "evidence": {
+        "status": 200,
+        "wall_s": 6.873,
+        "bytes": 516085,
+        "error": null
+      }
+    },
+    {
+      "name": "baseline response below3MB",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "kbest actual public analysis completes",
+      "passed": true,
+      "evidence": {
+        "status": 200,
+        "wall_s": 2.507,
+        "bytes": 322787,
+        "error": null
+      }
+    },
+    {
+      "name": "kbest response below3MB",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "rfe actual public analysis completes",
+      "passed": true,
+      "evidence": {
+        "status": 200,
+        "wall_s": 2.567,
+        "bytes": 286978,
+        "error": null
+      }
+    },
+    {
+      "name": "rfe response below3MB",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "sfs actual public analysis completes",
+      "passed": true,
+      "evidence": {
+        "status": 200,
+        "wall_s": 5.772,
+        "bytes": 322676,
+        "error": null
+      }
+    },
+    {
+      "name": "sfs response below3MB",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "lasso_select actual public analysis completes",
+      "passed": true,
+      "evidence": {
+        "status": 200,
+        "wall_s": 6.019,
+        "bytes": 272341,
+        "error": null
+      }
+    },
+    {
+      "name": "lasso_select response below3MB",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "elasticnet_select actual public analysis completes",
+      "passed": true,
+      "evidence": {
+        "status": 200,
+        "wall_s": 16.034,
+        "bytes": 287862,
+        "error": null
+      }
+    },
+    {
+      "name": "elasticnet_select response below3MB",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "same stateless analysis identity/split across six methods",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "all9 models publicly computed",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "patient-isolated split4623/1252",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "dummy public model independently reproduces all-test metrics",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "ols public model independently reproduces all-test metrics",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "ridge public model independently reproduces all-test metrics",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "lasso_reg public model independently reproduces all-test metrics",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "kbest public model independently reproduces all-test metrics",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "rfe public model independently reproduces all-test metrics",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "sfs public model independently reproduces all-test metrics",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "lasso_select public model independently reproduces all-test metrics",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "elasticnet_select public model independently reproduces all-test metrics",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "private URL rejected422",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "cross-origin upload rejected403",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "source fingerprint mismatch409",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "invalid too-short dataset rejected",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "valid retry succeeds after failures",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "protected_sha256 unchanged",
+      "passed": true,
+      "evidence": 188
+    },
+    {
+      "name": "export_sha256 unchanged",
+      "passed": true,
+      "evidence": 493
+    },
+    {
+      "name": "source_sha256 unchanged",
+      "passed": true,
+      "evidence": 11
+    }
+  ],
+  "passed_checks": 49,
+  "static_assets": 509,
+  "models": 9,
+  "limits": [
+    "All runtime sources match except vercel.json. Exact cause of that single build-time config hash difference is unconfirmed; effective platform settings have not been retrieved.",
+    "Cold-start identity, Function memory, actual billing plan and platform-wide concurrency are unavailable from public HTTP.",
+    "Browser workflow and final deliverable text are checked separately."
+  ]
+}

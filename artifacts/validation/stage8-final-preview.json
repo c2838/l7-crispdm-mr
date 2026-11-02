@@ -1,0 +1,265 @@
+{
+  "status": "ready_for_user_commit_push",
+  "repository": "https://github.com/c2838/l7-crispdm-mr",
+  "branch": "main",
+  "base_commit": "1234731f98644bf5722af175ddcf592dcddca287",
+  "production_url": "https://l7-crispdm-mr.vercel.app/",
+  "operation": "User commits and pushes the listed local stage8 final text/PDF/evidence files; existing Git integration creates new deployment.",
+  "impact": "Only four publicly served assets change: index.html,app.mjs and two PDF downloads. No dependency/API/model/platform-setting changes.",
+  "verification": "After deploy: verify new status text, links and four assets SHA; API health200. Release source vercel.json may differ, so check actual assets rather than require local release_id equality.",
+  "rollback": "Revert only the final text/PDF commit and redeploy the verified working1234731 version.",
+  "local_release_id": "c5bf4289acb95a38392ea48e5f63555460125b0104cdd050b88ddb63d1a8bb7b",
+  "files": [
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage7-pdf-build.json",
+      "bytes": 1715,
+      "sha256": "3a735031843a57e4fe75a00d823239d79217435f9733369de33ce6ba68a4b5f0"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-progress.json",
+      "bytes": 2029,
+      "sha256": "20df1c528cb84c7b212c9609b1329b4cf8b2da2c54a91b8612d1192ebdaf27b7"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/baseline.json",
+      "bytes": 983286,
+      "sha256": "d4b91549efa051f39b67b8443925d4708c859d026b4579afd761fb0cfe760c2b"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/browser.json",
+      "bytes": 1135,
+      "sha256": "5ea7e225444a148cf95175b4ea743b67d79d517fce3f2bdfa284a007fafdc54d"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/concurrency.json",
+      "bytes": 574,
+      "sha256": "bb4e4a7b337ba5e3f472437f8bf929634f13198e5373d4fad514096d34b03642"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/elasticnet_select.json",
+      "bytes": 511003,
+      "sha256": "c7f83bd681b2e982ce3ffc5425e20ebbd652195572dcd42224ca8198c211f05f"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/health-timings.json",
+      "bytes": 146,
+      "sha256": "11f35cb5c57e56230ad5ec7ea0778e1059621920d3b48d11ad04d95de40158f4"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/kbest.json",
+      "bytes": 565748,
+      "sha256": "70a4c8e209186b8db635021e40201f743655cd92899c2a59a57283c078137e2b"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/lasso_select.json",
+      "bytes": 484528,
+      "sha256": "449b0183a567747d5369b3cc3c6c7e88bd3cc568e21c5f2d2e7c58fd9ded2c48"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_infographic-contact-1.jpg",
+      "bytes": 48343,
+      "sha256": "8effd965b9d7da6365c884c7c666f65e4d3bbbdd384aac3edb635496651a7179"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_infographic/page-1.png",
+      "bytes": 241265,
+      "sha256": "49c47a7c06578d9d703c0d3d279768c67f7603800e31c60d2232c06dd4b6ffb8"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft-contact-1.jpg",
+      "bytes": 142390,
+      "sha256": "cf6db8b68aa6f269aa82b0ccb56affa6c7ded3c5ad66add9fbd9769ee74c7b77"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft-contact-2.jpg",
+      "bytes": 146607,
+      "sha256": "d7e3ca5aae17b9fa20f1d732e1d417a8cae38af6612e1dd014bf4e86dadb76f2"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft-contact-3.jpg",
+      "bytes": 95759,
+      "sha256": "f4f8312744e97ed69cb46c70c7b2de111227908758ff69c14bd06cebbb074736"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-01.png",
+      "bytes": 132362,
+      "sha256": "03723e724fa7af7536a57fc00f5f56ff1a27192000c482661f6ee7657af950a2"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-02.png",
+      "bytes": 103929,
+      "sha256": "26f5a27b1d3aaa40cbb53a617c35e6fc5229abaf0901f603d68253968d710696"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-03.png",
+      "bytes": 99612,
+      "sha256": "211e1af10fdde0f9738955ff353e17d0c73fce78a0fd1d7547d393271a0afded"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-04.png",
+      "bytes": 101137,
+      "sha256": "611ddb0dadb46d5faba83d4485a561dc7be60f679e0cdc6f1bc543fef104afef"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-05.png",
+      "bytes": 109530,
+      "sha256": "118e75884cc063d19b4f7960f86bb7d6f3ff1f523589a14b6520169cc0bdcec2"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-06.png",
+      "bytes": 111746,
+      "sha256": "06c95669735f84b04595e12cf5cfef86e337148c6fc82ff9b7d8961d17341b86"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-07.png",
+      "bytes": 119404,
+      "sha256": "104231419ebb7a644c072ca1917ca17219ff6a05f66ff20306ca39417dca7228"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-08.png",
+      "bytes": 150729,
+      "sha256": "1d0c0827eb87addb50d87a305c0db71c266c3fae0033a907f6d92e4051ca246e"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-09.png",
+      "bytes": 100887,
+      "sha256": "3b65788f76234e41fdfa747b967ada571800d0b9bc2671d73fa3dfc26ebc41a2"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-10.png",
+      "bytes": 105596,
+      "sha256": "e72e455f4375c93afb9bf7b2380c0d6efe03deed62af126254f2234391e23b75"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-11.png",
+      "bytes": 123392,
+      "sha256": "4d6e37aee19469cbcf05e99f959011d25097bde616938d04fc88f0acb2cb3f45"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-12.png",
+      "bytes": 101433,
+      "sha256": "5f6de9514d13389bb6d1075736542643e40ced1c4f9a6b4f506bfe4c07aa6563"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-13.png",
+      "bytes": 140975,
+      "sha256": "163fc5b76e4769f1dbaf2b27cb8ee7833975571336448c336e0213da5d37429d"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-14.png",
+      "bytes": 110147,
+      "sha256": "33823d0020117f5cf4b82833c8670f8d2356d2310af61bd5039955b0e7570b0f"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-15.png",
+      "bytes": 111783,
+      "sha256": "1eb72d10853d4e04e4080f152720386df3621c63b4318310a03c830e2de0d3f6"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-16.png",
+      "bytes": 190862,
+      "sha256": "dad6052393d09f2b7556bc23c7c62eb8c0b702f1d23fc623fb51a2012f6a16b4"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-17.png",
+      "bytes": 206728,
+      "sha256": "d541434f0172cd4f970b48bafabc82937c39712fb567df60a1c692f538d72a63"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-18.png",
+      "bytes": 126193,
+      "sha256": "105a50577bb4a4e52467deaee59addfa0120ff362b48c12b35f3925af079c3d7"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-19.png",
+      "bytes": 133193,
+      "sha256": "a155a25fd8f14cdc199eafaa71dccbd752d6c0dc2db1066724e1ab01e03e9132"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/L7_CRISPDM_MR_report_draft/page-20.png",
+      "bytes": 96302,
+      "sha256": "530f5c352e3348cdf5b6dc70002395462b53b336d2020beea9fbe74185ab77f3"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/pdf/checks.json",
+      "bytes": 2684,
+      "sha256": "e8c4a1fd493121829c62ff91aa7f2ad5121289383597cf7f6a86f745859e0a55"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/release.json",
+      "bytes": 91574,
+      "sha256": "520dcbdfd387ecd7cd9180533f1891f77d98803e401fc926cc4563a4a2812ab0"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/rfe.json",
+      "bytes": 510364,
+      "sha256": "8053c85e2284a865ebdb1ef10310106c252af648539d4fc4eb0fe9e7876f4daf"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/sfs.json",
+      "bytes": 565637,
+      "sha256": "4d3d118fa35b1807b638f2beb68d940537a6a9aa2f3c411a6678e4e42b15cb65"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/static-http.json",
+      "bytes": 64059,
+      "sha256": "4069985b21cd39f2df07fcedcd4622c655de74a7e228dd22b452da5dd5268a14"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/artifacts/validation/stage8-public/summary.json",
+      "bytes": 7105,
+      "sha256": "b54b6a33fcc3e215c0ae9b8538880ac91fd5c09a3081455fb7767aa06ad65ebc"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/docs/STAGE8_RESULTS.md",
+      "bytes": 2743,
+      "sha256": "82861f67b9a41abcbffccc64789f0997a8aba4503027a2a365189f19c08327d3"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/reports/output/pdf/L7_CRISPDM_MR_infographic.pdf",
+      "bytes": 123402,
+      "sha256": "3892c1211b71a07ee19c7a840d80827fdbf97857b447ecae3d6eeed2d7075137"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/reports/output/pdf/L7_CRISPDM_MR_report_draft.pdf",
+      "bytes": 1620658,
+      "sha256": "2a07f6e9fe04eb48dc80abbf6947db1bc38ff4929fd6f08c730d2f0c81a3e032"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/reports/source/build_deliverables.py",
+      "bytes": 38311,
+      "sha256": "45af60f8fbec749d3f23b50dd9856c5643845e18f2b1a3f45c817e77d3a9e007"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/reports/source/report-data.json",
+      "bytes": 2494,
+      "sha256": "dbc7b9464f862f0b88ab99376b146dfba3db487de058041ecaa8a7ee10e680fe"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/reports/source/report-draft.md",
+      "bytes": 26627,
+      "sha256": "54a2c3b51ec14147a6e5d64f72ef5a82b6e56d3a398baa04802fa32c434ed57b"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/web/app.mjs",
+      "bytes": 24361,
+      "sha256": "db529f9035d3a975b3e5fd182ab03a3efa25e9c441c26a3b51537b8fc760cda2"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/web/downloads/L7_CRISPDM_MR_infographic.pdf",
+      "bytes": 123402,
+      "sha256": "3892c1211b71a07ee19c7a840d80827fdbf97857b447ecae3d6eeed2d7075137"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/web/downloads/L7_CRISPDM_MR_report_draft.pdf",
+      "bytes": 1620658,
+      "sha256": "2a07f6e9fe04eb48dc80abbf6947db1bc38ff4929fd6f08c730d2f0c81a3e032"
+    },
+    {
+      "path": "/Users/c2838/NCHU/115-1 中興作業/AIOT/L7_CRISPDM_MR/web/index.html",
+      "bytes": 24670,
+      "sha256": "7681c01e793240fecf9d244ae3a0b2838de760c424e9936b302bf3b5755c2969"
+    }
+  ],
+  "external_writes_by_agent": false
+}

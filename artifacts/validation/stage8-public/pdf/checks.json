@@ -1,0 +1,123 @@
+{
+  "status": "passed_automated_and_visual_review",
+  "checks": [
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 1,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 2,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 3,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 4,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 5,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 6,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 7,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 8,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 9,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 10,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 11,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 12,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 13,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 14,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 15,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 16,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 17,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 18,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 19,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_report_draft",
+      "page": 20,
+      "text_within_bounds": true
+    },
+    {
+      "pdf": "L7_CRISPDM_MR_infographic",
+      "page": 1,
+      "text_within_bounds": true
+    }
+  ],
+  "rendered": [
+    {
+      "name": "L7_CRISPDM_MR_report_draft",
+      "pages": 20,
+      "rendered": 20
+    },
+    {
+      "name": "L7_CRISPDM_MR_infographic",
+      "pages": 1,
+      "rendered": 1
+    }
+  ],
+  "visual_review": "All21 pages inspected on contact sheets; changed report pages14/17 and A3 inspected at full resolution. No overflow, overlap or missing glyphs."
+}

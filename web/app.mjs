@@ -51,7 +51,7 @@ function renderContext(){
     ['Data Preparation','Keep fitting within training folds','固定 80/20 development/test；填補、drop-first 類別編碼、標準化及選取均在相應 training fold 擬合。GPU 四次計時只用於定義 Target。'],
     ['Modeling','Compare five selection methods','SelectKBest、RFE、Forward SFS、Lasso 與 ElasticNet 選取後重新擬合 OLS；另比較 Dummy、全特徵 OLS、Ridge／Lasso 預測模型。'],
     ['Evaluation','Report evidence and limitations',isGPU?'原尺度凍結代表 Test R² 0.4099、RMSE 285.23 ms；18.40% 負點預測，殘差與條件區間有明顯限制。log 版本為事先規劃的補充。':'含前期成績代表 Test R² 0.9290；背景代表 0.3654。含前期成績 PI 在 130 筆 test 覆蓋 100%，平均寬 5.31 分，不能當作未來保證。'],
-    ['Deployment','Explore a new sample','本機互動展示、單筆推論與自訂 CSV／網址分析已提供；公開部署與遠端驗收仍待後續完成。新學校／新 GPU 外部效能未驗證。']
+    ['Deployment','Explore a new sample','公開網站已驗證兩題互動、附件與第三份真實資料的 CSV／網址分析；新學校／新 GPU 外部效能未驗證。']
   ];
   $('workflow-grid').innerHTML=workflow.map((w,i)=>`<article><span>0${i+1} / ${w[0]}</span><h3>${w[1]}</h3><p>${esc(w[2])}</p></article>`).join('');
 }
@@ -164,4 +164,4 @@ $('predict-form').addEventListener('submit',event=>{event.preventDefault();calcu
 $('download-model').addEventListener('click',()=>download(`${state.caseData.id}-${state.card.method}-model.json`,{artifact:state.detail.artifact,inference:state.detail.inference,scope:state.detail.scope}));
 $('download-comparison').addEventListener('click',()=>{const columns=['method','candidate','selected_fields','cv_rmse','test_rmse','test_r2'];const records=order.map(m=>{const c=state.caseData.candidates.find(x=>x.id===state.caseData.winner_ids[m]);return [names[m],c.id,c.selected_count,c.cv.rmse,c.test.rmse,c.test.r2];});download(state.caseData.id+'-frozen-comparison.csv',[columns,...records].map(row=>row.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(',')).join('\r\n'),'text/csv;charset=utf-8');});
 let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(renderCharts,180);});
-json('data/catalog.json').then(c=>{$('build-label').textContent=`Frozen analysis ${c.freeze_sha256.slice(0,12)} · Local preview`;return selectScenario('sgemm');}).catch(report);
+json('data/catalog.json').then(c=>{$('build-label').textContent=`Frozen analysis ${c.freeze_sha256.slice(0,12)} · Public functionality verified`;return selectScenario('sgemm');}).catch(report);

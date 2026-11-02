@@ -67,7 +67,7 @@ def footer(title,draft=True):
         c.setFont('TC',8.5);c.setFillColor(MUTED);c.drawString(42,h-31,'L7  /  CRISP-DM  /  MULTIPLE REGRESSION')
         c.setStrokeColor(colors.HexColor('#D9E3E5'));c.line(42,38,w-42,38)
         c.setFont('TC',8.2);c.drawString(42,25,safe(title)[:55]);c.drawRightString(w-42,25,str(doc.page))
-        if draft:c.setFillColor(GOLD);c.drawRightString(w-42,h-31,'研究摘要已核對 / 公開驗收待補')
+        if draft:c.setFillColor(GOLD);c.drawRightString(w-42,h-31,'公開功能已驗收 / 繳交封存待確認')
         c.restoreState()
     return draw
 
@@ -117,11 +117,11 @@ def report():
     h('本次分析的判斷')
     p('GPU保留為目前原始特徵加法式線性模型能力有限的案例；學生主模型以G1與G2保留較多預測資訊，但只支持回顧條件估計。兩題都以正確方法、評估隔離及忠實揭露限制為完成標準，不以提高R²重選test。')
     h('文件版本與未完成範圍')
-    p(f'本機附件草稿，整理日期 {DATE}（Asia/Taipei）。分析數字取自既有凍結JSON，未重新調模。使用者已提供兩題NotebookLM回答，摘要經來源核對修訂後整合；公開網站、原始碼repo及雲端驗收在階段8完成後定稿。此PDF尚非最終繳交版。')
+    p(f'公開功能驗收版，整理日期 {DATE}（Asia/Taipei）。分析數字取自既有凍結JSON，未重新調模。兩題NotebookLM摘要已核對；公開網站、兩題切換及第三份真實資料的CSV／URL與九模型已實測。對話快照及最終繳交封存仍待階段9。')
     p('GPT協作：需求整理、分析程式、網站、驗證、文稿與版面由Agent協助。使用者決定資料、案例定位與階段範圍，並負責NotebookLM實際研究。','small')
 
     page(2,'需求對照與實驗設計')
-    tab([['作業要求','本專案對應','目前狀態'],['Kaggle / 14-39原始輸入','GPU 14；student-por 32','完成'],['線性回歸 / 特徵選擇 / 評估','OLS、五種選擇、baseline與正則化比較','完成'],['預測圖含CI或PI','係數CI、平均反應CI與個別觀測PI分開','本機完成'],['CRISP-DM六階段','兩題均記錄；Deployment含實際自訂API','公開驗收待階段8'],['兩題下拉 / 任意Dataset加分','靜態正式成果 + 新CSV真正運算','本機完成；公開待驗收'],['NotebookLM / AI標示','兩題資料包及GPT協作說明','兩題回答已收到、摘要已核對'],['報告 / 資訊圖表 / 對話PDF','optional依使用者要求均製作','本機草稿；最終待更新']],[145,252,114])
+    tab([['作業要求','本專案對應','目前狀態'],['Kaggle / 14-39原始輸入','GPU 14；student-por 32','完成'],['線性回歸 / 特徵選擇 / 評估','OLS、五種選擇、baseline與正則化比較','完成'],['預測圖含CI或PI','係數CI、平均反應CI與個別觀測PI分開','公開可查看'],['CRISP-DM六階段','兩題均記錄；Deployment含實際自訂API','公開功能已驗收'],['兩題下拉 / 任意Dataset加分','靜態正式成果 + 新CSV真正運算','公開六方法九模型通過'],['NotebookLM / AI標示','兩題資料包及GPT協作說明','兩題回答已收到、摘要已核對'],['報告 / 資訊圖表 / 對話PDF','optional依使用者要求均製作','報告更新；對話待封存']],[145,252,114])
     p('老師主文要求線性回歸與特徵選擇；九模型比較及共同OLS重擬合是本專案的實驗設計，不能把所有補充方法寫成教師強制要求。')
     h('Frozen的定義')
     p('先以development CV選各方法候選與主代表，保存selection-freeze.json，再進行final test評估。表格列各方法預先選定的勝出模型；上方其他k／參數屬development探索，不用已揭露test重新挑選。')
@@ -202,11 +202,11 @@ def report():
     page(14,'部署架構、資源界線與隱私')
     tab([['層次','本機落地'],['Frontend','原生HTML / CSS / ES modules / SVG，沿用DIC2版型；正式結果按需載入'],['Analysis','一般Python核心，共用於CLI、正式資料與自訂資料'],['HTTP','FastAPI薄層；每方法自足請求，無跨instance歷史DB'],['URL取得','僅公開HTTPS 443；逐跳檢查DNS／固定公開IP／原host TLS與SNI'],['取消／並行','instance互斥鎖由真正運算結束釋放；協作取消不保證立即停止求解'],['資料保留','當次請求與頁面記憶體；表單系統暫存關閉清理；可下載結果']],[120,391])
     p('CSV最多3,500,000 bytes，50-10000列，來源最多100欄、原始X最多39、encoded最多64、每類別最多20類。JSON單回應最多3,000,000 bytes；圖有界顯示，指標／覆蓋使用全test。每方法協作預算120秒；URL整體15秒。')
-    p('部署目標為Vercel Hobby，但尚未公開部署。build大小、套件、實際runtime／冷啟動、並行總額、費用與公開新資料操作留待階段8驗證；不把本機速度當雲端保證。沒有Git push、雲端狀態變更或LMS繳交。')
+    p('公開站由使用者部署至Vercel，GitHub為c2838/l7-crispdm-mr。實際公開HTTP驗證509靜態檔、CSV與UCI網址、六方法九模型及錯誤處理，49項檢查通過；九模型完整test指標由本機獨立重算一致。實際方案、Function記憶體及冷啟動身分無管理端證據，不宣稱已量測；尚未LMS繳交。')
 
     page(15,'驗證證據與可重現性')
     tab([['驗證','方法與判斷依據','實際結果'],['正式模型／區間','獨立NumPy / sklearn / Student-t核對，全test與凍結SHA','279項；33原單元'],['正式前端推論','Python對網站共用模組，含原尺度方程','3590數值；1891資料／公式核對'],['階段6單元','原33 + 39服務測試；傳輸失敗／deadline為受控測試','72成功'],['真實HTTP／資料','外部UCI HTTPS + localhost + CLI + 獨立重算','48成功；類別資料另14'],['新模型前端數值','18模型21案例；容差1e-7絕對 + 1e-8相對','129核對；最大誤差8.73e-11'],['瀏覽器與下載','真實上傳／URL／取消重試／390與320寬度；實際下載對HTTP','31瀏覽器；2894數值差異0']],[110,280,121])
-    p('驗證成功只表示軟體與計算符合所檢查契約，不證明統計假設成立、教育／醫療可用或公開服務已驗收。真實外部資料取得、localhost服務、受控失敗及未部署範圍分開保存。')
+    p('驗證成功只表示軟體與計算符合所檢查契約，不證明統計假設成立或教育／醫療可用。階段8另以真實公開HTTPS核對509靜態檔、六方法九模型及獨立test指標。公開證據見artifacts/validation/stage8-public/summary.json；平台內部資源限制仍明示未驗證。')
     p('selection-freeze SHA-256：\n3a4fec9047f6e08b4eace272bd2f43d7fb4be1fb8356525549340561f15425f3','small')
     p('主要證據：artifacts/validation/stage4.json、stage5-data.json、stage5-prediction.json、stage6-{unit,http,teaching,prediction,browser,downloads,completion}.json。188受保護分析成果、493展示JSON及原始／處理資料保持原SHA。','small')
 
@@ -233,7 +233,7 @@ def report():
     p('已修正原文的Label Encoding及五方法誤列。G1／G2是第一、第二評量期，不寫成兩個學期；背景欄位的收集時點沒有全部證實，不能自行補成期末已知。B2之編碼敏感度與分數只屬其數學資料實驗。')
     p('GPT協助需求、程式、分析、驗證、研究核對與排版；使用者決定範圍、保留GPU案例並實際操作NotebookLM。貼文未附內部引用點擊對照，因此只聲明已獨立核對保留主張，不冒稱已驗證其NotebookLM介面。')
     p('[B1] UCI Dataset Information / Additional Variable Information；[B2] DOI10.1038/s41598-026-40538-y，Abstract / Methodology / encoding sensitivity / Discussion。B3全文未取得，不使用內文。','small')
-    p('尚待階段8：repo、公開部署與加分操作實證；最終繳交前更新對話／附件並逐頁檢查。研究摘要本機整合完成，不代表已公開或已繳交。','small')
+    p('公開網站：https://l7-crispdm-mr.vercel.app/\n原始碼：https://github.com/c2838/l7-crispdm-mr\n兩題切換及第三份真實資料分析已公開驗證；加分以教師評定為準。最終繳交前仍須更新對話快照與確認附件版本。','small')
 
     page(18,'引用與資料來源')
     p('以下為可追溯的外部來源；頁碼／章節及取得限制另見docs/notebooklm/sources.json。研究主張與本作業計算分開。','small')
@@ -261,9 +261,9 @@ def report():
         p('數值來源：web/'+REP[n]['detail']+'；係數與區間已於階段4／5獨立核對。','small')
 
     doc=SimpleDocTemplate(str(OUT/'L7_CRISPDM_MR_report_draft.pdf'),pagesize=A4,rightMargin=42,leftMargin=42,topMargin=49,bottomMargin=49,title='L7 CRISP-DM Multiple Regression - Analysis Draft',author='AIoT coursework - GPT-assisted; user reviewed scope',pageCompression=1)
-    doc.build(story,onFirstPage=footer('分析報告草稿 / 研究已核對；公開驗收待完成'),onLaterPages=footer('分析報告草稿 / 研究已核對；公開驗收待完成'))
+    doc.build(story,onFirstPage=footer('分析報告 / 公開功能已驗收；繳交封存待確認'),onLaterPages=footer('分析報告 / 公開功能已驗收；繳交封存待確認'))
     (SRC/'report-draft.md').write_text('# L7 CRISP-DM Multiple Regression\n\n'+'\n\n'.join(TEXT)+'\n')
-    (SRC/'report-data.json').write_text(json.dumps({'created_at':NOW.isoformat(),'status':'research_integrated_pending_public_deployment','scenario_values':TRACE,'freeze_sha256':hashlib.sha256((ROOT/'artifacts/analysis/models/selection-freeze.json').read_bytes()).hexdigest()},ensure_ascii=False,indent=2)+'\n')
+    (SRC/'report-data.json').write_text(json.dumps({'created_at':NOW.isoformat(),'status':'public_functionality_verified_pending_submission_archive','scenario_values':TRACE,'freeze_sha256':hashlib.sha256((ROOT/'artifacts/analysis/models/selection-freeze.json').read_bytes()).hexdigest()},ensure_ascii=False,indent=2)+'\n')
 
 def infographic():
     dest=OUT/'L7_CRISPDM_MR_infographic.pdf';w,h=A3;c=canvas.Canvas(str(dest),pagesize=A3,pageCompression=1);c.setTitle('L7 CRISP-DM Multiple Regression - Infographic')
@@ -285,15 +285,15 @@ def infographic():
     block(margin+cw+gap,top-223,cw,223,'B / Student Portuguese Grade',f"32個原始輸入 | 649列\nTarget：G3（0-20分）\nElasticNet選G1/G2 -> OLS\nTest R² = {b['test']['r2']:.4f}\nRMSE = {b['test']['rmse']:.3f} 分\n定位：已知前期成績的回顧條件估計",BLUE)
     y=top-245;c.setFillColor(TEAL);c.setFont('TC',18);c.drawString(margin,y,'CRISP-DM / 六階段都有證據')
     smallw=(w-2*margin-2*gap)/3;bh=112;ytop=y-18
-    steps=[('01 Business','定義Target、用途與錯誤影響\n不把高分等同高R²'),('02 Understanding','來源、字典、缺值與分布\n原始X與encoded欄位分開'),('03 Preparation','固定development / test\n前處理只fit training fold'),('04 Modeling','五方法選取 -> OLS\n另列mean、全X與正則化'),('05 Evaluation','固定test、CI / PI與診斷\n不看test重新選勝出者'),('06 Deployment','兩題下拉 + CSV / URL實算\n本機完成，公開驗收待8')]
+    steps=[('01 Business','定義Target、用途與錯誤影響\n不把高分等同高R²'),('02 Understanding','來源、字典、缺值與分布\n原始X與encoded欄位分開'),('03 Preparation','固定development / test\n前處理只fit training fold'),('04 Modeling','五方法選取 -> OLS\n另列mean、全X與正則化'),('05 Evaluation','固定test、CI / PI與診斷\n不看test重新選勝出者'),('06 Deployment','兩題下拉 + CSV / URL實算\n公開兩題與九模型已驗收')]
     for i,(title,body) in enumerate(steps):block(margin+(i%3)*(smallw+gap),ytop-(i//3+1)*(bh+gap),smallw,bh,title,body)
     ybase=ytop-2*(bh+gap)-132
     block(margin,ybase,w-2*margin,112,'Feature Selection / 選擇策略有不同控制方式','SelectKBest、RFE、SFS：比較k；Lasso、ElasticNet：比較α等參數，保留非零係數。\nFrozen表格列各方法CV勝出者；其他候選只作development探索，不用test反向挑模型。')
     y2=ybase-176
     block(margin,y2,cw,158,'CI / PI / 限制要一起讀','係數CI、平均反應CI、個別PI不同。\nGPU有18.40%負時間預測；PI寬。\n學生PI覆蓋100%，但test只有130筆。\n高覆蓋不保證未來有效，HC3不修復PI。')
-    block(margin+cw+gap,y2,cw,158,'Bring Your Own Data / 真正重算','CSV / 公開HTTPS -> 預覽與設定\n六請求、九模型、取消重試及下載\nUCI第三資料：5875列 / 16X / 42群組\n上傳與URL均完成本機實際分析。')
+    block(margin+cw+gap,y2,cw,158,'Bring Your Own Data / 真正重算','CSV / 公開HTTPS -> 預覽與設定\n六請求、九模型、取消重試及下載\nUCI第三資料：5875列 / 16X / 42群組\n上傳與URL均完成公開實際分析。')
     foot=y2-80
-    p=Paragraph('資料：UCI SGEMM / Student Performance（CC BY 4.0）；Kaggle鏡像。數字取自凍結正式JSON。<br/>原作者：Paredes、Ballester-Ripoll；Cortez。DOI：10.24432/C5MK70、10.24432/C5TG7T。<br/>GPT協助程式、分析、驗證與排版；使用者確認範圍及案例定位。NotebookLM兩題回答已由使用者提供；摘要經來源核對整合。<br/>本機分析成果；尚未公開部署、取得加分最終證據或繳交。'+DATE,ParagraphStyle('if',fontName='TC',fontSize=10.5,leading=16,textColor=MUTED,wordWrap='CJK'))
+    p=Paragraph('資料：UCI SGEMM / Student Performance（CC BY 4.0）；Kaggle鏡像。數字取自凍結正式JSON。<br/>原作者：Paredes、Ballester-Ripoll；Cortez。DOI：10.24432/C5MK70、10.24432/C5TG7T。<br/>GPT協助程式、分析、驗證與排版；使用者確認範圍及案例定位。NotebookLM兩題回答已由使用者提供；摘要經來源核對整合。<br/>公開站 l7-crispdm-mr.vercel.app | GitHub c2838/l7-crispdm-mr；尚未繳交。'+DATE,ParagraphStyle('if',fontName='TC',fontSize=10.5,leading=16,textColor=MUTED,wordWrap='CJK'))
     _,ph=p.wrap(w-2*margin,75);assert foot-ph>17;p.drawOn(c,margin,foot-ph)
     c.showPage();c.save()
 
@@ -320,7 +320,7 @@ def main():
     artifacts=[]
     for p in sorted(OUT.glob('*.pdf')):
         reader=PdfReader(p);artifacts.append({'path':str(p.relative_to(ROOT)),'pages':len(reader.pages),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'text_characters':sum(len(page.extract_text() or '') for page in reader.pages)})
-    manifest={'status':'authored_pending_render_review','created_at':NOW.isoformat(),'notebooklm_status':'user_outputs_received_summaries_reviewed','public_deployment':'not_done','artifacts':artifacts,'transcripts':ts,'font':'Arial Unicode embedded; unsupported characters visibly annotated','glyph_substitutions':{f'U+{ord(k):04X}':v for k,v in FALLBACKS.items()},'source_script':'reports/source/build_deliverables.py'}
+    manifest={'status':'authored_pending_render_review','created_at':NOW.isoformat(),'notebooklm_status':'user_outputs_received_summaries_reviewed','public_deployment':'public_functionality_verified_pending_final_asset_deployment','artifacts':artifacts,'transcripts':ts,'font':'Arial Unicode embedded; unsupported characters visibly annotated','glyph_substitutions':{f'U+{ord(k):04X}':v for k,v in FALLBACKS.items()},'source_script':'reports/source/build_deliverables.py'}
     (ROOT/'artifacts/validation/stage7-pdf-build.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'artifacts':artifacts,'glyph_substitution_types':len(FALLBACKS)},ensure_ascii=False))
 

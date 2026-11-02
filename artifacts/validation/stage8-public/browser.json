@@ -1,0 +1,39 @@
+{
+  "status": "passed_actual_public_browser",
+  "base_url": "https://l7-crispdm-mr.vercel.app/",
+  "gpu_test_r2": "0.4099",
+  "student_test_r2": "0.9290",
+  "url_preview_rows": 5875,
+  "upload_preview_rows": 5875,
+  "target": "total_UPDRS",
+  "group": "subject#",
+  "raw_inputs": 16,
+  "method_requests_succeeded": 6,
+  "models": 9,
+  "cancel": "All six requests shown cancelled; unstarted methods not sent.",
+  "retry": "Baseline retry succeeded and produced4 models while five others remained cancelled.",
+  "download": {
+    "bytes": 4145643,
+    "sha256": "7715d844c21afd6e5d59889b0fe094c0876c97ba1eb6b45089e2b5538e5925ec",
+    "results": 6,
+    "models": 9
+  },
+  "viewports": [
+    {
+      "width": 1280,
+      "document_width": 1265
+    },
+    {
+      "width": 390,
+      "document_width": 375
+    }
+  ],
+  "screenshots": [
+    "outputs/hw2/stage8/public-nine-models-desktop.png"
+  ],
+  "console_errors_before_failure_tests": 0,
+  "limits": [
+    "Browser tests cover specified workflows; not every possible dataset, device or platform limit.",
+    "Actual cold-start instance identity and Function memory not available."
+  ]
+}

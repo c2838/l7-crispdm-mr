@@ -1,0 +1,20 @@
+{
+  "actual_two_simultaneous_requests": [
+    {
+      "status": 200,
+      "elapsed_s": 11.583,
+      "state": "completed",
+      "error": null,
+      "analysis_id": "e161211c038f9d8395d4edf8dd3cda5be742f52931f78dca768ccaaf0e341169"
+    },
+    {
+      "status": 200,
+      "elapsed_s": 3.145,
+      "state": "completed",
+      "error": null,
+      "analysis_id": "e161211c038f9d8395d4edf8dd3cda5be742f52931f78dca768ccaaf0e341169"
+    }
+  ],
+  "passed": true,
+  "limits": "Two bounded requests only; does not establish platform-wide concurrency, memory or billing limits."
+}
