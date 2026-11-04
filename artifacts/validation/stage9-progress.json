@@ -1,7 +1,7 @@
 {
-  "status": "prepared_verified_pending_user_review_publication_and_lms",
+  "status": "submitted_user_confirmed_closeout",
   "stage9_authorized": true,
-  "stage9_complete": false,
+  "stage9_complete": true,
   "prepared": {
     "pdf_pages": [
       20,
@@ -14,11 +14,11 @@
     "public_bonus_models": 9,
     "package_files": 20
   },
-  "pending": [
-    "User reviews and pushes final documents/PDFs; Vercel publishes, then Agent verifies actual public hashes.",
-    "User submits reviewed text and three PDFs in authenticated LMS.",
-    "Actual LMS receipt/status/time/links/files verified."
-  ],
+  "pending": [],
   "external_writes_by_agent": false,
-  "lms_submitted": false
+  "lms_submitted": true,
+  "published_commit": "8201b944b5853b381011dd16a83eb78c0868800c",
+  "published_release_id": "760a416193e0f447261df04ed7b9ad3a532556cbdf47028901f43e947abfd9c9",
+  "completion_basis": "Public website/assets independently verified; actual LMS submission directly confirmed by user.",
+  "receipt_scope": "No independently inspected LMS timestamp, receipt screenshot or attachment list."
 }

@@ -1,0 +1,82 @@
+{
+  "status": "passed_actual_stage9_publication",
+  "git_commit": "8201b944b5853b381011dd16a83eb78c0868800c",
+  "release_id": "760a416193e0f447261df04ed7b9ad3a532556cbdf47028901f43e947abfd9c9",
+  "base_url": "https://l7-crispdm-mr.vercel.app",
+  "deployment_status_url": "https://vercel.com/colin-f439/l7-crispdm-mr/2MNDAy5wCFxzMK4zYVzVnajucLp8",
+  "checks": [
+    {
+      "name": "GitHub deployment successful",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release200",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "release hash reproducible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "509 static assets retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "public final asset matches downloads/HW2_conversation_snapshot.pdf",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "bytes": 691051
+      }
+    },
+    {
+      "name": "public final asset matches downloads/L7_CRISPDM_MR_infographic.pdf",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "bytes": 121879
+      }
+    },
+    {
+      "name": "public final asset matches downloads/L7_CRISPDM_MR_report_draft.pdf",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "bytes": 1621179
+      }
+    },
+    {
+      "name": "public final asset matches index.html",
+      "passed": true,
+      "detail": {
+        "status": 200,
+        "bytes": 24696
+      }
+    },
+    {
+      "name": "homepage current108 pages204 messages",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "API healthy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "GitHub README final version",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed_checks": 11,
+  "lms_submitted": false,
+  "limits": [
+    "Final four public assets and README verified; the full six-method public analysis was validated earlier.",
+    "LMS submission/status/time/files still require actual evidence."
+  ]
+}

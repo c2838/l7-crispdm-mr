@@ -32,3 +32,10 @@ LMS唯讀開啟作業連結後導向course/info/46977，未顯示可提交欄位
 平台方案、Function記憶體、冷啟動身分與負載上限仍未取得管理端證據；本次僅繳交封存，不改平台設定或新增付費服務。功能證據不代表統計假設成立或保證教師加分。
 
 主要證據：artifacts/validation/stage9-pdf.json、stage9-browser-evidence.json、stage9-package.json；399項PDF核對、實際公開六方法與ZIP逐檔完整性均已執行。
+
+
+## 使用者確認繳交（最新結案狀態）
+
+使用者明確回覆「交了」，本次HW2依使用者確認完成繳交並結案。新版公開commit8201b944b5853b381011dd16a83eb78c0868800c及首頁／三份PDF／README／API已於前一輪獨立核對，11項通過。LMS實際送出由使用者操作並確認；Agent沒有獨立讀取登入後的提交時間、回執或附件清單，不補造這些資料。上文待提交項目為確認前的歷史狀態，由本段取代。結案只更新本機紀錄，不修改已交附件、不觸發新部署，也不要求再推送。
+
+確認紀錄：artifacts/validation/stage9-submission-confirmation.json。

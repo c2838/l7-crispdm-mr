@@ -1,0 +1,20 @@
+{
+  "status": "submitted_user_confirmed",
+  "confirmation_text": "交了",
+  "confirmation_recorded_at": "2026-11-03T01:15:08.986264+08:00",
+  "verification_method": "Direct user confirmation in this conversation",
+  "lms_url": "https://lms2020.nchu.edu.tw/course/homework/74761",
+  "lms_submitted": true,
+  "lms_submission_timestamp": null,
+  "lms_receipt_screenshot": null,
+  "attachment_list_independently_verified": false,
+  "website": "https://l7-crispdm-mr.vercel.app/",
+  "github": "https://github.com/c2838/l7-crispdm-mr",
+  "last_verified_public_commit": "8201b944b5853b381011dd16a83eb78c0868800c",
+  "last_verified_public_release": "760a416193e0f447261df04ed7b9ad3a532556cbdf47028901f43e947abfd9c9",
+  "notes": [
+    "Submission completion is confirmed by the user; no authenticated LMS receipt, timestamp or attachment list was independently inspected.",
+    "No external write, push, deployment or LMS submission performed by Agent.",
+    "No source, model, report or published asset changed during closeout."
+  ]
+}
